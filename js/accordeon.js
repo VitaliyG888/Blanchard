@@ -1,15 +1,32 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    document.querySelectorAll('#js-section')
+        .forEach(function (section) {
+            section.addEventListener('click', function (e) {
+                document.querySelectorAll('#js-section').forEach(function (se) {
+                    se.querySelector('#js-content').style.maxHeight = '0px'
+                })
 
-    let panelItem = document.querySelectorAll('.js-title'),
-        active = document.getElementsByClassName('active');
+                const accordeonSection = e.target.closest('#js-section')
+                const insideElHeight = accordeonSection.querySelector('#js-content > *').clientHeight
+                accordeonSection.querySelector('#js-content').style.maxHeight = insideElHeight + 'px'
 
-    Array.from(panelItem).forEach(function (item, i, panelItem) {
-        item.addEventListener('click', function (e) {
-            if (active.length > 0 && active[0] !== this)
-                active[0].classList.remove('active');
-            this.classList.toggle('active');
-        });
-    });
+                const accordionsElSection = document.querySelectorAll('#js-section');
+
+                if (this.classList.contains('active')) {
+
+                    document.querySelectorAll('#js-section').forEach(function (section) {
+                        section.querySelector('#js-content').style.maxHeight = '0px'
+                    })
+                    this.classList.remove('active');
+                } else {
+                    for (el of accordionsElSection) {
+                        el.classList.remove('active');
+                    }
+                    this.classList.add('active');
+                }
+            })
+        })
+
 
 })

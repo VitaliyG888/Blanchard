@@ -1017,12 +1017,9 @@ div[data-custom-properties="[object Object]"] {
 
 .accordion-item {
   position: relative;
-  flex-direction: column;
   flex-wrap: wrap;
+  padding: 20px 20px;
   width: 770px;
-  max-height: 363px;
-  padding-top: 24px;
-  padding-bottom: 30px;
 }
 
 .accordeon-link {
@@ -1036,13 +1033,17 @@ div[data-custom-properties="[object Object]"] {
   color: #333333;
 }
 
-.accordeon-title.active + .accordeon-content {
+.accordeon-section.js-section.active .accordeon-title {
+  border-bottom: none;
+}
+
+.accordeon-section.js-section.active .accordeon-content.js-content {
   border-top: 1px solid var(--first-color);
   border-bottom: 1px solid var(--first-color);
   max-height: 350px;
 }
 
-.accordeon-title.active::before {
+.accordeon-section.js-section.active .accordeon-title::before {
   content: "";
   position: absolute;
   right: 10px;
@@ -1392,7 +1393,7 @@ input[type="checkbox"]:checked + .editions__label::before {
 }
 
 .tooltip1::before {
-  top: -66px;
+  top: -82px;
   left: -146px;
 }
 
@@ -1401,24 +1402,27 @@ input[type="checkbox"]:checked + .editions__label::before {
 }
 
 .tooltip2::before {
-  top: -85px;
+  top: -81px;
   left: -153px;
 }
 
+.tooltip2::after {
+  top: -6px;
+}
+
 .tooltip3::before {
-  top: -50px;
+  top: -66px;
   left: -138px;
   width: 296px;
 }
 
 .tooltip3::after {
-  top: -7px;
+  top: -6px;
 }
 
 .tooltip-toggle::after {
   content: " ";
   position: absolute;
-  top: -10px;
   left: 4px;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
