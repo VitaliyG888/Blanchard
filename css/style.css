@@ -670,16 +670,50 @@ div[data-custom-properties="[object Object]"] {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background-color: #666666;
+  background-color: #ececec;
   border-radius: 50%;
   text-align: center;
   padding: 3px 10px;
   top: -35px;
 }
 
+.swiper-button-next-st:focus,
+.swiper-button-prev-st:focus {
+  border: 2px solid var(--first-color);
+  outline: none;
+  padding: 0px 10px;
+}
+
+.swiper-button-next-st:hover,
+.swiper-button-prev-st:hover {
+  background-color: var(--first-color);
+}
+
+.swiper-button-next-st:active,
+.swiper-button-prev-st:active {
+  background-color: var(--first-color);
+  border: 2px solid var(--second-color);
+}
+
 .swiper-button-next-st:after,
 .swiper-button-prev-st:after {
   font-size: 12px;
+  color: #000000;
+}
+
+.swiper-button-next.swiper-button-next-st:hover::after {
+  color: #ffffff;
+}
+
+.swiper-button-prev.swiper-button-prev-st:hover::after {
+  color: #ffffff;
+}
+
+.swiper-button-next.swiper-button-next-st:active::after {
+  color: #ffffff;
+}
+
+.swiper-button-prev.swiper-button-prev-st:active::after {
   color: #ffffff;
 }
 
