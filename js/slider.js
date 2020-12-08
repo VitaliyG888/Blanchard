@@ -9,10 +9,28 @@ var swiper0 = new Swiper('#slider0', {
 
 
 var swiper1 = new Swiper('#slider1', {
-    slidesPerView: 3,
-    slidesPerColumn: 2,
-    spaceBetween: 50,
-    slidesPerGroup: 3,
+
+    slidesPerView: 1,
+    slidesPerColumn: 1,
+    spaceBetween: 34,
+    slidesPerGroup: 1,
+
+    breakpoints: {
+        550: {
+            slidesPerView: 2,
+            slidesPerColumn: 2,
+            spaceBetween: 34,
+            slidesPerGroup: 2,
+        },
+        1400: {
+            slidesPerView: 3,
+            slidesPerColumn: 2,
+            spaceBetween: 50,
+            slidesPerGroup: 3,
+        },
+    },
+
+    loop: true,
 
     autoplay: {
         delay: 6000,
@@ -33,11 +51,22 @@ var swiper1 = new Swiper('#slider1', {
 });
 
 var swiper2 = new Swiper('#slider2', {
-    slidesPerView: 3,
-    slidesPerColumn: 1,
-    spaceBetween: 50,
-    slidesPerGroup: 1,
 
+    slidesPerView: 1,
+    spaceBetween: 34,
+
+    breakpoints: {
+        550: {
+            slidesPerView: 2,
+            spaceBetween: 34,
+        },
+        1400: {
+            slidesPerView: 3,
+            slidesPerColumn: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 50,
+        },
+    },
     autoplay: {
         delay: 6000,
         disableOnInteraction: false,
@@ -57,10 +86,21 @@ var swiper2 = new Swiper('#slider2', {
 });
 
 var swiper2 = new Swiper('#slider3', {
-    slidesPerView: 3,
-    slidesPerColumn: 1,
-    spaceBetween: 50,
-    slidesPerGroup: 1,
+    slidesPerView: 1,
+    spaceBetween: 34,
+
+    breakpoints: {
+        550: {
+            slidesPerView: 2,
+            spaceBetween: 34,
+        },
+        1400: {
+            slidesPerView: 3,
+            slidesPerColumn: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 50,
+        },
+    },
 
     autoplay: {
         delay: 6000,
