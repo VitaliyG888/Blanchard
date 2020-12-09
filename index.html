@@ -14,6 +14,48 @@
 <body>
     <header class="header">
         <div class="container header__container flex">
+
+            <button class="header__burger nav-toggle burger js-burger" aria-label="Открыть меню">
+                <span></span>
+            </button>
+            <div class="menu js-menu">
+                <header class="header-menu">
+                    <div class="header__container-menu flex">
+                        <a href="index.html" class="header__logo-menu logo">
+                            <img class="header__logo-img" src="image/logo.png" alt="Логотип">
+                        </a>
+                        <button class="header__close js-close reset-btn" aria-label="Закрыть меню">
+                            <span class="close__line"></span>
+                            <span class="close__line"></span>
+                        </button>
+                    </div>
+                </header>
+                <nav class="menu-nav">
+                    <ul class="menu-nav__list">
+                        <li class="menu-nav__item">
+                            <a href="#" class="menu-nav__link">О нас</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="#" class="menu-nav__link">Галерея</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="#" class="menu-nav__link">Каталог</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="#" class="menu-nav__link">События</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="#" class="menu-nav__link">Издания</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="#" class="menu-nav__link">Проекты</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="#" class="menu-nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <a href="#" class="header__logo">
                 <img src="image/logo.png" alt="Лого">
             </a>
@@ -47,6 +89,16 @@
                     <path fill="white"
                         d="M 5.12056 9.09278 L 6.13889 10.1111 L 9.75 6.5 L 6.13889 2.88889 L 5.12056 3.90722 L 6.98389 5.77778 H 0 V 7.22222 H 6.98389 L 5.12056 9.09278 Z M 11.5556 0 H 1.44444 C 0.642778 0 0 0.65 0 1.44444 V 4.33333 H 1.44444 V 1.44444 H 11.5556 V 11.5556 H 1.44444 V 8.66667 H 0 V 11.5556 C 0 12.35 0.642778 13 1.44444 13 H 11.5556 C 12.35 13 13 12.35 13 11.5556 V 1.44444 C 13 0.65 12.35 0 11.5556 0 Z" />
                 </svg>Войти</a>
+            <button class="header__magnifier" type="submit">
+                <svg class="header__magnifier--lupe" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 23 22"
+                    width="23" height="22">
+                    <rect class="first__magnifier-rect" fill="white"
+                        transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" width="6.8678"
+                        height="1.71695" />
+                    <path class="first__magnifier-path" clip-rule="evenodd" fill="white" fill-rule="evenodd"
+                        d="M 12.0969 18 C 7.53041 18 3.99692 14.3229 3.99692 10 C 3.99692 5.67715 7.53041 2 12.0969 2 C 16.6634 2 20.1969 5.67715 20.1969 10 C 20.1969 14.3229 16.6634 18 12.0969 18 Z M 12.0969 20 C 6.57408 20 2.09692 15.5228 2.09692 10 C 2.09692 4.47715 6.57408 0 12.0969 0 C 17.6198 0 22.0969 4.47715 22.0969 10 C 22.0969 15.5228 17.6198 20 12.0969 20 Z" />
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -275,9 +327,9 @@
 
                 <form class="first__search">
                     <input type="search" class="first__search-input" placeholder="Поиск по сайту">
-                    <button type="submit">
-                        <svg class="first__magnifier" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 23 22"
-                            width="23" height="22">
+                    <button class="first__magnifier" type="submit">
+                        <svg class="first__magnifier--lupe" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 23 22" width="23" height="22">
                             <rect class="first__magnifier-rect" fill="white"
                                 transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" width="6.8678"
                                 height="1.71695" />
@@ -419,36 +471,30 @@
                         <button class="accordeon-title accordeon-title--first">C 1400 по 1499 гг.</button>
                         <div class="accordeon-content js-content" id="js-content">
                             <div class="accordion-item flex" onclick="event.stopPropagation()">
-                                <div class="accordion-list">
-                                    <button class="accordeon-link" id="painter1">Бенедетто ди Биндо</button>
-                                    <button class="accordeon-link" id="painter2">Бергоньоне, Амброджо</button>
-                                    <button class="accordeon-link" id="painter3">Биссоло, Франческо</button>
-                                    <button class="accordeon-link" id="painter4">Больтраффио, Джованни</button>
-                                    <button class="accordeon-link" id="painter5">Бонсиньори, Франческо</button>
-                                    <button class="accordeon-link" id="painter6">Боттичини, Рафаэлло</button>
-                                    <button class="accordeon-link" id="painter7">Брамантино</button>
-                                    <button class="accordeon-link" id="painter8">Бреа, Людовико</button>
-                                    <button class="accordeon-link" id="painter9">Бьяджо д’Антонио Туччи</button>
-                                </div>
-                                <div class="accordion-list">
-                                    <button class="accordeon-link" id="painter10">Веккьетта</button>
-                                    <button class="accordeon-link" id="painter11">Андреа Верроккьо</button>
-                                    <button class="accordeon-link" id="painter12">Доменико Гирландайо</button>
-                                    <button class="accordeon-link" id="painter13">Беноццо Гоццоли</button>
-                                    <button class="accordeon-link" id="painter14">Граначчи, Франческо</button>
-                                    <button class="accordeon-link" id="painter15">Грегорио ди Чекко</button>
-                                    <button class="accordeon-link" id="painter16">Джованни да Удине</button>
-                                    <button class="accordeon-link" id="painter17">Джованни ди Паоло</button>
-                                    <button class="accordeon-link" id="painter18">Джорджоне</button>
-                                </div>
-                                <div class="accordion-list">
-                                    <button class="accordeon-link" id="painter19">Парентино, Бернардо</button>
-                                    <button class="accordeon-link" id="painter20">Пезеллино</button>
-                                    <button class="accordeon-link" id="painter21">Пьетро Перуджино</button>
-                                    <button class="accordeon-link" id="painter22">Перуцци, Бальдассаре</button>
-                                    <button class="accordeon-link" id="painter23">Пизанелло</button>
-                                    <button class="accordeon-link" id="painter24">Пинтуриккьо</button>
-                                </div>
+                                <button class="accordeon-link" id="painter1">Бенедетто ди Биндо</button>
+                                <button class="accordeon-link" id="painter2">Бергоньоне, Амброджо</button>
+                                <button class="accordeon-link" id="painter3">Биссоло, Франческо</button>
+                                <button class="accordeon-link" id="painter4">Больтраффио, Джованни</button>
+                                <button class="accordeon-link" id="painter5">Бонсиньори, Франческо</button>
+                                <button class="accordeon-link" id="painter6">Боттичини, Рафаэлло</button>
+                                <button class="accordeon-link" id="painter7">Брамантино</button>
+                                <button class="accordeon-link" id="painter8">Бреа, Людовико</button>
+                                <button class="accordeon-link" id="painter9">Бьяджо д’Антонио Туччи</button>
+                                <button class="accordeon-link" id="painter10">Веккьетта</button>
+                                <button class="accordeon-link" id="painter11">Андреа Верроккьо</button>
+                                <button class="accordeon-link" id="painter12">Доменико Гирландайо</button>
+                                <button class="accordeon-link" id="painter13">Беноццо Гоццоли</button>
+                                <button class="accordeon-link" id="painter14">Граначчи, Франческо</button>
+                                <button class="accordeon-link" id="painter15">Грегорио ди Чекко</button>
+                                <button class="accordeon-link" id="painter16">Джованни да Удине</button>
+                                <button class="accordeon-link" id="painter17">Джованни ди Паоло</button>
+                                <button class="accordeon-link" id="painter18">Джорджоне</button>
+                                <button class="accordeon-link" id="painter19">Парентино, Бернардо</button>
+                                <button class="accordeon-link" id="painter20">Пезеллино</button>
+                                <button class="accordeon-link" id="painter21">Пьетро Перуджино</button>
+                                <button class="accordeon-link" id="painter22">Перуцци, Бальдассаре</button>
+                                <button class="accordeon-link" id="painter23">Пизанелло</button>
+                                <button class="accordeon-link" id="painter24">Пинтуриккьо</button>
                             </div>
                         </div>
                     </div>
@@ -747,7 +793,8 @@
                 <div class="developments_card card1">
                     <span class="developments__signature signature">Музей им. Щусева<br>с 20 марта по 30 апреля</span>
                     <h3 class="developments__header">Книжная гравюра в живом восприятии</h3>
-                    <p class="developmets__descriptions">Один из ведущих флорентийских художников Кватроченто,
+                    <p class="developmets__descriptions" id="card1Description">Один из ведущих флорентийских художников
+                        Кватроченто,
                         основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава
                         художественной мастерской, где юный Микеланджело.</p>
                     <a class="developments__link link1">Подробнее</a>
@@ -755,7 +802,8 @@
                 <div class="developments_card card2">
                     <span class="developments__signature signature">ММОМА<br>24 марта 19:00</span>
                     <h3 class="developments__header">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-                    <p class="developmets__descriptions">Высокий уровень вовлечения представителей целевой аудитории
+                    <p class="developmets__descriptions" id="card2Description">Высокий уровень вовлечения представителей
+                        целевой аудитории
                         является четким доказательством простого факта: постоянный количественный рост и сфера нашей
                         активности представляет собой интересный эксперимент проверки новых принципов формирования...
                     </p>
@@ -764,7 +812,8 @@
                 <div class="developments_card card3">
                     <span class="developments__signature signature">Еврейский музей<br>с 31 марта по 21 апреля</span>
                     <h3 class="developments__header">Выставка «Формация 2020»</h3>
-                    <p class="developmets__descriptions">Идейные соображения высшего порядка, а также современная
+                    <p class="developmets__descriptions" id="card3Description">Идейные соображения высшего порядка, а
+                        также современная
                         методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как
                         перспективное планирование играет определяющее значение для новых принципов формирования
                         материально-технической и кадровой базы.</p>
@@ -999,6 +1048,7 @@
     <script src="js/select.js"></script>
     <script src="js/accordeon.js"></script>
     <script src="js/valid.js"></script>
+    <script src="js/menu.js"></script>
     <script src=" https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>

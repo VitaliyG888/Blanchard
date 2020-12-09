@@ -22,7 +22,7 @@ var swiper1 = new Swiper('#slider1', {
             spaceBetween: 34,
             slidesPerGroup: 2,
         },
-        1400: {
+        1430: {
             slidesPerView: 3,
             slidesPerColumn: 2,
             spaceBetween: 50,
@@ -53,14 +53,14 @@ var swiper1 = new Swiper('#slider1', {
 var swiper2 = new Swiper('#slider2', {
 
     slidesPerView: 1,
-    spaceBetween: 34,
+    spaceBetween: 50,
 
     breakpoints: {
         550: {
             slidesPerView: 2,
-            spaceBetween: 34,
+            spaceBetween: 50,
         },
-        1400: {
+        1430: {
             slidesPerView: 3,
             slidesPerColumn: 1,
             slidesPerGroup: 1,
@@ -94,7 +94,7 @@ var swiper2 = new Swiper('#slider3', {
             slidesPerView: 2,
             spaceBetween: 34,
         },
-        1400: {
+        1430: {
             slidesPerView: 3,
             slidesPerColumn: 1,
             slidesPerGroup: 1,

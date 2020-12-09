@@ -2,9 +2,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     console.log(document.documentElement.clientWidth);
 
-    console.log(document.querySelector("#name5").innerHTML);
+    console.log(document.querySelector("#card1Description").innerHTML);
 
-    if (document.documentElement.clientWidth < 1400) {
+    if (document.documentElement.clientWidth < 1650) {
+
+        document.querySelector("#card1Description").innerHTML = "Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава...";
+
+        document.querySelector("#card2Description").innerHTML = "Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный...";
+
+        document.querySelector("#card3Description").innerHTML = "Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное...";
+
+    }
+
+    if (document.documentElement.clientWidth < 1430) {
 
         document.querySelector("#name4").innerHTML = "Николай Ильин<br><span>Кричевский, Вла...</span>";
 
