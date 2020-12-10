@@ -1,9 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    console.log(document.documentElement.clientWidth);
-
-    console.log(document.querySelector("#card1Description").innerHTML);
-
     if (document.documentElement.clientWidth < 1650) {
 
         document.querySelector("#card1Description").innerHTML = "Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава...";
