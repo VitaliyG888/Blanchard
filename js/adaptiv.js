@@ -12,6 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.querySelector("#card3Description").innerHTML = "Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное...";
 
+        document.querySelector("#card4Description").innerHTML = "Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не...";
+
+        document.querySelector("#card5Description").innerHTML = "Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын...";
+
     }
 
     if (document.documentElement.clientWidth < 1430) {

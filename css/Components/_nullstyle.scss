@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    &::after,
+    &::before {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        font-size: 100%;
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        &:focus {
+            outline: 2px solid #7943a4;
+        }
+
+        &:active {
+            outline: none;
+        }
+
+        &:visited {
+            text-decoration: none;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    button::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+
+    &:focus,
+    &:active {
+        outline: none;
+    }
+
+    nav,
+    footer,
+    header,
+    aside {
+        display: block;
+    }
+
+    input,
+    button,
+    textarea {
+        font-family: inherit;
+    }
+
+    input::-ms-clear {
+        display: none;
+    }
+
+    ul,
+    li {
+        list-style: none;
+    }
+
+    img {
+        vertical-align: top;
+    }
+}

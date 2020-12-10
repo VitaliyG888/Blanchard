@@ -1,0 +1,20 @@
+//Компоненты
+@import 'Components/fonts';
+@import 'Components/_nullstyle';
+@import 'Components/_componenets';
+
+// Страницы
+@import 'Pages/_header';
+@import 'Pages/_first';
+@import 'Pages/_aboutUs';
+@import 'Pages/_gallery';
+@import 'Pages/_catalog';
+@import 'Pages/_developments';
+@import 'Pages/_editions';
+@import 'Pages/_projects';
+@import 'Pages/_contacts';
+@import 'Pages/_footer';
+@import 'Pages/_toggle-menu';
+
+//Макет
+@import 'Layouts/_responsive';
