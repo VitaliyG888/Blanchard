@@ -1607,7 +1607,7 @@ input[type="checkbox"]:checked + .editions__label::before {
 }
 
 .tooltip1::before {
-  top: -65px;
+  top: -80px;
   left: -146px;
 }
 
@@ -1616,7 +1616,7 @@ input[type="checkbox"]:checked + .editions__label::before {
 }
 
 .tooltip2::before {
-  top: -80px;
+  top: -92px;
   left: -153px;
 }
 
@@ -1625,7 +1625,7 @@ input[type="checkbox"]:checked + .editions__label::before {
 }
 
 .tooltip3::before {
-  top: -48px;
+  top: -63px;
   left: -138px;
   width: 296px;
 }

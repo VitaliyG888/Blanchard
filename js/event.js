@@ -4,7 +4,6 @@ let eventNews = function () {
         developmentsNews = document.querySelector('.developments__news');
 
 
-
     developmentsBtn.addEventListener('click', function () {
 
         developmentsCard.forEach(item => {
@@ -13,9 +12,9 @@ let eventNews = function () {
 
             developmentsNews.style.flexWrap = 'wrap';
 
-
+            developmentsBtn.style.display = 'none';
         })
-    })
+    });
 
 
 
