@@ -99,9 +99,12 @@
 
 }
 
-.header__close:hover {
-  border: none;
-  background: none;
+.header__close {
+
+  &:hover {
+    border: none;
+    background: none;
+  }
 
   &:hover .close__line {
     background-color: var(--extra-lite);

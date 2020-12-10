@@ -192,6 +192,43 @@ h3 {
   overflow: hidden;
 }
 
+.back_to_top {
+  position: fixed;
+  bottom: 10px;
+  left: 15px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  background-color: var(--first-color);
+  cursor: pointer;
+  border-radius: 100px;
+  display: none;
+}
+
+.back_to_top::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 18%;
+  bottom: 20%;
+  width: 25px;
+  height: 25px;
+  background-image: url(../image/strelka_up.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 111;
+}
+
+.back_to_top:hover {
+  background: var(--second-color);
+  opacity: 0.5;
+}
+
+.back_to_top-show {
+  display: block;
+}
+
 /* header */
 .header {
   max-height: 100px;
@@ -2213,7 +2250,7 @@ input[type="checkbox"]:checked + .editions__label::before {
   background: none;
 }
 
-.header__close:hover:hover .close__line {
+.header__close:hover .close__line {
   background-color: var(--extra-lite);
 }
 

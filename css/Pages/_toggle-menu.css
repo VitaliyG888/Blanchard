@@ -101,7 +101,7 @@
   background: none;
 }
 
-.header__close:hover:hover .close__line {
+.header__close:hover .close__line {
   background-color: var(--extra-lite);
 }
 
