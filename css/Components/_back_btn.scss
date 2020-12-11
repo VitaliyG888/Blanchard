@@ -1,11 +1,11 @@
 .back_to_top {
     position: fixed;
-    bottom: 10px;
-    left: 15px;
+    bottom: 20px;
+    left: 20px;
     z-index: 9999;
     width: 40px;
     height: 40px;
-    background-color: var(--first-color);
+    background-color: var(--second-color);
     cursor: pointer;
     border-radius: 100px;
     display: none;
@@ -27,8 +27,7 @@
     }
 
     &:hover {
-        background: var(--second-color);
-        opacity: 0.5;
+        background: var(--first-lite);
     }
 }
 

@@ -1,0 +1,51 @@
+@media (max-width: 1650px) {
+  .container {
+    width: 1400px;
+  }
+
+  .swiper-container#slider1 {
+    width: 1000px;
+    height: 610px;
+  }
+
+  .swiper-slide.gallery__slider {
+    height: 280px;
+
+    &::after {
+      width: 265px;
+      height: 254px;
+    }
+  }
+
+  .choices,
+  .choices__inner {
+    width: 350px;
+  }
+
+  .gallery__description {
+    max-width: 350px;
+    margin-top: 418px;
+    margin-left: 0;
+  }
+
+  /* catalog section */
+
+  .catalog__card.card {
+    max-width: 650px;
+    height: 730px;
+    background-size: 100% 400px;
+  }
+
+  .catalog__artists.accordeon {
+    max-width: 697px;
+  }
+
+  .card__title {
+    margin-top: 450px;
+  }
+
+  .swiper-container#slider2 {
+    max-width: 900px;
+  }
+}
+

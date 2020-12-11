@@ -85,6 +85,16 @@
   color: var(--first-color);
 }
 
+.contacts__button:hover {
+  background-color: var(--first-color);
+  color: #ffffff;
+}
+
+.contacts__button:focus {
+  background-color: var(--second-color);
+  border-color: var(--extra-lite);
+}
+
 .js-validate-error-label {
   font-size: 12px;
 }

@@ -84,6 +84,16 @@
   font-size: 18px;
   text-align: center;
   color: var(--first-color);
+
+  &:hover {
+    background-color: var(--first-color);
+    color: #ffffff;
+  }
+
+  &:focus {
+    background-color: var(--second-color);
+    border-color: var(--extra-lite);
+  }
 }
 
 .js-validate-error-label {

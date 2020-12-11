@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   function trackScroll() {
@@ -15,7 +15,7 @@
 
   function backToTop() {
     if (window.pageYOffset > 0) {
-      window.scrollBy(0, -80);
+      window.scrollBy(0, -40);
       setTimeout(backToTop, 0);
     }
   }

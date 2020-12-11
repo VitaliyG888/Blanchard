@@ -2,7 +2,7 @@
 .background__swiper.swiper-container.swiper-container-initialized.swiper-container-horizontal {
   z-index: -10;
   position: absolute;
-  width: 100vw;
+  width: 100%;
 }
 
 .background__first {
@@ -82,7 +82,8 @@ from {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.first__container, .first__block-up {
+.first__container,
+.first__block-up {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -163,11 +164,21 @@ from {
   background-size: cover;
 }
 
-.first__performer1, .first__performer3, .first__performer5, .first__performer7, .first__performer9, .first__performer11 {
+.first__performer1,
+.first__performer3,
+.first__performer5,
+.first__performer7,
+.first__performer9,
+.first__performer11 {
   background-image: url(../image/first-choice1.jpg);
 }
 
-.first__performer2, .first__performer4, .first__performer6, .first__performer8, .first__performer10, .first__performer12 {
+.first__performer2,
+.first__performer4,
+.first__performer6,
+.first__performer8,
+.first__performer10,
+.first__performer12 {
   background-image: url(../image/first-choice3.jpg);
 }
 
@@ -311,10 +322,12 @@ from {
   border-bottom: 1px solid rgba(255, 255, 255, 0.85);
 }
 
-.first__search:hover svg rect, .first__search:hover svg path {
+.first__search:hover svg rect,
+.first__search:hover svg path {
   fill: var(--first-lite);
 }
 
-.first__search:active svg rect, .first__search:active svg path {
+.first__search:active svg rect,
+.first__search:active svg path {
   fill: var(--second-color);
 }

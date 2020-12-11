@@ -194,12 +194,12 @@ h3 {
 
 .back_to_top {
   position: fixed;
-  bottom: 10px;
-  left: 15px;
+  bottom: 20px;
+  left: 20px;
   z-index: 9999;
   width: 40px;
   height: 40px;
-  background-color: var(--first-color);
+  background-color: var(--second-color);
   cursor: pointer;
   border-radius: 100px;
   display: none;
@@ -221,8 +221,7 @@ h3 {
 }
 
 .back_to_top:hover {
-  background: var(--second-color);
-  opacity: 0.5;
+  background: var(--first-lite);
 }
 
 .back_to_top-show {
@@ -310,7 +309,7 @@ h3 {
 .background__swiper.swiper-container.swiper-container-initialized.swiper-container-horizontal {
   z-index: -10;
   position: absolute;
-  width: 100vw;
+  width: 100%;
 }
 
 .background__first {
@@ -390,7 +389,8 @@ from {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.first__container, .first__block-up {
+.first__container,
+.first__block-up {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -471,11 +471,21 @@ from {
   background-size: cover;
 }
 
-.first__performer1, .first__performer3, .first__performer5, .first__performer7, .first__performer9, .first__performer11 {
+.first__performer1,
+.first__performer3,
+.first__performer5,
+.first__performer7,
+.first__performer9,
+.first__performer11 {
   background-image: url(../image/first-choice1.jpg);
 }
 
-.first__performer2, .first__performer4, .first__performer6, .first__performer8, .first__performer10, .first__performer12 {
+.first__performer2,
+.first__performer4,
+.first__performer6,
+.first__performer8,
+.first__performer10,
+.first__performer12 {
   background-image: url(../image/first-choice3.jpg);
 }
 
@@ -619,11 +629,13 @@ from {
   border-bottom: 1px solid rgba(255, 255, 255, 0.85);
 }
 
-.first__search:hover svg rect, .first__search:hover svg path {
+.first__search:hover svg rect,
+.first__search:hover svg path {
   fill: var(--first-lite);
 }
 
-.first__search:active svg rect, .first__search:active svg path {
+.first__search:active svg rect,
+.first__search:active svg path {
   fill: var(--second-color);
 }
 
@@ -1653,7 +1665,7 @@ input[type="checkbox"]:checked + .editions__label::before {
 }
 
 .tooltip2::before {
-  top: -92px;
+  top: -80px;
   left: -153px;
 }
 
@@ -1908,6 +1920,16 @@ input[type="checkbox"]:checked + .editions__label::before {
   font-size: 18px;
   text-align: center;
   color: var(--first-color);
+}
+
+.contacts__button:hover {
+  background-color: var(--first-color);
+  color: #ffffff;
+}
+
+.contacts__button:focus {
+  background-color: var(--second-color);
+  border-color: var(--extra-lite);
 }
 
 .js-validate-error-label {
@@ -2553,5 +2575,90 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .map {
     margin-left: 98px;
+  }
+}
+
+@media (max-width: 970px) {
+  .container {
+    width: 668px;
+  }
+  .header__logo {
+    padding: 30px 0 30px 0;
+    margin-right: 17px;
+  }
+  .nav-toggle span {
+    top: 17px;
+    left: 6px;
+  }
+  svg.header__magnifier--lupe {
+    width: 30px;
+    height: 30px;
+    margin-right: -7px;
+  }
+  .first__title {
+    margin-top: 92px;
+    margin-left: 0px;
+  }
+  .first__description {
+    letter-spacing: -0.1px;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  .first__description {
+    max-width: 661px;
+  }
+  .first__subscription {
+    margin-top: 133px;
+    margin-left: 5px;
+  }
+  .aboutUs {
+    height: 588px;
+  }
+  h2.aboutUs__title.title {
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .aboutUs__description {
+    margin-top: 18px;
+    margin-left: 7px;
+    max-width: 666px;
+    letter-spacing: -0.1px;
+  }
+  .gallery__block {
+    flex-wrap: wrap;
+  }
+  .gallery__showing {
+    margin-top: -784px;
+  }
+  .swiper-container#slider1 {
+    width: 668px;
+  }
+  .gallery__description {
+    max-width: 668px;
+    margin-top: 791px;
+  }
+  li.catalog__language {
+    margin-right: -15px;
+  }
+  .catalog__description {
+    width: 669px;
+  }
+  .catalog__content {
+    flex-wrap: wrap-reverse;
+  }
+  .catalog__artists.accordeon {
+    max-width: 668px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 54px;
+  }
+  .catalog__artists.accordeon .accordeon-section {
+    width: 100%;
+  }
+  .catalog__artists.accordeon .accordeon-section.accordeon-item {
+    width: 600px;
+  }
+  .catalog__artists.accordeon .accordeon-section .accordeon-link {
+    width: 210px;
   }
 }
