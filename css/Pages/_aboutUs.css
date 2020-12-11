@@ -1,7 +1,10 @@
 /* aboutUs section */
 .aboutUs {
-  height: 455px;
   background: #e5e5e5;
+}
+
+.aboutUs__container {
+  padding-bottom: 67px;
 }
 
 .aboutUs__description {

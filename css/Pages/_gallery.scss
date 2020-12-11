@@ -4,6 +4,10 @@
   background-image: url(../image/backg_gallary.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  .gallery__container {
+    padding-bottom: 70px;
+  }
 }
 
 .gallery__title {
@@ -111,10 +115,8 @@ div {
 }
 
 .gallery__description {
-  max-width: 401px;
-  margin-top: 554px;
-  margin-left: -5px;
-  margin-bottom: 71px;
+  max-width: 377px;
+  margin-top: -123px;
   font-weight: 600;
   font-size: 16px;
   line-height: 32px;

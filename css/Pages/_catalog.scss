@@ -57,7 +57,7 @@
 }
 
 .catalog__content {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .catalog__card.card {
@@ -66,19 +66,19 @@
   background-image: url(../image/catalog-Domeniko.jpg);
   background-size: 100% 470px;
   background-repeat: no-repeat;
-}
 
-.card__title {
-  margin-top: 505px;
-}
+  .card__title {
+    margin-top: 305px;
+  }
 
-.card__date {
-  display: block;
-  margin-top: 7px;
-}
+  .card__date {
+    display: block;
+    margin-top: 7px;
+  }
 
-.card__description {
-  margin-top: 8px;
+  .card__description {
+    margin-top: 8px;
+  }
 }
 
 .accordeon {

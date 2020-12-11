@@ -1,4 +1,8 @@
 /* developments section */
+.developments__container {
+  padding-bottom: 80px;
+}
+
 .developments_card {
   position: relative;
   max-width: 500px;

@@ -53,7 +53,7 @@
 }
 
 .catalog__content {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .catalog__card.card {
@@ -64,16 +64,16 @@
   background-repeat: no-repeat;
 }
 
-.card__title {
-  margin-top: 505px;
+.catalog__card.card .card__title {
+  margin-top: 305px;
 }
 
-.card__date {
+.catalog__card.card .card__date {
   display: block;
   margin-top: 7px;
 }
 
-.card__description {
+.catalog__card.card .card__description {
   margin-top: 8px;
 }
 

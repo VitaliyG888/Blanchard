@@ -1,60 +1,49 @@
 /* contacts section */
-.contacts__container {
-  padding-top: 0;
-}
-
-.contacts__title {
-  margin-left: 10px;
-}
-
 .contacts {
-  margin-top: 18px;
+  margin-top: 12px;
   border-top: 1px solid #cacaca;
 }
 
-.contacts__block {
-  width: 476px;
-  height: 700px;
+.contacts .contacts__container {
+  padding-top: 0;
 }
 
-.contacts_name {
+.contacts .contacts__container .contacts__block {
+  padding-top: 124px;
+  padding-bottom: 127px;
+}
+
+.contacts .contacts__container .contacts__block .contacts_name {
   display: block;
-  margin-top: 121px;
-  margin-left: 8px;
 }
 
-.contacts__address {
+.contacts .contacts__container .contacts__block .contacts__address {
   display: block;
   margin-top: 7px;
-  margin-left: 8px;
   font-weight: 400;
   font-size: 16px;
 }
 
-.contacts__docket {
+.contacts .contacts__container .contacts__block .contacts__odrercall,
+.contacts .contacts__container .contacts__block .contacts__docket {
+  margin-top: 34px;
   display: block;
-  margin-left: 8px;
   font-weight: 400;
   font-size: 24px;
   color: #333333;
 }
 
-.contacts__odrercall {
-  margin-top: 34px;
-}
-
-.contacts__form {
+.contacts .contacts__container .contacts__block .contacts__form {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-  margin-left: 8px;
   padding-top: 14px;
   width: 400px;
 }
 
-.contacts__input {
+.contacts .contacts__container .contacts__block .contacts__form .contacts__input {
   display: block;
   position: relative;
   width: 100%;
@@ -68,11 +57,11 @@
   color: #999999;
 }
 
-.contacts__tel {
+.contacts .contacts__container .contacts__block .contacts__form .contacts__tel {
   margin-top: 24px;
 }
 
-.contacts__button {
+.contacts .contacts__container .contacts__block .contacts__form .contacts__button {
   width: 157px;
   height: 59px;
   margin-top: 22px;
@@ -85,53 +74,52 @@
   color: var(--first-color);
 }
 
-.contacts__button:hover {
+.contacts .contacts__container .contacts__block .contacts__form .contacts__button:hover {
   background-color: var(--first-color);
   color: #ffffff;
 }
 
-.contacts__button:focus {
+.contacts .contacts__container .contacts__block .contacts__form .contacts__button:focus {
   background-color: var(--second-color);
   border-color: var(--extra-lite);
 }
 
-.js-validate-error-label {
+.contacts .contacts__container .contacts__block .js-validate-error-label {
   font-size: 12px;
 }
 
-.contacts__input.js-validate-error-field {
+.contacts .contacts__container .contacts__block .contacts__input.js-validate-error-field {
   border: 2px solid #b81111 !important;
   -webkit-box-sizing: border-box !important;
   box-sizing: border-box !important;
 }
 
-.contacts__tweet {
+.contacts .contacts__container .contacts__block .contacts__social {
+  margin-top: 15px;
+}
+
+.contacts .contacts__container .contacts__block .contacts__social .contacts__tweet {
   margin-top: 38px;
 }
 
-.contacts__social {
-  margin-top: 15px;
-  margin-left: 8px;
-}
-
-.contacts__teleg {
+.contacts .contacts__container .contacts__block .contacts__social .contacts__teleg {
   margin-left: 15px;
 }
 
-.map {
+.contacts .contacts__container .map {
   width: 100%;
   border-left: 1px solid #cacaca;
   border-right: 1px solid #cacaca;
-  margin-left: 58px;
+  margin-left: 121px;
 }
 
-[class*="ground-pane"] {
+.contacts .contacts__container [class*="ground-pane"] {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
 
-.ymaps-2-1-77-copyright__link,
-.ymaps-2-1-77-map-copyrights-promo,
-.ymaps-2-1-77-copyright.ymaps-2-1-77-copyright_logo_no {
+.contacts .contacts__container .ymaps-2-1-77-copyright__link,
+.contacts .contacts__container .ymaps-2-1-77-map-copyrights-promo,
+.contacts .contacts__container .ymaps-2-1-77-copyright.ymaps-2-1-77-copyright_logo_no {
   display: none;
 }

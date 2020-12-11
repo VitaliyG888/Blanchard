@@ -2,6 +2,23 @@
   .container {
     width: 925px;
   }
+  .header__container {
+    padding-top: 29px;
+    padding-bottom: 31px;
+  }
+  .header__container .header__logo {
+    margin-bottom: 0;
+    margin-left: -7px;
+    width: 185px;
+    height: 45px;
+  }
+  .first__header {
+    display: none;
+  }
+  .first .first__description {
+    max-width: 693px;
+    margin-top: 8px;
+  }
   .header__nav {
     display: none;
   }
@@ -24,6 +41,11 @@
     display: block;
     background: none;
   }
+  .header__magnifier .header__magnifier--lupe {
+    width: 31px;
+    height: 31px;
+    margin-top: 6px;
+  }
   .header__magnifier:hover svg rect,
   .header__magnifier:hover svg path {
     fill: var(--first-lite);
@@ -33,6 +55,10 @@
     fill: var(--second-color);
   }
   /* first section */
+  .first .first__container {
+    padding-top: 0;
+    padding-bottom: 152px;
+  }
   .first__nav {
     display: none;
   }
@@ -45,11 +71,14 @@
   .first__magnifier {
     display: none;
   }
+  .first__subscription {
+    margin-top: 134px;
+  }
   .swiper-container#slider1 {
     width: 600px;
   }
   .gallery__choice {
-    margin-right: 40px;
+    margin-right: 47px;
   }
   .choices,
   .choices__inner {
@@ -57,11 +86,10 @@
   }
   .aboutUs {
     margin-top: -38px;
-    height: 489px;
   }
   .gallery__description {
     max-width: 280px;
-    margin-top: 366px;
+    margin-top: -176px;
   }
   /* catalog section */
   .catalog__card.card {
@@ -83,6 +111,19 @@
   }
   .catalog__description {
     letter-spacing: -0.2px;
+  }
+  .catalog__title {
+    margin-right: 32px;
+  }
+  .catalog__transfer {
+    width: 450px;
+    margin-top: 10px;
+  }
+  .catalog__description {
+    margin-top: 0px;
+  }
+  .catalog__content {
+    margin-top: 45px;
   }
   .card__title {
     margin-top: 304px;
@@ -139,6 +180,7 @@
   }
   .editions__container {
     position: relative;
+    padding-bottom: 0;
   }
   .editions__choice {
     position: absolute;
@@ -201,13 +243,14 @@
   .contacts__title {
     margin-left: -63px;
   }
-  .contacts__block {
+  .contacts .contacts__container .contacts__block {
     width: 382px;
+    padding-top: 129px;
   }
-  .contacts__form {
+  .contacts .contacts__container .contacts__block .contacts__form {
     width: 335px;
   }
-  .map {
+  .contacts .contacts__container .map {
     margin-left: 98px;
   }
 }

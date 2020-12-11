@@ -17,11 +17,6 @@
   .choices__inner {
     width: 350px;
   }
-  .gallery__description {
-    max-width: 350px;
-    margin-top: 418px;
-    margin-left: 0;
-  }
   /* catalog section */
   .catalog__card.card {
     max-width: 650px;

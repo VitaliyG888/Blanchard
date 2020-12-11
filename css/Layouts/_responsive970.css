@@ -1,23 +1,23 @@
 @media (max-width: 970px) {
   .container {
-    width: 668px;
-  }
-  .header__logo {
-    padding: 30px 0 30px 0;
-    margin-right: 17px;
+    width: 698px;
   }
   .nav-toggle span {
     top: 17px;
-    left: 6px;
+    left: 14px;
   }
-  svg.header__magnifier--lupe {
-    width: 30px;
-    height: 30px;
-    margin-right: -7px;
+  .header__container {
+    padding-bottom: 26px;
+  }
+  .header__container .header__logo {
+    margin-left: 7px;
+  }
+  .header__container .header__magnifier .header__magnifier--lupe {
+    margin-right: 13px;
   }
   .first__title {
-    margin-top: 92px;
-    margin-left: 0px;
+    margin-top: 85px;
+    margin-left: 9px;
   }
   .first__description {
     letter-spacing: -0.1px;
@@ -28,17 +28,17 @@
     max-width: 661px;
   }
   .first__subscription {
-    margin-top: 133px;
+    margin-top: 137px;
     margin-left: 5px;
   }
-  .aboutUs {
-    height: 588px;
+  .aboutUs__container {
+    padding-bottom: 67px;
   }
-  h2.aboutUs__title.title {
+  .aboutUs__container .aboutUs__title {
     margin-left: 5px;
     margin-top: 5px;
   }
-  .aboutUs__description {
+  .aboutUs__container .aboutUs__description {
     margin-top: 18px;
     margin-left: 7px;
     max-width: 666px;
@@ -78,18 +78,41 @@
   .catalog__artists.accordeon .accordeon-section .accordion-item.flex {
     width: 100%;
   }
-  .catalog__artists.accordeon
-    .accordeon-section
-    .accordion-item.flex
-    .accordeon-link {
+  .catalog__artists.accordeon .accordeon-section .accordion-item.flex .accordeon-link {
     width: 210px;
   }
   .catalog__card.card {
     max-width: 668px;
     width: 100%;
     height: 727px;
-    margin-top: 395px;
+    margin-top: 45px;
     background-image: url(../image/Giraldajo2.jpg);
     background-size: 100% 419px;
+  }
+  .card__title {
+    margin-top: 448px;
+  }
+  .developments__title {
+    margin-top: -6px;
+  }
+  .developments_card:not(:nth-child(2n + 2)) {
+    margin-right: 34px;
+  }
+  .card3 {
+    display: none;
+  }
+  .editions__blocks {
+    flex-wrap: wrap;
+  }
+  .editions__blocks .editions__block--left {
+    padding-top: 30px;
+  }
+  .editions__blocks .editions__block--left .editions_checkbox {
+    flex-wrap: wrap;
+    margin-bottom: 104px;
+    height: 128px;
+  }
+  .editions__blocks .editions__block--left .editions_checkbox span {
+    position: absolute;
   }
 }

@@ -5,6 +5,10 @@
   background-size: cover;
 }
 
+.gallery .gallery__container {
+  padding-bottom: 70px;
+}
+
 .gallery__title {
   font-weight: 400;
   font-size: 48px;
@@ -106,10 +110,8 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .gallery__description {
-  max-width: 401px;
-  margin-top: 554px;
-  margin-left: -5px;
-  margin-bottom: 71px;
+  max-width: 377px;
+  margin-top: -123px;
   font-weight: 600;
   font-size: 16px;
   line-height: 32px;
