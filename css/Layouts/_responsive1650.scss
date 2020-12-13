@@ -3,6 +3,26 @@
     width: 1400px;
   }
 
+  .header__item--down {
+    margin-right: 97px;
+  }
+
+  .header__logo {
+    margin-right: 110px;
+  }
+
+  .header__item {
+    margin-right: 55px;
+
+    &:last-child {
+      margin-right: 60px;
+    }
+  }
+
+
+
+
+
   .swiper-container#slider1 {
     width: 1000px;
     height: 610px;
@@ -41,4 +61,23 @@
   .swiper-container#slider2 {
     max-width: 900px;
   }
+
+  .developments_card {
+    padding: 370px 18px 91px 49px;
+    width: 430px;
+
+    &:not(:nth-child(3n + 3)) {
+      margin-right: 40px;
+    }
+
+    .developmets__descriptions {
+      width: 333px;
+    }
+  }
+
+  .editions__order {
+    margin-right: 145px;
+  }
+
+
 }

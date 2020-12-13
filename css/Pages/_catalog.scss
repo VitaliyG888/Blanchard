@@ -1,5 +1,9 @@
 /* catalog section */
 
+.catalog__container {
+  padding-bottom: 0;
+}
+
 .catalog__title {
   margin-right: 35px;
 }
@@ -61,30 +65,31 @@
 }
 
 .catalog__card.card {
-  max-width: 750px;
+  max-width: 751px;
+  margin-right: 49px;
   height: 770px;
   background-image: url(../image/catalog-Domeniko.jpg);
   background-size: 100% 470px;
   background-repeat: no-repeat;
-
-  .card__title {
-    margin-top: 305px;
-  }
-
-  .card__date {
-    display: block;
-    margin-top: 7px;
-  }
-
-  .card__description {
-    margin-top: 8px;
-  }
 }
+
+.card__title {
+  margin-top: 499px;
+}
+
+.card__date {
+  display: block;
+  margin-top: 7px;
+}
+
+.card__description {
+  margin-top: 8px;
+}
+
+
 
 .accordeon {
   max-width: 800px;
-  margin-left: 49px;
-  margin-top: 4px;
 }
 
 .accordeon-section {
@@ -93,7 +98,7 @@
 }
 
 .accordeon-title {
-  padding: 36px 0 45px 0px;
+  padding: 36px 0 45px 2px;
   width: 100%;
   border-bottom: 1px solid black;
   background: none;

@@ -8,6 +8,7 @@
   }
   .header__container {
     padding-bottom: 26px;
+    padding-top: 29px;
   }
   .header__container .header__logo {
     margin-left: 7px;
@@ -29,7 +30,7 @@
   }
   .first__subscription {
     margin-top: 137px;
-    margin-left: 5px;
+    margin-left: 17px;
   }
   .aboutUs__container {
     padding-bottom: 67px;
@@ -48,14 +49,17 @@
     flex-wrap: wrap;
   }
   .gallery__showing {
-    margin-top: -784px;
+    margin-top: 137px;
   }
   .swiper-container#slider1 {
     width: 668px;
   }
   .gallery__description {
     max-width: 668px;
-    margin-top: 791px;
+    margin-top: 13px;
+  }
+  .catalog__container {
+    padding-bottom: 7px;
   }
   li.catalog__language {
     margin-right: -15px;
@@ -86,6 +90,7 @@
     width: 100%;
     height: 727px;
     margin-top: 45px;
+    margin-right: 0;
     background-image: url(../image/Giraldajo2.jpg);
     background-size: 100% 419px;
   }
@@ -94,6 +99,9 @@
   }
   .developments__title {
     margin-top: -6px;
+  }
+  .developments_card {
+    max-width: 317px;
   }
   .developments_card:not(:nth-child(2n + 2)) {
     margin-right: 34px;

@@ -1,11 +1,13 @@
 /* contacts section */
 .contacts {
+  position: relative;
   margin-top: 12px;
   border-top: 1px solid #cacaca;
 }
 
 .contacts .contacts__container {
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 .contacts .contacts__container .contacts__block {
@@ -106,20 +108,31 @@
   margin-left: 15px;
 }
 
-.contacts .contacts__container .map {
+.contacts .contacts__map.map {
+  position: absolute;
+  display: flex;
   width: 100%;
-  border-left: 1px solid #cacaca;
-  border-right: 1px solid #cacaca;
-  margin-left: 121px;
+  height: 700px;
 }
 
-.contacts .contacts__container [class*="ground-pane"] {
+.contacts .contacts__map.map .map__right {
+  border-left: 1px solid #cacaca;
+  height: 700px;
+  width: 64.76vw;
+}
+
+.contacts .contacts__map.map .map__left {
+  width: 35.24vw;
+  height: 100%;
+}
+
+.contacts [class*="ground-pane"] {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
 
-.contacts .contacts__container .ymaps-2-1-77-copyright__link,
-.contacts .contacts__container .ymaps-2-1-77-map-copyrights-promo,
-.contacts .contacts__container .ymaps-2-1-77-copyright.ymaps-2-1-77-copyright_logo_no {
+.contacts .ymaps-2-1-77-copyright__link,
+.contacts .ymaps-2-1-77-map-copyrights-promo,
+.contacts .ymaps-2-1-77-copyright.ymaps-2-1-77-copyright_logo_no {
   display: none;
 }

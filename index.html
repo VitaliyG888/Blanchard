@@ -13,98 +13,323 @@
 
 <body>
     <header class="header">
-        <div class="container header__container flex">
 
-            <button class="header__burger nav-toggle js-burger" aria-label="Открыть меню">
-                <span></span>
-            </button>
-            <div class="menu-toggle js-menu">
-                <header class="header-menu">
-                    <div class="header__container-menu flex">
-                        <a href="index.html" class="header__logo-menu logo">
-                            <img class="header__logo-img" src="image/logo.png" alt="Логотип">
-                        </a>
-                        <button class="header__close js-close reset-btn" aria-label="Закрыть меню">
-                            <span class="close__line"></span>
-                            <span class="close__line"></span>
-                        </button>
-                    </div>
-                </header>
-                <nav class="menu-nav">
-                    <ul class="menu-nav__list">
-                        <li class="menu-nav__item">
-                            <a href="#" class="menu-nav__link">О нас</a>
+        <div class="header__primary flex">
+            <div class="container header__container--up flex">
+                <!-- Кнопка открытия выезжающего меню -->
+                <button class="header__burger nav-toggle js-burger" aria-label="Открыть меню">
+                    <span></span>
+                </button>
+                <!-- Выезжающее меню для меньших разрешений -->
+                <div class="menu-toggle js-menu">
+                    <header class="header-menu">
+                        <div class="header__container-menu flex">
+                            <button class="header__close js-close reset-btn" aria-label="Закрыть меню">
+                                <span class="close__line"></span>
+                                <span class="close__line"></span>
+                            </button>
+                        </div>
+                    </header>
+                    <nav class="menu-nav">
+                        <ul class="menu-nav__list">
+                            <li class="menu-nav__item">
+                                <a href="#" class="menu-nav__link">О нас</a>
+                            </li>
+                            <li class="menu-nav__item">
+                                <a href="#" class="menu-nav__link">Галерея</a>
+                            </li>
+                            <li class="menu-nav__item">
+                                <a href="#" class="menu-nav__link">Каталог</a>
+                            </li>
+                            <li class="menu-nav__item">
+                                <a href="#" class="menu-nav__link">События</a>
+                            </li>
+                            <li class="menu-nav__item">
+                                <a href="#" class="menu-nav__link">Издания</a>
+                            </li>
+                            <li class="menu-nav__item">
+                                <a href="#" class="menu-nav__link">Проекты</a>
+                            </li>
+                            <li class="menu-nav__item">
+                                <a href="#" class="menu-nav__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Дестоп меню -->
+                <a href="#" class="header__logo"></a>
+                <nav class="header__nav">
+                    <ul class="header__list menu-header flex">
+                        <li class="header__item">
+                            <a href="#" class="header__link">О нас</a>
                         </li>
-                        <li class="menu-nav__item">
-                            <a href="#" class="menu-nav__link">Галерея</a>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Галерея</a>
                         </li>
-                        <li class="menu-nav__item">
-                            <a href="#" class="menu-nav__link">Каталог</a>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Каталог</a>
                         </li>
-                        <li class="menu-nav__item">
-                            <a href="#" class="menu-nav__link">События</a>
+                        <li class="header__item">
+                            <a href="#" class="header__link">События</a>
                         </li>
-                        <li class="menu-nav__item">
-                            <a href="#" class="menu-nav__link">Издания</a>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Издания</a>
                         </li>
-                        <li class="menu-nav__item">
-                            <a href="#" class="menu-nav__link">Проекты</a>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Проекты</a>
                         </li>
-                        <li class="menu-nav__item">
-                            <a href="#" class="menu-nav__link">Контакты</a>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
+                <a href="#" class="header__admission"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 13 13" width="13" height="13">
+                        <path fill="white"
+                            d="M 5.12056 9.09278 L 6.13889 10.1111 L 9.75 6.5 L 6.13889 2.88889 L 5.12056 3.90722 L 6.98389 5.77778 H 0 V 7.22222 H 6.98389 L 5.12056 9.09278 Z M 11.5556 0 H 1.44444 C 0.642778 0 0 0.65 0 1.44444 V 4.33333 H 1.44444 V 1.44444 H 11.5556 V 11.5556 H 1.44444 V 8.66667 H 0 V 11.5556 C 0 12.35 0.642778 13 1.44444 13 H 11.5556 C 12.35 13 13 12.35 13 11.5556 V 1.44444 C 13 0.65 12.35 0 11.5556 0 Z" />
+                    </svg>Войти</a>
+                <button class="header__quest" type="submit">
+                    <svg class="header__quest--lupe" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 23 22"
+                        width="23" height="22">
+                        <rect class="first__quest-rect" fill="white"
+                            transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" width="6.8678"
+                            height="1.71695" />
+                        <path class="first__quest-path" clip-rule="evenodd" fill="white" fill-rule="evenodd"
+                            d="M 12.0969 18 C 7.53041 18 3.99692 14.3229 3.99692 10 C 3.99692 5.67715 7.53041 2 12.0969 2 C 16.6634 2 20.1969 5.67715 20.1969 10 C 20.1969 14.3229 16.6634 18 12.0969 18 Z M 12.0969 20 C 6.57408 20 2.09692 15.5228 2.09692 10 C 2.09692 4.47715 6.57408 0 12.0969 0 C 17.6198 0 22.0969 4.47715 22.0969 10 C 22.0969 15.5228 17.6198 20 12.0969 20 Z" />
+                    </svg>
+                </button>
             </div>
+        </div>
 
+        <div class="header__secondary">
+            <div class="container header__container--down flex">
+                <nav class="header__nav--down">
+                    <ul class="header__list--down flex">
+                        <li class="header__item--down">
+                            <a href="#" class="header__style">Реализм</a>
+                            <ul class="header__choice" data-simplebar>
+                                <li class="header__performer header__performer1">
+                                    <a href="#" class="header__artist">Тинторетто</a>
+                                </li>
+                                <li class="header__performer header__performer2">
+                                    <a href="#" class="header__artist">Фридрих</a>
+                                </li>
+                                <li class="header__performer header__performer3">
+                                    <a href="#" class="header__artist">Леонардо</a>
+                                </li>
+                                <li class="header__performer header__performer4">
+                                    <a href="#" class="header__artist">Верроккьо</a>
+                                </li>
+                                <li class="header__performer header__performer5">
+                                    <a href="#" class="header__artist">Тинторетто</a>
+                                </li>
+                                <li class="header__performer header__performer6">
+                                    <a href="#" class="header__artist">Фридрих</a>
+                                </li>
+                                <li class="header__performer header__performer7">
+                                    <a href="#" class="header__artist">Леонардо</a>
+                                </li>
+                                <li class="header__performer header__performer8">
+                                    <a href="#" class="header__artist">Верроккьо</a>
+                                </li>
+                                <li class="header__performer header__performer9">
+                                    <a href="#" class="header__artist">Тинторетто</a>
+                                </li>
+                                <li class="header__performer header__performer10">
+                                    <a href="#" class="header__artist">Фридрих</a>
+                                </li>
+                                <li class="header__performer header__performer11">
+                                    <a href="#" class="header__artist">Леонардо</a>
+                                </li>
+                                <li class="header__performer header__performer12">
+                                    <a href="#" class="header__artist">Верроккьо</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__item--down">
+                            <a href="#" class="header__style">Импрессионизм</a>
+                            <ul class="header__choice" data-simplebar>
+                                <li class="header__performer header__performer1">
+                                    <a href="#" class="header__artist">Тинторетто</a>
+                                </li>
+                                <li class="header__performer header__performer2">
+                                    <a href="#" class="header__artist">Фридрих</a>
+                                </li>
+                                <li class="header__performer header__performer3">
+                                    <a href="#" class="header__artist">Леонардо</a>
+                                </li>
+                                <li class="header__performer header__performer4">
+                                    <a href="#" class="header__artist">Верроккьо</a>
+                                </li>
+                                <li class="header__performer header__performer5">
+                                    <a href="#" class="header__artist">Тинторетто</a>
+                                </li>
+                                <li class="header__performer header__performer6">
+                                    <a href="#" class="header__artist">Фридрих</a>
+                                </li>
+                                <li class="header__performer header__performer7">
+                                    <a href="#" class="header__artist">Леонардо</a>
+                                </li>
+                                <li class="header__performer header__performer8">
+                                    <a href="#" class="header__artist">Верроккьо</a>
+                                </li>
+                                <li class="header__performer header__performer9">
+                                    <a href="#" class="header__artist">Тинторетто</a>
+                                </li>
+                                <li class="header__performer header__performer10">
+                                    <a href="#" class="header__artist">Фридрих</a>
+                                </li>
+                                <li class="header__performer header__performer11">
+                                    <a href="#" class="header__artist">Леонардо</a>
+                                </li>
+                                <li class="header__performer header__performer12">
+                                    <a href="#" class="header__artist">Верроккьо</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__item--down">
+                            <a href="#" class="header__style">Постимпрессионизм</a>
+                            <ul class="header__choice" data-simplebar>
+                                <li class="header__performer header__performer1">
+                                    <a href="#" class="header__artist">Тинторетто</a>
+                                </li>
+                                <li class="header__performer header__performer2">
+                                    <a href="#" class="header__artist">Фридрих</a>
+                                </li>
+                                <li class="header__performer header__performer3">
+                                    <a href="#" class="header__artist">Леонардо</a>
+                                </li>
+                                <li class="header__performer header__performer4">
+                                    <a href="#" class="header__artist">Верроккьо</a>
+                                </li>
+                                <li class="header__performer header__performer5">
+                                    <a href="#" class="header__artist">Тинторетто</a>
+                                </li>
+                                <li class="header__performer header__performer6">
+                                    <a href="#" class="header__artist">Фридрих</a>
+                                </li>
+                                <li class="header__performer header__performer7">
+                                    <a href="#" class="header__artist">Леонардо</a>
+                                </li>
+                                <li class="header__performer header__performer8">
+                                    <a href="#" class="header__artist">Верроккьо</a>
+                                </li>
+                                <li class="header__performer header__performer9">
+                                    <a href="#" class="header__artist">Тинторетто</a>
+                                </li>
+                                <li class="header__performer header__performer10">
+                                    <a href="#" class="header__artist">Фридрих</a>
+                                </li>
+                                <li class="header__performer header__performer11">
+                                    <a href="#" class="header__artist">Леонардо</a>
+                                </li>
+                                <li class="header__performer header__performer12">
+                                    <a href="#" class="header__artist">Верроккьо</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__item--down">
+                            <a href="#" class="header__style">Авангард</a>
+                            <ul class="header__choice" data-simplebar>
+                                <li class="header__performer header__performer1">
+                                    <a href="#" class="header__artist">Тинторетто</a>
+                                </li>
+                                <li class="header__performer header__performer2">
+                                    <a href="#" class="header__artist">Фридрих</a>
+                                </li>
+                                <li class="header__performer header__performer3">
+                                    <a href="#" class="header__artist">Леонардо</a>
+                                </li>
+                                <li class="header__performer header__performer4">
+                                    <a href="#" class="header__artist">Верроккьо</a>
+                                </li>
+                                <li class="header__performer header__performer5">
+                                    <a href="#" class="header__artist">Тинторетто</a>
+                                </li>
+                                <li class="header__performer header__performer6">
+                                    <a href="#" class="header__artist">Фридрих</a>
+                                </li>
+                                <li class="header__performer header__performer7">
+                                    <a href="#" class="header__artist">Леонардо</a>
+                                </li>
+                                <li class="header__performer header__performer8">
+                                    <a href="#" class="header__artist">Верроккьо</a>
+                                </li>
+                                <li class="header__performer header__performer9">
+                                    <a href="#" class="header__artist">Тинторетто</a>
+                                </li>
+                                <li class="header__performer header__performer10">
+                                    <a href="#" class="header__artist">Фридрих</a>
+                                </li>
+                                <li class="header__performer header__performer11">
+                                    <a href="#" class="header__artist">Леонардо</a>
+                                </li>
+                                <li class="header__performer header__performer12">
+                                    <a href="#" class="header__artist">Верроккьо</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__item--down">
+                            <a href="#" class="header__style">Футуризм</a>
+                            <ul class="header__choice" data-simplebar>
+                                <li class="header__performer header__performer1">
+                                    <a href="#" class="header__artist">Тинторетто</a>
+                                </li>
+                                <li class="header__performer header__performer2">
+                                    <a href="#" class="header__artist">Фридрих</a>
+                                </li>
+                                <li class="header__performer header__performer3">
+                                    <a href="#" class="header__artist">Леонардо</a>
+                                </li>
+                                <li class="header__performer header__performer4">
+                                    <a href="#" class="header__artist">Верроккьо</a>
+                                </li>
+                                <li class="header__performer header__performer5">
+                                    <a href="#" class="header__artist">Тинторетто</a>
+                                </li>
+                                <li class="header__performer header__performer6">
+                                    <a href="#" class="header__artist">Фридрих</a>
+                                </li>
+                                <li class="header__performer header__performer7">
+                                    <a href="#" class="header__artist">Леонардо</a>
+                                </li>
+                                <li class="header__performer header__performer8">
+                                    <a href="#" class="header__artist">Верроккьо</a>
+                                </li>
+                                <li class="header__performer header__performer9">
+                                    <a href="#" class="header__artist">Тинторетто</a>
+                                </li>
+                                <li class="header__performer header__performer10">
+                                    <a href="#" class="header__artist">Фридрих</a>
+                                </li>
+                                <li class="header__performer header__performer11">
+                                    <a href="#" class="header__artist">Леонардо</a>
+                                </li>
+                                <li class="header__performer header__performer12">
+                                    <a href="#" class="header__artist">Верроккьо</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
 
-            <a href="#" class="header__logo"></a>
-            <nav class="header__nav">
-                <ul class="header__list menu-header flex">
-                    <li class="header__item">
-                        <a href="#" class="header__link">О нас</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">Галерея</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">Каталог</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">События</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">Издания</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">Проекты</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <a href="#" class="header__admission"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 13 13" width="13" height="13">
-                    <path fill="white"
-                        d="M 5.12056 9.09278 L 6.13889 10.1111 L 9.75 6.5 L 6.13889 2.88889 L 5.12056 3.90722 L 6.98389 5.77778 H 0 V 7.22222 H 6.98389 L 5.12056 9.09278 Z M 11.5556 0 H 1.44444 C 0.642778 0 0 0.65 0 1.44444 V 4.33333 H 1.44444 V 1.44444 H 11.5556 V 11.5556 H 1.44444 V 8.66667 H 0 V 11.5556 C 0 12.35 0.642778 13 1.44444 13 H 11.5556 C 12.35 13 13 12.35 13 11.5556 V 1.44444 C 13 0.65 12.35 0 11.5556 0 Z" />
-                </svg>Войти</a>
-            <button class="header__magnifier" type="submit">
-                <svg class="header__magnifier--lupe" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 23 22"
-                    width="23" height="22">
-                    <rect class="first__magnifier-rect" fill="white"
-                        transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" width="6.8678"
-                        height="1.71695" />
-                    <path class="first__magnifier-path" clip-rule="evenodd" fill="white" fill-rule="evenodd"
-                        d="M 12.0969 18 C 7.53041 18 3.99692 14.3229 3.99692 10 C 3.99692 5.67715 7.53041 2 12.0969 2 C 16.6634 2 20.1969 5.67715 20.1969 10 C 20.1969 14.3229 16.6634 18 12.0969 18 Z M 12.0969 20 C 6.57408 20 2.09692 15.5228 2.09692 10 C 2.09692 4.47715 6.57408 0 12.0969 0 C 17.6198 0 22.0969 4.47715 22.0969 10 C 22.0969 15.5228 17.6198 20 12.0969 20 Z" />
-                </svg>
-            </button>
+                <form class="header__search">
+                    <input type="search" class="header__search-input" placeholder="Поиск по сайту">
+                    <button class="header__magnifier" type="submit">
+                        <svg class="header__magnifier--lupe" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 23 22" width="23" height="22">
+                            <rect class="header__magnifier-rect" fill="white"
+                                transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" width="6.8678"
+                                height="1.71695" />
+                            <path class="header__magnifier-path" clip-rule="evenodd" fill="white" fill-rule="evenodd"
+                                d="M 12.0969 18 C 7.53041 18 3.99692 14.3229 3.99692 10 C 3.99692 5.67715 7.53041 2 12.0969 2 C 16.6634 2 20.1969 5.67715 20.1969 10 C 20.1969 14.3229 16.6634 18 12.0969 18 Z M 12.0969 20 C 6.57408 20 2.09692 15.5228 2.09692 10 C 2.09692 4.47715 6.57408 0 12.0969 0 C 17.6198 0 22.0969 4.47715 22.0969 10 C 22.0969 15.5228 17.6198 20 12.0969 20 Z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </header>
-
-
-
-
+    <!-- Первый экран -->
     <section class="first">
         <div class="background__swiper swiper-container" id="slider0">
             <div class="background__slider swiper-wrapper">
@@ -114,233 +339,8 @@
 
             </div>
         </div>
-        <div class="first__header"></div>
         <div class="container first__container">
-            <div class="first__block-up flex">
-                <nav class="first__nav">
-                    <ul class="first__list flex">
-                        <li class="first__item">
-                            <a href="#" class="first__style">Реализм</a>
-                            <ul class="first__choice" data-simplebar>
-                                <li class="first__performer first__performer1">
-                                    <a href="#" class="first__artist">Тинторетто</a>
-                                </li>
-                                <li class="first__performer first__performer2">
-                                    <a href="#" class="first__artist">Фридрих</a>
-                                </li>
-                                <li class="first__performer first__performer3">
-                                    <a href="#" class="first__artist">Леонардо</a>
-                                </li>
-                                <li class="first__performer first__performer4">
-                                    <a href="#" class="first__artist">Верроккьо</a>
-                                </li>
-                                <li class="first__performer first__performer5">
-                                    <a href="#" class="first__artist">Тинторетто</a>
-                                </li>
-                                <li class="first__performer first__performer6">
-                                    <a href="#" class="first__artist">Фридрих</a>
-                                </li>
-                                <li class="first__performer first__performer7">
-                                    <a href="#" class="first__artist">Леонардо</a>
-                                </li>
-                                <li class="first__performer first__performer8">
-                                    <a href="#" class="first__artist">Верроккьо</a>
-                                </li>
-                                <li class="first__performer first__performer9">
-                                    <a href="#" class="first__artist">Тинторетто</a>
-                                </li>
-                                <li class="first__performer first__performer10">
-                                    <a href="#" class="first__artist">Фридрих</a>
-                                </li>
-                                <li class="first__performer first__performer11">
-                                    <a href="#" class="first__artist">Леонардо</a>
-                                </li>
-                                <li class="first__performer first__performer12">
-                                    <a href="#" class="first__artist">Верроккьо</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="first__item">
-                            <a href="#" class="first__style">Импрессионизм</a>
-                            <ul class="first__choice" data-simplebar>
-                                <li class="first__performer first__performer1">
-                                    <a href="#" class="first__artist">Тинторетто</a>
-                                </li>
-                                <li class="first__performer first__performer2">
-                                    <a href="#" class="first__artist">Фридрих</a>
-                                </li>
-                                <li class="first__performer first__performer3">
-                                    <a href="#" class="first__artist">Леонардо</a>
-                                </li>
-                                <li class="first__performer first__performer4">
-                                    <a href="#" class="first__artist">Верроккьо</a>
-                                </li>
-                                <li class="first__performer first__performer5">
-                                    <a href="#" class="first__artist">Тинторетто</a>
-                                </li>
-                                <li class="first__performer first__performer6">
-                                    <a href="#" class="first__artist">Фридрих</a>
-                                </li>
-                                <li class="first__performer first__performer7">
-                                    <a href="#" class="first__artist">Леонардо</a>
-                                </li>
-                                <li class="first__performer first__performer8">
-                                    <a href="#" class="first__artist">Верроккьо</a>
-                                </li>
-                                <li class="first__performer first__performer9">
-                                    <a href="#" class="first__artist">Тинторетто</a>
-                                </li>
-                                <li class="first__performer first__performer10">
-                                    <a href="#" class="first__artist">Фридрих</a>
-                                </li>
-                                <li class="first__performer first__performer11">
-                                    <a href="#" class="first__artist">Леонардо</a>
-                                </li>
-                                <li class="first__performer first__performer12">
-                                    <a href="#" class="first__artist">Верроккьо</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="first__item">
-                            <a href="#" class="first__style">Постимпрессионизм</a>
-                            <ul class="first__choice" data-simplebar>
-                                <li class="first__performer first__performer1">
-                                    <a href="#" class="first__artist">Тинторетто</a>
-                                </li>
-                                <li class="first__performer first__performer2">
-                                    <a href="#" class="first__artist">Фридрих</a>
-                                </li>
-                                <li class="first__performer first__performer3">
-                                    <a href="#" class="first__artist">Леонардо</a>
-                                </li>
-                                <li class="first__performer first__performer4">
-                                    <a href="#" class="first__artist">Верроккьо</a>
-                                </li>
-                                <li class="first__performer first__performer5">
-                                    <a href="#" class="first__artist">Тинторетто</a>
-                                </li>
-                                <li class="first__performer first__performer6">
-                                    <a href="#" class="first__artist">Фридрих</a>
-                                </li>
-                                <li class="first__performer first__performer7">
-                                    <a href="#" class="first__artist">Леонардо</a>
-                                </li>
-                                <li class="first__performer first__performer8">
-                                    <a href="#" class="first__artist">Верроккьо</a>
-                                </li>
-                                <li class="first__performer first__performer9">
-                                    <a href="#" class="first__artist">Тинторетто</a>
-                                </li>
-                                <li class="first__performer first__performer10">
-                                    <a href="#" class="first__artist">Фридрих</a>
-                                </li>
-                                <li class="first__performer first__performer11">
-                                    <a href="#" class="first__artist">Леонардо</a>
-                                </li>
-                                <li class="first__performer first__performer12">
-                                    <a href="#" class="first__artist">Верроккьо</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="first__item">
-                            <a href="#" class="first__style">Авангард</a>
-                            <ul class="first__choice" data-simplebar>
-                                <li class="first__performer first__performer1">
-                                    <a href="#" class="first__artist">Тинторетто</a>
-                                </li>
-                                <li class="first__performer first__performer2">
-                                    <a href="#" class="first__artist">Фридрих</a>
-                                </li>
-                                <li class="first__performer first__performer3">
-                                    <a href="#" class="first__artist">Леонардо</a>
-                                </li>
-                                <li class="first__performer first__performer4">
-                                    <a href="#" class="first__artist">Верроккьо</a>
-                                </li>
-                                <li class="first__performer first__performer5">
-                                    <a href="#" class="first__artist">Тинторетто</a>
-                                </li>
-                                <li class="first__performer first__performer6">
-                                    <a href="#" class="first__artist">Фридрих</a>
-                                </li>
-                                <li class="first__performer first__performer7">
-                                    <a href="#" class="first__artist">Леонардо</a>
-                                </li>
-                                <li class="first__performer first__performer8">
-                                    <a href="#" class="first__artist">Верроккьо</a>
-                                </li>
-                                <li class="first__performer first__performer9">
-                                    <a href="#" class="first__artist">Тинторетто</a>
-                                </li>
-                                <li class="first__performer first__performer10">
-                                    <a href="#" class="first__artist">Фридрих</a>
-                                </li>
-                                <li class="first__performer first__performer11">
-                                    <a href="#" class="first__artist">Леонардо</a>
-                                </li>
-                                <li class="first__performer first__performer12">
-                                    <a href="#" class="first__artist">Верроккьо</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="first__item">
-                            <a href="#" class="first__style">Футуризм</a>
-                            <ul class="first__choice" data-simplebar>
-                                <li class="first__performer first__performer1">
-                                    <a href="#" class="first__artist">Тинторетто</a>
-                                </li>
-                                <li class="first__performer first__performer2">
-                                    <a href="#" class="first__artist">Фридрих</a>
-                                </li>
-                                <li class="first__performer first__performer3">
-                                    <a href="#" class="first__artist">Леонардо</a>
-                                </li>
-                                <li class="first__performer first__performer4">
-                                    <a href="#" class="first__artist">Верроккьо</a>
-                                </li>
-                                <li class="first__performer first__performer5">
-                                    <a href="#" class="first__artist">Тинторетто</a>
-                                </li>
-                                <li class="first__performer first__performer6">
-                                    <a href="#" class="first__artist">Фридрих</a>
-                                </li>
-                                <li class="first__performer first__performer7">
-                                    <a href="#" class="first__artist">Леонардо</a>
-                                </li>
-                                <li class="first__performer first__performer8">
-                                    <a href="#" class="first__artist">Верроккьо</a>
-                                </li>
-                                <li class="first__performer first__performer9">
-                                    <a href="#" class="first__artist">Тинторетто</a>
-                                </li>
-                                <li class="first__performer first__performer10">
-                                    <a href="#" class="first__artist">Фридрих</a>
-                                </li>
-                                <li class="first__performer first__performer11">
-                                    <a href="#" class="first__artist">Леонардо</a>
-                                </li>
-                                <li class="first__performer first__performer12">
-                                    <a href="#" class="first__artist">Верроккьо</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
 
-                <form class="first__search">
-                    <input type="search" class="first__search-input" placeholder="Поиск по сайту">
-                    <button class="first__magnifier" type="submit">
-                        <svg class="first__magnifier--lupe" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 23 22" width="23" height="22">
-                            <rect class="first__magnifier-rect" fill="white"
-                                transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" width="6.8678"
-                                height="1.71695" />
-                            <path class="first__magnifier-path" clip-rule="evenodd" fill="white" fill-rule="evenodd"
-                                d="M 12.0969 18 C 7.53041 18 3.99692 14.3229 3.99692 10 C 3.99692 5.67715 7.53041 2 12.0969 2 C 16.6634 2 20.1969 5.67715 20.1969 10 C 20.1969 14.3229 16.6634 18 12.0969 18 Z M 12.0969 20 C 6.57408 20 2.09692 15.5228 2.09692 10 C 2.09692 4.47715 6.57408 0 12.0969 0 C 17.6198 0 22.0969 4.47715 22.0969 10 C 22.0969 15.5228 17.6198 20 12.0969 20 Z" />
-                        </svg>
-                    </button>
-                </form>
-            </div>
             <div class="first__block-down">
                 <h1 class="first__title">Прикоснитесь к прекрасному</h1>
                 <p class="first__description">Мы вынуждены отталкиваться от того, что реализация намеченных
@@ -351,7 +351,7 @@
             </div>
         </div>
     </section>
-
+    <!-- Секция О нас -->
     <section class="aboutUs">
         <div class="container aboutUs__container">
             <h2 class="aboutUs__title title">О нас</h2>
@@ -365,7 +365,7 @@
                 набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
         </div>
     </section>
-
+    <!-- Секция Галерея -->
     <section class="gallery">
         <div class="container gallery__container">
             <h2 class="gallery__title title">Галерея</h2>
@@ -430,7 +430,7 @@
                     количества скачиваний <span>авторизуйтесь,</span> либо воспользуйтесь лицензией. </p>
             </div>
     </section>
-
+    <!-- Секция каталог -->
     <section class="catalog">
         <div class="container catalog__container">
             <div class="catalog__header flex">
@@ -819,7 +819,7 @@
             </div>
         </div>
     </section>
-
+    <!-- Секция События -->
     <section class="developments">
         <div class="container developments__container">
             <h2 class="developments__title title">События</h2>
@@ -875,7 +875,7 @@
             <button class="developments__btn">Все события</button>
         </div>
     </section>
-
+    <!-- Секция Издания -->
     <section class="editions">
         <div class="container editions__container">
             <h2 class="editions__title title">Издания</h2>
@@ -943,13 +943,15 @@
                             </div>
                             <div class="swiper-slide editions__slider editions3">
                                 <div class="editions__name">Книга про буквы
-                                    <br><span class="editions__autor">Гордон, Юрий </span></div>
+                                    <br><span class="editions__autor">Гордон, Юрий </span>
+                                </div>
                                 <span class="editions__prise">2 200 руб</span>
                                 <button class="editions__order">Заказать</button>
                             </div>
                             <div class="swiper-slide editions__slider editions4">
                                 <div class="editions__name" id="name4">Николай Ильин
-                                    <br><span class="editions__autor">Кричевский, Владимир </span></div>
+                                    <br><span class="editions__autor">Кричевский, Владимир </span>
+                                </div>
                                 <span class="editions__prise">1 100 руб</span>
                                 <button class="editions__order">Заказать</button>
                             </div>
@@ -961,13 +963,15 @@
                             </div>
                             <div class="swiper-slide editions__slider editions6">
                                 <div class="editions__name" id="name6">Эволюция графических ст...
-                                    <br><span class="editions__autor">Хеллер, Чваст</span></div>
+                                    <br><span class="editions__autor">Хеллер, Чваст</span>
+                                </div>
                                 <span class="editions__prise">3 200 руб</span>
                                 <button class="editions__order">Заказать</button>
                             </div>
                             <div class="swiper-slide editions__slider editions7">
                                 <div class="editions__name" id="name7">Искусство и визуальное в...
-                                    <br><span class="editions__autor">Арнхейм, Рудольф </span></div>
+                                    <br><span class="editions__autor">Арнхейм, Рудольф </span>
+                                </div>
                                 <span class="editions__prise">2 200 руб</span>
                                 <button class="editions__order">Заказать</button>
                             </div>
@@ -978,7 +982,7 @@
         </div>
         </div>
     </section>
-
+    <!-- Секция Проекты -->
     <section class="projects">
         <div class="container projects__container">
             <h2 class="projects__title title">Проекты</h2>
@@ -1020,40 +1024,48 @@
                 очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:
                 <a class="projects__link" href=" blanchard-art.ru/projects/about">blanchard-art.ru/projects/about</a>
             </p>
-        </div>
-        <div class="projects__slider">
-            <h3 class="projects__partners">Партнёры проектов:</h3>
-            <div class="projects__showing">
-                <div class="projects__swiper-button3 swiper-button">
-                    <div class="swiper-button-prev swiper-button-prev-st button3-prev"></div>
-                    <div class="swiper-pagination swiper-pagination-st pagination3"></div>
-                    <div class="swiper-button-next swiper-button-next-st button3-next"></div>
 
-                </div>
 
-                <div class="projects__swiper swiper-container" id="slider3">
-                    <div class="projects__slider swiper-wrapper">
-                        <div class="swiper-slide projects__slider projects1"></div>
-                        <div class="swiper-slide projects__slider projects2"></div>
-                        <div class="swiper-slide projects__slider projects3"></div>
-                        <div class="swiper-slide projects__slider projects4"></div>
-                        <div class="swiper-slide projects__slider projects5"></div>
-                        <div class="swiper-slide projects__slider projects6"></div>
-                        <div class="swiper-slide projects__slider projects7"></div>
-                        <div class="swiper-slide projects__slider projects8"></div>
-                        <div class="swiper-slide projects__slider projects9"></div>
+            <div class="projects__slider">
+                <h3 class="projects__partners">Партнёры проектов:</h3>
+                <div class="projects__showing">
+                    <div class="projects__swiper-button3 swiper-button">
+                        <div class="swiper-button-prev swiper-button-prev-st button3-prev"></div>
+                        <div class="swiper-pagination swiper-pagination-st pagination3"></div>
+                        <div class="swiper-button-next swiper-button-next-st button3-next"></div>
+
+                    </div>
+
+                    <div class="projects__swiper swiper-container" id="slider3">
+                        <div class="projects__slider swiper-wrapper">
+                            <div class="swiper-slide projects__slider projects1"></div>
+                            <div class="swiper-slide projects__slider projects2"></div>
+                            <div class="swiper-slide projects__slider projects3"></div>
+                            <div class="swiper-slide projects__slider projects4"></div>
+                            <div class="swiper-slide projects__slider projects5"></div>
+                            <div class="swiper-slide projects__slider projects6"></div>
+                            <div class="swiper-slide projects__slider projects7"></div>
+                            <div class="swiper-slide projects__slider projects8"></div>
+                            <div class="swiper-slide projects__slider projects9"></div>
+                        </div>
                     </div>
                 </div>
+
+
+                <h2 class="contacts__title title">Контакты</h2>
             </div>
-
-
-            <h2 class="contacts__title title">Контакты</h2>
         </div>
+
+
 
 
     </section>
-
+    <!-- Секция Кантакты -->
     <section class="contacts">
+        <div class="contacts__map map">
+            <div class="map__left"></div>
+            <div class="map__right" id="YMapsID"></div>
+        </div>
         <div class="container contacts__container flex">
             <div class="contacts__block">
                 <h3 class="contacts_name">Шоурум №4</h3>
@@ -1074,12 +1086,13 @@
                             alt="Телеграм"></a>
                 </div>
             </div>
-            <div class="contacts__map map" id="YMapsID"></div>
         </div>
+
+
     </section>
-
+    <!-- Кнопка возврата на верх -->
     <button class="back_to_top" title="Наверх"></button>
-
+    <!-- Футер -->
     <footer class="footer">
         <div class="container footer__container flex">
             <a href="" class="footer__logo"><img src="image/logo-footer.png" alt="Логотип"></a>
@@ -1096,7 +1109,7 @@
             </ul>
         </div>
     </footer>
-
+    <!-- Скрипты -->
     <script src="js/adaptiv.js"></script>
     <script src="js/just-validate.min.js"></script>
     <script src="js/inputmask.min.js"></script>

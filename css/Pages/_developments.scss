@@ -6,14 +6,62 @@
 
 .developments_card {
   position: relative;
-  max-width: 500px;
-  min-height: 700px;
-  margin-top: 19px;
-  padding: 0 50px;
+  width: 500px;
+  margin-top: 14px;
+  padding: 314px 18px 91px 49px;
   border: 1px solid #cacaca;
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% 42.8%;
+
+  &:not(:nth-child(3n + 3)) {
+    margin-right: 50px;
+  }
+
+  .developments__signature {
+    display: block;
+    position: relative;
+    text-align: right;
+  }
+
+  .developmets__descriptions {
+    display: block;
+    position: relative;
+    width: 409px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+    margin-top: 3px;
+  }
+
+  .developments__link {
+    display: block;
+    position: absolute;
+    bottom: 47px;
+    color: var(--first-color);
+
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      width: 92px;
+      height: 2px;
+      border-bottom: 1px solid var(--first-color);
+    }
+
+    &:hover {
+      font-weight: 700;
+    }
+
+    &:active {
+      color: var(--second-color);
+    }
+
+    &:focus {
+      outline: 2px solid var(--second-color);
+    }
+  }
 }
 
 .card1 {
@@ -36,61 +84,6 @@
 .card5 {
   background-image: url(../image/dev5.jpg);
   display: none;
-}
-
-.developments_card:not(:nth-child(3n + 3)) {
-  margin-right: 50px;
-}
-
-.developments__signature {
-  display: block;
-  position: relative;
-  margin-top: 313px;
-  margin-right: 17px;
-  text-align: right;
-}
-
-.developments__header {
-  letter-spacing: -0.5px;
-}
-
-.developmets__descriptions {
-  display: block;
-  position: relative;
-  letter-spacing: -0.7px;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 32px;
-  color: #333333;
-  margin-top: 3px;
-}
-
-.developments__link {
-  display: block;
-  position: absolute;
-  bottom: 43px;
-  color: var(--first-color);
-
-  &::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 92px;
-    height: 2px;
-    border-bottom: 1px solid var(--first-color);
-  }
-
-  &:hover {
-    font-weight: 700;
-  }
-
-  &:active {
-    color: var(--second-color);
-  }
-
-  &:focus {
-    outline: 2px solid var(--second-color);
-  }
 }
 
 .developments__btn {

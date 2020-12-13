@@ -1,167 +1,173 @@
 @media (max-width: 970px) {
-    .container {
-        width: 698px;
+  .container {
+    width: 698px;
+  }
+
+  .nav-toggle span {
+    top: 17px;
+    left: 14px;
+  }
+
+  .header__container {
+    padding-bottom: 26px;
+    padding-top: 29px;
+
+    .header__logo {
+      margin-left: 7px;
     }
 
-    .nav-toggle span {
-        top: 17px;
-        left: 14px;
+    .header__magnifier .header__magnifier--lupe {
+      margin-right: 13px;
+    }
+  }
+
+
+  .first__title {
+    margin-top: 85px;
+    margin-left: 9px;
+  }
+
+  .first__description {
+    letter-spacing: -0.1px;
+    margin-left: 5px;
+    margin-top: 10px;
+
+  }
+
+  .first__description {
+    max-width: 661px;
+  }
+
+  .first__subscription {
+    margin-top: 137px;
+    margin-left: 17px;
+  }
+
+  .aboutUs__container {
+    padding-bottom: 67px;
+
+    .aboutUs__title {
+      margin-left: 5px;
+      margin-top: 5px;
     }
 
-    .header__container {
-        padding-bottom: 26px;
-
-        .header__logo {
-            margin-left: 7px;
-        }
-
-        .header__magnifier .header__magnifier--lupe {
-            margin-right: 13px;
-        }
+    .aboutUs__description {
+      margin-top: 18px;
+      margin-left: 7px;
+      max-width: 666px;
+      letter-spacing: -0.1px;
     }
+  }
+
+  .gallery__block {
+    flex-wrap: wrap;
+  }
+
+  .gallery__showing {
+    margin-top: 137px;
+  }
+
+  .swiper-container#slider1 {
+    width: 668px;
+  }
+
+  .gallery__description {
+    max-width: 668px;
+    margin-top: 13px;
+  }
+
+  .catalog__container {
+    padding-bottom: 7px;
+  }
+
+  li.catalog__language {
+    margin-right: -15px;
+  }
+
+  .catalog__description {
+    width: 669px;
+  }
+
+  .catalog__content {
+    flex-wrap: wrap-reverse;
+  }
+
+  .catalog__artists.accordeon {
+    max-width: 668px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 54px;
 
 
-    .first__title {
-        margin-top: 85px;
-        margin-left: 9px;
-    }
-
-    .first__description {
-        letter-spacing: -0.1px;
-        margin-left: 5px;
-        margin-top: 10px;
-
-    }
-
-    .first__description {
-        max-width: 661px;
-    }
-
-    .first__subscription {
-        margin-top: 137px;
-        margin-left: 5px;
-    }
-
-    .aboutUs__container {
-        padding-bottom: 67px;
-
-        .aboutUs__title {
-            margin-left: 5px;
-            margin-top: 5px;
-        }
-
-        .aboutUs__description {
-            margin-top: 18px;
-            margin-left: 7px;
-            max-width: 666px;
-            letter-spacing: -0.1px;
-        }
-    }
+    .accordeon-section {
+      width: 100%;
 
 
-
-
-
-    .gallery__block {
-        flex-wrap: wrap;
-    }
-
-    .gallery__showing {
-        margin-top: -784px;
-    }
-
-    .swiper-container#slider1 {
-        width: 668px;
-    }
-
-    .gallery__description {
-        max-width: 668px;
-        margin-top: 791px;
-    }
-
-    li.catalog__language {
-        margin-right: -15px;
-    }
-
-    .catalog__description {
-        width: 669px;
-    }
-
-    .catalog__content {
-        flex-wrap: wrap-reverse;
-    }
-
-    .catalog__artists.accordeon {
-        max-width: 668px;
+      .accordion-item.flex {
         width: 100%;
-        margin-left: 0;
-        margin-top: 54px;
 
 
-        .accordeon-section {
-            width: 100%;
-
-
-            .accordion-item.flex {
-                width: 100%;
-
-
-                .accordeon-link {
-                    width: 210px;
-
-                }
-
-            }
-
+        .accordeon-link {
+          width: 210px;
 
         }
 
+      }
+
+
     }
 
-    .catalog__card.card {
-        max-width: 668px;
-        width: 100%;
-        height: 727px;
-        margin-top: 45px;
-        background-image: url(../image/Giraldajo2.jpg);
-        background-size: 100% 419px;
-    }
+  }
 
-    .card__title {
-        margin-top: 448px;
-    }
+  .catalog__card.card {
+    max-width: 668px;
+    width: 100%;
+    height: 727px;
+    margin-top: 45px;
+    margin-right: 0;
+    background-image: url(../image/Giraldajo2.jpg);
+    background-size: 100% 419px;
+  }
 
-    .developments__title {
-        margin-top: -6px;
-    }
+  .card__title {
+    margin-top: 448px;
+  }
 
-    .developments_card:not(:nth-child(2n + 2)) {
-        margin-right: 34px;
-    }
+  .developments__title {
+    margin-top: -6px;
+  }
 
-    .card3 {
-        display: none;
-    }
+  .developments_card {
+    max-width: 317px;
+  }
 
-    .editions__blocks {
+  .developments_card:not(:nth-child(2n + 2)) {
+    margin-right: 34px;
+  }
+
+  .card3 {
+    display: none;
+  }
+
+  .editions__blocks {
+    flex-wrap: wrap;
+
+    .editions__block--left {
+      padding-top: 30px;
+
+      .editions_checkbox {
         flex-wrap: wrap;
+        margin-bottom: 104px;
+        height: 128px;
 
-        .editions__block--left {
-            padding-top: 30px;
-
-            .editions_checkbox {
-                flex-wrap: wrap;
-                margin-bottom: 104px;
-                height: 128px;
-
-                span {
-                    position: absolute;
-                }
-            }
-
+        span {
+          position: absolute;
         }
-
-
+      }
 
     }
+
+
+
+  }
 }
