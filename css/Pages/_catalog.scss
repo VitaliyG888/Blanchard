@@ -15,7 +15,8 @@
   justify-content: space-between;
 }
 
-.catalog__language button {
+.tab-nav__link {
+  border: none;
   height: 66px;
   width: 66px;
   border-radius: 50%;
@@ -100,6 +101,7 @@
 .accordeon-title {
   padding: 36px 0 45px 2px;
   width: 100%;
+  border: none;
   border-bottom: 1px solid black;
   background: none;
   font-weight: 600;

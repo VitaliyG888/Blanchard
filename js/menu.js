@@ -16,8 +16,11 @@
       menuBurgerElem.classList.add('menu--showed');
       body.style.overflow = 'hidden';
       document.querySelector('.menu-nav__list').classList.add('menu-header');
-      document.querySelector('.header__list').classList.remove('menu-header');
-
+      document.querySelector('.header__list').classList.remove('menu-header');;
+      document.querySelector('.header__admission').classList.add('active-reversed');
+      document.querySelector('.nav-toggle').classList.add('active');
+      document.querySelector('.header__quest').classList.add('active');
+      document.querySelector('.header__close').style.display = 'block';
       (function () {
         'use strict';
 
@@ -117,6 +120,11 @@
       body.style.overflow = 'initial';
       document.querySelector('.header__list').classList.add('menu-header');
       document.querySelector('.menu-nav__list').classList.remove('menu-header');
+      document.querySelector('.header__admission').classList.remove('active-reversed');
+      document.querySelector('.nav-toggle').classList.remove('active');
+      document.querySelector('.header__quest').classList.remove('active');
+      document.querySelector('.header__close').style.display = 'none';
+
 
       Array.from(body.children).forEach((child) => {
         if (child !== menuBurgerElem) {

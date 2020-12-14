@@ -116,7 +116,7 @@
 }
 
 .contacts .contacts__map.map .map__right {
-  border-left: 1px solid #cacaca;
+  border-left: 2px solid #cacaca;
   height: 700px;
   width: 64.76vw;
 }

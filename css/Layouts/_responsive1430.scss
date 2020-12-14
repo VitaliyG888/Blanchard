@@ -6,13 +6,15 @@
   .header__container--up {
     padding-top: 29px;
     padding-bottom: 28px;
-
-    .header__logo {
-      margin-bottom: 0;
-      width: 187px;
-      height: 45px;
-    }
   }
+
+  .header__logo {
+    margin-bottom: 0;
+    margin-right: 5px;
+    width: 187px;
+    height: 45px;
+  }
+
 
   .header__secondary {
     display: none;
@@ -22,10 +24,8 @@
     display: block;
   }
 
-  .header__logo {
-    margin-right: 5px;
-    width: 189px;
-    height: 44px;
+  .header__quest.active {
+    display: none;
   }
 
   .header__quest--lupe {
@@ -57,20 +57,15 @@
 
   .nav-toggle {
     display: block;
-    -webkit-box-ordinal-group: -1;
-    -ms-flex-order: -2;
-    order: -2;
-  }
-
-  .header__close {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    display: block;
   }
 
   .header__admission {
     display: none;
+    z-index: 100;
+  }
+
+  .header__admission.active-reversed {
+    display: block;
   }
 
   .header__magnifier {
@@ -107,19 +102,10 @@
     padding-bottom: 152px;
   }
 
-  .first__nav {
-    display: none;
-  }
-
   .first__block-up {
     -webkit-box-pack: right;
     -ms-flex-pack: right;
     justify-content: right;
-  }
-
-  .first__search-input,
-  .first__magnifier {
-    display: none;
   }
 
   .first__subscription {
@@ -145,7 +131,7 @@
 
   .gallery__description {
     max-width: 280px;
-    margin-top: -176px;
+    margin-top: -170px;
   }
 
   /* catalog section */
@@ -201,7 +187,26 @@
   .developments_card {
     max-width: 290px;
     min-height: 683px;
+    padding: 211px 16px 91px 35px;
     background-size: 100% 200px;
+
+    &:not(:nth-child(3n + 3)) {
+      margin-right: 27px;
+    }
+
+    .developments__signature {
+      margin-bottom: 5px;
+      ;
+    }
+
+    .developmets__descriptions {
+      letter-spacing: 0.1px;
+      width: 223px;
+    }
+
+    .developments__link {
+      bottom: 50px;
+    }
   }
 
   .card1 {
@@ -224,32 +229,6 @@
     background-image: url(../image/event5-2.jpg);
   }
 
-
-
-  .developments_card {
-    &:not(:nth-child(3n + 3)) {
-      margin-right: 27px;
-    }
-
-    padding: 5px 34px;
-
-    .developments__signature {
-      margin-top: 211px;
-      margin-right: 0;
-    }
-
-    .developmets__descriptions {
-      letter-spacing: 0.1px;
-      width: 223px;
-    }
-
-    .developments__link {
-      bottom: 48px;
-    }
-  }
-
-
-
   /* editions section */
 
   .swiper-container#slider2 {
@@ -265,7 +244,7 @@
 
   .editions__container {
     position: relative;
-    padding-bottom: 0;
+    padding-bottom: 15px;
   }
 
   .editions__choice {
@@ -304,17 +283,26 @@
 
   .editions__showing {
     margin-left: 49px;
+    margin-top: 0;
   }
 
   /* projects section */
+
+  .projects__container {
+    padding-bottom: 4px;
+  }
 
   .projects__descriptions {
     max-width: 925px;
     letter-spacing: -0.1px;
   }
 
+  .tooltip1::before {
+    top: -65px;
+  }
+
   .projects__partners {
-    margin-top: 18px;
+    margin-top: 22px;
   }
 
   .swiper-container#slider3 {
@@ -343,7 +331,7 @@
 
   .contacts .contacts__container .contacts__block {
     width: 382px;
-    padding-top: 129px;
+    padding-top: 122px;
   }
 
   .contacts .contacts__container .contacts__block .contacts__form {

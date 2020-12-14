@@ -22,26 +22,15 @@
   }
   .first__description {
     letter-spacing: -0.1px;
-    margin-left: 5px;
-    margin-top: 10px;
-  }
-  .first__description {
-    max-width: 661px;
   }
   .first__subscription {
     margin-top: 137px;
-    margin-left: 17px;
   }
   .aboutUs__container {
     padding-bottom: 67px;
   }
-  .aboutUs__container .aboutUs__title {
-    margin-left: 5px;
-    margin-top: 5px;
-  }
   .aboutUs__container .aboutUs__description {
     margin-top: 18px;
-    margin-left: 7px;
     max-width: 666px;
     letter-spacing: -0.1px;
   }
@@ -54,12 +43,32 @@
   .swiper-container#slider1 {
     width: 668px;
   }
+  .swiper-button-next-st,
+  .swiper-button-prev-st {
+    top: -28px;
+  }
+  .swiper-button-prev-st {
+    left: -1px;
+  }
+  .swiper-button-next-st {
+    right: 6px;
+  }
+  .swiper-pagination-st {
+    top: -26px;
+  }
   .gallery__description {
     max-width: 668px;
-    margin-top: 13px;
+    margin-top: 17px;
   }
   .catalog__container {
     padding-bottom: 7px;
+  }
+  .catalog__transfer {
+    margin-top: 5px;
+  }
+  .catalog__description {
+    margin-top: 5px;
+    margin-left: 0;
   }
   li.catalog__language {
     margin-right: -15px;
@@ -74,7 +83,7 @@
     max-width: 668px;
     width: 100%;
     margin-left: 0;
-    margin-top: 54px;
+    margin-top: 50px;
   }
   .catalog__artists.accordeon .accordeon-section {
     width: 100%;
@@ -89,7 +98,7 @@
     max-width: 668px;
     width: 100%;
     height: 727px;
-    margin-top: 45px;
+    margin-top: 50px;
     margin-right: 0;
     background-image: url(../image/Giraldajo2.jpg);
     background-size: 100% 419px;
@@ -97,11 +106,17 @@
   .card__title {
     margin-top: 448px;
   }
+  .developments__container {
+    padding-bottom: 86px;
+  }
   .developments__title {
     margin-top: -6px;
   }
   .developments_card {
     max-width: 317px;
+  }
+  .developments_card:not(:nth-child(3n + 3)) {
+    margin-right: 0;
   }
   .developments_card:not(:nth-child(2n + 2)) {
     margin-right: 34px;
@@ -109,18 +124,86 @@
   .card3 {
     display: none;
   }
+  .editions__container {
+    padding-bottom: 78px;
+  }
   .editions__blocks {
     flex-wrap: wrap;
   }
   .editions__blocks .editions__block--left {
     padding-top: 30px;
+    width: 100%;
   }
-  .editions__blocks .editions__block--left .editions_checkbox {
-    flex-wrap: wrap;
+  .editions__checkboks {
     margin-bottom: 104px;
-    height: 128px;
+    padding-top: 20px;
+    width: 100%;
   }
-  .editions__blocks .editions__block--left .editions_checkbox span {
+  .editions__checkboks span {
     position: absolute;
+    top: 166px;
+    margin-top: 0;
+  }
+  .editions__list {
+    display: flex;
+  }
+  .editions__list .editions__list--1 {
+    width: 134px;
+    margin-right: 57px;
+  }
+  .editions__list .editions__list--2 {
+    width: 297px;
+    margin-right: 43px;
+  }
+  .editions__list .editions__list--3 {
+    width: 222px;
+  }
+  .editions__label {
+    margin-bottom: 11px;
+  }
+  .editions__choice {
+    left: 14px;
+    top: 369px;
+  }
+  .swiper-container#slider2 {
+    max-width: 614px;
+  }
+  .swiper-slide.editions__slider {
+    height: 436px;
+  }
+  .editions__order {
+    margin-top: 394px;
+  }
+  .editions__swiper-button2 {
+    margin-left: -33px;
+  }
+  .editions__showing {
+    margin-left: 26px;
+    margin-top: 70px;
+  }
+  .projects__descriptions {
+    letter-spacing: 0.4px;
+  }
+  .projects__partners {
+    margin-top: 26px;
+  }
+  .swiper-container#slider3 {
+    max-width: 562px;
+    margin-bottom: 80px;
+    margin-top: 7px;
+    height: 106px;
+  }
+  .swiper-slide.projects__slider {
+    height: 106px;
+  }
+  .swiper-button-prev.swiper-button-prev-st.button3-prev,
+  .swiper-button-next.swiper-button-next-st.button3-next {
+    margin-top: -38px;
+  }
+  .contacts .contacts__map.map .map__left {
+    width: 56.8vw;
+  }
+  .contacts .contacts__map.map .map__right {
+    width: 43.2vw;
   }
 }

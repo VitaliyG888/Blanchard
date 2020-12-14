@@ -13,19 +13,13 @@
   color: #ffffff;
 }
 
-.editions__checkboks {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .editions__check {
   display: none;
 }
 
 .editions__docket {
-  margin-top: 23px;
+  display: block;
+  margin-top: 21px;
   margin-bottom: 9px;
   font-weight: 700;
   font-size: 16px;
@@ -34,7 +28,7 @@
 
 .editions__label {
   position: relative;
-  display: inline-block;
+  display: block;
   padding-left: 25px;
   cursor: pointer;
   margin-bottom: 10px;
@@ -130,6 +124,7 @@ input[type="checkbox"]:checked + .editions__label::before {
 
 .editions__showing {
   margin-left: 110px;
+  margin-top: -5px;
 }
 
 .editions__swiper-button2 {

@@ -20,14 +20,16 @@
                 <button class="header__burger nav-toggle js-burger" aria-label="Открыть меню">
                     <span></span>
                 </button>
+
+                <button class="header__close js-close reset-btn" aria-label="Закрыть меню">
+                    <span class="close__line"></span>
+                    <span class="close__line"></span>
+                </button>
                 <!-- Выезжающее меню для меньших разрешений -->
                 <div class="menu-toggle js-menu">
                     <header class="header-menu">
                         <div class="header__container-menu flex">
-                            <button class="header__close js-close reset-btn" aria-label="Закрыть меню">
-                                <span class="close__line"></span>
-                                <span class="close__line"></span>
-                            </button>
+
                         </div>
                     </header>
                     <nav class="menu-nav">
@@ -331,7 +333,7 @@
     </header>
     <!-- Первый экран -->
     <section class="first">
-        <div class="background__swiper swiper-container" id="slider0">
+        <div class="first__swiper background swiper-container" id="slider0">
             <div class="background__slider swiper-wrapper">
                 <div class="swiper-slide background__first background1"></div>
                 <div class="swiper-slide background__first background2"></div>
@@ -342,7 +344,7 @@
         <div class="container first__container">
 
             <div class="first__block-down">
-                <h1 class="first__title">Прикоснитесь к прекрасному</h1>
+                <h2 class="first__title">Прикоснитесь к прекрасному</h2>
                 <p class="first__description">Мы вынуждены отталкиваться от того, что реализация намеченных
                     плановых
                     заданий
@@ -529,6 +531,9 @@
                                 <button class="accordeon-link" id="painter22">Перуцци, Бальдассаре</button>
                                 <button class="accordeon-link" id="painter23">Пизанелло</button>
                                 <button class="accordeon-link" id="painter24">Пинтуриккьо</button>
+                                <button class="accordeon-link" id="painter18">Джорджоне</button>
+                                <button class="accordeon-link" id="painter19">Парентино, Бернардо</button>
+                                <button class="accordeon-link" id="painter20">Пезеллино</button>
                             </div>
                         </div>
                     </div>
@@ -881,35 +886,43 @@
             <h2 class="editions__title title">Издания</h2>
             <div class="editions__blocks flex">
                 <div class="editions__block--left">
-                    <div class="editions__checkboks flex">
+                    <div class="editions__checkboks">
                         <span class="editions__docket">Категории</span>
-                        <input class="editions__check" id="check1" type="checkbox" name="check" value="check1">
-                        <label class="editions__label" for="check1">Бестселлеры</label>
-                        <input class="editions__check" id="check2" type="checkbox" name="check" value="check2">
-                        <label class="editions__label" for="check2">Искуство</label>
-                        <input class="editions__check" id="check3" type="checkbox" name="check" value="check3">
-                        <label class="editions__label" for="check3">Архитектура</label>
-                        <input class="editions__check" id="check4" type="checkbox" name="check" value="check4">
-                        <label class="editions__label" for="check4">Дизайн</label>
-                        <input class="editions__check" id="check5" type="checkbox" name="check" value="check5">
-                        <label class="editions__label" for="check5">Мода</label>
-                        <input class="editions__check" id="check6" type="checkbox" name="check" value="check1">
-                        <label class="editions__label" for="check6">Детям</label>
-                        <input class="editions__check" id="check7" type="checkbox" name="check" value="check2">
-                        <label class="editions__label" for="check7">Художественная литература</label>
-                        <input class="editions__check" id="check8" type="checkbox" name="check" value="check3">
-                        <label class="editions__label" for="check8">Публицистика</label>
-                        <input class="editions__check" id="check9" type="checkbox" name="check" value="check4">
-                        <label class="editions__label" for="check9">Путиводители</label>
-                        <input class="editions__check" id="check10" type="checkbox" name="check" value="check5">
-                        <label class="editions__label" for="check10">Философия</label>
-                        <input class="editions__check" id="check11" type="checkbox" name="check" value="check4">
-                        <label class="editions__label" for="check11">Учебная литература</label>
-                        <input class="editions__check" id="check12" type="checkbox" name="check" value="check5">
-                        <label class="editions__label" for="check12">Журналы и газеты</label>
+                        <div class="editions__list">
+                            <div class="editions__list--1">
+                                <input class="editions__check" id="check1" type="checkbox" name="check" value="check1">
+                                <label class="editions__label" for="check1">Бестселлеры</label>
+                                <input class="editions__check" id="check2" type="checkbox" name="check" value="check2">
+                                <label class="editions__label" for="check2">Искуство</label>
+                                <input class="editions__check" id="check3" type="checkbox" name="check" value="check3">
+                                <label class="editions__label" for="check3">Архитектура</label>
+                                <input class="editions__check" id="check4" type="checkbox" name="check" value="check4">
+                                <label class="editions__label" for="check4">Дизайн</label>
+                            </div>
+                            <div class="editions__list--2">
+                                <input class="editions__check" id="check5" type="checkbox" name="check" value="check5">
+                                <label class="editions__label" for="check5">Мода</label>
+                                <input class="editions__check" id="check6" type="checkbox" name="check" value="check1">
+                                <label class="editions__label" for="check6">Детям</label>
+                                <input class="editions__check" id="check7" type="checkbox" name="check" value="check2">
+                                <label class="editions__label" for="check7">Художественная литература</label>
+                                <input class="editions__check" id="check8" type="checkbox" name="check" value="check3">
+                                <label class="editions__label" for="check8">Публицистика</label>
+                            </div>
+                            <div class="editions__list--3">
+                                <input class="editions__check" id="check9" type="checkbox" name="check" value="check4">
+                                <label class="editions__label" for="check9">Путиводители</label>
+                                <input class="editions__check" id="check10" type="checkbox" name="check" value="check5">
+                                <label class="editions__label" for="check10">Философия</label>
+                                <input class="editions__check" id="check11" type="checkbox" name="check" value="check4">
+                                <label class="editions__label" for="check11">Учебная литература</label>
+                                <input class="editions__check" id="check12" type="checkbox" name="check" value="check5">
+                                <label class="editions__label" for="check12">Журналы и газеты</label>
+                            </div>
+                        </div>
                     </div>
                     <span class="editions__price">Цена</span>
-                    <div class="editions__choice flex">
+                    <form class="editions__choice flex">
                         <label class="editions__from" for="choice1">От</label>
                         <input class="editions__namber editions__namber--from" id="choice1" type="namber" name="choice1"
                             placeholder="50">
@@ -917,7 +930,7 @@
                         <input class="editions__namber  editions__namber--to" id="choice2" type="namber" name="choice2"
                             placeholder="25 000">
                         <label class="editions__to" for="choice2">рублей</label>
-                    </div>
+                    </form>
                 </div>
                 <div class="editions__showing">
                     <div class="editions__swiper-button2 swiper-button">
