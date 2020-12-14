@@ -85,6 +85,7 @@
 .header__quest {
   display: none;
   background: none;
+  border: none;
 }
 
 .header__item--down {
@@ -112,9 +113,6 @@
 .header__nav--down {
   margin-top: 2px;
 }
-
-
-
 
 .header__style {
   font-weight: 400;
@@ -295,6 +293,7 @@
     position: absolute;
     left: 6px;
     top: 7px;
+    border: none;
     background: none;
   }
 }

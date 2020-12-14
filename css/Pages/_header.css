@@ -82,6 +82,7 @@
 .header__quest {
   display: none;
   background: none;
+  border: none;
 }
 
 .header__item--down {
@@ -279,5 +280,6 @@
   position: absolute;
   left: 6px;
   top: 7px;
+  border: none;
   background: none;
 }
