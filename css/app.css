@@ -230,16 +230,12 @@ h3 {
 }
 
 .header__nav {
-  margin-right: 38px;
+  margin-right: 277px;
   margin-top: 8px;
 }
 
-.header__item {
+.header__item:not(:last-child) {
   margin-right: 62px;
-}
-
-.header__item:last-child {
-  margin-right: 238px;
 }
 
 .header__link {
@@ -290,7 +286,7 @@ h3 {
   border: none;
 }
 
-.header__item--down {
+.header__item--down:not(:last-child) {
   margin-right: 102px;
 }
 
@@ -568,14 +564,14 @@ h3 {
 }
 
 .first .first__container {
-  padding-top: 0;
+  padding-top: 69px;
   padding-bottom: 125px;
 }
 
 .first .first__title {
   display: block;
   position: relative;
-  margin-top: 69px;
+  margin-bottom: 20px;
   margin-left: -3px;
   max-width: 597px;
   font-weight: 700;
@@ -587,7 +583,7 @@ h3 {
 
 .first .first__description {
   max-width: 597px;
-  margin-top: 20px;
+  margin-bottom: 92px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -595,7 +591,6 @@ h3 {
 }
 
 .first .first__subscription {
-  margin-top: 92px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -633,8 +628,11 @@ h3 {
   padding-bottom: 67px;
 }
 
+.aboutUs__title {
+  margin-bottom: 18px;
+}
+
 .aboutUs__description {
-  margin-top: 18px;
   max-width: 1080px;
 }
 
@@ -1084,10 +1082,14 @@ div[data-custom-properties="[object Object]"] {
   background: no-repeat center/70% url(../image/spain.png);
 }
 
+.catalog__header {
+  margin-bottom: 6px;
+}
+
 .catalog__description {
   display: none;
   max-width: 1080px;
-  margin-top: 9px;
+  margin-bottom: 50px;
   margin-left: 2px;
   height: 117px;
 }
@@ -1096,13 +1098,10 @@ div[data-custom-properties="[object Object]"] {
   display: block;
 }
 
-.catalog__content {
-  margin-top: 50px;
-}
-
 .catalog__card.card {
   max-width: 751px;
   margin-right: 49px;
+  padding-top: 499px;
   height: 770px;
   background-image: url(../image/catalog-Domeniko.jpg);
   background-size: 100% 470px;
@@ -1110,16 +1109,12 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .card__title {
-  margin-top: 499px;
+  margin-bottom: 7px;
 }
 
 .card__date {
   display: block;
-  margin-top: 7px;
-}
-
-.card__description {
-  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .accordeon {
@@ -1433,9 +1428,13 @@ input[type="checkbox"]:checked + .editions__label::before {
   border-color: var(--first-color);
 }
 
+.editions__checkboks {
+  margin-bottom: 38px;
+}
+
 .editions__price {
   display: block;
-  margin-top: 29px;
+  margin-bottom: 15px;
   font-weight: 700;
   font-size: 16px;
   color: #ffffff;
@@ -1446,7 +1445,6 @@ input[type="checkbox"]:checked + .editions__label::before {
   height: 40px;
   left: 160px;
   top: 5416px;
-  margin-top: 15px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1609,9 +1607,12 @@ input[type="checkbox"]:checked + .editions__label::before {
   padding-bottom: 0;
 }
 
+.projects__title {
+  margin-bottom: 19px;
+}
+
 .projects__descriptions {
   max-width: 1080px;
-  margin-top: 15px;
   letter-spacing: 0.242px;
 }
 
@@ -1840,19 +1841,20 @@ input[type="checkbox"]:checked + .editions__label::before {
 
 .contacts .contacts__container .contacts__block .contacts_name {
   display: block;
+  margin-bottom: 7px;
 }
 
 .contacts .contacts__container .contacts__block .contacts__address {
   display: block;
-  margin-top: 7px;
+  margin-bottom: 34px;
   font-weight: 400;
   font-size: 16px;
 }
 
 .contacts .contacts__container .contacts__block .contacts__odrercall,
 .contacts .contacts__container .contacts__block .contacts__docket {
-  margin-top: 34px;
   display: block;
+  margin-bottom: 14px;
   font-weight: 400;
   font-size: 24px;
   color: #333333;
@@ -1864,7 +1866,6 @@ input[type="checkbox"]:checked + .editions__label::before {
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-  padding-top: 14px;
   width: 400px;
 }
 
@@ -1873,6 +1874,7 @@ input[type="checkbox"]:checked + .editions__label::before {
   position: relative;
   width: 100%;
   height: 40px;
+  margin-bottom: 24px;
   padding-left: 20px;
   border-radius: 100px;
   font-family: Open Sans;
@@ -1883,13 +1885,13 @@ input[type="checkbox"]:checked + .editions__label::before {
 }
 
 .contacts .contacts__container .contacts__block .contacts__form .contacts__tel {
-  margin-top: 24px;
+  margin-bottom: 22px;
 }
 
 .contacts .contacts__container .contacts__block .contacts__form .contacts__button {
   width: 157px;
   height: 59px;
-  margin-top: 22px;
+  margin-bottom: 38px;
   background: none;
   border: 2px solid var(--first-color);
   border-radius: 100px;
@@ -2015,8 +2017,8 @@ input[type="checkbox"]:checked + .editions__label::before {
   position: absolute;
   display: block;
   left: 0;
-  bottom: 10px;
-  width: 25px;
+  bottom: 13px;
+  width: 32px;
   height: 2px;
   background: #ffffff;
   -webkit-transition: all 0.3s ease-in;
@@ -2029,8 +2031,8 @@ input[type="checkbox"]:checked + .editions__label::before {
   position: absolute;
   display: block;
   left: 0;
-  top: 10px;
-  width: 32px;
+  top: 12px;
+  width: 25px;
   height: 2px;
   background: #ffffff;
   -webkit-transition: all 0.3s ease-in;
@@ -2047,6 +2049,7 @@ input[type="checkbox"]:checked + .editions__label::before {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 0;
+  width: 32px;
   background-color: var(--first-color);
 }
 
@@ -2055,7 +2058,6 @@ input[type="checkbox"]:checked + .editions__label::before {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   bottom: -2px;
-  width: 32px;
   background-color: var(--first-color);
 }
 
@@ -2166,11 +2168,11 @@ input[type="checkbox"]:checked + .editions__label::before {
   .header__logo {
     margin-right: 110px;
   }
-  .header__item {
+  .header__item:not(:last-child) {
     margin-right: 55px;
   }
-  .header__item:last-child {
-    margin-right: 60px;
+  .header__nav {
+    margin-right: 20px;
   }
   .swiper-container#slider1 {
     width: 1000px;
@@ -2195,9 +2197,6 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .catalog__artists.accordeon {
     max-width: 697px;
-  }
-  .card__title {
-    margin-top: 450px;
   }
   .swiper-container#slider2 {
     max-width: 900px;
@@ -2252,16 +2251,6 @@ input[type="checkbox"]:checked + .editions__label::before {
   .first__header {
     display: none;
   }
-  .first .first__title {
-    margin-top: 112px;
-  }
-  .first .first__subscription {
-    margin-top: 135px;
-  }
-  .first .first__description {
-    max-width: 693px;
-    margin-top: 8px;
-  }
   .header__nav {
     display: none;
   }
@@ -2294,39 +2283,40 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   /* first section */
   .first .first__container {
-    padding-top: 0;
-    padding-bottom: 152px;
+    padding-top: 114px;
+    padding-bottom: 111px;
+  }
+  .first .first__title {
+    margin-bottom: 10px;
+  }
+  .first .first__description {
+    max-width: 693px;
+    margin-bottom: 133px;
   }
   .first__block-up {
     -webkit-box-pack: right;
     -ms-flex-pack: right;
     justify-content: right;
   }
-  .first__subscription {
-    margin-top: 134px;
-  }
   .swiper-container#slider1 {
     width: 600px;
-  }
-  .gallery__choice {
-    margin-right: 47px;
   }
   .choices,
   .choices__inner {
     width: 280px;
-  }
-  .aboutUs {
-    margin-top: -38px;
   }
   .gallery__description {
     max-width: 280px;
     margin-top: -170px;
   }
   /* catalog section */
+  .catalog__header {
+    margin-bottom: 0px;
+  }
   .catalog__card.card {
+    padding-top: 304px;
     max-width: 437px;
     height: 700px;
-    margin-top: 5px;
     background-image: url(../image/Girlandajo.jpg);
     background-size: 100% 274px;
     background-repeat: no-repeat;
@@ -2349,15 +2339,6 @@ input[type="checkbox"]:checked + .editions__label::before {
   .catalog__transfer {
     width: 450px;
     margin-top: 10px;
-  }
-  .catalog__description {
-    margin-top: 0px;
-  }
-  .catalog__content {
-    margin-top: 45px;
-  }
-  .card__title {
-    margin-top: 304px;
   }
   /* developments section */
   .developments_card {
@@ -2411,12 +2392,12 @@ input[type="checkbox"]:checked + .editions__label::before {
   .editions__choice {
     position: absolute;
     left: 599px;
-    top: 89px;
+    top: 105px;
   }
   .editions__price {
     position: absolute;
     right: 371px;
-    top: 88px;
+    top: 113px;
   }
   .editions__order {
     margin-right: 171px;
@@ -2443,15 +2424,15 @@ input[type="checkbox"]:checked + .editions__label::before {
   .projects__container {
     padding-bottom: 4px;
   }
+  .projects__title {
+    margin-bottom: 13px;
+  }
   .projects__descriptions {
     max-width: 925px;
     letter-spacing: -0.1px;
   }
   .tooltip1::before {
     top: -65px;
-  }
-  .projects__partners {
-    margin-top: 22px;
   }
   .swiper-container#slider3 {
     max-width: 818px;
@@ -2492,7 +2473,6 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .nav-toggle span {
     top: 17px;
-    left: 14px;
   }
   .header__container {
     padding-bottom: 26px;
@@ -2504,21 +2484,18 @@ input[type="checkbox"]:checked + .editions__label::before {
   .header__container .header__magnifier .header__magnifier--lupe {
     margin-right: 13px;
   }
-  .first__title {
-    margin-top: 85px;
-    margin-left: 9px;
+  .first .first__container {
+    padding-top: 111px;
+    padding-bottom: 115px;
   }
   .first__description {
     letter-spacing: -0.1px;
-  }
-  .first__subscription {
-    margin-top: 137px;
+    margin-bottom: 135px;
   }
   .aboutUs__container {
     padding-bottom: 67px;
   }
   .aboutUs__container .aboutUs__description {
-    margin-top: 18px;
     max-width: 666px;
     letter-spacing: -0.1px;
   }
@@ -2551,11 +2528,13 @@ input[type="checkbox"]:checked + .editions__label::before {
   .catalog__container {
     padding-bottom: 7px;
   }
+  .catalog__header {
+    margin-bottom: 5px;
+  }
   .catalog__transfer {
     margin-top: 5px;
   }
   .catalog__description {
-    margin-top: 5px;
     margin-left: 0;
   }
   li.catalog__language {
@@ -2563,6 +2542,7 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .catalog__description {
     width: 669px;
+    margin-bottom: 95px;
   }
   .catalog__content {
     flex-wrap: wrap-reverse;
@@ -2571,7 +2551,7 @@ input[type="checkbox"]:checked + .editions__label::before {
     max-width: 668px;
     width: 100%;
     margin-left: 0;
-    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .catalog__artists.accordeon .accordeon-section {
     width: 100%;
@@ -2586,13 +2566,10 @@ input[type="checkbox"]:checked + .editions__label::before {
     max-width: 668px;
     width: 100%;
     height: 727px;
-    margin-top: 50px;
+    padding-top: 448px;
     margin-right: 0;
     background-image: url(../image/Giraldajo2.jpg);
     background-size: 100% 419px;
-  }
-  .card__title {
-    margin-top: 448px;
   }
   .developments__container {
     padding-bottom: 86px;
@@ -2649,9 +2626,12 @@ input[type="checkbox"]:checked + .editions__label::before {
   .editions__label {
     margin-bottom: 11px;
   }
+  .editions__price {
+    top: 351px;
+  }
   .editions__choice {
     left: 14px;
-    top: 369px;
+    top: 386px;
   }
   .swiper-container#slider2 {
     max-width: 614px;
@@ -2693,6 +2673,9 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .contacts .contacts__map.map .map__right {
     width: 43.2vw;
+  }
+  .contacts .contacts__container .contacts__block .contacts_name {
+    margin-bottom: 9px;
   }
 }
 

@@ -49,10 +49,14 @@
   background: no-repeat (center / 70%) url(../image/spain.png);
 }
 
+.catalog__header {
+  margin-bottom: 6px;
+}
+
 .catalog__description {
   display: none;
   max-width: 1080px;
-  margin-top: 9px;
+  margin-bottom: 50px;
   margin-left: 2px;
   height: 117px;
 }
@@ -61,13 +65,10 @@
   display: block;
 }
 
-.catalog__content {
-  margin-top: 50px;
-}
-
 .catalog__card.card {
   max-width: 751px;
   margin-right: 49px;
+  padding-top: 499px;
   height: 770px;
   background-image: url(../image/catalog-Domeniko.jpg);
   background-size: 100% 470px;
@@ -75,16 +76,12 @@
 }
 
 .card__title {
-  margin-top: 499px;
+  margin-bottom: 7px;
 }
 
 .card__date {
   display: block;
-  margin-top: 7px;
-}
-
-.card__description {
-  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 

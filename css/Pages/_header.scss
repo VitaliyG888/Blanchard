@@ -26,16 +26,12 @@
 }
 
 .header__nav {
-  margin-right: 38px;
+  margin-right: 277px;
   margin-top: 8px;
 }
 
-.header__item {
+.header__item:not(:last-child) {
   margin-right: 62px;
-
-  &:last-child {
-    margin-right: 238px;
-  }
 }
 
 .header__link {
@@ -88,14 +84,14 @@
   border: none;
 }
 
-.header__item--down {
+.header__item--down:not(:last-child) {
   margin-right: 102px;
+}
 
-  &:hover .header__choice {
-    -webkit-transform: scaleY(1);
-    -ms-transform: scaleY(1);
-    transform: scaleY(1);
-  }
+.header__item--down:hover .header__choice {
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
 }
 
 

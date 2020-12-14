@@ -5,7 +5,6 @@
 
   .nav-toggle span {
     top: 17px;
-    left: 14px;
   }
 
   .header__container {
@@ -21,26 +20,20 @@
     }
   }
 
-
-  .first__title {
-    margin-top: 85px;
-    margin-left: 9px;
+  .first .first__container {
+    padding-top: 111px;
+    padding-bottom: 115px;
   }
 
   .first__description {
     letter-spacing: -0.1px;
-
-  }
-
-  .first__subscription {
-    margin-top: 137px;
+    margin-bottom: 135px;
   }
 
   .aboutUs__container {
     padding-bottom: 67px;
 
     .aboutUs__description {
-      margin-top: 18px;
       max-width: 666px;
       letter-spacing: -0.1px;
     }
@@ -86,12 +79,15 @@
     padding-bottom: 7px;
   }
 
+  .catalog__header {
+    margin-bottom: 5px;
+  }
+
   .catalog__transfer {
     margin-top: 5px;
   }
 
   .catalog__description {
-    margin-top: 5px;
     margin-left: 0;
   }
 
@@ -101,6 +97,7 @@
 
   .catalog__description {
     width: 669px;
+    margin-bottom: 95px;
   }
 
   .catalog__content {
@@ -111,7 +108,7 @@
     max-width: 668px;
     width: 100%;
     margin-left: 0;
-    margin-top: 50px;
+    margin-bottom: 50px;
 
 
     .accordeon-section {
@@ -138,14 +135,10 @@
     max-width: 668px;
     width: 100%;
     height: 727px;
-    margin-top: 50px;
+    padding-top: 448px;
     margin-right: 0;
     background-image: url(../image/Giraldajo2.jpg);
     background-size: 100% 419px;
-  }
-
-  .card__title {
-    margin-top: 448px;
   }
 
   // developments section
@@ -223,9 +216,13 @@
     margin-bottom: 11px;
   }
 
+  .editions__price {
+    top: 351px;
+  }
+
   .editions__choice {
     left: 14px;
-    top: 369px;
+    top: 386px;
   }
 
   .swiper-container#slider2 {
@@ -285,4 +282,8 @@
     width: 43.2vw;
   }
 
+  .contacts .contacts__container .contacts__block .contacts_name {
+    margin-bottom: 9px;
+
+  }
 }

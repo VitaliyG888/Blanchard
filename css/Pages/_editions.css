@@ -57,9 +57,13 @@ input[type="checkbox"]:checked + .editions__label::before {
   border-color: var(--first-color);
 }
 
+.editions__checkboks {
+  margin-bottom: 38px;
+}
+
 .editions__price {
   display: block;
-  margin-top: 29px;
+  margin-bottom: 15px;
   font-weight: 700;
   font-size: 16px;
   color: #ffffff;
@@ -70,7 +74,6 @@ input[type="checkbox"]:checked + .editions__label::before {
   height: 40px;
   left: 160px;
   top: 5416px;
-  margin-top: 15px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

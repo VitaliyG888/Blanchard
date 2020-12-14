@@ -8,11 +8,11 @@
   .header__logo {
     margin-right: 110px;
   }
-  .header__item {
+  .header__item:not(:last-child) {
     margin-right: 55px;
   }
-  .header__item:last-child {
-    margin-right: 60px;
+  .header__nav {
+    margin-right: 20px;
   }
   .swiper-container#slider1 {
     width: 1000px;
@@ -37,9 +37,6 @@
   }
   .catalog__artists.accordeon {
     max-width: 697px;
-  }
-  .card__title {
-    margin-top: 450px;
   }
   .swiper-container#slider2 {
     max-width: 900px;

@@ -11,12 +11,12 @@
     margin-right: 110px;
   }
 
-  .header__item {
+  .header__item:not(:last-child) {
     margin-right: 55px;
+  }
 
-    &:last-child {
-      margin-right: 60px;
-    }
+  .header__nav {
+    margin-right: 20px;
   }
 
   .swiper-container#slider1 {
@@ -48,10 +48,6 @@
 
   .catalog__artists.accordeon {
     max-width: 697px;
-  }
-
-  .card__title {
-    margin-top: 450px;
   }
 
   .swiper-container#slider2 {
