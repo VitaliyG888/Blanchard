@@ -60,7 +60,7 @@
                 </div>
                 <!-- Дестоп меню -->
                 <a href="#" class="header__logo"></a>
-                <nav class="header__nav">
+                <nav class="header__nav" id="header-nav">
                     <ul class="header__list menu-header flex">
                         <li class="header__item">
                             <a href="#" class="header__link">О нас</a>
@@ -90,16 +90,6 @@
                         <path fill="white"
                             d="M 5.12056 9.09278 L 6.13889 10.1111 L 9.75 6.5 L 6.13889 2.88889 L 5.12056 3.90722 L 6.98389 5.77778 H 0 V 7.22222 H 6.98389 L 5.12056 9.09278 Z M 11.5556 0 H 1.44444 C 0.642778 0 0 0.65 0 1.44444 V 4.33333 H 1.44444 V 1.44444 H 11.5556 V 11.5556 H 1.44444 V 8.66667 H 0 V 11.5556 C 0 12.35 0.642778 13 1.44444 13 H 11.5556 C 12.35 13 13 12.35 13 11.5556 V 1.44444 C 13 0.65 12.35 0 11.5556 0 Z" />
                     </svg>Войти</a>
-                <button class="header__quest" type="submit">
-                    <svg class="header__quest--lupe" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 23 22"
-                        width="23" height="22">
-                        <rect class="first__quest-rect" fill="white"
-                            transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" width="6.8678"
-                            height="1.71695" />
-                        <path class="first__quest-path" clip-rule="evenodd" fill="white" fill-rule="evenodd"
-                            d="M 12.0969 18 C 7.53041 18 3.99692 14.3229 3.99692 10 C 3.99692 5.67715 7.53041 2 12.0969 2 C 16.6634 2 20.1969 5.67715 20.1969 10 C 20.1969 14.3229 16.6634 18 12.0969 18 Z M 12.0969 20 C 6.57408 20 2.09692 15.5228 2.09692 10 C 2.09692 4.47715 6.57408 0 12.0969 0 C 17.6198 0 22.0969 4.47715 22.0969 10 C 22.0969 15.5228 17.6198 20 12.0969 20 Z" />
-                    </svg>
-                </button>
             </div>
         </div>
 
@@ -316,8 +306,9 @@
                 </nav>
 
                 <form class="header__search">
-                    <input type="search" class="header__search-input" placeholder="Поиск по сайту">
-                    <button class="header__magnifier" type="submit">
+                    <input type="search" class="header__search-input" id="header__search-input"
+                        placeholder="Поиск по сайту">
+                    <button class="header__magnifier" id="search-btn" type="submit">
                         <svg class="header__magnifier--lupe" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 23 22" width="23" height="22">
                             <rect class="header__magnifier-rect" fill="white"

@@ -2267,6 +2267,7 @@ input[type="checkbox"]:checked + .editions__label::before {
   .header__magnifier {
     display: block;
     background: none;
+    border: none;
   }
   .header__magnifier .header__magnifier--lupe {
     width: 31px;

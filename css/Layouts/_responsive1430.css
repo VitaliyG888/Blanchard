@@ -15,17 +15,6 @@
   .header__secondary {
     display: none;
   }
-  .header__quest {
-    display: block;
-  }
-  .header__quest.active {
-    display: none;
-  }
-  .header__quest--lupe {
-    width: 31px;
-    height: 31px;
-    margin-top: 3px;
-  }
   .first__header {
     display: none;
   }
@@ -45,6 +34,7 @@
   .header__magnifier {
     display: block;
     background: none;
+    border: none;
   }
   .header__magnifier .header__magnifier--lupe {
     width: 31px;
