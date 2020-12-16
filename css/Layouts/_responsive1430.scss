@@ -69,6 +69,10 @@
     }
   }
 
+  .header__magnifier.active {
+    display: none;
+  }
+
   /* first section */
 
   .first .first__container {

@@ -19,8 +19,10 @@
       document.querySelector('.header__list').classList.remove('menu-header');;
       document.querySelector('.header__admission').classList.add('active-reversed');
       document.querySelector('.nav-toggle').classList.add('active');
-      document.querySelector('.header__quest').classList.add('active');
+      document.querySelector('.header__magnifier').classList.add('active');
       document.querySelector('.header__close').style.display = 'block';
+
+
       (function () {
         'use strict';
 
@@ -122,7 +124,7 @@
       document.querySelector('.menu-nav__list').classList.remove('menu-header');
       document.querySelector('.header__admission').classList.remove('active-reversed');
       document.querySelector('.nav-toggle').classList.remove('active');
-      document.querySelector('.header__quest').classList.remove('active');
+      document.querySelector('.header__magnifier').classList.remove('active');
       document.querySelector('.header__close').style.display = 'none';
 
 

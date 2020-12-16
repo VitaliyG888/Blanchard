@@ -280,12 +280,6 @@ h3 {
   fill: var(--second-color);
 }
 
-.header__quest {
-  display: none;
-  background: none;
-  border: none;
-}
-
 .header__item--down:not(:last-child) {
   margin-right: 102px;
 }
@@ -478,6 +472,7 @@ h3 {
 }
 
 .header__search .header__magnifier {
+  display: block;
   position: absolute;
   left: 6px;
   top: 7px;
@@ -2237,17 +2232,6 @@ input[type="checkbox"]:checked + .editions__label::before {
   .header__secondary {
     display: none;
   }
-  .header__quest {
-    display: block;
-  }
-  .header__quest.active {
-    display: none;
-  }
-  .header__quest--lupe {
-    width: 31px;
-    height: 31px;
-    margin-top: 3px;
-  }
   .first__header {
     display: none;
   }
@@ -2281,6 +2265,9 @@ input[type="checkbox"]:checked + .editions__label::before {
   .header__magnifier:active svg rect,
   .header__magnifier:active svg path {
     fill: var(--second-color);
+  }
+  .header__magnifier.active {
+    display: none;
   }
   /* first section */
   .first .first__container {

@@ -49,6 +49,9 @@
   .header__magnifier:active svg path {
     fill: var(--second-color);
   }
+  .header__magnifier.active {
+    display: none;
+  }
   /* first section */
   .first .first__container {
     padding-top: 114px;
