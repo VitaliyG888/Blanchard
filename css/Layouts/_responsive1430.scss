@@ -10,7 +10,7 @@
 
   .header__logo {
     margin-bottom: 0;
-    margin-right: 5px;
+    margin-right: 9px;
     width: 187px;
     height: 45px;
   }
@@ -30,6 +30,7 @@
 
   .nav-toggle {
     display: block;
+    margin-right: 6px;
   }
 
   .header__admission {
@@ -43,13 +44,13 @@
 
   .header__magnifier {
     display: block;
+    margin-right: -9px;
     background: none;
     border: none;
 
     .header__magnifier--lupe {
       width: 31px;
       height: 31px;
-      margin-top: 6px;
     }
 
     &:hover svg {
@@ -76,23 +77,31 @@
   /* first section */
 
   .first .first__container {
-    padding-top: 114px;
-    padding-bottom: 111px;
+    padding-top: 51px;
+    padding-bottom: 114px;
   }
 
   .first .first__title {
-    margin-bottom: 10px;
+    margin-bottom: -7px;
   }
 
   .first .first__description {
     max-width: 693px;
-    margin-bottom: 133px;
+    margin-bottom: 134px;
   }
 
   .first__block-up {
     -webkit-box-pack: right;
     -ms-flex-pack: right;
     justify-content: right;
+  }
+
+  .aboutUs__container {
+    padding-bottom: 53px;
+  }
+
+  .gallery .gallery__container {
+    padding-bottom: 54px;
   }
 
   .swiper-container#slider1 {
@@ -106,17 +115,22 @@
 
   .gallery__description {
     max-width: 280px;
-    margin-top: -170px;
+    margin-top: -182px;
   }
 
   /* catalog section */
 
   .catalog__header {
-    margin-bottom: 0px;
+    margin-bottom: -39px;
+  }
+
+  .catalog__transfer {
+    width: 450px;
+    margin-top: 52px;
   }
 
   .catalog__card.card {
-    padding-top: 304px;
+    padding-top: 279px;
     max-width: 437px;
     height: 700px;
     background-image: url(../image/Girlandajo.jpg);
@@ -144,12 +158,11 @@
     margin-right: 32px;
   }
 
-  .catalog__transfer {
-    width: 450px;
-    margin-top: 10px;
-  }
-
   /* developments section */
+
+  .developments__container {
+    padding-bottom: 78px;
+  }
 
   .developments_card {
     max-width: 290px;
@@ -162,7 +175,7 @@
     }
 
     .developments__signature {
-      margin-bottom: 5px;
+      margin-bottom: -19px;
       ;
     }
 
@@ -196,6 +209,10 @@
     background-image: url(../image/event5-2.jpg);
   }
 
+  .developments__news {
+    margin-bottom: 49px;
+  }
+
   /* editions section */
 
   .swiper-container#slider2 {
@@ -211,7 +228,7 @@
 
   .editions__container {
     position: relative;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
 
   .editions__choice {
@@ -266,6 +283,7 @@
   .projects__descriptions {
     max-width: 925px;
     letter-spacing: -0.1px;
+    margin-bottom: 27px;
   }
 
   .tooltip1::before {
@@ -292,13 +310,17 @@
 
   /* contacts section */
 
+  .contacts__title {
+    margin-bottom: 2px;
+  }
+
   .contacts__container {
     max-height: 700px;
   }
 
   .contacts .contacts__container .contacts__block {
     width: 382px;
-    padding-top: 122px;
+    padding-top: 100px;
   }
 
   .contacts .contacts__container .contacts__block .contacts__form {

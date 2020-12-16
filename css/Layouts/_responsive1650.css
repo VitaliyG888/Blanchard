@@ -2,8 +2,8 @@
   .container {
     width: 1400px;
   }
-  .header__item--down {
-    margin-right: 97px;
+  .header__item--down:not(:last-child) {
+    margin-right: 85px;
   }
   .header__logo {
     margin-right: 110px;
@@ -32,6 +32,7 @@
   /* catalog section */
   .catalog__card.card {
     max-width: 650px;
+    padding-top: 400px;
     height: 730px;
     background-size: 100% 400px;
   }
@@ -42,7 +43,7 @@
     max-width: 900px;
   }
   .developments_card {
-    padding: 370px 18px 91px 49px;
+    padding: 318px 18px 91px 49px;
     width: 430px;
   }
   .developments_card:not(:nth-child(3n + 3)) {

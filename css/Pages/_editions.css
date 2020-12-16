@@ -1,6 +1,7 @@
 /* editions section */
 .editions__container {
   padding-bottom: 77px;
+  padding-top: 41px;
 }
 
 .editions {
@@ -11,6 +12,10 @@
 
 .editions__title {
   color: #ffffff;
+}
+
+.editions__blocks {
+  margin-top: -39px;
 }
 
 .editions__check {

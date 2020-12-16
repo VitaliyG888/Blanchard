@@ -1,6 +1,7 @@
 /* projects section */
 .projects__container {
   padding-bottom: 0;
+  padding-top: 40px;
 }
 
 .projects__title {
@@ -10,6 +11,11 @@
 .projects__descriptions {
   max-width: 1080px;
   letter-spacing: 0.242px;
+}
+
+.projects__partners {
+  line-height: 18px;
+  margin-bottom: 8px;
 }
 
 .projects__tooltip svg {
@@ -121,10 +127,6 @@
   color: var(--second-color);
 }
 
-.projects__partners {
-  margin-top: 20px;
-}
-
 .swiper-slide.projects__slider {
   display: block;
   position: relative;
@@ -216,4 +218,8 @@
 .projects__swiper-button3.swiper-button .swiper-button-prev.swiper-button-prev-st.button3-prev:hover,
 .projects__swiper-button3.swiper-button .swiper-button-next.swiper-button-next-st.button3-next:hover {
   background-color: var(--first-color);
+}
+
+.contacts__title {
+  margin-bottom: 14px;
 }

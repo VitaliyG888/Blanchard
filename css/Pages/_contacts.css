@@ -11,8 +11,8 @@
 }
 
 .contacts .contacts__container .contacts__block {
-  padding-top: 124px;
-  padding-bottom: 127px;
+  padding-top: 99px;
+  padding-bottom: 123px;
 }
 
 .contacts .contacts__container .contacts__block .contacts_name {
@@ -89,24 +89,18 @@
 
 .contacts .contacts__container .contacts__block .js-validate-error-label {
   font-size: 12px;
+  margin-bottom: 7px;
 }
 
 .contacts .contacts__container .contacts__block .contacts__input.js-validate-error-field {
+  margin-bottom: 7px !important;
   border: 2px solid #b81111 !important;
   -webkit-box-sizing: border-box !important;
   box-sizing: border-box !important;
 }
 
-.contacts .contacts__container .contacts__block .contacts__social {
-  margin-top: 15px;
-}
-
-.contacts .contacts__container .contacts__block .contacts__social .contacts__tweet {
-  margin-top: 38px;
-}
-
-.contacts .contacts__container .contacts__block .contacts__social .contacts__teleg {
-  margin-left: 15px;
+.contacts .contacts__container .contacts__whats {
+  margin-right: 15px;
 }
 
 .contacts .contacts__map.map {

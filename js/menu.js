@@ -26,19 +26,16 @@
       (function () {
         'use strict';
 
-        var requestAnimationFrame = window.requestAnimationFrame ||
+        let requestAnimationFrame = window.requestAnimationFrame ||
           window.mozRequestAnimationFrame ||
           window.webkitRequestAnimationFrame ||
           window.msRequestAnimationFrame;
         window.requestAnimationFrame = requestAnimationFrame;
 
-        var menu = document.querySelector('.menu-header');
-        console.log(menu);
-        var items = menu.querySelectorAll('a');
-        console.log(items);
-        var containers = document.querySelectorAll('h2.title');
-        console.log(containers);
-        var pageHeight = Math.max(
+        let menu = document.querySelector('.menu-header'),
+          items = menu.querySelectorAll('a'),
+          containers = document.querySelectorAll('h2.title');
+        let pageHeight = Math.max(
           document.body.scrollHeight, document.documentElement.scrollHeight,
           document.body.offsetHeight, document.documentElement.offsetHeight,
           document.body.clientHeight, document.documentElement.clientHeight
@@ -68,7 +65,7 @@
         function selectContainer(current) {
           [].forEach.call(containers, function (container, index) {
             if (index == current) {
-              var startY = container.getBoundingClientRect().top - 30,
+              let startY = container.getBoundingClientRect().top - 30,
                 direction = (startY < 0) ? -1 : (startY > 0) ? 1 : 0;
               if (direction == 0) return;
               scroll(container, direction);
@@ -77,11 +74,11 @@
         }
 
         function scroll(el, direction) {
-          var duration = 3000,
+          let duration = 3000,
             start = new Date().getTime();
 
           var fn = function () {
-            var top = el.getBoundingClientRect().top - 30,
+            let top = el.getBoundingClientRect().top - 30,
               now = new Date().getTime() - start,
               result = Math.round(top * now / duration);
 

@@ -21,7 +21,7 @@
   }
 
   .first .first__container {
-    padding-top: 111px;
+    padding-top: 50px;
     padding-bottom: 115px;
   }
 
@@ -31,7 +31,7 @@
   }
 
   .aboutUs__container {
-    padding-bottom: 67px;
+    padding-bottom: 51px;
 
     .aboutUs__description {
       max-width: 666px;
@@ -43,8 +43,17 @@
     flex-wrap: wrap;
   }
 
+  .gallery__choice {
+    margin-bottom: 140px;
+  }
+
   .gallery__showing {
-    margin-top: 137px;
+    margin-top: 0;
+    margin-bottom: -4px;
+  }
+
+  .gallery__swiper-button1.swiper-button {
+    margin-bottom: 10px;
   }
 
   .swiper-container#slider1 {
@@ -70,7 +79,7 @@
 
   .gallery__description {
     max-width: 668px;
-    margin-top: 17px;
+    margin-top: 0;
   }
 
   // catalog section
@@ -80,11 +89,11 @@
   }
 
   .catalog__header {
-    margin-bottom: 5px;
+    margin-bottom: -38px;
   }
 
   .catalog__transfer {
-    margin-top: 5px;
+    margin-top: 43px;
   }
 
   .catalog__description {
@@ -135,7 +144,7 @@
     max-width: 668px;
     width: 100%;
     height: 727px;
-    padding-top: 448px;
+    padding-top: 424px;
     margin-right: 0;
     background-image: url(../image/Giraldajo2.jpg);
     background-size: 100% 419px;
@@ -144,15 +153,17 @@
   // developments section
 
   .developments__container {
+    padding-top: 78px;
     padding-bottom: 86px;
   }
 
   .developments__title {
-    margin-top: -6px;
+    margin-top: -3px;
   }
 
   .developments_card {
     max-width: 317px;
+    padding-bottom: 87px;
   }
 
   .developments_card:not(:nth-child(3n + 3)) {
@@ -165,6 +176,14 @@
 
   .card3 {
     display: none;
+  }
+
+  .developments_card .developments__signature {
+    margin-bottom: -16px;
+  }
+
+  .developments__news {
+    margin-bottom: 50px;
   }
 
   // editions section
@@ -250,10 +269,11 @@
 
   .projects__descriptions {
     letter-spacing: 0.4px;
+    margin-bottom: 33px;
   }
 
   .projects__partners {
-    margin-top: 26px;
+    margin-bottom: 4px;
   }
 
   .swiper-container#slider3 {
@@ -274,16 +294,20 @@
 
   // contacts section
 
+  .contacts__title {
+    margin-bottom: 0px;
+  }
+
   .contacts .contacts__map.map .map__left {
-    width: 56.8vw;
+    width: 55.8vw;
   }
 
   .contacts .contacts__map.map .map__right {
-    width: 43.2vw;
+    width: 44.2vw;
   }
 
   .contacts .contacts__container .contacts__block .contacts_name {
-    margin-bottom: 9px;
+    margin-bottom: 6px;
 
   }
 }

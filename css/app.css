@@ -23,8 +23,6 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -82,13 +80,6 @@
   outline: none;
 }
 
-* nav,
-* footer,
-* header,
-* aside {
-  display: block;
-}
-
 * input {
   font-family: inherit;
 }
@@ -99,6 +90,8 @@
 
 * ul,
 * li {
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
   list-style: none;
 }
 
@@ -134,6 +127,10 @@ h3 {
   font-size: 24px;
 }
 
+button:hover {
+  transition: all 0.5s ease-in-out;
+}
+
 .signature {
   font-weight: 400;
   font-size: 12px;
@@ -153,7 +150,7 @@ h3 {
 .container {
   max-width: 1630px;
   margin: 0 auto;
-  padding: 80px 15px;
+  padding: 0 15px;
 }
 
 .visually-hidden {
@@ -215,14 +212,13 @@ h3 {
 .header__container--up {
   width: 1630px;
   padding-top: 28px;
-  padding-bottom: 32px;
+  padding-bottom: 24px;
   justify-content: space-between;
 }
 
 .header__logo {
   width: 173px;
   height: 40px;
-  margin-right: 179px;
   background-image: url(../image/logo.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -230,8 +226,8 @@ h3 {
 }
 
 .header__nav {
-  margin-right: 277px;
-  margin-top: 8px;
+  margin-top: -7px;
+  margin-left: -100px;
 }
 
 .header__item:not(:last-child) {
@@ -297,11 +293,11 @@ h3 {
 .header__container--down {
   justify-content: space-between;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 9px;
 }
 
 .header__nav--down {
-  margin-top: 2px;
+  margin-top: -14px;
 }
 
 .header__style {
@@ -429,7 +425,8 @@ h3 {
 
 .header__search {
   position: relative;
-  padding-left: 40px;
+  margin-top: -3px;
+  padding-left: 44px;
 }
 
 .header__search .header__search-input {
@@ -559,8 +556,8 @@ h3 {
 }
 
 .first .first__container {
-  padding-top: 69px;
-  padding-bottom: 125px;
+  padding-top: 9px;
+  padding-bottom: 122px;
 }
 
 .first .first__title {
@@ -620,7 +617,8 @@ h3 {
 }
 
 .aboutUs__container {
-  padding-bottom: 67px;
+  padding-bottom: 52px;
+  padding-top: 40px;
 }
 
 .aboutUs__title {
@@ -639,10 +637,12 @@ h3 {
 }
 
 .gallery .gallery__container {
-  padding-bottom: 70px;
+  padding-bottom: 55px;
+  padding-top: 40px;
 }
 
 .gallery__title {
+  margin-bottom: 23px;
   font-weight: 400;
   font-size: 48px;
   line-height: 65px;
@@ -656,11 +656,14 @@ h3 {
 
 .gallery__docket {
   display: block;
-  margin-top: 23px;
   margin-bottom: 11px;
   font-weight: 600;
   font-size: 16px;
   color: #ffffff;
+}
+
+.gallery__showing {
+  margin-top: -23px;
 }
 
 .choices__inner {
@@ -744,7 +747,7 @@ div[data-custom-properties="[object Object]"] {
 
 .gallery__description {
   max-width: 377px;
-  margin-top: -123px;
+  margin-top: -134px;
   font-weight: 600;
   font-size: 16px;
   line-height: 32px;
@@ -756,6 +759,7 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .swiper-container#slider1 {
+  margin-top: -7px;
   width: 1147px;
   height: 750px;
 }
@@ -1033,14 +1037,20 @@ div[data-custom-properties="[object Object]"] {
 /* catalog section */
 .catalog__container {
   padding-bottom: 0;
+  padding-top: 39px;
+}
+
+.catalog__header {
+  margin-bottom: -41px;
 }
 
 .catalog__title {
-  margin-right: 35px;
+  margin-right: 30px;
 }
 
 .catalog__transfer {
   width: 450px;
+  margin-top: 40px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1077,10 +1087,6 @@ div[data-custom-properties="[object Object]"] {
   background: no-repeat center/70% url(../image/spain.png);
 }
 
-.catalog__header {
-  margin-bottom: 6px;
-}
-
 .catalog__description {
   display: none;
   max-width: 1080px;
@@ -1096,7 +1102,7 @@ div[data-custom-properties="[object Object]"] {
 .catalog__card.card {
   max-width: 751px;
   margin-right: 49px;
-  padding-top: 499px;
+  padding-top: 477px;
   height: 770px;
   background-image: url(../image/catalog-Domeniko.jpg);
   background-size: 100% 470px;
@@ -1109,7 +1115,7 @@ div[data-custom-properties="[object Object]"] {
 
 .card__date {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: -8px;
 }
 
 .accordeon {
@@ -1256,13 +1262,19 @@ div[data-custom-properties="[object Object]"] {
 /* developments section */
 .developments__container {
   padding-bottom: 80px;
+  padding-top: 83px;
+}
+
+.developments__title {
+  margin-bottom: -3px;
+  margin-top: 0;
 }
 
 .developments_card {
   position: relative;
   width: 500px;
   margin-top: 14px;
-  padding: 314px 18px 91px 49px;
+  padding: 312px 18px 71px 49px;
   border: 1px solid #cacaca;
   background-repeat: no-repeat;
   background-position: top;
@@ -1272,10 +1284,15 @@ div[data-custom-properties="[object Object]"] {
   margin-right: 50px;
 }
 
+.developments_card .developments__header {
+  margin-bottom: 0;
+}
+
 .developments_card .developments__signature {
   display: block;
   position: relative;
   text-align: right;
+  margin-bottom: -21px;
 }
 
 .developments_card .developmets__descriptions {
@@ -1292,7 +1309,7 @@ div[data-custom-properties="[object Object]"] {
 .developments_card .developments__link {
   display: block;
   position: absolute;
-  bottom: 47px;
+  bottom: 40px;
   color: var(--first-color);
 }
 
@@ -1339,10 +1356,14 @@ div[data-custom-properties="[object Object]"] {
   display: none;
 }
 
+.developments__news {
+  margin-bottom: 52px;
+}
+
 .developments__btn {
   display: block;
   position: relative;
-  margin: 49px auto 0;
+  margin: 0 auto;
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
@@ -1367,6 +1388,7 @@ div[data-custom-properties="[object Object]"] {
 /* editions section */
 .editions__container {
   padding-bottom: 77px;
+  padding-top: 41px;
 }
 
 .editions {
@@ -1377,6 +1399,10 @@ div[data-custom-properties="[object Object]"] {
 
 .editions__title {
   color: #ffffff;
+}
+
+.editions__blocks {
+  margin-top: -39px;
 }
 
 .editions__check {
@@ -1600,6 +1626,7 @@ input[type="checkbox"]:checked + .editions__label::before {
 /* projects section */
 .projects__container {
   padding-bottom: 0;
+  padding-top: 40px;
 }
 
 .projects__title {
@@ -1609,6 +1636,11 @@ input[type="checkbox"]:checked + .editions__label::before {
 .projects__descriptions {
   max-width: 1080px;
   letter-spacing: 0.242px;
+}
+
+.projects__partners {
+  line-height: 18px;
+  margin-bottom: 8px;
 }
 
 .projects__tooltip svg {
@@ -1720,10 +1752,6 @@ input[type="checkbox"]:checked + .editions__label::before {
   color: var(--second-color);
 }
 
-.projects__partners {
-  margin-top: 20px;
-}
-
 .swiper-slide.projects__slider {
   display: block;
   position: relative;
@@ -1817,6 +1845,10 @@ input[type="checkbox"]:checked + .editions__label::before {
   background-color: var(--first-color);
 }
 
+.contacts__title {
+  margin-bottom: 14px;
+}
+
 /* contacts section */
 .contacts {
   position: relative;
@@ -1830,8 +1862,8 @@ input[type="checkbox"]:checked + .editions__label::before {
 }
 
 .contacts .contacts__container .contacts__block {
-  padding-top: 124px;
-  padding-bottom: 127px;
+  padding-top: 99px;
+  padding-bottom: 123px;
 }
 
 .contacts .contacts__container .contacts__block .contacts_name {
@@ -1908,24 +1940,18 @@ input[type="checkbox"]:checked + .editions__label::before {
 
 .contacts .contacts__container .contacts__block .js-validate-error-label {
   font-size: 12px;
+  margin-bottom: 7px;
 }
 
 .contacts .contacts__container .contacts__block .contacts__input.js-validate-error-field {
+  margin-bottom: 7px !important;
   border: 2px solid #b81111 !important;
   -webkit-box-sizing: border-box !important;
   box-sizing: border-box !important;
 }
 
-.contacts .contacts__container .contacts__block .contacts__social {
-  margin-top: 15px;
-}
-
-.contacts .contacts__container .contacts__block .contacts__social .contacts__tweet {
-  margin-top: 38px;
-}
-
-.contacts .contacts__container .contacts__block .contacts__social .contacts__teleg {
-  margin-left: 15px;
+.contacts .contacts__container .contacts__whats {
+  margin-right: 15px;
 }
 
 .contacts .contacts__map.map {
@@ -1982,8 +2008,8 @@ input[type="checkbox"]:checked + .editions__label::before {
   height: 140px;
 }
 
-.footer__link {
-  margin-left: 19px;
+.footer__item:not(:last-child) {
+  margin-right: 18px;
 }
 
 /* menu */
@@ -2157,8 +2183,8 @@ input[type="checkbox"]:checked + .editions__label::before {
   .container {
     width: 1400px;
   }
-  .header__item--down {
-    margin-right: 97px;
+  .header__item--down:not(:last-child) {
+    margin-right: 85px;
   }
   .header__logo {
     margin-right: 110px;
@@ -2187,6 +2213,7 @@ input[type="checkbox"]:checked + .editions__label::before {
   /* catalog section */
   .catalog__card.card {
     max-width: 650px;
+    padding-top: 400px;
     height: 730px;
     background-size: 100% 400px;
   }
@@ -2197,7 +2224,7 @@ input[type="checkbox"]:checked + .editions__label::before {
     max-width: 900px;
   }
   .developments_card {
-    padding: 370px 18px 91px 49px;
+    padding: 318px 18px 91px 49px;
     width: 430px;
   }
   .developments_card:not(:nth-child(3n + 3)) {
@@ -2225,7 +2252,7 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .header__logo {
     margin-bottom: 0;
-    margin-right: 5px;
+    margin-right: 9px;
     width: 187px;
     height: 45px;
   }
@@ -2240,6 +2267,7 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .nav-toggle {
     display: block;
+    margin-right: 6px;
   }
   .header__admission {
     display: none;
@@ -2250,13 +2278,13 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .header__magnifier {
     display: block;
+    margin-right: -9px;
     background: none;
     border: none;
   }
   .header__magnifier .header__magnifier--lupe {
     width: 31px;
     height: 31px;
-    margin-top: 6px;
   }
   .header__magnifier:hover svg rect,
   .header__magnifier:hover svg path {
@@ -2271,20 +2299,26 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   /* first section */
   .first .first__container {
-    padding-top: 114px;
-    padding-bottom: 111px;
+    padding-top: 51px;
+    padding-bottom: 114px;
   }
   .first .first__title {
-    margin-bottom: 10px;
+    margin-bottom: -7px;
   }
   .first .first__description {
     max-width: 693px;
-    margin-bottom: 133px;
+    margin-bottom: 134px;
   }
   .first__block-up {
     -webkit-box-pack: right;
     -ms-flex-pack: right;
     justify-content: right;
+  }
+  .aboutUs__container {
+    padding-bottom: 53px;
+  }
+  .gallery .gallery__container {
+    padding-bottom: 54px;
   }
   .swiper-container#slider1 {
     width: 600px;
@@ -2295,14 +2329,18 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .gallery__description {
     max-width: 280px;
-    margin-top: -170px;
+    margin-top: -182px;
   }
   /* catalog section */
   .catalog__header {
-    margin-bottom: 0px;
+    margin-bottom: -39px;
+  }
+  .catalog__transfer {
+    width: 450px;
+    margin-top: 52px;
   }
   .catalog__card.card {
-    padding-top: 304px;
+    padding-top: 279px;
     max-width: 437px;
     height: 700px;
     background-image: url(../image/Girlandajo.jpg);
@@ -2324,11 +2362,10 @@ input[type="checkbox"]:checked + .editions__label::before {
   .catalog__title {
     margin-right: 32px;
   }
-  .catalog__transfer {
-    width: 450px;
-    margin-top: 10px;
-  }
   /* developments section */
+  .developments__container {
+    padding-bottom: 78px;
+  }
   .developments_card {
     max-width: 290px;
     min-height: 683px;
@@ -2339,7 +2376,7 @@ input[type="checkbox"]:checked + .editions__label::before {
     margin-right: 27px;
   }
   .developments_card .developments__signature {
-    margin-bottom: 5px;
+    margin-bottom: -19px;
   }
   .developments_card .developmets__descriptions {
     letter-spacing: 0.1px;
@@ -2363,6 +2400,9 @@ input[type="checkbox"]:checked + .editions__label::before {
   .card5 {
     background-image: url(../image/event5-2.jpg);
   }
+  .developments__news {
+    margin-bottom: 49px;
+  }
   /* editions section */
   .swiper-container#slider2 {
     max-width: 630px;
@@ -2375,7 +2415,7 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .editions__container {
     position: relative;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
   .editions__choice {
     position: absolute;
@@ -2418,6 +2458,7 @@ input[type="checkbox"]:checked + .editions__label::before {
   .projects__descriptions {
     max-width: 925px;
     letter-spacing: -0.1px;
+    margin-bottom: 27px;
   }
   .tooltip1::before {
     top: -65px;
@@ -2437,12 +2478,15 @@ input[type="checkbox"]:checked + .editions__label::before {
     margin-top: -33px;
   }
   /* contacts section */
+  .contacts__title {
+    margin-bottom: 2px;
+  }
   .contacts__container {
     max-height: 700px;
   }
   .contacts .contacts__container .contacts__block {
     width: 382px;
-    padding-top: 122px;
+    padding-top: 100px;
   }
   .contacts .contacts__container .contacts__block .contacts__form {
     width: 335px;
@@ -2473,7 +2517,7 @@ input[type="checkbox"]:checked + .editions__label::before {
     margin-right: 13px;
   }
   .first .first__container {
-    padding-top: 111px;
+    padding-top: 50px;
     padding-bottom: 115px;
   }
   .first__description {
@@ -2481,7 +2525,7 @@ input[type="checkbox"]:checked + .editions__label::before {
     margin-bottom: 135px;
   }
   .aboutUs__container {
-    padding-bottom: 67px;
+    padding-bottom: 51px;
   }
   .aboutUs__container .aboutUs__description {
     max-width: 666px;
@@ -2490,8 +2534,15 @@ input[type="checkbox"]:checked + .editions__label::before {
   .gallery__block {
     flex-wrap: wrap;
   }
+  .gallery__choice {
+    margin-bottom: 140px;
+  }
   .gallery__showing {
-    margin-top: 137px;
+    margin-top: 0;
+    margin-bottom: -4px;
+  }
+  .gallery__swiper-button1.swiper-button {
+    margin-bottom: 10px;
   }
   .swiper-container#slider1 {
     width: 668px;
@@ -2511,16 +2562,16 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .gallery__description {
     max-width: 668px;
-    margin-top: 17px;
+    margin-top: 0;
   }
   .catalog__container {
     padding-bottom: 7px;
   }
   .catalog__header {
-    margin-bottom: 5px;
+    margin-bottom: -38px;
   }
   .catalog__transfer {
-    margin-top: 5px;
+    margin-top: 43px;
   }
   .catalog__description {
     margin-left: 0;
@@ -2554,19 +2605,21 @@ input[type="checkbox"]:checked + .editions__label::before {
     max-width: 668px;
     width: 100%;
     height: 727px;
-    padding-top: 448px;
+    padding-top: 424px;
     margin-right: 0;
     background-image: url(../image/Giraldajo2.jpg);
     background-size: 100% 419px;
   }
   .developments__container {
+    padding-top: 78px;
     padding-bottom: 86px;
   }
   .developments__title {
-    margin-top: -6px;
+    margin-top: -3px;
   }
   .developments_card {
     max-width: 317px;
+    padding-bottom: 87px;
   }
   .developments_card:not(:nth-child(3n + 3)) {
     margin-right: 0;
@@ -2576,6 +2629,12 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .card3 {
     display: none;
+  }
+  .developments_card .developments__signature {
+    margin-bottom: -16px;
+  }
+  .developments__news {
+    margin-bottom: 50px;
   }
   .editions__container {
     padding-bottom: 78px;
@@ -2639,9 +2698,10 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .projects__descriptions {
     letter-spacing: 0.4px;
+    margin-bottom: 33px;
   }
   .projects__partners {
-    margin-top: 26px;
+    margin-bottom: 4px;
   }
   .swiper-container#slider3 {
     max-width: 562px;
@@ -2656,14 +2716,17 @@ input[type="checkbox"]:checked + .editions__label::before {
   .swiper-button-next.swiper-button-next-st.button3-next {
     margin-top: -38px;
   }
+  .contacts__title {
+    margin-bottom: 0px;
+  }
   .contacts .contacts__map.map .map__left {
-    width: 56.8vw;
+    width: 55.8vw;
   }
   .contacts .contacts__map.map .map__right {
-    width: 43.2vw;
+    width: 44.2vw;
   }
   .contacts .contacts__container .contacts__block .contacts_name {
-    margin-bottom: 9px;
+    margin-bottom: 6px;
   }
 }
 

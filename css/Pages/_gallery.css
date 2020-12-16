@@ -6,10 +6,12 @@
 }
 
 .gallery .gallery__container {
-  padding-bottom: 70px;
+  padding-bottom: 55px;
+  padding-top: 40px;
 }
 
 .gallery__title {
+  margin-bottom: 23px;
   font-weight: 400;
   font-size: 48px;
   line-height: 65px;
@@ -23,11 +25,14 @@
 
 .gallery__docket {
   display: block;
-  margin-top: 23px;
   margin-bottom: 11px;
   font-weight: 600;
   font-size: 16px;
   color: #ffffff;
+}
+
+.gallery__showing {
+  margin-top: -23px;
 }
 
 .choices__inner {
@@ -111,7 +116,7 @@ div[data-custom-properties="[object Object]"] {
 
 .gallery__description {
   max-width: 377px;
-  margin-top: -123px;
+  margin-top: -134px;
   font-weight: 600;
   font-size: 16px;
   line-height: 32px;
@@ -123,6 +128,7 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .swiper-container#slider1 {
+  margin-top: -7px;
   width: 1147px;
   height: 750px;
 }

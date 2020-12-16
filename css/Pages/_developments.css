@@ -1,13 +1,19 @@
 /* developments section */
 .developments__container {
   padding-bottom: 80px;
+  padding-top: 83px;
+}
+
+.developments__title {
+  margin-bottom: -3px;
+  margin-top: 0;
 }
 
 .developments_card {
   position: relative;
   width: 500px;
   margin-top: 14px;
-  padding: 314px 18px 91px 49px;
+  padding: 312px 18px 71px 49px;
   border: 1px solid #cacaca;
   background-repeat: no-repeat;
   background-position: top;
@@ -17,10 +23,15 @@
   margin-right: 50px;
 }
 
+.developments_card .developments__header {
+  margin-bottom: 0;
+}
+
 .developments_card .developments__signature {
   display: block;
   position: relative;
   text-align: right;
+  margin-bottom: -21px;
 }
 
 .developments_card .developmets__descriptions {
@@ -37,7 +48,7 @@
 .developments_card .developments__link {
   display: block;
   position: absolute;
-  bottom: 47px;
+  bottom: 40px;
   color: var(--first-color);
 }
 
@@ -84,10 +95,14 @@
   display: none;
 }
 
+.developments__news {
+  margin-bottom: 52px;
+}
+
 .developments__btn {
   display: block;
   position: relative;
-  margin: 49px auto 0;
+  margin: 0 auto;
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;

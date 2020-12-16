@@ -2,6 +2,7 @@
 
 .projects__container {
   padding-bottom: 0;
+  padding-top: 40px;
 }
 
 .projects__title {
@@ -12,6 +13,11 @@
 .projects__descriptions {
   max-width: 1080px;
   letter-spacing: 0.242px;
+}
+
+.projects__partners {
+  line-height: 18px;
+  margin-bottom: 8px;
 }
 
 .projects__tooltip svg {
@@ -140,11 +146,6 @@
   }
 }
 
-
-.projects__partners {
-  margin-top: 20px;
-}
-
 .swiper-slide.projects__slider {
   display: block;
   position: relative;
@@ -233,4 +234,8 @@
       background-color: var(--first-color);
     }
   }
+}
+
+.contacts__title {
+  margin-bottom: 14px;
 }
