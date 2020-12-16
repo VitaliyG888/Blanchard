@@ -110,8 +110,10 @@
   }
 
   .catalog__content {
+    -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
   }
+
 
   .catalog__artists.accordeon {
     max-width: 668px;

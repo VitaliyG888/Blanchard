@@ -12,6 +12,8 @@
   width: 1630px;
   padding-top: 28px;
   padding-bottom: 24px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -93,7 +95,8 @@
 }
 
 .header__container--down {
-
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 9px;
