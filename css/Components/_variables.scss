@@ -1,0 +1,13 @@
+$first-color: #9d5cd0;
+$first-lite: #c283f3;
+$extra-lite: #d1a9f0;
+$second-color: #7943a4;
+$Black: #000000;
+$Wight: #ffffff;
+$Grey: #cacaca;
+
+@mixin transition($property) {
+  -webkit-transition: $property 0.5s ease-in-out;
+  -o-transition: $property 0.5s ease-in-out;
+  transition: $property 0.5s ease-in-out;
+}

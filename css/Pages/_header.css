@@ -43,6 +43,9 @@
 
 .header__link:hover {
   color: var(--first-lite);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .header__link:active {
@@ -62,10 +65,16 @@
 
 .header__admission:hover {
   color: var(--first-lite);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .header__admission:hover svg path {
   fill: var(--first-lite);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .header__admission:active {
@@ -124,11 +133,17 @@
 
 .header__style:hover {
   color: var(--first-color);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .header__style:hover:after {
   border-left: 1px solid var(--first-color);
   border-bottom: 1px solid var(--first-color);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .header__style:active {
@@ -229,6 +244,9 @@
   position: relative;
   margin-top: -3px;
   padding-left: 44px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .header__search .header__search-input {
@@ -254,20 +272,29 @@
 
 .header__search:hover input {
   border-bottom: 1px solid var(--first-lite);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .header__search:active input {
   border-bottom: 1px solid rgba(255, 255, 255, 0.85);
 }
 
-.header__search:hover svg rect,
-.header__search:hover svg path {
+.header__search:hover .header__magnifier--lupe rect,
+.header__search:hover .header__magnifier--lupe path {
   fill: var(--first-lite);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.header__search:active svg rect,
-.header__search:active svg path {
+.header__search:active .header__magnifier--lupe rect,
+.header__search:active .header__magnifier--lupe path {
   fill: var(--second-color);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .header__search .header__magnifier {

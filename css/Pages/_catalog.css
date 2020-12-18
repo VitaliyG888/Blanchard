@@ -143,15 +143,24 @@
 
 .accordeon-title:hover {
   color: var(--first-color);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .accordeon-title:hover::after {
   background-color: var(--first-color);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .accordeon-title:hover::before {
   border-left: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .accordeon-title:active::after {

@@ -80,6 +80,9 @@
 .contacts .contacts__container .contacts__block .contacts__form .contacts__button:hover {
   background-color: var(--first-color);
   color: #ffffff;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .contacts .contacts__container .contacts__block .contacts__form .contacts__button:focus {

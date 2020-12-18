@@ -26,10 +26,9 @@
                     <span class="close__line"></span>
                 </button>
                 <!-- Выезжающее меню для меньших разрешений -->
-                <div class="menu-toggle js-menu">
+                <div class="menu-toggle menu js-menu">
                     <header class="header-menu">
                         <div class="header__container-menu flex">
-
                         </div>
                     </header>
                     <nav class="menu-nav">
@@ -308,7 +307,7 @@
                 <form class="header__search">
                     <input type="search" class="header__search-input" id="header__search-input"
                         placeholder="Поиск по сайту">
-                    <button class="header__magnifier" id="search-btn" type="submit">
+                    <button class="header__magnifier" id="search-btn" type="submit" aria-label="Поиск по сайту">
                         <svg class="header__magnifier--lupe" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 23 22" width="23" height="22">
                             <rect class="header__magnifier-rect" fill="white"
@@ -340,7 +339,8 @@
                     плановых
                     заданий
                     создаёт предпосылки для новых предложений.</p>
-                <button class="first__subscription">Подписаться на рассылку</button>
+                <button class="first__subscription" aria-label="Подписаться на рассылку">Подписаться на
+                    рассылку</button>
             </div>
         </div>
     </section>
@@ -366,10 +366,10 @@
                 <div class="gallery__choice">
                     <span class="gallery__docket">Фильтровать по:</span>
                     <div class="gallery__filter">
-                        <select class="gallery__select select" name="artist">
-                            <option class="gallery__option" value="">Автор</option>
-                            <option class="gallery__option" value="">Направление</option>
-                            <option class="gallery__option" value="">Техника</option>
+                        <select class="gallery__select select" name="artist" aria-label="Выбор фильтра">
+                            <option class="gallery__option" value="Автор">Автор</option>
+                            <option class="gallery__option" value="Направление">Направление</option>
+                            <option class="gallery__option" value="Техника">Техника</option>
 
                         </select>
                     </div>
@@ -428,21 +428,26 @@
         <div class="container catalog__container">
             <div class="catalog__header flex">
                 <h2 class="catalog__title title">Каталог</h2>
-                <ul class="catalog__transfer tab-nav flex">
+                <ul class="catalog__transfer tab-nav flex" aria-label="Выбор языка">
                     <li class="catalog__language">
-                        <button class="catalog__france tab-nav__link" data-tab-name="tab1"></button>
+                        <button class="catalog__france tab-nav__link" data-tab-name="tab1"
+                            aria-label="Французкий"></button>
                     </li>
                     <li class="catalog__language">
-                        <button class="catalog__germany tab-nav__link" data-tab-name="tab2"></button>
+                        <button class="catalog__germany tab-nav__link" data-tab-name="tab2"
+                            aria-label="Немецкий"></button>
                     </li>
                     <li class="catalog__language">
-                        <button class="catalog__italy tab-nav__link" data-tab-name="tab3"></button>
+                        <button class="catalog__italy tab-nav__link" data-tab-name="tab3"
+                            aria-label="Итальянский"></button>
                     </li>
                     <li class="catalog__language">
-                        <button class="catalog__russia tab-nav__link is-active" data-tab-name="tab4"></button>
+                        <button class="catalog__russia tab-nav__link is-active" data-tab-name="tab4"
+                            aria-label="Русский"></button>
                     </li>
                     <li class="catalog__language">
-                        <button class="catalog__spain tab-nav__link" data-tab-name="tab5"></button>
+                        <button class="catalog__spain tab-nav__link" data-tab-name="tab5"
+                            aria-label="Испанский"></button>
                     </li>
                 </ul>
             </div>
@@ -868,7 +873,7 @@
                     <a class="developments__link link5" href="#">Подробнее</a>
                 </div>
             </div>
-            <button class="developments__btn">Все события</button>
+            <button class="developments__btn" aria-label="Показать все события">Все события</button>
         </div>
     </section>
     <!-- Секция Издания -->
@@ -878,42 +883,52 @@
             <div class="editions__blocks flex">
                 <div class="editions__block--left">
                     <div class="editions__checkboks">
-                        <span class="editions__docket">Категории</span>
+                        <span class="editions__docket" tabindex="1"
+                            aria-label="Выбор категории издания">Категории</span>
                         <div class="editions__list">
                             <div class="editions__list--1">
-                                <input class="editions__check" id="check1" type="checkbox" name="check" value="check1">
+                                <input class="editions__check" id="check1" type="checkbox" name="check"
+                                    value="Бестселлеры">
                                 <label class="editions__label" for="check1">Бестселлеры</label>
-                                <input class="editions__check" id="check2" type="checkbox" name="check" value="check2">
+                                <input class="editions__check" id="check2" type="checkbox" name="check"
+                                    value="Искуство">
                                 <label class="editions__label" for="check2">Искуство</label>
-                                <input class="editions__check" id="check3" type="checkbox" name="check" value="check3">
+                                <input class="editions__check" id="check3" type="checkbox" name="check"
+                                    value="Архитектура">
                                 <label class="editions__label" for="check3">Архитектура</label>
-                                <input class="editions__check" id="check4" type="checkbox" name="check" value="check4">
+                                <input class="editions__check" id="check4" type="checkbox" name="check" value="Дизайн">
                                 <label class="editions__label" for="check4">Дизайн</label>
                             </div>
                             <div class="editions__list--2">
-                                <input class="editions__check" id="check5" type="checkbox" name="check" value="check5">
+                                <input class="editions__check" id="check5" type="checkbox" name="check" value="Мода">
                                 <label class="editions__label" for="check5">Мода</label>
-                                <input class="editions__check" id="check6" type="checkbox" name="check" value="check1">
+                                <input class="editions__check" id="check6" type="checkbox" name="check" value="Детям">
                                 <label class="editions__label" for="check6">Детям</label>
-                                <input class="editions__check" id="check7" type="checkbox" name="check" value="check2">
+                                <input class="editions__check" id="check7" type="checkbox" name="check"
+                                    value="Художественная литература">
                                 <label class="editions__label" for="check7">Художественная литература</label>
-                                <input class="editions__check" id="check8" type="checkbox" name="check" value="check3">
+                                <input class="editions__check" id="check8" type="checkbox" name="check"
+                                    value="Публицистика">
                                 <label class="editions__label" for="check8">Публицистика</label>
                             </div>
                             <div class="editions__list--3">
-                                <input class="editions__check" id="check9" type="checkbox" name="check" value="check4">
+                                <input class="editions__check" id="check9" type="checkbox" name="check"
+                                    value="Путиводители">
                                 <label class="editions__label" for="check9">Путиводители</label>
-                                <input class="editions__check" id="check10" type="checkbox" name="check" value="check5">
+                                <input class="editions__check" id="check10" type="checkbox" name="check"
+                                    value="Философия">
                                 <label class="editions__label" for="check10">Философия</label>
-                                <input class="editions__check" id="check11" type="checkbox" name="check" value="check4">
+                                <input class="editions__check" id="check11" type="checkbox" name="check"
+                                    value="Учебная литература">
                                 <label class="editions__label" for="check11">Учебная литература</label>
-                                <input class="editions__check" id="check12" type="checkbox" name="check" value="check5">
+                                <input class="editions__check" id="check12" type="checkbox" name="check"
+                                    value="Журналы и газеты">
                                 <label class="editions__label" for="check12">Журналы и газеты</label>
                             </div>
                         </div>
                     </div>
                     <span class="editions__price">Цена</span>
-                    <form class="editions__choice flex">
+                    <form class="editions__choice flex" tabindex="1" aria-label="Выбор цены издания">
                         <label class="editions__from" for="choice1">От</label>
                         <input class="editions__namber editions__namber--from" id="choice1" type="namber" name="choice1"
                             placeholder="50">
@@ -1080,14 +1095,15 @@
                         data-validate-field="name">
                     <input class="contacts__tel contacts__input" type="tel" name="phone" placeholder="Телефон*"
                         data-validate-field="tel">
-                    <button class="contacts__button" type="submit">Заказать</button>
+                    <button class="contacts__button" type="submit"
+                        aria-label="Заказать обратный звонок">Заказать</button>
                 </form>
                 <span class="contacts__tweet contacts__docket">Связаться в один клик</span>
                 <div class="contacts__social">
                     <a class="contacts__whats" href="https://api.whatsapp.com/send?phone=77788899965"><img
-                            src="image/Whatsapp-Icon.png" alt="Вотсап"></a>
+                            src="image/Whatsapp-Icon.png" aria-label="Перейти в Вотсап"></a>
                     <a class="contacts__teleg" href="https://t.me/username"><img src="image/Telegram_2019_Logo.png"
-                            alt="Телеграм"></a>
+                            aria-label="Перейти в Телеграм"></a>
                 </div>
             </div>
         </div>
@@ -1095,20 +1111,21 @@
 
     </section>
     <!-- Кнопка возврата на верх -->
-    <button class="back_to_top" title="Наверх"></button>
+    <button class="back_to_top" title="Наверх" aria-label="Скролл на верх"></button>
     <!-- Футер -->
     <footer class="footer">
         <div class="container footer__container flex">
-            <a href="" class="footer__logo"><img src="image/logo-footer.png" alt="Логотип"></a>
+            <a href="" class="footer__logo"><img src="image/logo-footer.png" aria-label="Логотип"></a>
             <ul class="footer__social flex">
                 <li class="footer__item">
-                    <a href="" class="footer__link vk"><img src="image/vk.png" alt="В контакте"></a>
+                    <a href="" class="footer__link vk"><img src="image/vk.png" aria-label="Перейти в Контакте"></a>
                 </li>
                 <li class="footer__item">
-                    <a href="" class="footer__link inst"><img src="image/instagram.png" alt="Инстаграм"></a>
+                    <a href="" class="footer__link inst"><img src="image/instagram.png"
+                            aria-label="Перейти в Instagram"></a>
                 </li>
                 <li class="footer__item">
-                    <a href="" class="footer__link fb"><img src="image/fb.png" alt=""></a>
+                    <a href="" class="footer__link fb"><img src="image/fb.png" aria-label="Перейти в Facebook"></a>
                 </li>
             </ul>
         </div>

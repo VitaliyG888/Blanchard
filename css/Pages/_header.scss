@@ -43,6 +43,9 @@
 
   &:hover {
     color: var(--first-lite);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   &:active {
@@ -64,9 +67,15 @@
 
   &:hover {
     color: var(--first-lite);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
     svg path {
       fill: var(--first-lite);
+      -webkit-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
   }
 
@@ -129,9 +138,15 @@
     &:after {
       border-left: 1px solid var(--first-color);
       border-bottom: 1px solid var(--first-color);
+      -webkit-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
 
     color: var(--first-color);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   &:active {
@@ -235,6 +250,9 @@
   position: relative;
   margin-top: -3px;
   padding-left: 44px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
 
   .header__search-input {
@@ -260,26 +278,29 @@
 
   &:hover input {
     border-bottom: 1px solid var(--first-lite);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   &:active input {
     border-bottom: 1px solid rgba(255, 255, 255, 0.85);
   }
 
-  &:hover svg {
-
-    rect,
-    path {
-      fill: var(--first-lite);
-    }
+  &:hover .header__magnifier--lupe rect,
+  &:hover .header__magnifier--lupe path {
+    fill: var(--first-lite);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
-  &:active svg {
-
-    rect,
-    path {
-      fill: var(--second-color);
-    }
+  &:active .header__magnifier--lupe rect,
+  &:active .header__magnifier--lupe path {
+    fill: var(--second-color);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   .header__magnifier {

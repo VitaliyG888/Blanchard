@@ -164,6 +164,10 @@ div[data-custom-properties="[object Object]"] {
 .swiper-button-next-st:hover,
 .swiper-button-prev-st:hover {
   background-color: var(--first-color);
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .swiper-button-next-st:active,
@@ -236,9 +240,9 @@ div[data-custom-properties="[object Object]"] {
   z-index: 2;
   background-color: var(--extra-lite);
   opacity: 0;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .swiper-slide.gallery__slider::after {
@@ -257,16 +261,16 @@ div[data-custom-properties="[object Object]"] {
   background-size: cover;
   background-position: center;
   opacity: 0;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .swiper-slide.gallery__slider:hover::after {
   opacity: 1;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .swiper-slide.gallery__slider:active::after {

@@ -147,10 +147,6 @@
 }
 
 .swiper-slide.projects__slider {
-  display: block;
-  position: relative;
-  height: 152px;
-  border: 1px solid #cacaca;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,6 +161,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  height: 152px;
+  border: 1px solid #cacaca;
+  filter: grayscale(100%);
+  transition: 1s;
+
+  &:hover {
+    filter: grayscale(0);
+  }
 }
 
 .swiper-container#slider3 {
@@ -174,10 +179,6 @@
 
 .projects1 {
   background-image: url(../image/projects1.jpg);
-}
-
-.swiper-slide.projects__slider:hover .projects1 {
-  background-image: url(../image/projects1-1.jpg);
 }
 
 .projects2 {
