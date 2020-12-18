@@ -45,6 +45,7 @@
   .header__magnifier:hover svg rect,
   .header__magnifier:hover svg path {
     fill: var(--first-lite);
+    transition: all 1s;
   }
   .header__magnifier:active svg rect,
   .header__magnifier:active svg path {

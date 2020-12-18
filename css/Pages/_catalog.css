@@ -43,6 +43,15 @@
   background: no-repeat center/70% url(../image/russia.png);
 }
 
+@-webkit-keyframes border {
+  0% {
+    border-color: rgba(157, 92, 208, 0);
+  }
+  100% {
+    border-color: #9d5cd0;
+  }
+}
+
 @keyframes border {
   0% {
     border-color: rgba(157, 92, 208, 0);
@@ -53,7 +62,9 @@
 }
 
 .is-active {
+  -webkit-animation: border 1s ease-in;
   animation: border 1s ease-in;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
@@ -70,6 +81,15 @@
   opacity: 0;
 }
 
+@-webkit-keyframes description {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes description {
   0% {
     opacity: 0;
@@ -81,7 +101,9 @@
 
 .is-active__description {
   display: block;
+  -webkit-animation: description 1s ease-in;
   animation: description 1s ease-in;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 

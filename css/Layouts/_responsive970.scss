@@ -269,6 +269,14 @@
 
   // progects section
 
+  .tooltip3::before {
+    top: -64px;
+  }
+
+  .tooltip1::before {
+    top: -81px;
+  }
+
   .projects__descriptions {
     letter-spacing: 0.4px;
     margin-bottom: 33px;

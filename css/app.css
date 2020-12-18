@@ -1127,6 +1127,15 @@ div[data-custom-properties="[object Object]"] {
   background: no-repeat center/70% url(../image/russia.png);
 }
 
+@-webkit-keyframes border {
+  0% {
+    border-color: rgba(157, 92, 208, 0);
+  }
+  100% {
+    border-color: #9d5cd0;
+  }
+}
+
 @keyframes border {
   0% {
     border-color: rgba(157, 92, 208, 0);
@@ -1137,7 +1146,9 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .is-active {
+  -webkit-animation: border 1s ease-in;
   animation: border 1s ease-in;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
@@ -1154,6 +1165,15 @@ div[data-custom-properties="[object Object]"] {
   opacity: 0;
 }
 
+@-webkit-keyframes description {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes description {
   0% {
     opacity: 0;
@@ -1165,7 +1185,9 @@ div[data-custom-properties="[object Object]"] {
 
 .is-active__description {
   display: block;
+  -webkit-animation: description 1s ease-in;
   animation: description 1s ease-in;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
@@ -2094,6 +2116,7 @@ input[type="checkbox"]:checked + .editions__label::before {
 .contacts .contacts__map.map .map__left {
   width: 35.24vw;
   height: 100%;
+  z-index: -100;
 }
 
 .contacts [class*="ground-pane"] {
@@ -2413,6 +2436,7 @@ input[type="checkbox"]:checked + .editions__label::before {
   .header__magnifier:hover svg rect,
   .header__magnifier:hover svg path {
     fill: var(--first-lite);
+    transition: all 1s;
   }
   .header__magnifier:active svg rect,
   .header__magnifier:active svg path {
@@ -2820,6 +2844,12 @@ input[type="checkbox"]:checked + .editions__label::before {
   .editions__showing {
     margin-left: 26px;
     margin-top: 70px;
+  }
+  .tooltip3::before {
+    top: -64px;
+  }
+  .tooltip1::before {
+    top: -81px;
   }
   .projects__descriptions {
     letter-spacing: 0.4px;
