@@ -144,21 +144,33 @@ input[type="checkbox"]:checked+.editions__label::before {
   margin-left: 9px;
 }
 
-.editions__from {
+.editions__input {
   margin-top: 7px;
-  margin-left: 18px;
+  margin-left: 21px;
   font-weight: 400;
   font-size: 16px;
   color: #ffffff;
+  padding-right: 9px;
+}
+
+.editions__number {
+  width: 82px;
+  color: #ffffff;
+  background-color: var(--second-color);
+  border: none;
+  outline: none;
+  padding-left: 10px;
+
+  &::placeholder {
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+  }
 }
 
 .editions__to {
-  margin-top: 7px;
-  margin-left: 18px;
-  font-weight: 400;
-  font-size: 16px;
-  color: #ffffff;
-  margin-left: 13px;
+  margin-left: 12px;
 }
 
 .editions__showing {

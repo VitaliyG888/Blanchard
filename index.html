@@ -27,10 +27,10 @@
                 </button>
                 <!-- Выезжающее меню для меньших разрешений -->
                 <div class="menu-toggle menu js-menu">
-                    <header class="header-menu">
+                    <div class="menu__header header">
                         <div class="header__container-menu flex">
                         </div>
-                    </header>
+                    </div>
                     <nav class="menu-nav">
                         <ul class="menu-nav__list">
                             <li class="menu-nav__item">
@@ -422,13 +422,14 @@
                 <p>Вам предоставляется 10 бесплатных скачиваний. Для увеличения
                     количества скачиваний <span>авторизуйтесь,</span> либо воспользуйтесь лицензией. </p>
             </div>
+        </div>
     </section>
     <!-- Секция каталог -->
     <section class="catalog">
         <div class="container catalog__container">
             <div class="catalog__header flex">
-                <h2 class="catalog__title title">Каталог</h2>
-                <ul class="catalog__transfer tab-nav flex" aria-label="Выбор языка">
+                <h2 class="catalog__title title" tabindex="1" aria-label="Выбор языка">Каталог</h2>
+                <ul class="catalog__transfer tab-nav flex">
                     <li class="catalog__language">
                         <button class="catalog__france tab-nav__link" data-tab-name="tab1"
                             aria-label="Французкий"></button>
@@ -499,320 +500,301 @@
                     </p>
                 </div>
                 <div class="catalog__artists accordeon">
-                    <div class="accordeon-section js-section" id="js-section">
+                    <div class="accordeon-section js-section">
                         <button class="accordeon-title accordeon-title--first">C 1400 по 1499 гг.</button>
-                        <div class="accordeon-content js-content" id="js-content">
+                        <div class="accordeon-content js-content">
                             <div class="accordion-item flex" onclick="event.stopPropagation()">
-                                <button class="accordeon-link" id="painter1">Бенедетто ди Биндо</button>
-                                <button class="accordeon-link" id="painter2">Бергоньоне, Амброджо</button>
-                                <button class="accordeon-link" id="painter3">Биссоло, Франческо</button>
-                                <button class="accordeon-link" id="painter4">Больтраффио, Джованни</button>
-                                <button class="accordeon-link" id="painter5">Бонсиньори, Франческо</button>
-                                <button class="accordeon-link" id="painter6">Боттичини, Рафаэлло</button>
-                                <button class="accordeon-link" id="painter7">Брамантино</button>
-                                <button class="accordeon-link" id="painter8">Бреа, Людовико</button>
-                                <button class="accordeon-link" id="painter9">Бьяджо д’Антонио Туччи</button>
-                                <button class="accordeon-link" id="painter10">Веккьетта</button>
-                                <button class="accordeon-link" id="painter11">Андреа Верроккьо</button>
-                                <button class="accordeon-link" id="painter12">Доменико Гирландайо</button>
-                                <button class="accordeon-link" id="painter13">Беноццо Гоццоли</button>
-                                <button class="accordeon-link" id="painter14">Граначчи, Франческо</button>
-                                <button class="accordeon-link" id="painter15">Грегорио ди Чекко</button>
-                                <button class="accordeon-link" id="painter16">Джованни да Удине</button>
-                                <button class="accordeon-link" id="painter17">Джованни ди Паоло</button>
-                                <button class="accordeon-link" id="painter18">Джорджоне</button>
-                                <button class="accordeon-link" id="painter19">Парентино, Бернардо</button>
-                                <button class="accordeon-link" id="painter20">Пезеллино</button>
-                                <button class="accordeon-link" id="painter21">Пьетро Перуджино</button>
-                                <button class="accordeon-link" id="painter22">Перуцци, Бальдассаре</button>
-                                <button class="accordeon-link" id="painter23">Пизанелло</button>
-                                <button class="accordeon-link" id="painter24">Пинтуриккьо</button>
-                                <button class="accordeon-link" id="painter18">Джорджоне</button>
-                                <button class="accordeon-link" id="painter19">Парентино, Бернардо</button>
-                                <button class="accordeon-link" id="painter20">Пезеллино</button>
+                                <button class="accordeon-link">Бенедетто ди Биндо</button>
+                                <button class="accordeon-link">Бергоньоне, Амброджо</button>
+                                <button class="accordeon-link">Биссоло, Франческо</button>
+                                <button class="accordeon-link">Больтраффио, Джованни</button>
+                                <button class="accordeon-link">Бонсиньори, Франческо</button>
+                                <button class="accordeon-link">Боттичини, Рафаэлло</button>
+                                <button class="accordeon-link">Брамантино</button>
+                                <button class="accordeon-link">Бреа, Людовико</button>
+                                <button class="accordeon-link">Бьяджо д’Антонио Туччи</button>
+                                <button class="accordeon-link">Веккьетта</button>
+                                <button class="accordeon-link">Андреа Верроккьо</button>
+                                <button class="accordeon-link">Доменико Гирландайо</button>
+                                <button class="accordeon-link">Беноццо Гоццоли</button>
+                                <button class="accordeon-link">Граначчи, Франческо</button>
+                                <button class="accordeon-link">Грегорио ди Чекко</button>
+                                <button class="accordeon-link">Джованни да Удине</button>
+                                <button class="accordeon-link">Джованни ди Паоло</button>
+                                <button class="accordeon-link">Джорджоне</button>
+                                <button class="accordeon-link">Парентино, Бернардо</button>
+                                <button class="accordeon-link">Пезеллино</button>
+                                <button class="accordeon-link">Пьетро Перуджино</button>
+                                <button class="accordeon-link">Перуцци, Бальдассаре</button>
+                                <button class="accordeon-link">Пизанелло</button>
+                                <button class="accordeon-link">Пинтуриккьо</button>
+                                <button class="accordeon-link">Джорджоне</button>
+                                <button class="accordeon-link">Парентино, Бернардо</button>
+                                <button class="accordeon-link">Пезеллино</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="accordeon-section js-section" id="js-section">
+                    <div class="accordeon-section js-section">
                         <button class="accordeon-title">C 1500 по 1599 гг.</button>
-                        <div class="accordeon-content js-content" id="js-content">
+                        <div class="accordeon-content js-content">
                             <div class="accordion-item flex" onclick="event.stopPropagation()">
-                                <button class="accordeon-link" id="painter1">Бенедетто ди Биндо</button>
-                                <button class="accordeon-link" id="painter2">Бергоньоне, Амброджо</button>
-                                <button class="accordeon-link" id="painter3">Биссоло, Франческо</button>
-                                <button class="accordeon-link" id="painter4">Больтраффио, Джованни</button>
-                                <button class="accordeon-link" id="painter5">Бонсиньори, Франческо</button>
-                                <button class="accordeon-link" id="painter6">Боттичини, Рафаэлло</button>
-                                <button class="accordeon-link" id="painter7">Брамантино</button>
-                                <button class="accordeon-link" id="painter8">Бреа, Людовико</button>
-                                <button class="accordeon-link" id="painter9">Бьяджо д’Антонио Туччи</button>
-                                <button class="accordeon-link" id="painter10">Веккьетта</button>
-                                <button class="accordeon-link" id="painter11">Андреа Верроккьо</button>
-                                <button class="accordeon-link" id="painter12">Доменико Гирландайо</button>
-                                <button class="accordeon-link" id="painter13">Беноццо Гоццоли</button>
-                                <button class="accordeon-link" id="painter14">Граначчи, Франческо</button>
-                                <button class="accordeon-link" id="painter15">Грегорио ди Чекко</button>
-                                <button class="accordeon-link" id="painter16">Джованни да Удине</button>
-                                <button class="accordeon-link" id="painter17">Джованни ди Паоло</button>
-                                <button class="accordeon-link" id="painter18">Джорджоне</button>
-                                <button class="accordeon-link" id="painter19">Парентино, Бернардо</button>
-                                <button class="accordeon-link" id="painter20">Пезеллино</button>
-                                <button class="accordeon-link" id="painter21">Пьетро Перуджино</button>
-                                <button class="accordeon-link" id="painter22">Перуцци, Бальдассаре</button>
-                                <button class="accordeon-link" id="painter23">Пизанелло</button>
-                                <button class="accordeon-link" id="painter24">Пинтуриккьо</button>
-                                <button class="accordeon-link" id="painter12">Доменико Гирландайо</button>
-                                <button class="accordeon-link" id="painter13">Беноццо Гоццоли</button>
-                                <button class="accordeon-link" id="painter14">Граначчи, Франческо</button>
-                                <button class="accordeon-link" id="painter15">Грегорио ди Чекко</button>
-                                <button class="accordeon-link" id="painter16">Джованни да Удине</button>
-                                <button class="accordeon-link" id="painter17">Джованни ди Паоло</button>
-                                <button class="accordeon-link" id="painter18">Джорджоне</button>
-                                <button class="accordeon-link" id="painter19">Парентино, Бернардо</button>
-                                <button class="accordeon-link" id="painter20">Пезеллино</button>
-                                <button class="accordeon-link" id="painter21">Пьетро Перуджино</button>
-                                <button class="accordeon-link" id="painter22">Перуцци, Бальдассаре</button>
-                                <button class="accordeon-link" id="painter23">Пизанелло</button>
-                                <button class="accordeon-link" id="painter24">Пинтуриккьо</button>
+                                <button class="accordeon-link">Бенедетто ди Биндо</button>
+                                <button class="accordeon-link">Бергоньоне, Амброджо</button>
+                                <button class="accordeon-link">Биссоло, Франческо</button>
+                                <button class="accordeon-link">Больтраффио, Джованни</button>
+                                <button class="accordeon-link">Бонсиньори, Франческо</button>
+                                <button class="accordeon-link">Боттичини, Рафаэлло</button>
+                                <button class="accordeon-link">Брамантино</button>
+                                <button class="accordeon-link">Бреа, Людовико</button>
+                                <button class="accordeon-link">Бьяджо д’Антонио Туччи</button>
+                                <button class="accordeon-link">Веккьетта</button>
+                                <button class="accordeon-link">Андреа Верроккьо</button>
+                                <button class="accordeon-link">Доменико Гирландайо</button>
+                                <button class="accordeon-link">Беноццо Гоццоли</button>
+                                <button class="accordeon-link">Граначчи, Франческо</button>
+                                <button class="accordeon-link">Грегорио ди Чекко</button>
+                                <button class="accordeon-link">Джованни да Удине</button>
+                                <button class="accordeon-link">Джованни ди Паоло</button>
+                                <button class="accordeon-link">Джорджоне</button>
+                                <button class="accordeon-link">Парентино, Бернардо</button>
+                                <button class="accordeon-link">Пезеллино</button>
+                                <button class="accordeon-link">Пьетро Перуджино</button>
+                                <button class="accordeon-link">Перуцци, Бальдассаре</button>
+                                <button class="accordeon-link">Пизанелло</button>
+                                <button class="accordeon-link">Пинтуриккьо</button>
+                                <button class="accordeon-link">Доменико Гирландайо</button>
+                                <button class="accordeon-link">Беноццо Гоццоли</button>
+                                <button class="accordeon-link">Граначчи, Франческо</button>
+                                <button class="accordeon-link">Грегорио ди Чекко</button>
+                                <button class="accordeon-link">Джованни да Удине</button>
+                                <button class="accordeon-link">Джованни ди Паоло</button>
+                                <button class="accordeon-link">Джорджоне</button>
+                                <button class="accordeon-link">Парентино, Бернардо</button>
+                                <button class="accordeon-link">Пезеллино</button>
+                                <button class="accordeon-link">Пьетро Перуджино</button>
+                                <button class="accordeon-link">Перуцци, Бальдассаре</button>
+                                <button class="accordeon-link">Пизанелло</button>
+                                <button class="accordeon-link">Пинтуриккьо</button>
                             </div>
                         </div>
                     </div>
-                    <div class="accordeon-section js-section" id="js-section">
+                    <div class="accordeon-section js-section">
                         <button class="accordeon-title">
                             C 1600 по 1699 гг.
                         </button>
-                        <div class="accordeon-content js-content" id="js-content">
+                        <div class="accordeon-content js-content">
                             <div class="accordion-item flex" onclick="event.stopPropagation()">
-                                <button class="accordeon-link" id="painter1">Бенедетто ди Биндо</button>
-                                <button class="accordeon-link" id="painter2">Бергоньоне, Амброджо</button>
-                                <button class="accordeon-link" id="painter3">Биссоло, Франческо</button>
-                                <button class="accordeon-link" id="painter4">Больтраффио, Джованни</button>
-                                <button class="accordeon-link" id="painter5">Бонсиньори, Франческо</button>
-                                <button class="accordeon-link" id="painter6">Боттичини, Рафаэлло</button>
-                                <button class="accordeon-link" id="painter7">Брамантино</button>
-                                <button class="accordeon-link" id="painter8">Бреа, Людовико</button>
-                                <button class="accordeon-link" id="painter9">Бьяджо д’Антонио Туччи</button>
-                                <button class="accordeon-link" id="painter10">Веккьетта</button>
-                                <button class="accordeon-link" id="painter11">Андреа Верроккьо</button>
-                                <button class="accordeon-link" id="painter12">Доменико Гирландайо</button>
-                                <button class="accordeon-link" id="painter13">Беноццо Гоццоли</button>
-                                <button class="accordeon-link" id="painter14">Граначчи, Франческо</button>
-                                <button class="accordeon-link" id="painter15">Грегорио ди Чекко</button>
-                                <button class="accordeon-link" id="painter16">Джованни да Удине</button>
-                                <button class="accordeon-link" id="painter17">Джованни ди Паоло</button>
-                                <button class="accordeon-link" id="painter18">Джорджоне</button>
-                                <button class="accordeon-link" id="painter19">Парентино, Бернардо</button>
-                                <button class="accordeon-link" id="painter20">Пезеллино</button>
-                                <button class="accordeon-link" id="painter21">Пьетро Перуджино</button>
-                                <button class="accordeon-link" id="painter22">Перуцци, Бальдассаре</button>
-                                <button class="accordeon-link" id="painter23">Пизанелло</button>
-                                <button class="accordeon-link" id="painter24">Пинтуриккьо</button>
-                                <button class="accordeon-link" id="painter1">Бенедетто ди Биндо</button>
-                                <button class="accordeon-link" id="painter2">Бергоньоне, Амброджо</button>
-                                <button class="accordeon-link" id="painter3">Биссоло, Франческо</button>
-                                <button class="accordeon-link" id="painter4">Больтраффио, Джованни</button>
-                                <button class="accordeon-link" id="painter5">Бонсиньори, Франческо</button>
-                                <button class="accordeon-link" id="painter6">Боттичини, Рафаэлло</button>
-                                <button class="accordeon-link" id="painter7">Брамантино</button>
-                                <button class="accordeon-link" id="painter8">Бреа, Людовико</button>
-                                <button class="accordeon-link" id="painter9">Бьяджо д’Антонио Туччи</button>
-                                <button class="accordeon-link" id="painter10">Веккьетта</button>
-                                <button class="accordeon-link" id="painter11">Андреа Верроккьо</button>
-                                <button class="accordeon-link" id="painter12">Доменико Гирландайо</button>
-                                <button class="accordeon-link" id="painter13">Беноццо Гоццоли</button>
-                                <button class="accordeon-link" id="painter14">Граначчи, Франческо</button>
-                                <button class="accordeon-link" id="painter15">Грегорио ди Чекко</button>
-                                <button class="accordeon-link" id="painter16">Джованни да Удине</button>
-                                <button class="accordeon-link" id="painter17">Джованни ди Паоло</button>
-                                <button class="accordeon-link" id="painter18">Джорджоне</button>
-                                <button class="accordeon-link" id="painter19">Парентино, Бернардо</button>
-                                <button class="accordeon-link" id="painter20">Пезеллино</button>
-                                <button class="accordeon-link" id="painter21">Пьетро Перуджино</button>
-                                <button class="accordeon-link" id="painter22">Перуцци, Бальдассаре</button>
-                                <button class="accordeon-link" id="painter23">Пизанелло</button>
-                                <button class="accordeon-link" id="painter24">Пинтуриккьо</button>
-                                <button class="accordeon-link" id="painter1">Бенедетто ди Биндо</button>
-                                <button class="accordeon-link" id="painter2">Бергоньоне, Амброджо</button>
-                                <button class="accordeon-link" id="painter3">Биссоло, Франческо</button>
-                                <button class="accordeon-link" id="painter4">Больтраффио, Джованни</button>
-                                <button class="accordeon-link" id="painter5">Бонсиньори, Франческо</button>
-                                <button class="accordeon-link" id="painter6">Боттичини, Рафаэлло</button>
-                                <button class="accordeon-link" id="painter7">Брамантино</button>
-                                <button class="accordeon-link" id="painter8">Бреа, Людовико</button>
-                                <button class="accordeon-link" id="painter9">Бьяджо д’Антонио Туччи</button>
-                                <button class="accordeon-link" id="painter10">Веккьетта</button>
-                                <button class="accordeon-link" id="painter11">Андреа Верроккьо</button>
-                                <button class="accordeon-link" id="painter12">Доменико Гирландайо</button>
-                                <button class="accordeon-link" id="painter13">Беноццо Гоццоли</button>
-                                <button class="accordeon-link" id="painter14">Граначчи, Франческо</button>
-                                <button class="accordeon-link" id="painter15">Грегорио ди Чекко</button>
-                                <button class="accordeon-link" id="painter16">Джованни да Удине</button>
-                                <button class="accordeon-link" id="painter17">Джованни ди Паоло</button>
-                                <button class="accordeon-link" id="painter18">Джорджоне</button>
-                                <button class="accordeon-link" id="painter19">Парентино, Бернардо</button>
-                                <button class="accordeon-link" id="painter20">Пезеллино</button>
-                                <button class="accordeon-link" id="painter21">Пьетро Перуджино</button>
-                                <button class="accordeon-link" id="painter22">Перуцци, Бальдассаре</button>
-                                <button class="accordeon-link" id="painter23">Пизанелло</button>
-                                <button class="accordeon-link" id="painter24">Пинтуриккьо</button>
+                                <button class="accordeon-link">Бенедетто ди Биндо</button>
+                                <button class="accordeon-link">Бергоньоне, Амброджо</button>
+                                <button class="accordeon-link">Биссоло, Франческо</button>
+                                <button class="accordeon-link">Больтраффио, Джованни</button>
+                                <button class="accordeon-link">Бонсиньори, Франческо</button>
+                                <button class="accordeon-link">Боттичини, Рафаэлло</button>
+                                <button class="accordeon-link">Брамантино</button>
+                                <button class="accordeon-link">Бреа, Людовико</button>
+                                <button class="accordeon-link">Бьяджо д’Антонио Туччи</button>
+                                <button class="accordeon-link">Веккьетта</button>
+                                <button class="accordeon-link">Андреа Верроккьо</button>
+                                <button class="accordeon-link">Доменико Гирландайо</button>
+                                <button class="accordeon-link">Беноццо Гоццоли</button>
+                                <button class="accordeon-link">Граначчи, Франческо</button>
+                                <button class="accordeon-link">Грегорио ди Чекко</button>
+                                <button class="accordeon-link">Джованни да Удине</button>
+                                <button class="accordeon-link">Джованни ди Паоло</button>
+                                <button class="accordeon-link">Джорджоне</button>
+                                <button class="accordeon-link">Парентино, Бернардо</button>
+                                <button class="accordeon-link">Пезеллино</button>
+                                <button class="accordeon-link">Пьетро Перуджино</button>
+                                <button class="accordeon-link">Перуцци, Бальдассаре</button>
+                                <button class="accordeon-link">Пизанелло</button>
+                                <button class="accordeon-link">Пинтуриккьо</button>
+                                <button class="accordeon-link">Бенедетто ди Биндо</button>
+                                <button class="accordeon-link">Бергоньоне, Амброджо</button>
+                                <button class="accordeon-link">Биссоло, Франческо</button>
+                                <button class="accordeon-link">Больтраффио, Джованни</button>
+                                <button class="accordeon-link">Бонсиньори, Франческо</button>
+                                <button class="accordeon-link">Боттичини, Рафаэлло</button>
+                                <button class="accordeon-link">Брамантино</button>
+                                <button class="accordeon-link">Бреа, Людовико</button>
+                                <button class="accordeon-link">Бьяджо д’Антонио Туччи</button>
+                                <button class="accordeon-link">Веккьетта</button>
+                                <button class="accordeon-link">Андреа Верроккьо</button>
+                                <button class="accordeon-link">Доменико Гирландайо</button>
+                                <button class="accordeon-link">Беноццо Гоццоли</button>
+                                <button class="accordeon-link">Граначчи, Франческо</button>
+                                <button class="accordeon-link">Грегорио ди Чекко</button>
+                                <button class="accordeon-link">Джованни да Удине</button>
+                                <button class="accordeon-link">Джованни ди Паоло</button>
+                                <button class="accordeon-link">Джорджоне</button>
+                                <button class="accordeon-link">Парентино, Бернардо</button>
+                                <button class="accordeon-link">Пезеллино</button>
+                                <button class="accordeon-link">Пьетро Перуджино</button>
+                                <button class="accordeon-link">Перуцци, Бальдассаре</button>
+                                <button class="accordeon-link">Пизанелло</button>
+                                <button class="accordeon-link">Пинтуриккьо</button>
+                                <button class="accordeon-link">Бенедетто ди Биндо</button>
+                                <button class="accordeon-link">Бергоньоне, Амброджо</button>
+                                <button class="accordeon-link">Биссоло, Франческо</button>
                             </div>
                         </div>
                     </div>
-                    <div class="accordeon-section js-section" id="js-section">
+                    <div class="accordeon-section js-section">
                         <button class="accordeon-title">
                             C 1700 по 1799 гг.
                         </button>
-                        <div class="accordeon-content js-content" id="js-content">
+                        <div class="accordeon-content js-content">
                             <div class="accordion-item flex" onclick="event.stopPropagation()">
-                                <button class="accordeon-link" id="painter1">Бенедетто ди Биндо</button>
-                                <button class="accordeon-link" id="painter2">Бергоньоне, Амброджо</button>
-                                <button class="accordeon-link" id="painter3">Биссоло, Франческо</button>
-                                <button class="accordeon-link" id="painter4">Больтраффио, Джованни</button>
-                                <button class="accordeon-link" id="painter5">Бонсиньори, Франческо</button>
-                                <button class="accordeon-link" id="painter6">Боттичини, Рафаэлло</button>
-                                <button class="accordeon-link" id="painter7">Брамантино</button>
-                                <button class="accordeon-link" id="painter8">Бреа, Людовико</button>
-                                <button class="accordeon-link" id="painter9">Бьяджо д’Антонио Туччи</button>
-                                <button class="accordeon-link" id="painter10">Веккьетта</button>
-                                <button class="accordeon-link" id="painter11">Андреа Верроккьо</button>
-                                <button class="accordeon-link" id="painter12">Доменико Гирландайо</button>
-                                <button class="accordeon-link" id="painter13">Беноццо Гоццоли</button>
-                                <button class="accordeon-link" id="painter14">Граначчи, Франческо</button>
-                                <button class="accordeon-link" id="painter15">Грегорио ди Чекко</button>
-                                <button class="accordeon-link" id="painter16">Джованни да Удине</button>
-                                <button class="accordeon-link" id="painter17">Джованни ди Паоло</button>
-                                <button class="accordeon-link" id="painter18">Джорджоне</button>
-                                <button class="accordeon-link" id="painter19">Парентино, Бернардо</button>
-                                <button class="accordeon-link" id="painter20">Пезеллино</button>
-                                <button class="accordeon-link" id="painter21">Пьетро Перуджино</button>
-                                <button class="accordeon-link" id="painter22">Перуцци, Бальдассаре</button>
-                                <button class="accordeon-link" id="painter23">Пизанелло</button>
-                                <button class="accordeon-link" id="painter24">Пинтуриккьо</button>
+                                <button class="accordeon-link">Бенедетто ди Биндо</button>
+                                <button class="accordeon-link">Бергоньоне, Амброджо</button>
+                                <button class="accordeon-link">Биссоло, Франческо</button>
+                                <button class="accordeon-link">Больтраффио, Джованни</button>
+                                <button class="accordeon-link">Бонсиньори, Франческо</button>
+                                <button class="accordeon-link">Боттичини, Рафаэлло</button>
+                                <button class="accordeon-link">Брамантино</button>
+                                <button class="accordeon-link">Бреа, Людовико</button>
+                                <button class="accordeon-link">Бьяджо д’Антонио Туччи</button>
+                                <button class="accordeon-link">Веккьетта</button>
+                                <button class="accordeon-link">Андреа Верроккьо</button>
+                                <button class="accordeon-link">Доменико Гирландайо</button>
+                                <button class="accordeon-link">Беноццо Гоццоли</button>
+                                <button class="accordeon-link">Граначчи, Франческо</button>
+                                <button class="accordeon-link">Грегорио ди Чекко</button>
+                                <button class="accordeon-link">Джованни да Удине</button>
+                                <button class="accordeon-link">Джованни ди Паоло</button>
+                                <button class="accordeon-link">Джорджоне</button>
+                                <button class="accordeon-link">Парентино, Бернардо</button>
+                                <button class="accordeon-link">Пезеллино</button>
+                                <button class="accordeon-link">Пьетро Перуджино</button>
+                                <button class="accordeon-link">Перуцци, Бальдассаре</button>
+                                <button class="accordeon-link">Пизанелло</button>
+                                <button class="accordeon-link">Пинтуриккьо</button>
                             </div>
                         </div>
                     </div>
-                    <div class="accordeon-section js-section" id="js-section">
+                    <div class="accordeon-section js-section">
                         <button class="accordeon-title">
                             C 1800 по 1899 гг.
                         </button>
-                        <div class="accordeon-content js-content" id="js-content">
+                        <div class="accordeon-content js-content">
                             <div class="accordion-item flex" onclick="event.stopPropagation()">
-                                <button class="accordeon-link" id="painter1">Бенедетто ди Биндо</button>
-                                <button class="accordeon-link" id="painter2">Бергоньоне, Амброджо</button>
-                                <button class="accordeon-link" id="painter3">Биссоло, Франческо</button>
-                                <button class="accordeon-link" id="painter4">Больтраффио, Джованни</button>
-                                <button class="accordeon-link" id="painter5">Бонсиньори, Франческо</button>
-                                <button class="accordeon-link" id="painter6">Боттичини, Рафаэлло</button>
-                                <button class="accordeon-link" id="painter7">Брамантино</button>
-                                <button class="accordeon-link" id="painter8">Бреа, Людовико</button>
-                                <button class="accordeon-link" id="painter9">Бьяджо д’Антонио Туччи</button>
-                                <button class="accordeon-link" id="painter10">Веккьетта</button>
-                                <button class="accordeon-link" id="painter11">Андреа Верроккьо</button>
-                                <button class="accordeon-link" id="painter12">Доменико Гирландайо</button>
-                                <button class="accordeon-link" id="painter13">Беноццо Гоццоли</button>
-                                <button class="accordeon-link" id="painter14">Граначчи, Франческо</button>
-                                <button class="accordeon-link" id="painter15">Грегорио ди Чекко</button>
-                                <button class="accordeon-link" id="painter16">Джованни да Удине</button>
-                                <button class="accordeon-link" id="painter17">Джованни ди Паоло</button>
-                                <button class="accordeon-link" id="painter18">Джорджоне</button>
-                                <button class="accordeon-link" id="painter19">Парентино, Бернардо</button>
-                                <button class="accordeon-link" id="painter20">Пезеллино</button>
-                                <button class="accordeon-link" id="painter21">Пьетро Перуджино</button>
-                                <button class="accordeon-link" id="painter22">Перуцци, Бальдассаре</button>
-                                <button class="accordeon-link" id="painter23">Пизанелло</button>
-                                <button class="accordeon-link" id="painter24">Пинтуриккьо</button>
+                                <button class="accordeon-link">Бенедетто ди Биндо</button>
+                                <button class="accordeon-link">Бергоньоне, Амброджо</button>
+                                <button class="accordeon-link">Биссоло, Франческо</button>
+                                <button class="accordeon-link">Больтраффио, Джованни</button>
+                                <button class="accordeon-link">Бонсиньори, Франческо</button>
+                                <button class="accordeon-link">Боттичини, Рафаэлло</button>
+                                <button class="accordeon-link">Брамантино</button>
+                                <button class="accordeon-link">Бреа, Людовико</button>
+                                <button class="accordeon-link">Бьяджо д’Антонио Туччи</button>
+                                <button class="accordeon-link">Веккьетта</button>
+                                <button class="accordeon-link">Андреа Верроккьо</button>
+                                <button class="accordeon-link">Доменико Гирландайо</button>
+                                <button class="accordeon-link">Беноццо Гоццоли</button>
+                                <button class="accordeon-link">Граначчи, Франческо</button>
+                                <button class="accordeon-link">Грегорио ди Чекко</button>
+                                <button class="accordeon-link">Джованни да Удине</button>
+                                <button class="accordeon-link">Джованни ди Паоло</button>
+                                <button class="accordeon-link">Джорджоне</button>
+                                <button class="accordeon-link">Парентино, Бернардо</button>
+                                <button class="accordeon-link">Пезеллино</button>
+                                <button class="accordeon-link">Пьетро Перуджино</button>
+                                <button class="accordeon-link">Перуцци, Бальдассаре</button>
+                                <button class="accordeon-link">Пизанелло</button>
+                                <button class="accordeon-link">Пинтуриккьо</button>
                             </div>
                         </div>
                     </div>
-                    <div class="accordeon-section js-section" id="js-section">
+                    <div class="accordeon-section js-section">
                         <button class="accordeon-title">
                             C 1900 по 1999 гг.
                         </button>
-                        <div class="accordeon-content js-content" id="js-content">
+                        <div class="accordeon-content js-content">
                             <div class="accordion-item flex" onclick="event.stopPropagation()">
-                                <button class="accordeon-link" id="painter1">Бенедетто ди Биндо</button>
-                                <button class="accordeon-link" id="painter2">Бергоньоне, Амброджо</button>
-                                <button class="accordeon-link" id="painter3">Биссоло, Франческо</button>
-                                <button class="accordeon-link" id="painter4">Больтраффио, Джованни</button>
-                                <button class="accordeon-link" id="painter5">Бонсиньори, Франческо</button>
-                                <button class="accordeon-link" id="painter6">Боттичини, Рафаэлло</button>
-                                <button class="accordeon-link" id="painter7">Брамантино</button>
-                                <button class="accordeon-link" id="painter8">Бреа, Людовико</button>
-                                <button class="accordeon-link" id="painter9">Бьяджо д’Антонио Туччи</button>
-                                <button class="accordeon-link" id="painter10">Веккьетта</button>
-                                <button class="accordeon-link" id="painter11">Андреа Верроккьо</button>
-                                <button class="accordeon-link" id="painter12">Доменико Гирландайо</button>
-                                <button class="accordeon-link" id="painter13">Беноццо Гоццоли</button>
-                                <button class="accordeon-link" id="painter14">Граначчи, Франческо</button>
-                                <button class="accordeon-link" id="painter15">Грегорио ди Чекко</button>
-                                <button class="accordeon-link" id="painter16">Джованни да Удине</button>
-                                <button class="accordeon-link" id="painter17">Джованни ди Паоло</button>
-                                <button class="accordeon-link" id="painter18">Джорджоне</button>
-                                <button class="accordeon-link" id="painter19">Парентино, Бернардо</button>
-                                <button class="accordeon-link" id="painter20">Пезеллино</button>
-                                <button class="accordeon-link" id="painter21">Пьетро Перуджино</button>
-                                <button class="accordeon-link" id="painter22">Перуцци, Бальдассаре</button>
-                                <button class="accordeon-link" id="painter23">Пизанелло</button>
-                                <button class="accordeon-link" id="painter24">Пинтуриккьо</button>
+                                <button class="accordeon-link">Бенедетто ди Биндо</button>
+                                <button class="accordeon-link">Бергоньоне, Амброджо</button>
+                                <button class="accordeon-link">Биссоло, Франческо</button>
+                                <button class="accordeon-link">Больтраффио, Джованни</button>
+                                <button class="accordeon-link">Бонсиньори, Франческо</button>
+                                <button class="accordeon-link">Боттичини, Рафаэлло</button>
+                                <button class="accordeon-link">Брамантино</button>
+                                <button class="accordeon-link">Бреа, Людовико</button>
+                                <button class="accordeon-link">Бьяджо д’Антонио Туччи</button>
+                                <button class="accordeon-link">Веккьетта</button>
+                                <button class="accordeon-link">Андреа Верроккьо</button>
+                                <button class="accordeon-link">Доменико Гирландайо</button>
+                                <button class="accordeon-link">Беноццо Гоццоли</button>
+                                <button class="accordeon-link">Граначчи, Франческо</button>
+                                <button class="accordeon-link">Грегорио ди Чекко</button>
+                                <button class="accordeon-link">Джованни да Удине</button>
+                                <button class="accordeon-link">Джованни ди Паоло</button>
+                                <button class="accordeon-link">Джорджоне</button>
+                                <button class="accordeon-link">Парентино, Бернардо</button>
+                                <button class="accordeon-link">Пезеллино</button>
+                                <button class="accordeon-link">Пьетро Перуджино</button>
+                                <button class="accordeon-link">Перуцци, Бальдассаре</button>
+                                <button class="accordeon-link">Пизанелло</button>
+                                <button class="accordeon-link">Пинтуриккьо</button>
                             </div>
                         </div>
                     </div>
-                    <div class="accordeon-section js-section" id="js-section">
+                    <div class="accordeon-section js-section">
                         <button class="accordeon-title">
                             C 2000 г.
                         </button>
-                        <div class="accordeon-content js-content" id="js-content">
+                        <div class="accordeon-content js-content">
                             <div class="accordion-item flex" onclick="event.stopPropagation()">
-                                <button class="accordeon-link" id="painter1">Бенедетто ди Биндо</button>
-                                <button class="accordeon-link" id="painter2">Бергоньоне, Амброджо</button>
-                                <button class="accordeon-link" id="painter3">Биссоло, Франческо</button>
-                                <button class="accordeon-link" id="painter4">Больтраффио, Джованни</button>
-                                <button class="accordeon-link" id="painter5">Бонсиньори, Франческо</button>
-                                <button class="accordeon-link" id="painter6">Боттичини, Рафаэлло</button>
-                                <button class="accordeon-link" id="painter7">Брамантино</button>
-                                <button class="accordeon-link" id="painter8">Бреа, Людовико</button>
-                                <button class="accordeon-link" id="painter9">Бьяджо д’Антонио Туччи</button>
-                                <button class="accordeon-link" id="painter10">Веккьетта</button>
-                                <button class="accordeon-link" id="painter11">Андреа Верроккьо</button>
-                                <button class="accordeon-link" id="painter12">Доменико Гирландайо</button>
-                                <button class="accordeon-link" id="painter13">Беноццо Гоццоли</button>
-                                <button class="accordeon-link" id="painter14">Граначчи, Франческо</button>
-                                <button class="accordeon-link" id="painter15">Грегорио ди Чекко</button>
-                                <button class="accordeon-link" id="painter16">Джованни да Удине</button>
-                                <button class="accordeon-link" id="painter17">Джованни ди Паоло</button>
-                                <button class="accordeon-link" id="painter18">Джорджоне</button>
-                                <button class="accordeon-link" id="painter19">Парентино, Бернардо</button>
-                                <button class="accordeon-link" id="painter20">Пезеллино</button>
-                                <button class="accordeon-link" id="painter21">Пьетро Перуджино</button>
-                                <button class="accordeon-link" id="painter22">Перуцци, Бальдассаре</button>
-                                <button class="accordeon-link" id="painter23">Пизанелло</button>
-                                <button class="accordeon-link" id="painter24">Пинтуриккьо</button>
-
-                                <button class="accordeon-link" id="painter1">Бенедетто ди Биндо</button>
-                                <button class="accordeon-link" id="painter2">Бергоньоне, Амброджо</button>
-                                <button class="accordeon-link" id="painter3">Биссоло, Франческо</button>
-                                <button class="accordeon-link" id="painter4">Больтраффио, Джованни</button>
-                                <button class="accordeon-link" id="painter5">Бонсиньори, Франческо</button>
-                                <button class="accordeon-link" id="painter6">Боттичини, Рафаэлло</button>
-                                <button class="accordeon-link" id="painter7">Брамантино</button>
-                                <button class="accordeon-link" id="painter8">Бреа, Людовико</button>
-                                <button class="accordeon-link" id="painter9">Бьяджо д’Антонио Туччи</button>
-                                <button class="accordeon-link" id="painter10">Веккьетта</button>
-                                <button class="accordeon-link" id="painter11">Андреа Верроккьо</button>
-                                <button class="accordeon-link" id="painter12">Доменико Гирландайо</button>
-                                <button class="accordeon-link" id="painter13">Беноццо Гоццоли</button>
-                                <button class="accordeon-link" id="painter14">Граначчи, Франческо</button>
-                                <button class="accordeon-link" id="painter15">Грегорио ди Чекко</button>
-                                <button class="accordeon-link" id="painter16">Джованни да Удине</button>
-                                <button class="accordeon-link" id="painter17">Джованни ди Паоло</button>
-                                <button class="accordeon-link" id="painter18">Джорджоне</button>
-                                <button class="accordeon-link" id="painter19">Парентино, Бернардо</button>
-                                <button class="accordeon-link" id="painter20">Пезеллино</button>
-                                <button class="accordeon-link" id="painter21">Пьетро Перуджино</button>
-                                <button class="accordeon-link" id="painter22">Перуцци, Бальдассаре</button>
-                                <button class="accordeon-link" id="painter23">Пизанелло</button>
-                                <button class="accordeon-link" id="painter24">Пинтуриккьо</button>
+                                <button class="accordeon-link">Бенедетто ди Биндо</button>
+                                <button class="accordeon-link">Бергоньоне, Амброджо</button>
+                                <button class="accordeon-link">Биссоло, Франческо</button>
+                                <button class="accordeon-link">Больтраффио, Джованни</button>
+                                <button class="accordeon-link">Бонсиньори, Франческо</button>
+                                <button class="accordeon-link">Боттичини, Рафаэлло</button>
+                                <button class="accordeon-link">Брамантино</button>
+                                <button class="accordeon-link">Бреа, Людовико</button>
+                                <button class="accordeon-link">Бьяджо д’Антонио Туччи</button>
+                                <button class="accordeon-link">Веккьетта</button>
+                                <button class="accordeon-link">Андреа Верроккьо</button>
+                                <button class="accordeon-link">Доменико Гирландайо</button>
+                                <button class="accordeon-link">Беноццо Гоццоли</button>
+                                <button class="accordeon-link">Граначчи, Франческо</button>
+                                <button class="accordeon-link">Грегорио ди Чекко</button>
+                                <button class="accordeon-link">Джованни да Удине</button>
+                                <button class="accordeon-link">Джованни ди Паоло</button>
+                                <button class="accordeon-link">Джорджоне</button>
+                                <button class="accordeon-link">Парентино, Бернардо</button>
+                                <button class="accordeon-link">Пезеллино</button>
+                                <button class="accordeon-link">Пьетро Перуджино</button>
+                                <button class="accordeon-link">Перуцци, Бальдассаре</button>
+                                <button class="accordeon-link">Пизанелло</button>
+                                <button class="accordeon-link">Пинтуриккьо</button>
+                                <button class="accordeon-link">Бенедетто ди Биндо</button>
+                                <button class="accordeon-link">Бергоньоне, Амброджо</button>
+                                <button class="accordeon-link">Биссоло, Франческо</button>
+                                <button class="accordeon-link">Больтраффио, Джованни</button>
+                                <button class="accordeon-link">Бонсиньори, Франческо</button>
+                                <button class="accordeon-link">Боттичини, Рафаэлло</button>
+                                <button class="accordeon-link">Брамантино</button>
+                                <button class="accordeon-link">Бреа, Людовико</button>
+                                <button class="accordeon-link">Бьяджо д’Антонио Туччи</button>
+                                <button class="accordeon-link">Веккьетта</button>
+                                <button class="accordeon-link">Андреа Верроккьо</button>
+                                <button class="accordeon-link">Доменико Гирландайо</button>
+                                <button class="accordeon-link">Беноццо Гоццоли</button>
+                                <button class="accordeon-link">Граначчи, Франческо</button>
+                                <button class="accordeon-link">Грегорио ди Чекко</button>
+                                <button class="accordeon-link">Джованни да Удине</button>
+                                <button class="accordeon-link">Джованни ди Паоло</button>
+                                <button class="accordeon-link">Джорджоне</button>
+                                <button class="accordeon-link">Парентино, Бернардо</button>
+                                <button class="accordeon-link">Пезеллино</button>
+                                <button class="accordeon-link">Пьетро Перуджино</button>
+                                <button class="accordeon-link">Перуцци, Бальдассаре</button>
+                                <button class="accordeon-link">Пизанелло</button>
+                                <button class="accordeon-link">Пинтуриккьо</button>
+                                <button class="accordeon-link">Бенедетто ди Биндо</button>
+                                <button class="accordeon-link">Бергоньоне, Амброджо</button>
+                                <button class="accordeon-link">Биссоло, Франческо</button>
                             </div>
                         </div>
                     </div>
@@ -883,8 +865,7 @@
             <div class="editions__blocks flex">
                 <div class="editions__block--left">
                     <div class="editions__checkboks">
-                        <span class="editions__docket" tabindex="1"
-                            aria-label="Выбор категории издания">Категории</span>
+                        <span class="editions__docket">Категории</span>
                         <div class="editions__list">
                             <div class="editions__list--1">
                                 <input class="editions__check" id="check1" type="checkbox" name="check"
@@ -929,13 +910,13 @@
                     </div>
                     <span class="editions__price">Цена</span>
                     <form class="editions__choice flex" tabindex="1" aria-label="Выбор цены издания">
-                        <label class="editions__from" for="choice1">От</label>
-                        <input class="editions__namber editions__namber--from" id="choice1" type="namber" name="choice1"
+                        <label class="editions__from editions__input" for="choice1">От</label>
+                        <input class="editions__number editions__number--from" id="choice1" type="number" name="choice1"
                             placeholder="50">
-                        <label class="editions__to" for="choice2">до</label>
-                        <input class="editions__namber  editions__namber--to" id="choice2" type="namber" name="choice2"
+                        <label class="editions__to editions__input" for="choice2">до</label>
+                        <input class="editions__number  editions__number--to" id="choice2" type="number" name="choice2"
                             placeholder="25 000">
-                        <label class="editions__to" for="choice2">рублей</label>
+                        <label class="editions__to editions__input" for="choice2">рублей</label>
                     </form>
                 </div>
                 <div class="editions__showing">
@@ -999,7 +980,6 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
     <!-- Секция Проекты -->
     <section class="projects">
@@ -1020,7 +1000,7 @@
                 </span> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности
                 принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <span
                     class="tooltip-toggle projects__tooltip tooltip2"
-                    aria-label="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  "
+                    aria-label="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"
                     tabindex="0">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" width="16" height="16">
                         <path clip-rule="evenodd" fill="#9d5cd0" fill-rule="evenodd"
@@ -1032,7 +1012,7 @@
                 исключительно в разрезе маркетинговых и финансовых <span
                     class="tooltip-toggle projects__tooltip tooltip3" aria-label="В стремлении повысить качество"
                     tabindex="0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" width="16" height="16">
+                    <svg xmlns=" http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" width="16" height="16">
                         <path clip-rule="evenodd" fill="#9d5cd0" fill-rule="evenodd"
                             d="M 8 16 C 12.4183 16 16 12.4183 16 8 C 16 3.58172 12.4183 0 8 0 C 3.58172 0 0 3.58172 0 8 C 0 12.4183 3.58172 16 8 16 Z" />
                         <path fill="white"
@@ -1101,9 +1081,9 @@
                     <span class="contacts__tweet contacts__docket">Связаться в один клик</span>
                     <div class="contacts__social">
                         <a class="contacts__whats" href="https://api.whatsapp.com/send?phone=77788899965"><img
-                                src="image/Whatsapp-Icon.png" aria-label="Перейти в Вотсап"></a>
+                                src="image/Whatsapp-Icon.png" alt="Вотсап" aria-label="Перейти в Вотсап"></a>
                         <a class="contacts__teleg" href="https://t.me/username"><img src="image/Telegram_2019_Logo.png"
-                                aria-label="Перейти в Телеграм"></a>
+                                alt="Телеграм" aria-label="Перейти в Телеграм"></a>
                     </div>
                 </form>
             </div>
@@ -1116,17 +1096,16 @@
     <!-- Футер -->
     <footer class="footer">
         <div class="container footer__container flex">
-            <a href="" class="footer__logo"><img src="image/logo-footer.png" aria-label="Логотип"></a>
-            <ul class="footer__social flex">
+            <a href="" class="footer__logo"><img src="image/logo-footer.png" alt="Логотип"></a>
+            <ul class=" footer__social flex">
                 <li class="footer__item">
-                    <a href="" class="footer__link vk"><img src="image/vk.png" aria-label="Перейти в Контакте"></a>
+                    <a href="" class="footer__link vk"><img src="image/vk.png" alt="Вконтакте"></a>
                 </li>
                 <li class="footer__item">
-                    <a href="" class="footer__link inst"><img src="image/instagram.png"
-                            aria-label="Перейти в Instagram"></a>
+                    <a href="" class="footer__link inst"><img src="image/instagram.png" alt="Инстаграм"></a>
                 </li>
                 <li class="footer__item">
-                    <a href="" class="footer__link fb"><img src="image/fb.png" aria-label="Перейти в Facebook"></a>
+                    <a href="" class="footer__link fb"><img src="image/fb.png" alt="Фейсбук"></a>
                 </li>
             </ul>
         </div>
@@ -1143,7 +1122,7 @@
     <script src=" https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1?apikey=ваш API-ключ&load=package.full&lang=ru_RU"></script>
+    <script src="https://api-maps.yandex.ru/2.1?apikey=вашAPI-ключ&load=package.full&lang=ru_RU"></script>
     <script src="js/scroll.js"></script>
     <script src="js/map.js"></script>
     <script src="js/tab.js"></script>

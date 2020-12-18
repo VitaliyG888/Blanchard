@@ -44,7 +44,7 @@
     line-height: 16px;
     text-align: center;
     content: attr(aria-label);
-    padding: 11px 11px 17px 11px;
+    padding: 9px 11px 11px 11px;
     text-transform: none;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -55,7 +55,7 @@
 
 .tooltip1 {
   &::before {
-    top: -81px;
+    top: -74px;
     left: -146px;
   }
 
@@ -66,7 +66,7 @@
 
 .tooltip2 {
   &::before {
-    top: -80px;
+    top: -72px;
     left: -153px;
   }
 
@@ -77,7 +77,7 @@
 
 .tooltip3 {
   &::before {
-    top: -49px;
+    top: -40px;
     left: -138px;
     width: 300px;
   }
