@@ -43,9 +43,7 @@
 
         menu.onclick = function (e) {
           if (e.target.tagName != 'A') return;
-          console.log('A');
           var current = switchLinks(e.target);
-          console.log(current);
           selectContainer(current);
           closeMenu();
         }
@@ -74,13 +72,13 @@
         }
 
         function scroll(el, direction) {
-          let duration = 3000,
+          let duration2 = 3000,
             start = new Date().getTime();
 
           var fn = function () {
             let top = el.getBoundingClientRect().top - 30,
               now = new Date().getTime() - start,
-              result = Math.round(top * now / duration);
+              result = Math.round(top * now / duration2);
 
             result = (result > direction * top) ? top : (result == 0) ? direction : result;
             if (direction * top > 0 && (pageHeight - window.pageYOffset) > direction * document.documentElement.clientHeight) {

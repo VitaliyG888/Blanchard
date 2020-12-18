@@ -19,9 +19,7 @@
 
   menu.onclick = function (e) {
     if (e.target.tagName != 'A') return;
-    console.log('A');
     let current = switchLinks(e.target);
-    console.log(current);
     selectContainer(current);
   }
 
@@ -50,13 +48,13 @@
   }
 
   function scroll(el, direction) {
-    let duration = 3000,
+    let duration1 = 6000,
       start = new Date().getTime();
 
     let fn = function () {
       let top = el.getBoundingClientRect().top - 30,
         now = new Date().getTime() - start,
-        result = Math.round(top * now / duration);
+        result = Math.round(top * now / duration1);
 
       result = (result > direction * top) ? top : (result == 0) ? direction : result;
       if (direction * top > 0 && (pageHeight - window.pageYOffset) > direction * document.documentElement.clientHeight) {
