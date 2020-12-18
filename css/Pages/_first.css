@@ -120,6 +120,20 @@
 
 .first .first__subscription:hover {
   border: 3px solid var(--extra-lite);
+  transition: border-width .5s;
+  animation: shadow 1s;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 10px 0 var(--first-color) inset, 0 0 10px 4px var(--first-color);
+  }
+  100% {
+    box-shadow: none;
+  }
 }
 
 .first .first__subscription:focus {
