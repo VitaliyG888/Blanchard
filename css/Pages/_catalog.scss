@@ -1,5 +1,7 @@
 /* catalog section */
 
+$first-color: #9d5cd0;
+
 .catalog__container {
   padding-bottom: 0;
   padding-top: 39px;
@@ -22,10 +24,10 @@
 }
 
 .tab-nav__link {
-  border: none;
   height: 66px;
   width: 66px;
   border-radius: 50%;
+  border: 2px solid rgba($first-color, 0);
 }
 
 .catalog__france {
@@ -45,11 +47,20 @@
 
 }
 
-.is-active {
-  border: 2px solid var(--first-color);
+@keyframes border {
+  0% {
+    border-color: rgba($first-color, 0);
+  }
+
+  100% {
+    border-color: rgba($first-color, 1);
+  }
 }
 
-
+.is-active {
+  animation: border 1s ease-in;
+  animation-fill-mode: forwards;
+}
 
 .catalog__spain {
   background: no-repeat (center / 70%) url(../image/spain.png);
@@ -61,10 +72,23 @@
   margin-bottom: 50px;
   margin-left: 2px;
   height: 117px;
+  opacity: 0;
+}
+
+@keyframes description {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .is-active__description {
   display: block;
+  animation: description 1s ease-in;
+  animation-fill-mode: forwards;
 }
 
 .catalog__card.card {

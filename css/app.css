@@ -1105,10 +1105,10 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .tab-nav__link {
-  border: none;
   height: 66px;
   width: 66px;
   border-radius: 50%;
+  border: 2px solid rgba(157, 92, 208, 0);
 }
 
 .catalog__france {
@@ -1127,8 +1127,18 @@ div[data-custom-properties="[object Object]"] {
   background: no-repeat center/70% url(../image/russia.png);
 }
 
+@keyframes border {
+  0% {
+    border-color: rgba(157, 92, 208, 0);
+  }
+  100% {
+    border-color: #9d5cd0;
+  }
+}
+
 .is-active {
-  border: 2px solid var(--first-color);
+  animation: border 1s ease-in;
+  animation-fill-mode: forwards;
 }
 
 .catalog__spain {
@@ -1141,10 +1151,22 @@ div[data-custom-properties="[object Object]"] {
   margin-bottom: 50px;
   margin-left: 2px;
   height: 117px;
+  opacity: 0;
+}
+
+@keyframes description {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .is-active__description {
   display: block;
+  animation: description 1s ease-in;
+  animation-fill-mode: forwards;
 }
 
 .catalog__card.card {
