@@ -14,6 +14,7 @@ var swiper1 = new Swiper('#slider1', {
   slidesPerColumn: 1,
   spaceBetween: 34,
   slidesPerGroup: 1,
+  observer: true,
 
   breakpoints: {
     550: {
@@ -55,6 +56,7 @@ var swiper2 = new Swiper('#slider2', {
   slidesPerView: 1,
   spaceBetween: 50,
   watchOverflow: true,
+  observer: true,
 
   breakpoints: {
     550: {
@@ -90,9 +92,10 @@ var swiper2 = new Swiper('#slider2', {
   },
 });
 
-var swiper2 = new Swiper('#slider3', {
+var swiper3 = new Swiper('#slider3', {
   slidesPerView: 1,
   spaceBetween: 34,
+  observer: true,
 
   breakpoints: {
     550: {
