@@ -193,6 +193,10 @@
 	position: relative;
 }
 
+.accordeon-title--first {
+	border-top: 1px solid $Black;
+}
+
 .accordeon-title {
 	padding: 37px 0 45px;
 	width: 100%;
@@ -205,13 +209,6 @@
 	color: $Darck-grey;
 	cursor: pointer;
 	text-align: left;
-}
-
-.accordeon-title--first {
-	border-top: 1px solid $Black;
-}
-
-.accordeon-title {
 
 	&.active {
 		border-bottom: none;
@@ -250,7 +247,7 @@
 
 		&::after {
 			background-color: $first-color;
-			@include transition (backgrownd-color);
+			@include transition(all);
 		}
 
 		&::before {
@@ -284,15 +281,24 @@
 	display: block;
 	background: none;
 	width: 260px;
-	border: none;
+	border: transparent;
+	box-sizing: border-box;
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 32px;
 	text-align: left;
 	color: #333333;
+	border: 1px solid rgba($first-color, 0);
+	@include transition(all);
 
 	&:hover {
 		color: $first-color;
+		@include transition(color);
+	}
+
+	&:active {
+		border: 1px solid rgba($first-color, 1);
+		@include transition(all);
 	}
 }
 

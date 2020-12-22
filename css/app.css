@@ -898,6 +898,7 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .swiper-container#slider1 {
+  overflow: hidden;
   width: 1155px;
   height: 750px;
   padding-left: 5px;
@@ -1302,6 +1303,10 @@ div[data-custom-properties="[object Object]"] {
   position: relative;
 }
 
+.accordeon-title--first {
+  border-top: 1px solid #000000;
+}
+
 .accordeon-title {
   padding: 37px 0 45px;
   width: 100%;
@@ -1314,10 +1319,6 @@ div[data-custom-properties="[object Object]"] {
   color: #333333;
   cursor: pointer;
   text-align: left;
-}
-
-.accordeon-title--first {
-  border-top: 1px solid #000000;
 }
 
 .accordeon-title.active {
@@ -1360,9 +1361,9 @@ div[data-custom-properties="[object Object]"] {
 
 .accordeon-title:hover::after {
   background-color: #9d5cd0;
-  -webkit-transition: backgrownd-color 0.7s ease-in-out;
-  -o-transition: backgrownd-color 0.7s ease-in-out;
-  transition: backgrownd-color 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .accordeon-title:hover::before {
@@ -1398,16 +1399,32 @@ div[data-custom-properties="[object Object]"] {
   display: block;
   background: none;
   width: 260px;
-  border: none;
+  border: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
   text-align: left;
   color: #333333;
+  border: 1px solid rgba(157, 92, 208, 0);
+  -webkit-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .accordeon-link:hover {
   color: #9d5cd0;
+  -webkit-transition: color 0.7s ease-in-out;
+  -o-transition: color 0.7s ease-in-out;
+  transition: color 0.7s ease-in-out;
+}
+
+.accordeon-link:active {
+  border: 1px solid #9d5cd0;
+  -webkit-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .accordeon-section.js-section.active .accordeon-title {
@@ -2038,14 +2055,18 @@ input[type="checkbox"]:checked + .editions__label::before {
   border: 1px solid #cacaca;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .swiper-slide.projects__slider:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
 }
 
 .swiper-container#slider3 {

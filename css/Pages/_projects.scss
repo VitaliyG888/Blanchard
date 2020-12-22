@@ -162,10 +162,12 @@
 	height: 152px;
 	border: 1px solid $Grey;
 	filter: grayscale(100%);
-	transition: 0.5s;
+	transition: all 0.5s ease-in;
 
 	&:hover {
 		filter: grayscale(0);
+		transition: all 0.5s ease-in;
+		cursor: pointer;
 	}
 }
 
