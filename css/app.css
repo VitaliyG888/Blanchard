@@ -2136,10 +2136,6 @@ input[type="checkbox"]:checked + .editions__label::before {
   border-top: 1px solid #cacaca;
 }
 
-.contacts__container {
-  padding-bottom: 5px;
-}
-
 .contacts__block {
   padding-top: 125px;
   padding-bottom: 123px;
