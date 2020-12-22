@@ -212,14 +212,18 @@
 
 		&:active {
 			background-color: $first-color;
-			opacity: 0.3;
+			opacity: 0.4;
+			border-color: $extra-lite !important;
 			@include transition(all);
 		}
 
 		&:hover {
-
 			border-color: $first-color;
 			@include transition(all);
+		}
+
+		&:focus {
+			outline: none;
 		}
 
 	}

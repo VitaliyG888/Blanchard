@@ -132,17 +132,19 @@
 
 		&:hover {
 			border-color: $extra-lite;
-			transition: border-color 0.5s linear;
+			@include transition(all);
 		}
 
 		&:focus {
 			background: $first-color;
 			border: 3px solid $second-color;
+			@include transition(all);
 		}
 
 		&:active {
 			background: $second-color;
 			border: 3px solid $extra-lite;
+			@include transition(all);
 		}
 	}
 }

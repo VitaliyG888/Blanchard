@@ -7,6 +7,10 @@
 	border-top: 1px solid $Grey;
 }
 
+.contacts__container {
+	padding-bottom: 5px;
+}
+
 .contacts__block {
 	padding-top: 125px;
 	padding-bottom: 123px;
@@ -53,7 +57,7 @@
 		font-style: normal;
 		font-weight: 400;
 		font-size: 16px;
-		color: #999999;
+		color: $signature-color;
 	}
 
 	.contacts__tel {
@@ -63,17 +67,17 @@
 	.contacts__button {
 		width: 157px;
 		height: 59px;
-		margin-bottom: 38px;
+		margin-bottom: 43px;
 		background: none;
-		border: 2px solid var(--first-color);
+		border: 2px solid $first-color;
 		border-radius: 100px;
 		font-weight: 700;
 		font-size: 18px;
 		text-align: center;
-		color: var(--first-color);
+		color: $first-color;
 
 		&:hover {
-			background-color: var(--first-color);
+			background-color: $first-color;
 			color: #ffffff;
 			-webkit-transition: all 0.5s ease-in-out;
 			-o-transition: all 0.5s ease-in-out;
@@ -81,8 +85,8 @@
 		}
 
 		&:focus {
-			background-color: var(--second-color);
-			border-color: var(--extra-lite);
+			background-color: $second-color;
+			border-color: $extra-lite;
 		}
 	}
 }
@@ -101,7 +105,7 @@
 
 
 .contacts__whats {
-	margin-right: 15px;
+	margin-right: 20px;
 }
 
 
