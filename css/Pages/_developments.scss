@@ -1,132 +1,138 @@
 /* developments section */
 
 .developments__container {
-  padding-bottom: 80px;
-  padding-top: 83px;
+	padding-bottom: 80px;
+	padding-top: 84px;
+	padding-left: 13px;
 }
 
 .developments__title {
-  margin-bottom: -3px;
-  margin-top: 0;
-}
-
-.developments_card {
-  position: relative;
-  width: 500px;
-  margin-top: 14px;
-  padding: 312px 18px 71px 49px;
-  border: 1px solid #cacaca;
-  background-repeat: no-repeat;
-  background-position: top;
-
-  &:not(:nth-child(3n + 3)) {
-    margin-right: 50px;
-  }
-
-  .developments__header {
-    margin-bottom: 0;
-  }
-
-  .developments__signature {
-    display: block;
-    position: relative;
-    text-align: right;
-    margin-bottom: -21px;
-  }
-
-  .developmets__descriptions {
-    display: block;
-    position: relative;
-    width: 409px;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 32px;
-    color: #333333;
-    margin-top: 3px;
-  }
-
-  .developments__link {
-    display: block;
-    position: absolute;
-    bottom: 40px;
-    color: var(--first-color);
-
-    &::after {
-      content: "";
-      display: block;
-      position: relative;
-      width: 92px;
-      height: 2px;
-      border-bottom: 1px solid var(--first-color);
-    }
-
-    &:hover {
-      font-weight: 700;
-      -webkit-transition: all 0.5s ease-in-out;
-      -o-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out;
-    }
-
-    &:active {
-      color: var(--second-color);
-    }
-
-    &:focus {
-      outline: 2px solid var(--second-color);
-    }
-  }
-}
-
-.card1 {
-  background-image: url(../image/dev1.jpg);
-}
-
-.card2 {
-  background-image: url(../image/dev2.jpg);
-}
-
-.card3 {
-  background-image: url(../image/dev3.jpg);
-}
-
-.card4 {
-  background-image: url(../image/dev4.jpg);
-  display: none;
-}
-
-.card5 {
-  background-image: url(../image/dev5.jpg);
-  display: none;
+	margin-bottom: 7px;
 }
 
 .developments__news {
-  margin-bottom: 52px;
+	margin-bottom: 50px;
+	margin-left: 3px;
+}
+
+.developments_card {
+	position: relative;
+	width: 500px;
+	margin-top: 14px;
+	padding: 313px 18px 89px 49px;
+	border: 1px solid $Grey;
+	background-repeat: no-repeat;
+	background-position: top;
+
+	&:not(:nth-child(3n + 3)) {
+		margin-right: 50px;
+	}
+
+	.developments__header {
+		margin-bottom: 0;
+	}
+
+	.developments__signature {
+		display: block;
+		position: relative;
+		text-align: right;
+		margin-bottom: 3px;
+		line-height: 16px;
+	}
+
+	.developments__header {
+		line-height: 33px;
+	}
+
+	.developmets__descriptions {
+		display: block;
+		position: relative;
+		width: 409px;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 32px;
+		color: $Darck-grey;
+		margin-top: 3px;
+	}
+
+	.developments__link {
+		display: block;
+		position: absolute;
+		bottom: 44px;
+		color: $first-color;
+
+		&::after {
+			content: "";
+			display: block;
+			position: relative;
+			width: 92px;
+			height: 2px;
+			border-bottom: 1px solid $first-color;
+		}
+
+		&:hover {
+			font-weight: 700;
+			-webkit-transition: all 0.5s ease-in-out;
+			-o-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
+		}
+
+		&:active {
+			color: $second-color;
+		}
+
+		&:focus {
+			outline: 2px solid $second-color;
+		}
+	}
+}
+
+.card1 {
+	background-image: url(../image/dev1.jpg);
+}
+
+.card2 {
+	background-image: url(../image/dev2.jpg);
+}
+
+.card3 {
+	background-image: url(../image/dev3.jpg);
+}
+
+.card4 {
+	background-image: url(../image/dev4.jpg);
+	display: none;
+}
+
+.card5 {
+	background-image: url(../image/dev5.jpg);
+	display: none;
 }
 
 .developments__btn {
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
-  padding: 15px 34px;
-  text-align: center;
-  background: none;
-  color: var(--first-color);
-  border-radius: 100px;
-  border: 2px solid var(--first-color);
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	padding: 15px 34px;
+	text-align: center;
+	background: none;
+	color: $first-color;
+	border-radius: 100px;
+	border: 2px solid $first-color;
 
-  &:hover {
-    background-color: var(--first-color);
-    color: #ffffff;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
+	&:hover {
+		background-color: $first-color;
+		color: $Wight;
+		-webkit-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
 
-  &:active {
-    border: 3px solid var(--extra-lite);
-    background-color: var(--second-color);
-  }
+	&:active {
+		border: 3px solid $extra-lite;
+		background-color: $second-color;
+	}
 }

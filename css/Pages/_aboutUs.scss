@@ -1,18 +1,20 @@
 /* aboutUs section */
 
 .aboutUs {
-  background: #e5e5e5;
+	background: $lite-grey;
 }
 
 .aboutUs__container {
-  padding-bottom: 52px;
-  padding-top: 40px;
+	padding-bottom: 70px;
+	padding-top: 84px;
+	padding-left: 13px;
 }
 
 .aboutUs__title {
-  margin-bottom: 18px;
+	margin-bottom: 22px;
 }
 
 .aboutUs__description {
-  max-width: 1080px;
+	max-width: 1080px;
+	margin-left: 1px;
 }

@@ -5,9 +5,20 @@ $second-color: #7943a4;
 $Black: #000000;
 $Wight: #ffffff;
 $Grey: #cacaca;
+$signature-color: #999999;
+$btn-slider-color:#ececec;
+$Darck-grey: #333333;
+$tool-color:#efefef;
+$lite-grey:#e5e5e5;
 
 @mixin transition($property) {
-  -webkit-transition: $property 0.5s ease-in-out;
-  -o-transition: $property 0.5s ease-in-out;
-  transition: $property 0.5s ease-in-out;
+	-webkit-transition: $property 0.7s ease-in-out;
+	-o-transition: $property 0.7s ease-in-out;
+	transition: $property 0.7s ease-in-out;
+}
+
+@mixin spaces-between {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }

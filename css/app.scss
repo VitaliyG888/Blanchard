@@ -1,25 +1,25 @@
 //Компоненты
-@import 'Components/_variables';
-@import 'Components/_fonts';
-@import 'Components/_nullstyle';
-@import 'Components/_componenets';
-@import 'Components/_back_btn';
+@import 'Components/variables';
+@import 'Components/fonts';
+@import 'Components/nullstyle';
+@import 'Components/componenets';
+@import 'Components/back_btn';
 
 // Страницы
-@import 'Pages/_header';
-@import 'Pages/_first';
-@import 'Pages/_aboutUs';
-@import 'Pages/_gallery';
-@import 'Pages/_catalog';
-@import 'Pages/_developments';
-@import 'Pages/_editions';
-@import 'Pages/_projects';
-@import 'Pages/_contacts';
-@import 'Pages/_footer';
-@import 'Pages/_toggle-menu';
+@import 'Pages/header';
+@import 'Pages/first';
+@import 'Pages/aboutUs';
+@import 'Pages/gallery';
+@import 'Pages/catalog';
+@import 'Pages/developments';
+@import 'Pages/editions';
+@import 'Pages/projects';
+@import 'Pages/contacts';
+@import 'Pages/footer';
+@import 'Pages/toggle-menu';
 
 //Макет
-@import 'Layouts/_responsive1650';
-@import 'Layouts/_responsive1430';
-@import 'Layouts/_responsive970';
-@import 'Layouts/_responsive750';
+@import 'Layouts/responsive1650';
+@import 'Layouts/responsive1430';
+@import 'Layouts/responsive970';
+@import 'Layouts/responsive750';
