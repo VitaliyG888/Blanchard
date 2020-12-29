@@ -161,13 +161,13 @@
 }
 
 .catalog__card.card {
-	max-width: 751px;
 	margin-right: 49px;
-	padding-top: 502px;
-	height: 770px;
-	background-image: url(../image/catalog-Domeniko.jpg);
-	background-size: 100% 470px;
-	background-repeat: no-repeat;
+
+	& img {
+		max-width: 750px;
+		height: 470px;
+		margin-bottom: 33px;
+	}
 }
 
 .catalog__content {

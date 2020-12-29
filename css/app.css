@@ -971,8 +971,10 @@ div[data-custom-properties="[object Object]"] {
   position: relative;
   width: 30px;
   height: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #ececec;
-  border-radius: 50%;
+  border-radius: 100px;
   padding: 3px 10px;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -981,7 +983,7 @@ div[data-custom-properties="[object Object]"] {
 
 .swiper-button-next-st:focus,
 .swiper-button-prev-st:focus {
-  border: 2px solid #9d5cd0;
+  border: 2px solid #7943a4;
   outline: none;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -999,8 +1001,8 @@ div[data-custom-properties="[object Object]"] {
 
 .swiper-button-next-st:active,
 .swiper-button-prev-st:active {
-  background-color: #9d5cd0;
-  border: 2px solid #7943a4;
+  background-color: #7943a4;
+  border: 2px solid #d1a9f0;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -1008,7 +1010,7 @@ div[data-custom-properties="[object Object]"] {
 
 .swiper-button-next-st:after,
 .swiper-button-prev-st:after {
-  font-size: 12px;
+  font-size: 10px;
   color: #000000;
   -webkit-transition: color 0.5s ease-in-out;
   -o-transition: color 0.5s ease-in-out;
@@ -1414,13 +1416,13 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .catalog__card.card {
-  max-width: 751px;
   margin-right: 49px;
-  padding-top: 502px;
-  height: 770px;
-  background-image: url(../image/catalog-Domeniko.jpg);
-  background-size: 100% 470px;
-  background-repeat: no-repeat;
+}
+
+.catalog__card.card img {
+  max-width: 750px;
+  height: 470px;
+  margin-bottom: 33px;
 }
 
 .catalog__content {
@@ -2647,9 +2649,9 @@ input[type="checkbox"]:checked + .editions__label::before {
   /* catalog section */
   .catalog__card.card {
     max-width: 650px;
-    padding-top: 400px;
-    height: 730px;
-    background-size: 100% 400px;
+  }
+  .catalog__card.card img {
+    width: 650px;
   }
   .catalog__artists.accordeon {
     max-width: 697px;
@@ -2808,12 +2810,11 @@ input[type="checkbox"]:checked + .editions__label::before {
     margin-top: 18px;
   }
   .catalog__card.card {
-    padding-top: 306px;
     max-width: 437px;
-    height: 700px;
-    background-image: url(../image/Girlandajo.jpg);
-    background-size: 100% 274px;
-    background-repeat: no-repeat;
+  }
+  .catalog__card.card img {
+    width: 437px;
+    height: 274px;
   }
   .catalog__artists.accordeon {
     max-width: 437px;
@@ -3071,12 +3072,10 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .catalog__card.card {
     max-width: 668px;
-    width: 100%;
-    height: 727px;
-    padding-top: 424px;
-    margin-right: 0;
-    background-image: url(../image/Giraldajo2.jpg);
-    background-size: 100% 419px;
+  }
+  .catalog__card.card img {
+    width: 668px;
+    height: 419px;
   }
   .developments__container {
     padding-top: 78px;

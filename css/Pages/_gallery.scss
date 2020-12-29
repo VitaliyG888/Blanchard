@@ -148,15 +148,16 @@ div {
 	position: relative;
 	width: 30px;
 	height: 30px;
+	box-sizing: border-box;
 	background-color: $btn-slider-color;
-	border-radius: 50%;
+	border-radius: 100px;
 	padding: 3px 10px;
 	@include transition(all, 0.5s);
 }
 
 .swiper-button-next-st:focus,
 .swiper-button-prev-st:focus {
-	border: 2px solid $first-color;
+	border: 2px solid $second-color;
 	outline: none;
 	@include transition(all, 0.5s);
 }
@@ -170,14 +171,14 @@ div {
 
 .swiper-button-next-st:active,
 .swiper-button-prev-st:active {
-	background-color: $first-color;
-	border: 2px solid rgba($second-color, 1);
+	background-color: $second-color;
+	border: 2px solid $extra-lite;
 	@include transition(all, 0.5s);
 }
 
 .swiper-button-next-st:after,
 .swiper-button-prev-st:after {
-	font-size: 12px;
+	font-size: 10px;
 	color: $Black;
 	@include transition(color, 0.5s);
 }

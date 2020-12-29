@@ -46,9 +46,10 @@
 
 	.catalog__card.card {
 		max-width: 650px;
-		padding-top: 400px;
-		height: 730px;
-		background-size: 100% 400px;
+
+		& img {
+			width: 650px;
+		}
 	}
 
 	.catalog__artists.accordeon {

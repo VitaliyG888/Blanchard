@@ -144,12 +144,11 @@
 
 	.catalog__card.card {
 		max-width: 668px;
-		width: 100%;
-		height: 727px;
-		padding-top: 424px;
-		margin-right: 0;
-		background-image: url(../image/Giraldajo2.jpg);
-		background-size: 100% 419px;
+
+		& img {
+			width: 668px;
+			height: 419px;
+		}
 	}
 
 	// developments section

@@ -163,12 +163,13 @@
 	}
 
 	.catalog__card.card {
-		padding-top: 306px;
 		max-width: 437px;
-		height: 700px;
-		background-image: url(../image/Girlandajo.jpg);
-		background-size: 100% 274px;
-		background-repeat: no-repeat;
+
+		& img {
+			width: 437px;
+			height: 274px;
+		}
+
 	}
 
 	.catalog__artists.accordeon {
