@@ -48,6 +48,11 @@
 		z-index: 20;
 	}
 
+	.nav-prime__link::before {
+		margin: 3px -7px;
+		height: 37px;
+	}
+
 	.header__burger {
 		display: block;
 		margin-right: 111px;

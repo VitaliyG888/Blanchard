@@ -698,15 +698,15 @@ button:focus {
           animation: backgroundAnimation 30s linear infinite;
 }
 
-.background1 {
+.background__first--1 {
   background-image: url("../image/birmingham-museums-trust.jpg");
 }
 
-.background2 {
+.background__first--2 {
   background-image: url("../image/bacground2.jpg");
 }
 
-.background3 {
+.background__first--3 {
   background-image: url("../image/background3.jpg");
 }
 
@@ -1951,7 +1951,7 @@ input[type="checkbox"]:checked + .editions__label::before {
   display: block;
   position: relative;
   width: 347px;
-  height: 512px;
+  height: 515px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1989,7 +1989,6 @@ input[type="checkbox"]:checked + .editions__label::before {
 
 .editions__order {
   position: absolute;
-  position: absolute;
   top: 472px;
   left: 0;
   padding: 9px 19px;
@@ -1998,7 +1997,7 @@ input[type="checkbox"]:checked + .editions__label::before {
   text-align: center;
   color: #ffffff;
   background: none;
-  border: 2px solid #9d5cd0;
+  border: 3px solid #9d5cd0;
   border-radius: 100px;
 }
 
@@ -2719,6 +2718,10 @@ input[type="checkbox"]:checked + .editions__label::before {
     left: 30vw;
     top: 15vw;
     z-index: 20;
+  }
+  .nav-prime__link::before {
+    margin: 3px -7px;
+    height: 37px;
   }
   .header__burger {
     display: block;

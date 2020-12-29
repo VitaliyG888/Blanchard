@@ -194,7 +194,7 @@ input[type="checkbox"]:checked+.editions__label::before {
 	display: block;
 	position: relative;
 	width: 347px;
-	height: 512px;
+	height: 515px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -232,7 +232,6 @@ input[type="checkbox"]:checked+.editions__label::before {
 
 .editions__order {
 	position: absolute;
-	position: absolute;
 	top: 472px;
 	left: 0;
 	padding: 9px 19px;
@@ -241,7 +240,7 @@ input[type="checkbox"]:checked+.editions__label::before {
 	text-align: center;
 	color: $Wight;
 	background: none;
-	border: 2px solid $first-color;
+	border: 3px solid $first-color;
 	border-radius: 100px;
 
 	&:hover {
