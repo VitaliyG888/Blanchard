@@ -2776,8 +2776,8 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .first__block-up {
     -webkit-box-pack: right;
-    -ms-flex-pack: right;
-    justify-content: right;
+        -ms-flex-pack: right;
+            justify-content: right;
   }
   .about__container {
     padding-bottom: 69px;
