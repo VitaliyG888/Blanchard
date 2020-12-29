@@ -125,11 +125,4 @@ var swiper3 = new Swiper('#slider3', {
 		nextEl: '.button3-next.swiper-button-next',
 		prevEl: '.button3-prev.swiper-button-prev',
 	},
-
-
-	pagination: {
-		el: '.pagination3.swiper-pagination',
-		clickable: true,
-		type: 'fraction',
-	},
 });

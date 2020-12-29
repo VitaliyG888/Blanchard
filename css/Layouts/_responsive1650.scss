@@ -1,81 +1,85 @@
 @media (max-width: 1650px) {
-  .container {
-    width: 1400px;
-  }
+	.container {
+		width: 1400px;
+	}
 
-  .header__item--down:not(:last-child) {
-    margin-right: 85px;
-  }
+	.header__item--down:not(:last-child) {
+		margin-right: 85px;
+	}
 
-  .header__logo {
-    margin-right: 110px;
-  }
+	.header__logo {
+		margin-right: 110px;
+	}
 
-  .header__item:not(:last-child) {
-    margin-right: 55px;
-  }
+	.header__item:not(:last-child) {
+		margin-right: 55px;
+	}
 
-  .header__nav {
-    margin-right: 20px;
-  }
+	.header__nav {
+		margin-right: 20px;
+	}
 
-  .swiper-container#slider1 {
-    width: 1000px;
-    height: 610px;
-  }
+	.swiper-container#slider1 {
+		width: 1000px;
+		height: 610px;
+	}
 
-  .swiper-slide.gallery__slider {
-    height: 280px;
+	.swiper-slide.gallery__slider {
+		height: 280px;
 
-    &::after {
-      width: 265px;
-      height: 254px;
-    }
-  }
+		&::after {
+			width: 265px;
+			height: 254px;
+		}
+	}
 
-  .choices,
-  .choices__inner {
-    width: 350px;
-  }
+	.gallery__description {
+		top: 655px;
+	}
 
-  /* catalog section */
+	.choices,
+	.choices__inner {
+		width: 350px;
+	}
 
-  .catalog__card.card {
-    max-width: 650px;
-    padding-top: 400px;
-    height: 730px;
-    background-size: 100% 400px;
-  }
+	/* catalog section */
 
-  .catalog__artists.accordeon {
-    max-width: 697px;
-  }
+	.catalog__card.card {
+		max-width: 650px;
+		padding-top: 400px;
+		height: 730px;
+		background-size: 100% 400px;
+	}
 
-  .swiper-container#slider2 {
-    max-width: 900px;
-  }
+	.catalog__artists.accordeon {
+		max-width: 697px;
+	}
 
-  .developments_card {
-    padding: 318px 18px 91px 49px;
-    width: 430px;
+	.swiper-container#slider2 {
+		max-width: 900px;
+	}
 
-    &:not(:nth-child(3n + 3)) {
-      margin-right: 40px;
-    }
+	.developments_card {
+		padding: 318px 18px 91px 49px;
+		width: 430px;
 
-    .developmets__descriptions {
-      width: 333px;
-    }
-  }
+		&:not(:nth-child(3n + 3)) {
+			margin-right: 35px;
+		}
 
-  .editions__order {
-    margin-right: 145px;
-  }
+		.developmets__descriptions {
+			width: 333px;
+		}
+	}
 
-  .swiper-container#slider3 {
-    max-width: 1250px;
-    margin-bottom: 80px;
-  }
+	.editions__order {
+		margin-right: 145px;
+	}
+
+	.swiper-container#slider3 {
+		max-width: 1250px;
+		margin-bottom: 80px;
+	}
 
 
 }

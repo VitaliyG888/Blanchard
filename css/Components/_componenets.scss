@@ -1,3 +1,7 @@
+*:focus {
+	outline: none;
+}
+
 p {
 	font-weight: 400;
 	font-size: 16px;
@@ -5,6 +9,7 @@ p {
 }
 
 h2 {
+	margin-left: -2px;
 	font-weight: 400;
 	font-size: 48px;
 }
@@ -14,12 +19,20 @@ h3 {
 	font-size: 24px;
 }
 
-button {
-	cursor: pointer;
+button:focus {
+	outline: none;
+}
 
-	&:focus {
-		outline: none;
-	}
+.reset-btn {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+.liststyle {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .signature {
@@ -29,27 +42,22 @@ button {
 }
 
 .flex {
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 }
 
 .container {
-	max-width: 1630px;
 	margin: 0 auto;
 	padding: 0 15px;
+	max-width: 1630px;
 }
 
 .visually-hidden {
 	position: absolute !important;
+	overflow: hidden;
+	border: 0 !important;
+	padding: 0 !important;
+	width: 1px !important;
+	height: 1px !important;
 	clip: rect(1px 1px 1px 1px);
 	clip: rect(1px, 1px, 1px, 1px);
-	padding: 0 !important;
-	border: 0 !important;
-	height: 1px !important;
-	width: 1px !important;
-	overflow: hidden;
 }

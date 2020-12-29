@@ -1,150 +1,118 @@
 /* first section */
 
-
-
 .first {
-	background: transparent;
-	z-index: -1;
+  z-index: -1;
+  background: transparent;
+}
 
-	.first__swiper {
-		position: absolute;
-		width: 100%;
-		height: 800px;
-		left: 0;
-		top: 100px;
-		z-index: -100;
-	}
+.first__swiper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -100;
+  width: 100%;
+  height: 800px;
+}
 
-	.background__first {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 800px;
-		z-index: -11;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		-webkit-animation: backgroundAnimation 30s linear infinite;
-		animation: backgroundAnimation 30s linear infinite;
-	}
+.background__first {
+  position: relative;
+  z-index: -11;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: backgroundAnimation 30s linear infinite;
+}
 
-	.background1 {
-		background-image: url(../image/birmingham-museums-trust.jpg);
-	}
+.background1 {
+  background-image: url("../image/birmingham-museums-trust.jpg");
+}
 
-	.background2 {
-		background-image: url(../image/bacground2.jpg);
-	}
+.background2 {
+  background-image: url("../image/bacground2.jpg");
+}
 
-	.background3 {
-		background-image: url(../image/background3.jpg);
-	}
+.background3 {
+  background-image: url("../image/background3.jpg");
+}
 
-	from {
-		background-size: 100% 100%;
-	}
+@keyframes backgroundAnimation {
+  from {
+    background-size: 100% 100%;
+  }
 
-	@-webkit-keyframes backgroundAnimation {
-		from {
-			background-size: 100% 100%;
-		}
+  50% {
+    background-size: 110% 110%;
+  }
 
-		50% {
-			background-size: 110% 110%;
-		}
+  to {
+    background-size: 100% 100%;
+  }
+}
 
-		to {
-			background-size: 100% 100%;
-		}
-	}
+.first__container {
+  padding-top: 69px;
+  padding-bottom: 122px;
+  padding-left: 13px;
+}
 
-	@keyframes backgroundAnimation {
-		from {
-			background-size: 100% 100%;
-		}
+.first__title {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  max-width: 597px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 83px;
+  letter-spacing: -0.26px;
+  color: $Wight;
+}
 
-		50% {
-			background-size: 110% 110%;
-		}
+.first__description {
+  margin-bottom: 92px;
+  margin-left: 2px;
+  max-width: 597px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $Wight;
+}
 
-		to {
-			background-size: 100% 100%;
-		}
-	}
+.first__subscription {
+  align-items: center;
+  margin-left: 2px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  padding: 23px 34px;
+  font-weight: 700;
+  font-size: 18px;
+  color: $Wight;
+  background-color: $first-color;
+  transition: all 0.7s ease-in;
 
-	.first__container {
-		padding-top: 69px;
-		padding-left: 13px;
-		padding-bottom: 122px;
-	}
+  &:focus {
+    outline: none;
+    border: 3px solid;
+    border-color: $second-color;
+    padding: 22px 33px;
+    background-color: $first-color;
+    transition: all 0.5s ease-in;
+  }
 
+  &:hover {
+    border-color: $extra-lite;
+    transition: all 0.5s ease-in;
+  }
 
-	.first__title {
-		display: block;
-		position: relative;
-		margin-bottom: 20px;
-		margin-left: -3px;
-		max-width: 597px;
-		font-weight: 700;
-		font-size: 72px;
-		letter-spacing: -0.1px;
-		line-height: 83px;
-		color: $Wight;
-	}
-
-	.first__description {
-		max-width: 597px;
-		margin-bottom: 92px;
-		margin-left: 2px;
-		font-weight: 700;
-		font-size: 18px;
-		line-height: 30px;
-		letter-spacing: -0.1px;
-		color: $Wight;
-	}
-
-	.first__subscription {
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-		padding: 17px 30px;
-		margin-left: 2px;
-		width: 314px;
-		height: 70px;
-		border: none;
-		background: $first-color;
-		border-radius: 100px;
-		font-weight: 700;
-		font-size: 18px;
-		color: $Wight;
-		border: 2px solid transparent;
-		transition: all 0.5s linear;
-
-		&:hover {
-			border-color: $extra-lite;
-			@include transition(all);
-		}
-
-		&:focus {
-			background: $first-color;
-			border: 3px solid $second-color;
-			@include transition(all);
-		}
-
-		&:active {
-			background: $second-color;
-			border: 3px solid $extra-lite;
-			@include transition(all);
-		}
-	}
+  &:active {
+    border: 3px solid;
+    border-color: $extra-lite;
+    padding: 22px 33px;
+    background-color: $second-color;
+    transition: all 0.5s ease-in;
+  }
 }

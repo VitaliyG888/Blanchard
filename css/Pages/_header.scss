@@ -1,21 +1,18 @@
 /* header */
 
-.header__primary {
+.header__higher {
 	background-color: $Black;
 }
 
-.header__container--up {
-	padding-top: 24px;
-	padding-bottom: 30px;
-	padding-right: 14px;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+.header__container {
 	align-items: center;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-right: 14px;
+	padding-bottom: 30px;
 }
 
 .header__logo {
-	margin-top: 7px;
 	width: 173px;
 	height: 40px;
 	z-index: 200;
@@ -25,207 +22,266 @@
 	margin-right: 100px;
 }
 
-.header__item:not(:last-child) {
+.nav-prime__item:not(:last-child) {
 	margin-right: 62px;
 }
 
-.header__link {
+.nav-prime__link {
+	position: relative;
 	font-weight: 600;
 	font-size: 18px;
 	letter-spacing: 0.15px;
 	color: $Wight;
+	transition: color 0.5s ease-in-out;
+
+	&::before {
+		content: "";
+		position: absolute;
+		margin: -4px -7px;
+		width: 125%;
+		height: 30px;
+		border: 2px solid $second-color;
+		opacity: 0;
+		transition: opacity .5s ease-in;
+	}
 
 	&:hover {
 		color: $first-color;
-		@include transition(color);
+		transition: color 0.5s ease-in-out;
 	}
 
 	&:active {
 		color: $second-color;
+		transition: color 0.5s ease-in-out;
+	}
+
+	&:focus::before {
+		opacity: 1;
+		transition: opacity .5s ease-in;
 	}
 }
 
-.header__admission {
+.admission {
+	position: relative;
 	font-weight: 400;
 	font-size: 18px;
 	color: $Wight;
+	transition: color 0.5s ease-in-out;
+
+	&::before {
+		content: "";
+		position: absolute;
+		margin: -4px -7px;
+		width: 125%;
+		height: 30px;
+		border: 2px solid $second-color;
+		opacity: 0;
+		transition: opacity .5s ease-in;
+	}
 
 	svg {
 		margin-right: 7px;
 	}
 
+	svg path {
+		fill: $Wight;
+		transition: fill 0.5s ease-in;
+	}
+
 	&:hover {
 		color: $first-color;
-		@include transition(color);
+		transition: color 0.5s ease-in-out;
 
 		svg path {
 			fill: $first-color;
-			@include transition(fill);
+			transition: fill 0.5s ease-in;
 		}
 	}
 
 	&:active {
 		color: $second-color;
+		transition: color 0.5s ease-in-out;
 
 		svg path {
 			fill: $second-color;
+			transition: fill 0.5s ease-in;
 		}
+	}
+
+	&:focus::before {
+		opacity: 1;
+		transition: opacity .5s ease-in;
 	}
 }
 
-
-.header__item--down:not(:last-child) {
-	margin-right: 102px;
-}
-
-.header__item--down:hover .header__choice {
-	-webkit-transform: scaleY(1);
-	-ms-transform: scaleY(1);
-	transform: scaleY(1);
-}
-
-
-.header__secondary {
+.header__nether {
 	background-color: rgba($Black, 0.5);
 }
 
-.header__container--down {
-	@include spaces-between;
+.nether__container {
 	align-items: center;
-	padding-top: 17px;
-	padding-bottom: 22px;
-	padding-left: 14px;
+	justify-content: space-between;
+	padding-top: 19px;
+	padding-bottom: 21px;
 }
 
-.header__style {
+.nether__item:not(:last-child) {
+	margin-right: 102px;
+}
+
+.nether__item:hover .nether__choice {
+	transform: scaleY(1);
+	transition: transform 0.6s ease-in-out;
+	transition-delay: 0.5s;
+}
+
+.nether__item:hover .nether__style {
+	color: $first-color;
+	transition: color 0.7s ease-in;
+
+	&::after {
+		margin-bottom: 0;
+		border-color: rgba($first-color, 1);
+		border-top: 1px solid;
+		border-right: 1px solid;
+		border-bottom: none;
+		border-left: none;
+		transition: border-color 0.6s ease-in-out;
+	}
+}
+
+.nether__item .nether__style {
+	position: relative;
+	padding-bottom: 22px;
 	font-weight: 400;
 	font-size: 18px;
 	color: $Wight;
-	padding-bottom: 25px;
+	transition: all 0.5s ease-in;
 
 	&::after {
 		content: "";
 		display: inline-block;
-		height: 8px;
-		width: 8px;
-		margin-left: 4px;
 		margin-bottom: 3px;
-		border-left: 1px solid $Wight;
-		border-bottom: 1px solid $Wight;
-		-webkit-transform: rotate(-45deg);
-		-ms-transform: rotate(-45deg);
+		margin-left: 4px;
+		border-color: rgba($Wight, 1);
+		border-bottom: 1px solid;
+		border-left: 1px solid;
+		width: 8px;
+		height: 8px;
 		transform: rotate(-45deg);
+		transition: border-color 0.5s ease-in-out;
 	}
 
-	&:hover {
-		&:after {
-			border-left: 1px solid $first-color;
-			border-bottom: 1px solid $first-color;
-			@include transition(all);
-		}
-
-		color: $first-color;
-		@include transition(color);
+	&::before {
+		content: "";
+		position: absolute;
+		left: -6px;
+		top: 0;
+		opacity: 0;
+		width: 115%;
+		height: 30px;
+		border: 2px solid $first-color;
+		transition: opasity 0.5s ease-in;
 	}
 
 	&:active {
-		&:after {
-			margin-bottom: 0;
-			border-left: none;
-			border-bottom: none;
-			border-right: 1px solid $second-color;
-			border-top: 1px solid $second-color;
-		}
-
 		color: $second-color;
+		transition: color 0.5s ease-in;
+
+		&::after {
+			margin-bottom: 0;
+			border-top: 1px solid $second-color;
+			border-right: 1px solid $second-color;
+			border-bottom: none;
+			border-left: none;
+			transition: all 0.5s ease-in-out;
+		}
+	}
+
+	&:focus::before {
+		opacity: 1;
+		transition: opasity 0.5s ease-in;
 	}
 }
 
-.header__choice {
+.nether__choice {
 	position: absolute;
+	z-index: 10;
+	margin-top: 26px;
+	margin-left: -60px;
+	padding: 40px;
 	width: 300px;
 	height: 300px;
-	padding: 40px 40px !important;
-	margin-left: -60px !important;
-	margin-top: 27px !important;
-	z-index: 10;
-	@include transition(all);
-	-webkit-transform: scaleY(0);
-	-ms-transform: scaleY(0);
-	transform: scaleY(0);
-	-webkit-transform-origin: 0 0;
-	-ms-transform-origin: 0 0;
-	transform-origin: 0 0;
 	background: rgba($Black, 0.4);
+	transform: scaleY(0);
+	transform-origin: 0 0;
+	transition: transform 0.6s ease-in;
 
-	.simplebar-scrollbar {
-		display: block !important;
-
-		&::before {
-			background: $first-color;
-			left: 0;
-			right: 2px;
-			width: 2px;
-			min-height: 28px;
-			max-height: 28px;
-		}
+	.simplebar-scrollbar::before {
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		border-radius: 0;
+		width: 2px;
+		background: $first-color;
+		opacity: 1;
 	}
 
-	.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
-		top: 0px;
-		bottom: 0px;
+	.simplebar-track.simplebar-vertical .simplebar-scrollbar::before {
+		top: 0;
+		bottom: 0;
 	}
 
 	.simplebar-track.simplebar-vertical {
-		top: 0px;
+		right: 20px;
 		top: 40px;
 		bottom: 40px;
-		right: 20px;
 		width: 2px;
-		visibility: inherit !important;
 		background-color: $Black;
 	}
 
-	.header__performer {
+	.nether__performer {
 		position: relative;
+		margin-bottom: 20px;
 		width: 220px;
 		height: 40px;
 		font-weight: 600;
-		font-size: 14px;
-		margin-bottom: 20px;
 		color: $Wight;
-		background-repeat: no-repeat;
 		background-size: cover;
+		background-repeat: no-repeat;
 	}
 
-	.header__artist {
-		display: block;
+	.nether__artist {
 		position: absolute;
 		left: 0;
 		top: 0;
+		display: block;
+		border: 2px solid transparent;
 		padding: 7px 0 7px 14px;
 		width: 220px;
 		height: 40px;
 		color: $Wight;
-		border: 2px solid transparent;
-		@include transition(all);
+		transition: background-color 0.5s ease-in;
+		transition: border-color 0.5s ease-in;
+
+		&:hover {
+			border-color: $first-color;
+			transition: border-color 0.5s ease-in;
+		}
+
+		&:focus {
+			border-color: $first-color;
+			transition: border-color 0.5s ease-in;
+		}
 
 		&:active {
 			background-color: $first-color;
 			opacity: 0.4;
-			border-color: $extra-lite !important;
-			@include transition(all);
+			border-color: $extra-lite;
+			transition: background-color 0.5s ease-in;
+			transition: border-color 0.5s ease-in;
 		}
-
-		&:hover {
-			border-color: $first-color;
-			@include transition(all);
-		}
-
-		&:focus {
-			outline: none;
-		}
-
 	}
 }
 
@@ -233,85 +289,94 @@
 	overflow: scrollfor;
 }
 
-.header__performer1,
-.header__performer3,
-.header__performer5,
-.header__performer7,
-.header__performer9,
-.header__performer11 {
-	background-image: url(../image/first-choice1.jpg);
+.performer1,
+.performer3,
+.performer5,
+.performer7,
+.performer9,
+.performer11 {
+	background-image: url("../image/first-choice1.jpg");
 }
 
-.header__performer2,
-.header__performer4,
-.header__performer6,
-.header__performer8,
-.header__performer10,
-.header__performer12 {
-	background-image: url(../image/first-choice3.jpg);
+.performer2,
+.performer4,
+.performer6,
+.performer8,
+.performer10,
+.performer12 {
+	background-image: url("../image/first-choice3.jpg");
 }
 
-.header__search {
+.search {
 	position: relative;
 	padding-left: 44px;
-	@include transition(all);
+	outline: 2px solid rgba($first-color, 0);
+	transition: all 0.5s ease-in;
 
+	.search__magnifier {
+		position: absolute;
+		left: 8px;
+		top: 8px;
+		display: block;
+		border: none;
+		background: transparent;
+	}
 
-	.header__search-input {
+	.search__input {
 		margin-top: 6px;
 		margin-right: 3px;
-		width: 218px;
+		border: none;
 		border-bottom: 1px solid rgba($Wight, 0.85);
-		border-right: none;
-		border-left: none;
-		border-top: none;
-		background: none;
-		font-weight: 400;
-		line-height: 22px;
+		width: 218px;
 		font-size: 18px;
+		line-height: 22px;
 		color: rgba($Wight, 0.85);
+		background: none;
+		transition: border-color 0.5s ease-in;
 
 		&::placeholder {
-			font-family: 'Open sans';
-			letter-spacing: 0.1px;
-		}
-
-		&:focus {
-			outline: none;
+			font-family: "Open sans";
 		}
 	}
 
 	&:focus-within {
-		outline: 1px solid $first-color;
+		outline: 2px solid rgba($first-color, 1);
+		transition: all 0.5s ease-in;
 	}
 
-	&:hover input {
+	&:hover .search__input {
 		border-bottom: 1px solid $first-color;
-		@include transition(all);
+		transition: border-color 0.5s ease-in;
 	}
 
-	&:active input {
-		border-bottom: 1px solid rgba($Wight, 0.85);
+	.search__magnifier--rect,
+	.search__magnifier--path {
+		fill: $Wight;
+		transition: fill 0.5s ease-in;
 	}
 
-	&:hover .header__magnifier--lupe rect,
-	&:hover .header__magnifier--lupe path {
+	&:hover .search__magnifier--rect,
+	&:hover .search__magnifier--path {
 		fill: $first-color;
-		@include transition(fill);
+		transition: fill 0.5s ease-in;
 	}
 
-	&:active .header__magnifier--lupe rect,
-	&:active .header__magnifier--lupe path {
+	&:active .search__input {
+		border-bottom: 1px solid rgba($Wight, 0.85);
+		transition: border-color 0.5s ease-in;
+	}
+
+	&:active .search__magnifier--rect,
+	&:active .search__magnifier--path {
 		fill: $second-color;
-		@include transition(fill);
+		transition: fill 0.5s ease-in;
 	}
+}
 
-	.header__magnifier {
-		display: block;
-		position: absolute;
-		left: 8px;
-		top: 8px;
-		border: none;
-		background: none;
-	}
+.header__burger {
+	display: none;
+}
+
+.header__close {
+	display: none;
 }

@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Blanchard</title>
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/simplebar.css">
 	<link rel="stylesheet" href="css/choices.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
@@ -14,11 +14,9 @@
 
 <body>
 	<header class="header">
-
-		<div class="header__primary">
-			<div class="container header__container--up flex">
-				<!-- Кнопка открытия выезжающего меню -->
-				<button class="header__burger nav-toggle js-burger" aria-label="Открыть меню">
+		<div class="header__higher higher">
+			<div class="container header__container flex">
+				<button class="header__burger nav-toggle js-burger reset-btn" aria-label="Открыть меню">
 					<span></span>
 				</button>
 
@@ -26,264 +24,235 @@
 					<span class="close__line"></span>
 					<span class="close__line"></span>
 				</button>
-				<!-- Выезжающее меню для меньших разрешений -->
-				<div class="menu-toggle menu js-menu">
-					<div class="menu__header header">
-					</div>
-					<nav class="menu-nav">
-						<ul class="menu-nav__list">
-							<li class="menu-nav__item">
-								<a href="#" class="menu-nav__link">О нас</a>
-							</li>
-							<li class="menu-nav__item">
-								<a href="#" class="menu-nav__link">Галерея</a>
-							</li>
-							<li class="menu-nav__item">
-								<a href="#" class="menu-nav__link">Каталог</a>
-							</li>
-							<li class="menu-nav__item">
-								<a href="#" class="menu-nav__link">События</a>
-							</li>
-							<li class="menu-nav__item">
-								<a href="#" class="menu-nav__link">Издания</a>
-							</li>
-							<li class="menu-nav__item">
-								<a href="#" class="menu-nav__link">Проекты</a>
-							</li>
-							<li class="menu-nav__item">
-								<a href="#" class="menu-nav__link">Контакты</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<!-- Дестоп меню -->
 				<a href="#" class="header__logo">
-					<img src="image/logo.png" alt="logo" aria-label="Логотип">
+					<img src="image/logo2.png" alt="logo" aria-label="Логотип">
 				</a>
-				<nav class="header__nav" id="header-nav">
-					<ul class="header__list menu-header flex">
-						<li class="header__item">
-							<a href="#" class="header__link">О нас</a>
+				<nav class="nav-prime header__nav" id="header-nav">
+					<ul class="nav-prime__list liststyle flex">
+						<li class="nav-prime__item">
+							<a href="#" class="nav-prime__link">О нас</a>
 						</li>
-						<li class="header__item">
-							<a href="#" class="header__link">Галерея</a>
+						<li class="nav-prime__item">
+							<a href="#" class="nav-prime__link">Галерея</a>
 						</li>
-						<li class="header__item">
-							<a href="#" class="header__link">Каталог</a>
+						<li class="nav-prime__item">
+							<a href="#" class="nav-prime__link">Каталог</a>
 						</li>
-						<li class="header__item">
-							<a href="#" class="header__link">События</a>
+						<li class="nav-prime__item">
+							<a href="#" class="nav-prime__link">События</a>
 						</li>
-						<li class="header__item">
-							<a href="#" class="header__link">Издания</a>
+						<li class="nav-prime__item">
+							<a href="#" class="nav-prime__link">Издания</a>
 						</li>
-						<li class="header__item">
-							<a href="#" class="header__link">Проекты</a>
+						<li class="nav-prime__item">
+							<a href="#" class="nav-prime__link">Проекты</a>
 						</li>
-						<li class="header__item">
-							<a href="#" class="header__link">Контакты</a>
+						<li class="nav-prime__item">
+							<a href="#" class="nav-prime__link">Контакты</a>
 						</li>
 					</ul>
 				</nav>
-				<a href="#" class="header__admission"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 13 13"
-						width="13" height="13">
+				<a href="#" class="admission header__admission"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+						viewBox="0 0 13 13" width="13" height="13">
 						<path fill="white"
 							d="M 5.12056 9.09278 L 6.13889 10.1111 L 9.75 6.5 L 6.13889 2.88889 L 5.12056 3.90722 L 6.98389 5.77778 H 0 V 7.22222 H 6.98389 L 5.12056 9.09278 Z M 11.5556 0 H 1.44444 C 0.642778 0 0 0.65 0 1.44444 V 4.33333 H 1.44444 V 1.44444 H 11.5556 V 11.5556 H 1.44444 V 8.66667 H 0 V 11.5556 C 0 12.35 0.642778 13 1.44444 13 H 11.5556 C 12.35 13 13 12.35 13 11.5556 V 1.44444 C 13 0.65 12.35 0 11.5556 0 Z" />
 					</svg>Войти</a>
 			</div>
 		</div>
-
-		<div class="header__secondary">
-			<div class="container header__container--down flex">
-				<nav class="header__nav--down">
-					<ul class="header__list--down flex">
-						<li class="header__item--down">
-							<a href="#" class="header__style">Реализм</a>
-							<ul class="header__choice" data-simplebar>
-								<li class="header__performer header__performer1">
-									<a href="#" class="header__artist">Тинторетто</a>
+		<div class="menu-toggle">
+			<div class="menu-toggle__header"></div>
+		</div>
+		<div class="header__nether nether">
+			<div class="container nether__container flex">
+				<nav class="nether__nav">
+					<ul class="nether__list liststyle flex">
+						<li class="nether__item">
+							<a href=" #" class="nether__style">Реализм</a>
+							<ul class=" nether__choice liststyle">
+								<li class="nether__performer performer1">
+									<a href="#" class="nether__artist">Тинторетто</a>
 								</li>
-								<li class="header__performer header__performer2">
-									<a href="#" class="header__artist">Фридрих</a>
-								</li>
-							</ul>
-						</li>
-						<li class="header__item--down">
-							<a href="#" class="header__style">Импрессионизм</a>
-							<ul class="header__choice" data-simplebar>
-								<li class="header__performer header__performer1">
-									<a href="#" class="header__artist">Тинторетто</a>
-								</li>
-								<li class="header__performer header__performer2">
-									<a href="#" class="header__artist">Фридрих</a>
-								</li>
-								<li class="header__performer header__performer3">
-									<a href="#" class="header__artist">Леонардо</a>
-								</li>
-								<li class="header__performer header__performer4">
-									<a href="#" class="header__artist">Верроккьо</a>
-								</li>
-								<li class="header__performer header__performer5">
-									<a href="#" class="header__artist">Тинторетто</a>
-								</li>
-								<li class="header__performer header__performer6">
-									<a href="#" class="header__artist">Фридрих</a>
-								</li>
-								<li class="header__performer header__performer7">
-									<a href="#" class="header__artist">Леонардо</a>
-								</li>
-								<li class="header__performer header__performer8">
-									<a href="#" class="header__artist">Верроккьо</a>
-								</li>
-								<li class="header__performer header__performer9">
-									<a href="#" class="header__artist">Тинторетто</a>
-								</li>
-								<li class="header__performer header__performer10">
-									<a href="#" class="header__artist">Фридрих</a>
-								</li>
-								<li class="header__performer header__performer11">
-									<a href="#" class="header__artist">Леонардо</a>
-								</li>
-								<li class="header__performer header__performer12">
-									<a href="#" class="header__artist">Верроккьо</a>
+								<li class="nether__performer performer2">
+									<a href="#" class="nether__artist">Фридрих</a>
 								</li>
 							</ul>
 						</li>
-						<li class="header__item--down">
-							<a href="#" class="header__style">Постимпрессионизм</a>
-							<ul class="header__choice" data-simplebar>
-								<li class="header__performer header__performer1">
-									<a href="#" class="header__artist">Тинторетто</a>
+						<li class="nether__item">
+							<a href=" #" class="nether__style">Импрессионизм</a>
+							<ul class=" nether__choice liststyle">
+								<li class="nether__performer performer1">
+									<a href="#" class="nether__artist">Тинторетто</a>
 								</li>
-								<li class="header__performer header__performer2">
-									<a href="#" class="header__artist">Фридрих</a>
+								<li class="nether__performer performer2">
+									<a href="#" class="nether__artist">Фридрих</a>
 								</li>
-								<li class="header__performer header__performer3">
-									<a href="#" class="header__artist">Леонардо</a>
+								<li class="nether__performer performer3">
+									<a href="#" class="nether__artist">Леонардо</a>
 								</li>
-								<li class="header__performer header__performer4">
-									<a href="#" class="header__artist">Верроккьо</a>
+								<li class="nether__performer performer4">
+									<a href="#" class="nether__artist">Верроккьо</a>
 								</li>
-								<li class="header__performer header__performer5">
-									<a href="#" class="header__artist">Тинторетто</a>
+								<li class="nether__performer performer5">
+									<a href="#" class="nether__artist">Тинторетто</a>
 								</li>
-								<li class="header__performer header__performer6">
-									<a href="#" class="header__artist">Фридрих</a>
+								<li class="nether__performer performer6">
+									<a href="#" class="nether__artist">Фридрих</a>
 								</li>
-								<li class="header__performer header__performer7">
-									<a href="#" class="header__artist">Леонардо</a>
+								<li class="nether__performer performer7">
+									<a href="#" class="nether__artist">Леонардо</a>
 								</li>
-								<li class="header__performer header__performer8">
-									<a href="#" class="header__artist">Верроккьо</a>
+								<li class="nether__performer performer8">
+									<a href="#" class="nether__artist">Верроккьо</a>
 								</li>
-								<li class="header__performer header__performer9">
-									<a href="#" class="header__artist">Тинторетто</a>
+								<li class="nether__performer performer9">
+									<a href="#" class="nether__artist">Тинторетто</a>
 								</li>
-								<li class="header__performer header__performer10">
-									<a href="#" class="header__artist">Фридрих</a>
+								<li class="nether__performer performer10">
+									<a href="#" class="nether__artist">Фридрих</a>
 								</li>
-								<li class="header__performer header__performer11">
-									<a href="#" class="header__artist">Леонардо</a>
+								<li class="nether__performer performer11">
+									<a href="#" class="nether__artist">Леонардо</a>
 								</li>
-								<li class="header__performer header__performer12">
-									<a href="#" class="header__artist">Верроккьо</a>
-								</li>
-							</ul>
-						</li>
-						<li class="header__item--down">
-							<a href="#" class="header__style">Авангард</a>
-							<ul class="header__choice" data-simplebar>
-								<li class="header__performer header__performer1">
-									<a href="#" class="header__artist">Тинторетто</a>
-								</li>
-								<li class="header__performer header__performer2">
-									<a href="#" class="header__artist">Фридрих</a>
-								</li>
-								<li class="header__performer header__performer3">
-									<a href="#" class="header__artist">Леонардо</a>
-								</li>
-								<li class="header__performer header__performer4">
-									<a href="#" class="header__artist">Верроккьо</a>
-								</li>
-								<li class="header__performer header__performer5">
-									<a href="#" class="header__artist">Тинторетто</a>
-								</li>
-								<li class="header__performer header__performer6">
-									<a href="#" class="header__artist">Фридрих</a>
-								</li>
-								<li class="header__performer header__performer7">
-									<a href="#" class="header__artist">Леонардо</a>
-								</li>
-								<li class="header__performer header__performer8">
-									<a href="#" class="header__artist">Верроккьо</a>
-								</li>
-								<li class="header__performer header__performer9">
-									<a href="#" class="header__artist">Тинторетто</a>
-								</li>
-								<li class="header__performer header__performer10">
-									<a href="#" class="header__artist">Фридрих</a>
-								</li>
-								<li class="header__performer header__performer11">
-									<a href="#" class="header__artist">Леонардо</a>
-								</li>
-								<li class="header__performer header__performer12">
-									<a href="#" class="header__artist">Верроккьо</a>
+								<li class="nether__performer performer12">
+									<a href="#" class="nether__artist">Верроккьо</a>
 								</li>
 							</ul>
 						</li>
-						<li class="header__item--down">
-							<a href="#" class="header__style">Футуризм</a>
-							<ul class="header__choice" data-simplebar>
-								<li class="header__performer header__performer1">
-									<a href="#" class="header__artist">Тинторетто</a>
+						<li class="nether__item">
+							<a href="#" class="nether__style">Постимпрессионизм</a>
+							<ul class="nether__choice liststyle">
+								<li class="nether__performer performer1">
+									<a href="#" class="nether__artist">Тинторетто</a>
 								</li>
-								<li class="header__performer header__performer2">
-									<a href="#" class="header__artist">Фридрих</a>
+								<li class="nether__performer performer2">
+									<a href="#" class="nether__artist">Фридрих</a>
 								</li>
-								<li class="header__performer header__performer3">
-									<a href="#" class="header__artist">Леонардо</a>
+								<li class="nether__performer performer3">
+									<a href="#" class="nether__artist">Леонардо</a>
 								</li>
-								<li class="header__performer header__performer4">
-									<a href="#" class="header__artist">Верроккьо</a>
+								<li class="nether__performer performer4">
+									<a href="#" class="nether__artist">Верроккьо</a>
 								</li>
-								<li class="header__performer header__performer5">
-									<a href="#" class="header__artist">Тинторетто</a>
+								<li class="nether__performer performer5">
+									<a href="#" class="nether__artist">Тинторетто</a>
 								</li>
-								<li class="header__performer header__performer6">
-									<a href="#" class="header__artist">Фридрих</a>
+								<li class="nether__performer performer6">
+									<a href="#" class="nether__artist">Фридрих</a>
 								</li>
-								<li class="header__performer header__performer7">
-									<a href="#" class="header__artist">Леонардо</a>
+								<li class="nether__performer performer7">
+									<a href="#" class="nether__artist">Леонардо</a>
 								</li>
-								<li class="header__performer header__performer8">
-									<a href="#" class="header__artist">Верроккьо</a>
+								<li class="nether__performer performer8">
+									<a href="#" class="nether__artist">Верроккьо</a>
 								</li>
-								<li class="header__performer header__performer9">
-									<a href="#" class="header__artist">Тинторетто</a>
+								<li class="nether__performer performer9">
+									<a href="#" class="nether__artist">Тинторетто</a>
 								</li>
-								<li class="header__performer header__performer10">
-									<a href="#" class="header__artist">Фридрих</a>
+								<li class="nether__performer performer10">
+									<a href="#" class="nether__artist">Фридрих</a>
 								</li>
-								<li class="header__performer header__performer11">
-									<a href="#" class="header__artist">Леонардо</a>
+								<li class="nether__performer performer11">
+									<a href="#" class="nether__artist">Леонардо</a>
 								</li>
-								<li class="header__performer header__performer12">
-									<a href="#" class="header__artist">Верроккьо</a>
+								<li class="nether__performer performer12">
+									<a href="#" class="nether__artist">Верроккьо</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nether__item">
+							<a href="#" class="nether__style">Авангард</a>
+							<ul class="nether__choice liststyle">
+								<li class="nether__performer performer1">
+									<a href="#" class="nether__artist">Тинторетто</a>
+								</li>
+								<li class="nether__performer performer2">
+									<a href="#" class="nether__artist">Фридрих</a>
+								</li>
+								<li class="nether__performer performer3">
+									<a href="#" class="nether__artist">Леонардо</a>
+								</li>
+								<li class="nether__performer performer4">
+									<a href="#" class="nether__artist">Верроккьо</a>
+								</li>
+								<li class="nether__performer performer5">
+									<a href="#" class="nether__artist">Тинторетто</a>
+								</li>
+								<li class="nether__performer performer6">
+									<a href="#" class="nether__artist">Фридрих</a>
+								</li>
+								<li class="nether__performer performer7">
+									<a href="#" class="nether__artist">Леонардо</a>
+								</li>
+								<li class="nether__performer performer8">
+									<a href="#" class="nether__artist">Верроккьо</a>
+								</li>
+								<li class="nether__performer performer9">
+									<a href="#" class="nether__artist">Тинторетто</a>
+								</li>
+								<li class="nether__performer performer10">
+									<a href="#" class="nether__artist">Фридрих</a>
+								</li>
+								<li class="nether__performer performer11">
+									<a href="#" class="nether__artist">Леонардо</a>
+								</li>
+								<li class="nether__performer performer12">
+									<a href="#" class="nether__artist">Верроккьо</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nether__item">
+							<a href="#" class="nether__style">Футуризм</a>
+							<ul class="nether__choice liststyle">
+								<li class="nether__performer performer1">
+									<a href="#" class="nether__artist">Тинторетто</a>
+								</li>
+								<li class="nether__performer performer2">
+									<a href="#" class="nether__artist">Фридрих</a>
+								</li>
+								<li class="nether__performer performer3">
+									<a href="#" class="nether__artist">Леонардо</a>
+								</li>
+								<li class="nether__performer performer4">
+									<a href="#" class="nether__artist">Верроккьо</a>
+								</li>
+								<li class="nether__performer performer5">
+									<a href="#" class="nether__artist">Тинторетто</a>
+								</li>
+								<li class="nether__performer performer6">
+									<a href="#" class="nether__artist">Фридрих</a>
+								</li>
+								<li class="nether__performer performer7">
+									<a href="#" class="nether__artist">Леонардо</a>
+								</li>
+								<li class="nether__performer performer8">
+									<a href="#" class="nether__artist">Верроккьо</a>
+								</li>
+								<li class="nether__performer performer9">
+									<a href="#" class="nether__artist">Тинторетто</a>
+								</li>
+								<li class="nether__performer performer10">
+									<a href="#" class="nether__artist">Фридрих</a>
+								</li>
+								<li class="nether__performer performer11">
+									<a href="#" class="nether__artist">Леонардо</a>
+								</li>
+								<li class="nether__performer performer12">
+									<a href="#" class="nether__artist">Верроккьо</a>
 								</li>
 							</ul>
 						</li>
 					</ul>
 				</nav>
 
-				<form class="header__search">
-					<input type="search" class="header__search-input" id="header__search-input" placeholder="Поиск по сайту">
-					<button class="header__magnifier" id="search-btn" type="submit" aria-label="Поиск по сайту">
-						<svg class="header__magnifier--lupe" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 23 22"
+				<form class="search header__search ">
+					<input type="search" class="search__input" id="header__search-input" placeholder="Поиск по сайту">
+					<button class="search__magnifier" id="search-btn" type="submit" aria-label="Поиск по сайту">
+						<svg class="search__magnifier--lupe" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 23 22"
 							width="23" height="22">
-							<rect class="header__magnifier-rect" fill="white"
+							<rect class="search__magnifier--rect" fill="white"
 								transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" width="6.8678"
 								height="1.71695" />
-							<path class="header__magnifier-path" clip-rule="evenodd" fill="white" fill-rule="evenodd"
+							<path class="search__magnifier--path" clip-rule="evenodd" fill="white" fill-rule="evenodd"
 								d="M 12.0969 18 C 7.53041 18 3.99692 14.3229 3.99692 10 C 3.99692 5.67715 7.53041 2 12.0969 2 C 16.6634 2 20.1969 5.67715 20.1969 10 C 20.1969 14.3229 16.6634 18 12.0969 18 Z M 12.0969 20 C 6.57408 20 2.09692 15.5228 2.09692 10 C 2.09692 4.47715 6.57408 0 12.0969 0 C 17.6198 0 22.0969 4.47715 22.0969 10 C 22.0969 15.5228 17.6198 20 12.0969 20 Z" />
 						</svg>
 					</button>
@@ -315,10 +284,10 @@
 		</div>
 	</section>
 	<!-- Секция О нас -->
-	<section class="aboutUs">
-		<div class="container aboutUs__container">
-			<h2 class="aboutUs__title title">О нас</h2>
-			<p class="aboutUs__description">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
+	<section class="about">
+		<div class="container about__container">
+			<h2 class="about__title title">О нас</h2>
+			<p class="about__description">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
 				однозначно определяет каждого участника как способного принимать собственные решения касаемо
 				распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный
 				прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная
@@ -341,7 +310,6 @@
 							<option class="gallery__option" value="Автор">Автор</option>
 							<option class="gallery__option" value="Направление">Направление</option>
 							<option class="gallery__option" value="Техника">Техника</option>
-
 						</select>
 					</div>
 				</div>
@@ -399,7 +367,7 @@
 		<div class="container catalog__container">
 			<div class="catalog__header flex">
 				<h2 class="catalog__title title">Каталог</h2>
-				<ul class="catalog__transfer tab-nav flex">
+				<ul class="catalog__transfer liststyle tab-nav flex">
 					<li class="catalog__language">
 						<button class="catalog__france tab-nav__link" data-tab-name="tab1" aria-label="Французкий"></button>
 					</li>
@@ -471,32 +439,32 @@
 						<div class="accordeon-content js-content">
 							<div class="accordion-item flex" onclick="event.stopPropagation()">
 								<button class="accordeon-link">Бенедетто ди Биндо</button>
-								<button class="accordeon-link">Бергоньоне, Амброджо</button>
-								<button class="accordeon-link">Биссоло, Франческо</button>
-								<button class="accordeon-link">Больтраффио, Джованни</button>
-								<button class="accordeon-link">Бонсиньори, Франческо</button>
-								<button class="accordeon-link">Боттичини, Рафаэлло</button>
-								<button class="accordeon-link">Брамантино</button>
-								<button class="accordeon-link">Бреа, Людовико</button>
-								<button class="accordeon-link">Бьяджо д’Антонио Туччи</button>
 								<button class="accordeon-link">Веккьетта</button>
+								<button class="accordeon-link">Парентино, Бернардо</button>
+								<button class="accordeon-link">Бергоньоне, Амброджо</button>
 								<button class="accordeon-link">Андреа Верроккьо</button>
+								<button class="accordeon-link">Пезеллино</button>
+								<button class="accordeon-link">Биссоло, Франческо</button>
 								<button class="accordeon-link">Доменико Гирландайо</button>
-								<button class="accordeon-link">Беноццо Гоццоли</button>
-								<button class="accordeon-link">Граначчи, Франческо</button>
-								<button class="accordeon-link">Грегорио ди Чекко</button>
-								<button class="accordeon-link">Джованни да Удине</button>
-								<button class="accordeon-link">Джованни ди Паоло</button>
-								<button class="accordeon-link">Джорджоне</button>
-								<button class="accordeon-link">Парентино, Бернардо</button>
-								<button class="accordeon-link">Пезеллино</button>
 								<button class="accordeon-link">Пьетро Перуджино</button>
+								<button class="accordeon-link">Больтраффио, Джованни</button>
+								<button class="accordeon-link">Беноццо Гоццоли</button>
 								<button class="accordeon-link">Перуцци, Бальдассаре</button>
+								<button class="accordeon-link">Бонсиньори, Франческо</button>
+								<button class="accordeon-link">Граначчи, Франческо</button>
 								<button class="accordeon-link">Пизанелло</button>
+								<button class="accordeon-link">Боттичини, Рафаэлло</button>
+								<button class="accordeon-link">Грегорио ди Чекко</button>
 								<button class="accordeon-link">Пинтуриккьо</button>
+								<button class="accordeon-link">Брамантино</button>
+								<button class="accordeon-link">Джованни да Удине</button>
+								<button class="accordeon-link"></button>
+								<button class="accordeon-link">Бреа, Людовико</button>
+								<button class="accordeon-link">Джованни ди Паоло</button>
+								<button class="accordeon-link"></button>
+								<button class="accordeon-link">Бьяджо д’Антонио Туччи</button>
 								<button class="accordeon-link">Джорджоне</button>
-								<button class="accordeon-link">Парентино, Бернардо</button>
-								<button class="accordeon-link">Пезеллино</button>
+								<button class="accordeon-link"></button>
 							</div>
 						</div>
 					</div>
@@ -946,7 +914,7 @@
 			<p class="projects__descriptions">Предварительные выводы: постоянное информационно-пропагандистское
 				обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи.
 				А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости,
-				из-за чего возрастает их статус бесполезности. Прежде всего, постоянное<br>
+				из-за чего возрастает их статус бесполезности. Прежде всего, постоянное
 				информационно-пропагандистское <span class="tooltip-toggle projects__tooltip tooltip1"
 					aria-label="Пример современных тенденций - современная методология разработки" tabindex="0">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" width="16" height="16">
@@ -1069,8 +1037,9 @@
 	<script src="js/accordeon.js"></script>
 	<script src="js/valid.js"></script>
 	<script src="js/menu.js"></script>
-	<script src=" https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/simplebar.js"></script>
+	<script src="js/simple-script.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/slider.js"></script>
 	<script src="https://api-maps.yandex.ru/2.1?apikey=вашAPI-ключ&load=package.full&lang=ru_RU"></script>
 	<script src="js/scroll.js"></script>
@@ -1078,6 +1047,7 @@
 	<script src="js/tab.js"></script>
 	<script src="js/event.js"></script>
 	<script src="js/scroll-back.js"></script>
+	<script src="js/inert.js"></script>
 
 </body>
 

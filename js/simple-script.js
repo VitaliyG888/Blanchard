@@ -1,1 +1,3 @@
-new SimpleBar(document.getElementById('header__choice'));
+document.querySelectorAll('.nether__choice').forEach(el => {
+  new SimpleBar(el)
+})

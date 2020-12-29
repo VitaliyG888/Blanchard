@@ -28,7 +28,7 @@
 
 	&:hover {
 		background: $first-color;
-		@include transition(all);
+		@include transition(all, 0.5s);
 	}
 }
 

@@ -3,9 +3,9 @@
 .nav-toggle {
 	display: none;
 	position: relative;
-	margin-top: 4px;
+	margin-top: -3px;
 	width: 36px;
-	height: 36px;
+	height: 28px;
 	border: none;
 	background: none;
 	cursor: pointer;
@@ -13,9 +13,9 @@
 	span {
 		display: block;
 		position: absolute;
-		width: 29px;
+		width: 28px;
 		right: 5px;
-		height: 2px;
+		height: 3.65px;
 		background: $Wight;
 
 		&::after {
@@ -24,10 +24,10 @@
 			display: block;
 			left: 0;
 			bottom: 13px;
-			width: 32px;
-			height: 2px;
+			width: 36px;
+			height: 3.65px;
 			background: $Wight;
-			@include transition(all);
+			@include transition(all, 0.7s);
 		}
 
 		&::before {
@@ -36,10 +36,10 @@
 			display: block;
 			left: 0;
 			top: 12px;
-			width: 25px;
-			height: 2px;
+			width: 24px;
+			height: 3.65px;
 			background: $Wight;
-			@include transition(all);
+			@include transition(all, 0.7s);
 		}
 	}
 
@@ -52,7 +52,7 @@
 		-ms-transform: rotate(45deg);
 		transform: rotate(45deg);
 		top: 0;
-		width: 32px;
+		width: 36px;
 		background-color: $first-color;
 	}
 
@@ -60,17 +60,14 @@
 		-webkit-transform: rotate(-45deg);
 		-ms-transform: rotate(-45deg);
 		transform: rotate(-45deg);
-		bottom: -2px;
+		bottom: -4px;
 		background-color: $first-color;
 	}
 }
 
-.nav-toggle.active {
-	display: none;
-}
-
-.menu__header.header {
-	height: 110px;
+.menu-toggle__header {
+	width: 100%;
+	height: 100px;
 	background-color: $Black;
 }
 
@@ -79,7 +76,7 @@
 	left: -5px;
 	top: 22px;
 	width: 100%;
-	height: 2px;
+	height: 3.5px;
 	background-color: $Wight;
 
 	&:nth-child(1) {
@@ -100,8 +97,9 @@
 .header__close {
 	position: relative;
 	display: none;
-	width: 30px;
-	height: 30px;
+	width: 36px;
+	height: 36px;
+	margin-top: -10px;
 	border: none;
 	background: none;
 	z-index: 100;
@@ -133,32 +131,9 @@
 	transition: left 1s;
 }
 
-.menu--showed {
+.menu-toggle.menu--showed {
 	left: 0;
 	-webkit-transition: left 1s;
 	-o-transition: left 1s;
 	transition: left 1s;
-}
-
-.menu-nav {
-	margin-left: 25%;
-	margin-top: 15px;
-}
-
-.menu-nav__link {
-	display: inline-block;
-	color: $Wight;
-	font-size: 42px;
-	line-height: 50px;
-	font-weight: 700;
-	-webkit-transition: color 0.3s ease-in-out;
-	-o-transition: color 0.3s ease-in-out;
-	transition: color 0.3s ease-in-out;
-
-	&:hover {
-		color: $second-color;
-		-webkit-transition: color 0.3s ease-in-out;
-		-o-transition: color 0.3s ease-in-out;
-		transition: color 0.3s ease-in-out;
-	}
 }

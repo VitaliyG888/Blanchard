@@ -3,7 +3,7 @@
 .developments__container {
 	padding-bottom: 80px;
 	padding-top: 84px;
-	padding-left: 13px;
+	padding-left: 12px;
 }
 
 .developments__title {
@@ -20,6 +20,7 @@
 	width: 500px;
 	margin-top: 14px;
 	padding: 313px 18px 89px 49px;
+	box-sizing: border-box;
 	border: 1px solid $Grey;
 	background-repeat: no-repeat;
 	background-position: top;
@@ -58,15 +59,15 @@
 	.developments__link {
 		display: block;
 		position: absolute;
-		bottom: 44px;
+		bottom: 42px;
+		line-height: 23px;
 		color: $first-color;
 
 		&::after {
 			content: "";
 			display: block;
 			position: relative;
-			width: 92px;
-			height: 2px;
+			width: 88px;
 			border-bottom: 1px solid $first-color;
 		}
 
@@ -116,7 +117,7 @@
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 25px;
-	padding: 15px 34px;
+	padding: 15px 33px;
 	text-align: center;
 	background: none;
 	color: $first-color;

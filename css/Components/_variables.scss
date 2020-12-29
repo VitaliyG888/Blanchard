@@ -11,10 +11,10 @@ $Darck-grey: #333333;
 $tool-color:#efefef;
 $lite-grey:#e5e5e5;
 
-@mixin transition($property) {
-	-webkit-transition: $property 0.7s ease-in-out;
-	-o-transition: $property 0.7s ease-in-out;
-	transition: $property 0.7s ease-in-out;
+@mixin transition($property, $time) {
+	-webkit-transition: $property $time ease-in-out;
+	-o-transition: $property $time ease-in-out;
+	transition: $property $time ease-in-out;
 }
 
 @mixin spaces-between {
