@@ -18,8 +18,6 @@
 
 .catalog__transfer {
 	width: 450px;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
 
@@ -166,6 +164,8 @@
 	& img {
 		max-width: 750px;
 		height: 470px;
+		-o-object-fit: cover;
+		object-fit: cover;
 		margin-bottom: 33px;
 	}
 }
@@ -221,8 +221,6 @@
 		margin-top: 10px;
 		border-left: 1px solid $Black;
 		border-bottom: 1px solid $Black;
-		-webkit-transform: rotate(-45deg);
-		-ms-transform: rotate(-45deg);
 		transform: rotate(-45deg);
 	}
 
@@ -234,7 +232,7 @@
 		width: 50px;
 		height: 50px;
 		border-radius: 100px;
-		background-color: $btn-slider-color;
+		background-color: $btn-slider-color2;
 		z-index: -2;
 	}
 
@@ -272,7 +270,6 @@
 
 .accordion-item {
 	position: relative;
-	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	padding: 28px 0 24px;
 	width: 800px;
@@ -320,8 +317,6 @@
 			border-top: 1px solid $Black;
 			border-left: none;
 			border-bottom: none;
-			-webkit-transform: rotate(-45deg);
-			-ms-transform: rotate(-45deg);
 			transform: rotate(-45deg);
 		}
 

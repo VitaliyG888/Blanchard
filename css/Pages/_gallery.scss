@@ -8,7 +8,7 @@
 	.gallery__container {
 		position: relative;
 		padding-bottom: 81px;
-		padding-top: 80px;
+		padding-top: 78px;
 		padding-left: 12px;
 	}
 }
@@ -88,6 +88,10 @@
 	}
 }
 
+.choices__list--dropdown .choices__item--selectable[data-id='3'] {
+	border-top: 1px solid $Wight;
+}
+
 .choices__list {
 	color: $Wight;
 }
@@ -110,21 +114,17 @@ div {
 	&:after {
 		content: "";
 		display: block;
-		height: 8px;
-		width: 8px;
+		height: 9px;
+		width: 9px;
 		margin-right: 4px;
 		border-right: 1px solid $Wight;
 		border-top: 1px solid $Wight;
-		-webkit-transform: rotate(-45deg);
-		-ms-transform: rotate(-45deg);
 		transform: rotate(-45deg);
 	}
 
 	&.is-open:after {
 		border-left: 1px solid $Wight;
 		border-bottom: 1px solid $Wight;
-		-webkit-transform: rotate(-45deg);
-		-ms-transform: rotate(-45deg);
 		transform: rotate(-45deg);
 	}
 }
@@ -139,7 +139,7 @@ div {
 
 .swiper-pagination-fraction {
 	bottom: 14px;
-	left: 2px;
+	left: -2px;
 	width: 89px;
 }
 
@@ -155,11 +155,24 @@ div {
 	@include transition(all, 0.5s);
 }
 
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+	left: 7px;
+	right: auto;
+}
+
 .swiper-button-next-st:focus,
 .swiper-button-prev-st:focus {
+	background-color: $btn-slider-color2;
 	border: 2px solid $second-color;
 	outline: none;
 	@include transition(all, 0.5s);
+}
+
+.swiper-button-next-st:focus::after,
+.swiper-button-prev-st:focus::after {
+	color: $Black;
+	@include transition(color, 0.5s);
 }
 
 .swiper-button-next-st:hover,
@@ -176,10 +189,10 @@ div {
 	@include transition(all, 0.5s);
 }
 
-.swiper-button-next-st:after,
-.swiper-button-prev-st:after {
+.swiper-button-next-st::after,
+.swiper-button-prev-st::after {
 	font-size: 10px;
-	color: $Black;
+	color: $Wight;
 	@include transition(color, 0.5s);
 }
 
@@ -189,10 +202,6 @@ div {
 .swiper-button-prev.swiper-button-prev-st:active::after {
 	color: $Wight;
 	@include transition(color, 0.5s);
-}
-
-.swiper-button-disabled {
-	background-color: rgba(223, 223, 223, 0.5);
 }
 
 .swiper-pagination-st {
@@ -235,8 +244,6 @@ div {
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
 		z-index: 2;
 		width: 310px;

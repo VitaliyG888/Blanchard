@@ -40,12 +40,8 @@
 	function selectContainer(current) {
 		[].forEach.call(containers, function (container, index) {
 			if (index == current) {
-				let startY = container.getBoundingClientRect().top - 30,
+				let startY = container.getBoundingClientRect().top - 60,
 					direction = (startY < 0) ? -1 : (startY > 0) ? 1 : 0;
-				// console.log(container);
-				// console.log(current);
-				// console.log(direction);
-				// console.log(index);
 				if (direction == 0) return;
 				scroll(container, direction);
 			}
@@ -53,17 +49,13 @@
 	}
 
 	function scroll(el, direction) {
-		let duration1 = 15000,
+		let duration1 = 5000,
 			start = new Date().getTime();
 
 		let fn = function () {
-			let top = el.getBoundingClientRect().top - 30,
+			let top = el.getBoundingClientRect().top,
 				now = new Date().getTime() - start,
 				result = Math.round(top * now / duration1);
-			// console.log(start);
-			// console.log(top);
-			// console.log(now);
-			// console.log(result);
 
 			result = (result > direction * top) ? top : (result == 0) ? direction : result;
 			if (direction * top > 0 && (pageHeight - window.pageYOffset) > direction * document.documentElement.clientHeight) {

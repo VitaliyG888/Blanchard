@@ -34,9 +34,6 @@
 }
 
 .contacts__form {
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
 	position: relative;
 	width: 400px;
@@ -75,8 +72,6 @@
 		&:hover {
 			background-color: $first-color;
 			color: #ffffff;
-			-webkit-transition: all 0.5s ease-in-out;
-			-o-transition: all 0.5s ease-in-out;
 			transition: all 0.5s ease-in-out;
 		}
 
@@ -99,7 +94,6 @@
 .contacts__input.js-validate-error-field {
 	margin-bottom: 7px !important;
 	border: 2px solid rgb(184, 17, 17) !important;
-	-webkit-box-sizing: border-box !important;
 	box-sizing: border-box !important;
 }
 
@@ -111,8 +105,6 @@
 
 .contacts__map.map {
 	position: absolute;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
 	height: 700px;
@@ -121,11 +113,11 @@
 	.map__right {
 		border-left: 2px solid $Grey;
 		height: 700px;
-		width: 64vw;
+		width: 65vw;
 	}
 
 	.map__left {
-		width: 36vw;
+		width: 35vw;
 		height: 100%;
 		z-index: -100;
 	}

@@ -78,6 +78,14 @@
 			height: 31px;
 		}
 
+		& svg {
+
+			rect,
+			path {
+				transition: all .7s ease-in;
+			}
+		}
+
 		&:hover svg {
 
 			rect,

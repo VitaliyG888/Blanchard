@@ -260,7 +260,7 @@
 			</div>
 		</div>
 	</header>
-	<!-- Первый экран -->
+
 	<section class="first">
 		<div class="first__swiper background swiper-container" id="slider0">
 			<div class="background__slider swiper-wrapper">
@@ -277,12 +277,12 @@
 					плановых
 					заданий
 					создаёт предпосылки для новых предложений.</p>
-				<button class="first__subscription" aria-label="Подписаться на рассылку">Подписаться на
+				<button class="first__subscription reset-btn" aria-label="Подписаться на рассылку">Подписаться на
 					рассылку</button>
 			</div>
 		</div>
 	</section>
-	<!-- Секция О нас -->
+
 	<section class="about">
 		<div class="container about__container">
 			<h2 class="about__title title">О нас</h2>
@@ -296,7 +296,7 @@
 				набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
 		</div>
 	</section>
-	<!-- Секция Галерея -->
+
 	<section class="gallery">
 		<div class="container gallery__container">
 
@@ -305,7 +305,7 @@
 					<h2 class="gallery__title title">Галерея</h2>
 					<span class="gallery__docket">Фильтровать по:</span>
 					<div class="gallery__filter">
-						<select class="gallery__select select" name="artist" aria-label="Выбор фильтра">
+						<select class="gallery__select select" name="artist">
 							<option class="gallery__option" value="Автор">Автор</option>
 							<option class="gallery__option" value="Направление">Направление</option>
 							<option class="gallery__option" value="Техника">Техника</option>
@@ -318,9 +318,8 @@
 						<div class="swiper-pagination swiper-pagination-st pagination1"></div>
 						<div class="swiper-button-next swiper-button-next-st button1-next"></div>
 					</div>
-
 					<div class="gallery__swiper swiper-container" id="slider1">
-						<div class="gallery__slider swiper-wrapper">
+						<div class="gallery__wraper swiper-wrapper">
 							<div class="swiper-slide gallery__slider picture1"></div>
 							<div class="swiper-slide gallery__slider picture2"></div>
 							<div class="swiper-slide gallery__slider picture3"></div>
@@ -361,7 +360,8 @@
 			</div>
 		</div>
 	</section>
-	<!-- Секция каталог -->
+
+
 	<section class="catalog">
 		<div class="container catalog__container">
 			<div class="catalog__header flex">
@@ -391,21 +391,18 @@
 				normes d'éthique et de moralité. Dans le cadre d'une vue d'ensemble, cherchant à supplanter les
 				production, nanotechnologie et à ce jour restent le lot des libéraux qui aspirent à être fonctionnels
 				séparés en éléments indépendants.</p>
-
 			<p class="catalog__description tab tab2">Aktionäre der größten Unternehmen, die ein Paradebeispiel sind
 				Die kontinentaleuropäische Art der politischen Kultur wird als universell verletzend eingestuft
 				Normen der Ethik und Moral. Als Teil des Gesamtbildes versuchen, traditionelle zu ersetzen
 				Produktion, Nanotechnologie und bis heute sind viele Liberale, die sich danach sehnen, funktionsfähig zu
 				sein
 				in unabhängige Elemente getrennt.</p>
-
 			<p class="catalog__description tab tab3">Azionisti delle più grandi aziende che sono un ottimo esempio
 				tipo di cultura politica continentale-europea, sarà dichiarata violante universale
 				norme di etica e moralità. Come parte del quadro più ampio, cercando di soppiantare il tradizionale
 				la produzione, la nanotecnologia e fino ad oggi rimangono il destino dei liberali che desiderano essere
 				funzionali
 				separati in elementi indipendenti.</p>
-
 			<p class="catalog__description tab tab4 is-active__description">Акционеры крупнейших компаний, которые
 				представляют собой яркий
 				пример
@@ -413,7 +410,6 @@
 				нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное
 				производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально
 				разнесены на независимые элементы. </p>
-
 			<p class="catalog__description tab tab5">Accionistas de las mayores empresas que son un buen ejemplo
 				tipo de cultura política continental-europea, será declarada violatoria universal
 				normas de ética y moralidad. Como parte del panorama general, buscando suplantar los tradicionales
@@ -434,7 +430,7 @@
 					</p>
 				</div>
 				<div class="catalog__artists accordeon">
-					<div class="accordeon-section js-section">
+					<div class="accordeon-section js-section active">
 						<button class="accordeon-title accordeon-title--first">C 1400 по 1499 гг.</button>
 						<div class="accordeon-content js-content">
 							<div class="accordion-item flex" onclick="event.stopPropagation()">
@@ -475,7 +471,7 @@
 							<div class="accordion-item flex" onclick="event.stopPropagation()">
 								<button class="accordeon-link">Бенедетто ди Биндо</button>
 								<button class="accordeon-link">Бергоньоне, Амброджо</button>
-								<button class="accordeon-l`ink">Биссоло, Франческо</button>
+								<button class="accordeon-link">Биссоло, Франческо</button>
 								<button class="accordeon-link">Больтраффио, Джованни</button>
 								<button class="accordeon-link">Бонсиньори, Франческо</button>
 								<button class="accordeon-link">Боттичини, Рафаэлло</button>
@@ -736,7 +732,8 @@
 			</div>
 		</div>
 	</section>
-	<!-- Секция События -->
+
+
 	<section class="developments">
 		<div class="container developments__container">
 			<h2 class="developments__title title">События</h2>
@@ -792,7 +789,8 @@
 			<button class="developments__btn" aria-label="Показать все события">Все события</button>
 		</div>
 	</section>
-	<!-- Секция Издания -->
+
+
 	<section class="editions">
 		<div class="container editions__container">
 			<h2 class="editions__title title">Издания</h2>
@@ -850,9 +848,7 @@
 						<div class="swiper-button-prev swiper-button-prev-st button2-prev"></div>
 						<div class="swiper-pagination swiper-pagination-st pagination2"></div>
 						<div class="swiper-button-next swiper-button-next-st button2-next"></div>
-
 					</div>
-
 					<div class="editions__swiper swiper-container" id="slider2">
 						<div class="editions__slider swiper-wrapper">
 							<div class="swiper-slide editions__slider editions1">
@@ -907,7 +903,8 @@
 			</div>
 		</div>
 	</section>
-	<!-- Секция Проекты -->
+
+
 	<section class="projects">
 		<div class="container projects__container">
 			<h2 class="projects__title title">Проекты</h2>
@@ -948,8 +945,6 @@
 				очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:
 				<a class="projects__link" href=" blanchard-art.ru/projects/about">blanchard-art.ru/projects/about</a>
 			</p>
-
-
 			<div class="projects__slider">
 				<h3 class="projects__partners">Партнёры проектов:</h3>
 				<div class="projects__showing">
@@ -958,7 +953,6 @@
 						<div class="swiper-pagination swiper-pagination-st pagination3"></div>
 						<div class="swiper-button-next swiper-button-next-st button3-next"></div>
 					</div>
-
 					<div class="projects__swiper swiper-container" id="slider3">
 						<div class="projects__slider swiper-wrapper">
 							<div class="swiper-slide projects__slider projects1"></div>
@@ -976,9 +970,9 @@
 				<h2 class="contacts__title title">Контакты</h2>
 			</div>
 		</div>
-
 	</section>
-	<!-- Секция Кантакты -->
+
+
 	<section class="contacts">
 		<div class="contacts__map map">
 			<div class="map__left"></div>
@@ -994,8 +988,8 @@
 						data-validate-field="name">
 					<input class="contacts__tel contacts__input" type="tel" name="phone" placeholder="Телефон*"
 						data-validate-field="tel">
-					<button class="contacts__button" type="submit" aria-label="Заказать обратный звонок">Заказать</button>
-
+					<button class="contacts__button reset-btn" type="submit"
+						aria-label="Заказать обратный звонок">Заказать</button>
 					<span class="contacts__tweet contacts__docket">Связаться в один клик</span>
 					<div class="contacts__social flex">
 						<a class="contacts__whats" href="https://api.whatsapp.com/send?phone=77788899965"><img
@@ -1006,12 +1000,10 @@
 				</form>
 			</div>
 		</div>
-
-
 	</section>
-	<!-- Кнопка возврата на верх -->
+
+
 	<button class="back_to_top" title="Наверх" aria-label="Скролл на верх"></button>
-	<!-- Футер -->
 	<footer class="footer">
 		<div class="container footer__container flex">
 			<a href="" class="footer__logo"><img src="image/logo-footer.png" alt="Логотип"></a>
@@ -1028,13 +1020,14 @@
 			</ul>
 		</div>
 	</footer>
-	<!-- Скрипты -->
+
+
 	<script src="js/adaptiv.js"></script>
 	<script src="js/just-validate.min.js"></script>
 	<script src="js/inputmask.min.js"></script>
 	<script src="js/choices.min.js"></script>
 	<script src="js/select.js"></script>
-	<script src="js/accordeon.js"></script>
+	<script src="js/accodeon.js"></script>
 	<script src="js/valid.js"></script>
 	<script src="js/menu.js"></script>
 	<script src="js/simplebar.js"></script>
@@ -1047,7 +1040,6 @@
 	<script src="js/tab.js"></script>
 	<script src="js/event.js"></script>
 	<script src="js/scroll-back.js"></script>
-	<script src="js/inert.js"></script>
 
 </body>
 
