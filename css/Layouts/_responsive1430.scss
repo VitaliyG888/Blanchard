@@ -123,7 +123,7 @@
 
 	.first .first__description {
 		max-width: 693px;
-		margin-bottom: 134px;
+		margin-bottom: 132px;
 	}
 
 	.first__block-up {
@@ -135,8 +135,12 @@
 		padding-left: 15px;
 	}
 
+	.about__title {
+		margin-left: -2px;
+	}
+
 	.gallery .gallery__container {
-		padding-bottom: 64px;
+		padding-bottom: 66px;
 		padding-left: 14px;
 	}
 
@@ -168,6 +172,10 @@
 		margin-bottom: 7px;
 	}
 
+	.catalog__title {
+		margin-right: 32px;
+	}
+
 	.catalog__transfer {
 		width: 450px;
 		margin-top: 18px;
@@ -193,14 +201,6 @@
 
 	.accordeon-link {
 		width: 230px;
-	}
-
-	.catalog__description {
-		letter-spacing: -0.2px;
-	}
-
-	.catalog__title {
-		margin-right: 32px;
 	}
 
 	/* developments section */
@@ -265,33 +265,27 @@
 		margin-left: 0px;
 	}
 
-	.swiper-slide.editions__slider {
-		width: 320px;
-		height: 430px;
-		background-size: 100% 320px;
-		margin-right: 57px;
-	}
-
 	.editions__container {
 		position: relative;
 		padding-bottom: 13px;
 	}
 
-	.editions__choice {
+	.editions__priceform {
 		position: absolute;
-		left: 599px;
+		flex-direction: row;
+		align-items: center;
+		left: 540px;
 		top: 105px;
 	}
 
 	.editions__price {
-		position: absolute;
-		right: 371px;
-		top: 113px;
+		margin-bottom: 0;
+		margin-right: 14px;
 	}
 
-	.editions__order {
-		margin-right: 171px;
-		margin-top: 390px;
+	.editions__img {
+		height: 320px;
+		margin-bottom: 14px;
 	}
 
 	.editions__checkboks {

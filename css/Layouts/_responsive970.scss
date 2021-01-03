@@ -8,8 +8,8 @@
 	}
 
 	.header__container {
-		padding-bottom: 26px;
 		padding-top: 29px;
+		padding-bottom: 29px;
 
 		.header__logo {
 			margin-left: 7px;
@@ -21,8 +21,8 @@
 	}
 
 	.first .first__container {
-		padding-top: 50px;
-		padding-bottom: 115px;
+		padding-top: 114px;
+		padding-bottom: 111px;
 	}
 
 	.first__description {
@@ -30,13 +30,19 @@
 		margin-bottom: 135px;
 	}
 
-	.aboutUs__container {
-		padding-bottom: 51px;
+	.about__container {
+		padding-bottom: 72px;
 
-		.aboutUs__description {
+		.about__description {
 			max-width: 666px;
 			letter-spacing: -0.1px;
 		}
+	}
+
+	.gallery .gallery__container {
+		padding-top: 80px;
+		padding-left: 12px;
+		padding-bottom: 70px;
 	}
 
 	.gallery__block {
@@ -44,16 +50,19 @@
 	}
 
 	.gallery__choice {
-		margin-bottom: 140px;
+		margin-bottom: 112px;
 	}
 
 	.gallery__showing {
-		margin-top: 0;
-		margin-bottom: -4px;
+		margin-bottom: 14px;
+
+		&.swiper {
+			padding-top: 17px;
+		}
 	}
 
 	.gallery__swiper-button1.swiper-button {
-		margin-bottom: 10px;
+		margin-bottom: 22px;
 	}
 
 	.swiper-container#slider1 {
@@ -62,55 +71,54 @@
 
 	.swiper-button-next-st,
 	.swiper-button-prev-st {
-		top: -28px;
-	}
-
-	.swiper-button-prev-st {
-		left: -1px;
+		top: 2px;
 	}
 
 	.swiper-button-next-st {
-		right: 6px;
+		right: 11px;
 	}
 
 	.swiper-pagination-st {
-		top: -26px;
+		top: -13px;
+
+		&.swiper-pagination-fraction {
+			font-size: 16px;
+		}
+
 	}
 
 	.gallery__description {
+		position: initial;
 		max-width: 668px;
-		margin-top: 0;
+		margin-left: 3px;
 	}
 
 	// catalog section
 
 	.catalog__container {
-		padding-bottom: 7px;
+		padding-top: 65px;
 	}
 
 	.catalog__header {
-		margin-bottom: -38px;
+		margin-bottom: 11px;
 	}
 
-	.catalog__transfer {
-		margin-top: 43px;
+	.catalog__title {
+		margin-top: 11px;
+		margin-right: 33px;
 	}
 
-	.catalog__description {
-		margin-left: 0;
-	}
-
-	li.catalog__language {
-		margin-right: -15px;
+	.catalog__language:not(:last-child) {
+		margin-right: 34px;
 	}
 
 	.catalog__description {
 		width: 669px;
 		margin-bottom: 95px;
+		margin-left: 0;
 	}
 
 	.catalog__content {
-		-ms-flex-wrap: wrap-reverse;
 		flex-wrap: wrap-reverse;
 	}
 
@@ -119,27 +127,20 @@
 		max-width: 668px;
 		width: 100%;
 		margin-left: 0;
-		margin-bottom: 50px;
-
+		margin-bottom: 49px;
 
 		.accordeon-section {
 			width: 100%;
 
-
 			.accordeon-item.flex {
 				width: 100%;
-
 
 				.accordeon-link {
 					width: 210px;
 
 				}
-
 			}
-
-
 		}
-
 	}
 
 	.catalog__card.card {

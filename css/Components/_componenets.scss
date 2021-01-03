@@ -8,10 +8,11 @@ p {
 	line-height: 32px;
 }
 
-h2 {
-	margin-left: -2px;
+.title {
 	font-weight: 400;
 	font-size: 48px;
+	line-height: 65px;
+	color: $Black;
 }
 
 h3 {

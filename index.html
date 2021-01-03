@@ -832,16 +832,18 @@
 							</div>
 						</div>
 					</div>
-					<span class="editions__price">Цена</span>
-					<form class="editions__choice flex" tabindex="1" aria-label="Выбор цены издания">
-						<label class="editions__from editions__input" for="choice1">От</label>
-						<input class="editions__number editions__number--from" id="choice1" type="number" name="choice1"
-							placeholder="50">
-						<label class="editions__to editions__input" for="choice2">до</label>
-						<input class="editions__number  editions__number--to" id="choice2" type="number" name="choice2"
-							placeholder="25 000">
-						<label class="editions__to editions__input" for="choice2">рублей</label>
-					</form>
+					<div class="editions__priceform flex">
+						<label class="editions__price">Цена</label>
+						<form class="editions__choice flex" tabindex="1" aria-label="Выбор цены издания">
+							<label class="editions__from editions__input" for="choice1">От</label>
+							<input class="editions__number editions__number--from" id="choice1" type="number" name="choice1"
+								placeholder="50">
+							<label class="editions__to editions__input" for="choice2">до</label>
+							<input class="editions__number  editions__number--to" id="choice2" type="number" name="choice2"
+								placeholder="25 000">
+							<label class="editions__to editions__input" for="choice2">рублей</label>
+						</form>
+					</div>
 				</div>
 				<div class="editions__showing">
 					<div class="editions__swiper-button2 swiper-button flex">
@@ -852,49 +854,71 @@
 					<div class="editions__swiper swiper-container" id="slider2">
 						<div class="editions__slider swiper-wrapper">
 							<div class="swiper-slide editions__slider editions1">
-								<div class="editions__name">Искусство цвета<br><span class="editions__autor">Иттен,
-										Иоханнес</span></div>
-								<span class="editions__prise">620 руб</span>
+								<img class="editions__img" src="image/editions1.jpg" alt="">
+								<div class="editions__pricename">
+									<div class="editions__name">Искусство цвета<br><span class="editions__autor">Иттен,
+											Иоханнес</span></div>
+									<span class="editions__prise">620 руб</span>
+								</div>
 								<button class="editions__order">Заказать</button>
 							</div>
 							<div class="swiper-slide editions__slider editions2">
-								<div class="editions__name">Типографика<br><span class="editions__autor">
-										Рудер, Эмиль </span></div>
-								<span class="editions__prise">2 450 руб</span>
+								<img class="editions__img" src="image/editions2.jpg" alt="">
+								<div class="editions__pricename">
+									<div class="editions__name">Типографика<br><span class="editions__autor">
+											Рудер, Эмиль </span></div>
+									<span class="editions__prise">2 450 руб</span>
+								</div>
 								<button class="editions__order">Заказать</button>
 							</div>
 							<div class="swiper-slide editions__slider editions3">
-								<div class="editions__name">Книга про буквы
-									<br><span class="editions__autor">Гордон, Юрий </span>
+								<img class="editions__img" src="image/editions3.jpg" alt="">
+								<div class="editions__pricename">
+									<div class="editions__name">Книга про буквы
+										<br><span class="editions__autor">Гордон, Юрий </span>
+									</div>
+									<span class="editions__prise">2 200 руб</span>
 								</div>
-								<span class="editions__prise">2 200 руб</span>
 								<button class="editions__order">Заказать</button>
 							</div>
 							<div class="swiper-slide editions__slider editions4">
-								<div class="editions__name" id="name4">Николай Ильин
-									<br><span class="editions__autor">Кричевский, Владимир </span>
+								<img class="editions__img" src="image/editions4.jpg" alt="">
+								<div class="editions__pricename">
+									<div class="editions__name" id="name4">Николай Ильин
+										<br><span class="editions__autor">Кричевский, Владимир </span>
+									</div>
+									<span class="editions__prise">1 100 руб</span>
 								</div>
-								<span class="editions__prise">1 100 руб</span>
 								<button class="editions__order">Заказать</button>
 							</div>
 							<div class="swiper-slide editions__slider editions5">
-								<div class="editions__name" id="name5">Модульные сетки в граф...<br><span
-										class="editions__autor">Мюллер-Брокманн, Йозеф </span></div>
-								<span class="editions__prise">1 450 руб</span>
+								<img class="editions__img" src="image/editions5.jpg" alt="">
+								<div class="editions__pricename">
+									<div class="editions__name" id="name5">Модульные сетки в граф...<br><span
+											class="editions__autor">Мюллер-Брокманн, Йозеф
+										</span></div>
+									<span class="editions__prise">1 450 руб</span>
+								</div>
 								<button class="editions__order">Заказать</button>
 							</div>
 							<div class="swiper-slide editions__slider editions6">
-								<div class="editions__name" id="name6">Эволюция графических ст...
-									<br><span class="editions__autor">Хеллер, Чваст</span>
+								<img class="editions__img" src="image/editions6.jpg" alt="">
+								<div class="editions__pricename">
+									<div class="editions__name" id="name6">Эволюция графических ст...
+										<br><span class="editions__autor">Хеллер, Чваст</span>
+									</div>
+									<span class="editions__prise">3 200 руб</span>
 								</div>
-								<span class="editions__prise">3 200 руб</span>
 								<button class="editions__order">Заказать</button>
 							</div>
 							<div class="swiper-slide editions__slider editions7">
-								<div class="editions__name" id="name7">Искусство и визуальное в...
-									<br><span class="editions__autor">Арнхейм, Рудольф </span>
+								<img class="editions__img" src="image/editions7.jpg" alt="">
+								<div class="editions__pricename">
+									<div class="editions__name" id="name7">Искусство и визуальное в...
+										<br><span class="editions__autor">Арнхейм, Рудольф </span>
+									</div>
+									<span class="editions__prise">2 200 руб</span>
 								</div>
-								<span class="editions__prise">2 200 руб</span>
 								<button class="editions__order">Заказать</button>
 							</div>
 						</div>
