@@ -1,5 +1,5 @@
 const burger = document.querySelector('.js-burger');
-const close = document.querySelector('.header__close');
+const close = document.querySelector('.js-close');
 const menu = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.header__nav');
 const body = document.body;

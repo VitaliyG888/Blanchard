@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 	let screenWidth1650 = window.matchMedia('(max-width: 1650px)'),
-		screenWidth1430 = window.matchMedia('(max-width: 1430px)');
-
-	let headerNav = document.querySelector('#header-nav');
-	let searchBtn = document.querySelector('#search-btn');
-	let headerSearchInput = document.querySelector('#header__search-input');
+		screenWidth1430 = window.matchMedia('(max-width: 1430px)'),
+		headerNav = document.querySelector('#header-nav'),
+		searchBtn = document.querySelector('#search-btn'),
+		headerSearchInput = document.querySelector('#header__search-input');
 
 	if (document.documentElement.clientWidth < 1650) {
 

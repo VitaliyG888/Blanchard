@@ -1,8 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-	const accordeonSectionAll = document.querySelectorAll('.js-section');
 
-	function accordeonActiveit() {
+
+	let accordeonActiveit = function () {
+
+		const accordeonSectionAll = document.querySelectorAll('.js-section');
+
 		[].forEach.call(accordeonSectionAll, function (item, index) {
 			if (!index == 0) {
 				item.querySelector('.js-content').style.maxHeight = '0px'

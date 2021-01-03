@@ -13,9 +13,9 @@
 }
 
 .header__logo {
+	z-index: 200;
 	width: 173px;
 	height: 40px;
-	z-index: 200;
 }
 
 .header__nav {
@@ -38,10 +38,15 @@
 		content: "";
 		position: absolute;
 		margin: -4px -7px;
+		border: 2px solid $second-color;
 		width: 125%;
 		height: 30px;
-		border: 2px solid $second-color;
 		opacity: 0;
+		transition: opacity .5s ease-in;
+	}
+
+	&:focus::before {
+		opacity: 1;
 		transition: opacity .5s ease-in;
 	}
 
@@ -53,11 +58,6 @@
 	&:active {
 		color: $second-color;
 		transition: color 0.5s ease-in-out;
-	}
-
-	&:focus::before {
-		opacity: 1;
-		transition: opacity .5s ease-in;
 	}
 }
 
@@ -72,11 +72,11 @@
 		content: "";
 		position: absolute;
 		margin: -4px -7px;
+		border: 2px solid $second-color;
 		width: 125%;
 		height: 30px;
-		border: 2px solid $second-color;
 		opacity: 0;
-		transition: opacity .5s ease-in;
+		transition: opacity 0.5s ease-in;
 	}
 
 	svg {
@@ -86,6 +86,11 @@
 	svg path {
 		fill: $Wight;
 		transition: fill 0.5s ease-in;
+	}
+
+	&:focus::before {
+		opacity: 1;
+		transition: opacity 0.5s ease-in;
 	}
 
 	&:hover {
@@ -106,11 +111,6 @@
 			fill: $second-color;
 			transition: fill 0.5s ease-in;
 		}
-	}
-
-	&:focus::before {
-		opacity: 1;
-		transition: opacity .5s ease-in;
 	}
 }
 
@@ -158,6 +158,18 @@
 	color: $Wight;
 	transition: all 0.5s ease-in;
 
+	&::before {
+		content: "";
+		position: absolute;
+		left: -6px;
+		top: 0;
+		border: 2px solid $first-color;
+		width: 115%;
+		height: 30px;
+		opacity: 0;
+		transition: opasity 0.5s ease-in;
+	}
+
 	&::after {
 		content: "";
 		display: inline-block;
@@ -172,15 +184,8 @@
 		transition: border-color 0.5s ease-in-out;
 	}
 
-	&::before {
-		content: "";
-		position: absolute;
-		left: -6px;
-		top: 0;
-		opacity: 0;
-		width: 115%;
-		height: 30px;
-		border: 2px solid $first-color;
+	&:focus::before {
+		opacity: 1;
 		transition: opasity 0.5s ease-in;
 	}
 
@@ -196,11 +201,6 @@
 			border-left: none;
 			transition: all 0.5s ease-in-out;
 		}
-	}
-
-	&:focus::before {
-		opacity: 1;
-		transition: opasity 0.5s ease-in;
 	}
 }
 
@@ -262,25 +262,23 @@
 		width: 220px;
 		height: 40px;
 		color: $Wight;
-		transition: background-color 0.5s ease-in;
-		transition: border-color 0.5s ease-in;
-
-		&:hover {
-			border-color: $first-color;
-			transition: border-color 0.5s ease-in;
-		}
+		transition: all 0.5s ease-in;
 
 		&:focus {
 			border-color: $first-color;
 			transition: border-color 0.5s ease-in;
 		}
 
+		&:hover {
+			border-color: $first-color;
+			transition: border-color 0.5s ease-in;
+		}
+
 		&:active {
 			background-color: $first-color;
-			opacity: 0.4;
 			border-color: $extra-lite;
-			transition: background-color 0.5s ease-in;
-			transition: border-color 0.5s ease-in;
+			opacity: 0.4;
+			transition: all 0.5s ease-in;
 		}
 	}
 }
@@ -309,8 +307,8 @@
 
 .search {
 	position: relative;
-	padding-left: 44px;
 	outline: 2px solid rgba($first-color, 0);
+	padding-left: 44px;
 	transition: all 0.5s ease-in;
 
 	.search__magnifier {
@@ -360,7 +358,7 @@
 		transition: all 0.5s ease-in;
 	}
 
-	&:hover .search__input {
+	&:hover {
 		border-bottom: 1px solid $first-color;
 		transition: border-color 0.5s ease-in;
 	}

@@ -195,7 +195,7 @@
 }
 
 .accordeon-title {
-	padding: 38px 0 43.5px;
+	padding: 38px 0 43.9px;
 	width: 100%;
 	border: none;
 	border-bottom: 1px solid $Black;
@@ -217,8 +217,8 @@
 		right: 10px;
 		height: 12px;
 		width: 12px;
-		margin-right: 8px;
-		margin-top: 10px;
+		margin-right: 9px;
+		margin-top: 12px;
 		border-left: 1px solid $Black;
 		border-bottom: 1px solid $Black;
 		transform: rotate(-45deg);
@@ -268,7 +268,7 @@
 	@include transition (all, 0.5s);
 }
 
-.accordion-item {
+.accordeon-item {
 	position: relative;
 	flex-wrap: wrap;
 	padding: 28px 0 24px;
@@ -311,8 +311,8 @@
 			right: 10px;
 			height: 12px;
 			width: 12px;
-			margin-left: 4px;
-			margin-top: 17px;
+			margin-left: 6px;
+			margin-top: 14px;
 			border-right: 1px solid $Black;
 			border-top: 1px solid $Black;
 			border-left: none;
