@@ -130,8 +130,8 @@ div {
 	padding-top: 47px;
 }
 
-.swiper-button {
-	margin-bottom: 22px;
+.gallery__swiper-button1 {
+	margin-bottom: 24px;
 }
 
 .swiper-pagination-fraction {
@@ -408,7 +408,7 @@ div {
 	letter-spacing: 0.4px;
 	color: $Wight;
 
-	span {
-		color: $first-color;
+	a {
+		color: $first-lite;
 	}
 }

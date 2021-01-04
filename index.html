@@ -356,7 +356,9 @@
 			</div>
 			<div class="gallery__description">
 				<p>Вам предоставляется 10 бесплатных скачиваний. Для увеличения
-					количества скачиваний <span>авторизуйтесь,</span> либо воспользуйтесь лицензией. </p>
+					количества скачиваний <a href="#" class="gallery__description--authorization">авторизуйтесь,</a> либо
+					воспользуйтесь
+					лицензией. </p>
 			</div>
 		</div>
 	</section>
@@ -738,52 +740,84 @@
 		<div class="container developments__container">
 			<h2 class="developments__title title">События</h2>
 			<div class="developments__news flex">
-				<div class="developments_card card1">
-					<span class="developments__signature signature">Музей им. Щусева<br>с 20 марта по 30 апреля</span>
-					<h3 class="developments__header">Книжная гравюра в живом восприятии</h3>
-					<p class="developmets__descriptions" id="card1Description">Один из ведущих флорентийских художников
-						Кватроченто,
-						основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава
-						художественной мастерской, где юный Микеланджело.</p>
-					<a class="developments__link link1" href="#">Подробнее</a>
+				<div class="developments__card card1">
+					<picture class="developments__picture">
+						<source class="developments__img" srcset="image/dev1.webp">
+						<img class="developments__img" src="image/dev1.jpg" alt="Книжная гравюра в живом восприятии">
+					</picture>
+					<div class="developments__card--down">
+						<span class="developments__signature signature">Музей им. Щусева<br>с 20 марта по 30 апреля</span>
+						<h3 class="developments__header">Книжная гравюра в живом восприятии</h3>
+						<p class="developmets__descriptions" id="card1Description">Один из ведущих флорентийских художников
+							Кватроченто,
+							основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава
+							художественной мастерской, где юный Микеланджело.</p>
+						<a class="developments__link link1" href="#">Подробнее</a>
+					</div>
 				</div>
-				<div class="developments_card card2">
-					<span class="developments__signature signature">ММОМА<br>24 марта 19:00</span>
-					<h3 class="developments__header">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-					<p class="developmets__descriptions" id="card2Description">Высокий уровень вовлечения представителей
-						целевой аудитории
-						является четким доказательством простого факта: постоянный количественный рост и сфера нашей
-						активности представляет собой интересный эксперимент проверки новых принципов формирования...
-					</p>
-					<a class="developments__link link2" href="#">Подробнее</a>
+				<div class="developments__card card2">
+					<picture class="developments__picture">
+						<source class="developments__img" srcset="image/dev2.webp">
+						<img class="developments__img" src="image/dev2.jpg"
+							alt="«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.">
+					</picture>
+					<div class="developments__card--down">
+						<span class="developments__signature signature">ММОМА<br>24 марта 19:00</span>
+						<h3 class="developments__header">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+						<p class="developmets__descriptions" id="card2Description">Высокий уровень вовлечения представителей
+							целевой аудитории
+							является четким доказательством простого факта: постоянный количественный рост и сфера нашей
+							активности представляет собой интересный эксперимент проверки новых принципов формирования...
+						</p>
+						<a class="developments__link link2" href="#">Подробнее</a>
+					</div>
 				</div>
-				<div class="developments_card card3">
-					<span class="developments__signature signature">Еврейский музей<br>с 31 марта по 21 апреля</span>
-					<h3 class="developments__header">Выставка «Формация 2020»</h3>
-					<p class="developmets__descriptions" id="card3Description">Идейные соображения высшего порядка, а
-						также современная
-						методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как
-						перспективное планирование играет определяющее значение для новых принципов формирования
-						материально-технической и кадровой базы.</p>
-					<a class="developments__link link3" href="#">Подробнее</a>
+				<div class="developments__card card3">
+					<picture class="developments__picture">
+						<source class="developments__img" srcset="image/dev3.webp">
+						<img class="developments__img" src="image/dev3.jpg" alt="Выставка «Формация 2020»">
+					</picture>
+					<div class="developments__card--down">
+						<span class="developments__signature signature">Еврейский музей<br>с 31 марта по 21 апреля</span>
+						<h3 class="developments__header">Выставка «Формация 2020»</h3>
+						<p class="developmets__descriptions" id="card3Description">Идейные соображения высшего порядка, а
+							также современная
+							методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как
+							перспективное планирование играет определяющее значение для новых принципов формирования
+							материально-технической и кадровой базы.</p>
+						<a class="developments__link link3" href="#">Подробнее</a>
+					</div>
 				</div>
-				<div class="developments_card card4">
-					<span class="developments__signature signature">Третьяковка на Крымском валу<br> с 30 марта по 30
-						апреля</span>
-					<h3 class="developments__header">XXIV Международная биеннале молодого искусства</h3>
-					<p class="developmets__descriptions" id="card4Description">Внезапно, реплицированные с зарубежных
-						источников, современные исследования представляют собой не что иное, как квинтэссенцию победы
-						маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и
-						финансовых....</p>
-					<a class="developments__link link4" href="#">Подробнее</a>
+				<div class="developments__card card4">
+					<picture class="developments__picture">
+						<source class="developments__img" srcset="image/dev4.webp">
+						<img class="developments__img" src="image/dev4.jpg" alt="XXIV Международная биеннале молодого искусства">
+					</picture>
+					<div class="developments__card--down">
+						<span class="developments__signature signature">Третьяковка на Крымском валу<br> с 30 марта по 30
+							апреля</span>
+						<h3 class="developments__header">XXIV Международная биеннале молодого искусства</h3>
+						<p class="developmets__descriptions" id="card4Description">Внезапно, реплицированные с зарубежных
+							источников, современные исследования представляют собой не что иное, как квинтэссенцию победы
+							маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и
+							финансовых....</p>
+						<a class="developments__link link4" href="#">Подробнее</a>
+					</div>
 				</div>
-				<div class="developments_card card5">
-					<span class="developments__signature signature">ММАМ<br>с 8 апреля по 20 мая</span>
-					<h3 class="developments__header">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-					<p class="developmets__descriptions" id="card5Description">Один из ведущих флорентийских художников
-						Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын
-						Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
-					<a class="developments__link link5" href="#">Подробнее</a>
+				<div class="developments__card card5">
+					<picture class="developments__picture">
+						<source class="developments__img" srcset="image/dev5.webp">
+						<img class="developments__img" src="image/dev5.jpg"
+							alt="Джон Винзор. Фотографии из серии «Метафора серебра»">
+					</picture>
+					<div class="developments__card--down">
+						<span class="developments__signature signature">ММАМ<br>с 8 апреля по 20 мая</span>
+						<h3 class="developments__header">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+						<p class="developmets__descriptions" id="card5Description">Один из ведущих флорентийских художников
+							Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын
+							Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
+						<a class="developments__link link5" href="#">Подробнее</a>
+					</div>
 				</div>
 			</div>
 			<button class="developments__btn" aria-label="Показать все события">Все события</button>
@@ -854,7 +888,10 @@
 					<div class="editions__swiper swiper-container" id="slider2">
 						<div class="editions__slider swiper-wrapper">
 							<div class="swiper-slide editions__slider editions1">
-								<img class="editions__img" src="image/editions1.jpg" alt="">
+								<picture class="editions__img">
+									<source srcset="image/editions1.webp">
+									<img src="image/editions1.jpg" alt="Иттен Иоханнес. Искуство цвета">
+								</picture>
 								<div class="editions__pricename">
 									<div class="editions__name">Искусство цвета<br><span class="editions__autor">Иттен,
 											Иоханнес</span></div>
@@ -863,7 +900,10 @@
 								<button class="editions__order">Заказать</button>
 							</div>
 							<div class="swiper-slide editions__slider editions2">
-								<img class="editions__img" src="image/editions2.jpg" alt="">
+								<picture class="editions__img">
+									<source srcset="image/editions2.webp">
+									<img src="image/editions2.jpg" alt="Рудель, Эмиль. Типографика.">
+								</picture>
 								<div class="editions__pricename">
 									<div class="editions__name">Типографика<br><span class="editions__autor">
 											Рудер, Эмиль </span></div>
@@ -872,7 +912,10 @@
 								<button class="editions__order">Заказать</button>
 							</div>
 							<div class="swiper-slide editions__slider editions3">
-								<img class="editions__img" src="image/editions3.jpg" alt="">
+								<picture class="editions__img">
+									<source srcset="image/editions3.webp">
+									<img src="image/editions3.jpg" alt="Гордон, Юрий. Книга про буквы.">
+								</picture>
 								<div class="editions__pricename">
 									<div class="editions__name">Книга про буквы
 										<br><span class="editions__autor">Гордон, Юрий </span>
@@ -882,7 +925,10 @@
 								<button class="editions__order">Заказать</button>
 							</div>
 							<div class="swiper-slide editions__slider editions4">
-								<img class="editions__img" src="image/editions4.jpg" alt="">
+								<picture class="editions__img">
+									<source srcset="image/editions4.webp">
+									<img src="image/editions4.jpg" alt="Кричевский, Владимир. Николай Ильин">
+								</picture>
 								<div class="editions__pricename">
 									<div class="editions__name" id="name4">Николай Ильин
 										<br><span class="editions__autor">Кричевский, Владимир </span>
@@ -892,7 +938,10 @@
 								<button class="editions__order">Заказать</button>
 							</div>
 							<div class="swiper-slide editions__slider editions5">
-								<img class="editions__img" src="image/editions5.jpg" alt="">
+								<picture class="editions__img">
+									<source srcset="image/editions5.webp">
+									<img src="image/editions5.jpg" alt="Мюллер-Брокманн, Йозеф. Модульные сетки в граф...">
+								</picture>
 								<div class="editions__pricename">
 									<div class="editions__name" id="name5">Модульные сетки в граф...<br><span
 											class="editions__autor">Мюллер-Брокманн, Йозеф
@@ -902,7 +951,10 @@
 								<button class="editions__order">Заказать</button>
 							</div>
 							<div class="swiper-slide editions__slider editions6">
-								<img class="editions__img" src="image/editions6.jpg" alt="">
+								<picture class="editions__img">
+									<source srcset="image/editions6.webp">
+									<img src="image/editions6.jpg" alt="Хеллер, Чваст, Йозеф. Эволюция графических ст...">
+								</picture>
 								<div class="editions__pricename">
 									<div class="editions__name" id="name6">Эволюция графических ст...
 										<br><span class="editions__autor">Хеллер, Чваст</span>
@@ -912,7 +964,10 @@
 								<button class="editions__order">Заказать</button>
 							</div>
 							<div class="swiper-slide editions__slider editions7">
-								<img class="editions__img" src="image/editions7.jpg" alt="">
+								<picture class="editions__img">
+									<source srcset="image/editions7.webp">
+									<img src="image/editions7.jpg" alt="Арнхейм, Рудольф. ЭИскусство и визуальное в...">
+								</picture>
 								<div class="editions__pricename">
 									<div class="editions__name" id="name7">Искусство и визуальное в...
 										<br><span class="editions__autor">Арнхейм, Рудольф </span>
@@ -1004,7 +1059,7 @@
 		</div>
 		<div class="container contacts__container flex">
 			<div class="contacts__block">
-				<h3 class="contacts_name">Шоурум №4</h3>
+				<h3 class="contacts__name">Шоурум №4</h3>
 				<span class="contacts__address">Леонтьевский переулок, дом 5, строение 1</span>
 				<span class="contacts__odrercall contacts__docket">Заказать обратный звонок</span>
 				<form class="contacts__form js-form flex" action="https://jsonplaceholder.typicode.com/posts">

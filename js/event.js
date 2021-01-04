@@ -1,20 +1,20 @@
 let eventNews = function () {
-    let developmentsCard = document.querySelectorAll('.developments_card'),
-        developmentsBtn = document.querySelector('.developments__btn'),
-        developmentsNews = document.querySelector('.developments__news');
+	let developmentsCard = document.querySelectorAll('.developments__card'),
+		developmentsBtn = document.querySelector('.developments__btn'),
+		developmentsNews = document.querySelector('.developments__news');
 
 
-    developmentsBtn.addEventListener('click', function () {
+	developmentsBtn.addEventListener('click', function () {
 
-        developmentsCard.forEach(item => {
+		developmentsCard.forEach(item => {
 
-            item.style.display = 'block';
+			item.style.display = 'block';
 
-            developmentsNews.style.flexWrap = 'wrap';
+			developmentsNews.style.flexWrap = 'wrap';
 
-            developmentsBtn.style.display = 'none';
-        })
-    });
+			developmentsBtn.style.display = 'none';
+		})
+	});
 
 
 

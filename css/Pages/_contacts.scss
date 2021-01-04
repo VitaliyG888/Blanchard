@@ -10,7 +10,7 @@
 	padding-bottom: 123px;
 }
 
-.contacts_name {
+.contacts__name {
 	display: block;
 	margin-bottom: 13px;
 }
@@ -111,11 +111,11 @@
 	.map__right {
 		border-left: 2px solid $Grey;
 		height: 700px;
-		width: 65vw;
+		width: 63.5vw;
 	}
 
 	.map__left {
-		width: 35vw;
+		width: 36.5vw;
 		height: 100%;
 		z-index: -100;
 	}

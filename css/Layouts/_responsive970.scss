@@ -15,6 +15,10 @@
 			margin-left: 7px;
 		}
 
+		.header__burger {
+			margin-right: 106px;
+		}
+
 		.header__magnifier .header__magnifier--lupe {
 			margin-right: 13px;
 		}
@@ -22,7 +26,7 @@
 
 	.first .first__container {
 		padding-top: 114px;
-		padding-bottom: 111px;
+		padding-bottom: 113px;
 	}
 
 	.first__description {
@@ -155,24 +159,23 @@
 	// developments section
 
 	.developments__container {
-		padding-top: 78px;
-		padding-bottom: 86px;
+		padding-top: 68px;
+		padding-bottom: 84px;
 	}
 
 	.developments__title {
-		margin-top: -3px;
+		margin-bottom: 16px;
 	}
 
-	.developments_card {
+	.developments__card {
 		max-width: 317px;
-		padding-bottom: 87px;
 	}
 
-	.developments_card:not(:nth-child(3n + 3)) {
+	.developments__card:not(:nth-child(3n + 3)) {
 		margin-right: 0;
 	}
 
-	.developments_card:not(:nth-child(2n + 2)) {
+	.developments__card:not(:nth-child(2n + 2)) {
 		margin-right: 32px;
 	}
 
@@ -185,7 +188,7 @@
 	}
 
 	.developments__news {
-		margin-bottom: 50px;
+		margin-bottom: 33px;
 	}
 
 	// editions section
@@ -205,7 +208,7 @@
 
 	.editions__checkboks {
 		margin-bottom: 104px;
-		padding-top: 20px;
+		padding-top: 25px;
 		width: 100%;
 
 		span {
@@ -234,17 +237,18 @@
 	}
 
 	.editions__label {
-		margin-bottom: 11px;
+		margin-bottom: 14px;
+	}
+
+	.editions__priceform {
+		flex-direction: column;
+		align-items: flex-start;
+		left: 15px;
+		top: 353px;
 	}
 
 	.editions__price {
-		top: 351px;
-		left: 15px;
-	}
-
-	.editions__choice {
-		left: 14px;
-		top: 386px;
+		margin-bottom: 14px;
 	}
 
 	.swiper-container#slider2 {
@@ -255,17 +259,13 @@
 		height: 436px;
 	}
 
-	.editions__order {
-		margin-top: 394px;
-	}
-
 	.editions__swiper-button2 {
-		margin-left: -33px;
+		margin-left: -41px;
 	}
 
 	.editions__showing {
-		margin-left: 26px;
-		margin-top: 70px;
+		margin-left: 31px;
+		margin-top: 73px;
 	}
 
 	// progects section
@@ -280,11 +280,11 @@
 
 	.projects__descriptions {
 		letter-spacing: 0.4px;
-		margin-bottom: 33px;
+		margin-bottom: 37px;
 	}
 
 	.projects__partners {
-		margin-bottom: 4px;
+		margin-bottom: 40px;
 	}
 
 	.swiper-container#slider3 {
@@ -306,7 +306,7 @@
 	// contacts section
 
 	.contacts__title {
-		margin-bottom: 0px;
+		margin-bottom: 13px;
 	}
 
 	.contacts .contacts__map.map .map__left {

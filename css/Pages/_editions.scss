@@ -1,13 +1,13 @@
 /* editions section */
 
 .editions__container {
-	padding-bottom: 81px;
-	padding-top: 85px;
+	padding-top: 80px;
+	padding-bottom: 79px;
 	padding-left: 11px;
 }
 
 .editions {
-	background-image: url(../image/editions-background.jpg);
+	background-image: url("../image/editions-background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -17,7 +17,7 @@
 }
 
 .editions__block--left {
-	padding-top: 28px;
+	padding-top: 22px;
 	margin-left: 3px;
 	margin-right: 101px;
 }
@@ -218,7 +218,8 @@ input[type="checkbox"]:checked+.editions__label::before {
 }
 
 .editions__swiper-button2 {
-	margin-top: -5px;
+	margin-top: -10px;
+	margin-bottom: 22px;
 }
 
 .editions__img {

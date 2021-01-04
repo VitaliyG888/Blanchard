@@ -55,7 +55,7 @@
 
 	.header__burger {
 		display: block;
-		margin-right: 111px;
+		margin-right: 113px;
 	}
 
 	.header__admission {
@@ -205,18 +205,19 @@
 
 	/* developments section */
 
-	.developments__container {
-		padding-bottom: 82px;
-	}
-
-	.developments_card {
+	.developments__card {
 		max-width: 290px;
-		min-height: 683px;
-		padding: 214px 16px 91px 35px;
-		background-size: 100% 200px;
+
+		.developments__picture {
+			height: 200px;
+		}
 
 		&:not(:nth-child(3n + 3)) {
 			margin-right: 27px;
+		}
+
+		.developments__card--down {
+			padding: 14px 17px 104px 35px;
 		}
 
 		.developments__signature {
@@ -234,28 +235,8 @@
 		}
 	}
 
-	.card1 {
-		background-image: url(../image/event1-2.jpg);
-	}
-
-	.card2 {
-		background-image: url(../image/event2-2.jpg);
-	}
-
-	.card3 {
-		background-image: url(../image/event3-2.jpg);
-	}
-
-	.card4 {
-		background-image: url(../image/event4-2.jpg);
-	}
-
-	.card5 {
-		background-image: url(../image/event5-2.jpg);
-	}
-
 	.developments__news {
-		margin-bottom: 49px;
+		margin-bottom: 30px;
 	}
 
 	/* editions section */
@@ -267,7 +248,7 @@
 
 	.editions__container {
 		position: relative;
-		padding-bottom: 13px;
+		padding-bottom: 14px;
 	}
 
 	.editions__priceform {
@@ -312,13 +293,10 @@
 		padding-bottom: 4px;
 	}
 
-	.projects__title {
-		margin-bottom: 23px;
-	}
-
 	.projects__descriptions {
 		max-width: 925px;
-		margin-bottom: 31px;
+		margin-bottom: 33px;
+		letter-spacing: 0;
 	}
 
 	.tooltip1::before {
@@ -327,7 +305,6 @@
 
 	.swiper-container#slider3 {
 		max-width: 818px;
-		margin-bottom: 87px;
 		height: 128px;
 	}
 
@@ -335,10 +312,7 @@
 		height: 128px;
 	}
 
-	.swiper-button-prev.swiper-button-prev-st.button3-prev {
-		margin-top: -33px;
-	}
-
+	.swiper-button-prev.swiper-button-prev-st.button3-prev,
 	.swiper-button-next.swiper-button-next-st.button3-next {
 		margin-top: -33px;
 	}
@@ -346,7 +320,7 @@
 	/* contacts section */
 
 	.contacts__title {
-		margin-bottom: 16px;
+		margin-bottom: 12px;
 	}
 
 	.contacts__container {
