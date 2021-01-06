@@ -48,7 +48,6 @@ function requestUrl() {
 			return tabName;
 		}
 	})
-	console.log(tabName);
 
 	switch (tabName) {
 		case 'tab1':
@@ -66,8 +65,8 @@ function requestUrl() {
 		case 'tab5':
 			requestURL = 'data5.json';
 			break;
-	}
-	console.log(requestURL);
+	};
+
 	request = new XMLHttpRequest();
 	request.open('GET', requestURL);
 	request.onload = function (e) {

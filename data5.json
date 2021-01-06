@@ -1,7 +1,7 @@
 {
   "contentDdata": [{
       "id": 1,
-      "title": "De 1400 a 1499",
+      "title": "Desde 1400 hasta 1499",
       "content": {
                     "nombre1": "Benedetto di Bindo",
                     "nombre2": "Bergognone Ambrogio",
@@ -71,7 +71,7 @@
     },
     {
       "id": 3,
-      "title": "De 1600 a 1699",
+      "title": "Desde 1600 hasta 1699",
       "content": {
                     "nombre1": "Benedetto di Bindo",
                     "nombre2": "Bergognone Ambrogio",
@@ -101,7 +101,7 @@
     },
     {
       "id": 4,
-      "title": "De 1700 a 1799",
+      "title": "Desde 1700 hasta 1799",
       "content": {
                     "nombre1": "Benedetto di Bindo",
                     "nombre2": "Bergognone Ambrogio",
@@ -161,7 +161,7 @@
     },
     {
       "id": 6,
-      "title": "De 1900 a 1999",
+      "title": "Desde 1900 hasta 1999",
       "content": {
                     "nombre1": "Benedetto di Bindo",
                     "nombre2": "Bergognone Ambrogio",
