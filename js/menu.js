@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		document.querySelector('.header__nav').classList.remove('nav--showed')
 	}
 
+	nav.addEventListener('click', closeMenu);
 	burger.addEventListener('click', showMenu);
 	close.addEventListener('click', closeMenu);
 });

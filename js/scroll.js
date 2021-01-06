@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			if (e.target.tagName != 'A') return;
 			let current = switchLinks(e.target);
 			selectContainer(current);
-			console.log(e.target);
 		}
 
 
@@ -49,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 
 		function scroll(el, direction) {
-			let duration1 = 10000,
+			let duration1 = 5000,
 				start = new Date().getTime();
 
 			let fn = function () {
@@ -58,8 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
 					result = Math.round(top * now / duration1);
 
 				result = (result > direction * top) ? top : (result == 0) ? direction : result;
-				console.log(result);
-				if (direction * top > 0 && (pageHeight - window.pageYOffset) > direction * document.documentElement.clientHeight) {
+				if (direction * top > 0) {
 					window.scrollBy(0, result);
 					requestAnimationFrame(fn);
 				}

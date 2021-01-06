@@ -1436,6 +1436,7 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .catalog__card.card {
+  max-width: 750px;
   margin-right: 50px;
 }
 
