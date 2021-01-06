@@ -47,8 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
 				let accordeonSectionAll = document.querySelectorAll('.js-section'),
 					accordeonTitleAll = document.querySelectorAll('.accordeon-title');
 
-				console.log(accordeonTitleAll);
-
 				let accordeonActiveit = function () {
 
 					[].forEach.call(accordeonSectionAll, function (item, index) {
