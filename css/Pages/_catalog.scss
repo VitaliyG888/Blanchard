@@ -288,10 +288,10 @@
 	&::before {
 		content: '';
 		position: absolute;
-		width: 200px;
+		width: 181px;
 		height: 30px;
 		top: -5px;
-		left: 0;
+		left: 4px;
 		border: 1px solid rgba($first-color, 0);
 		transition: all 0.5s ease-in;
 	}
@@ -301,7 +301,7 @@
 		position: absolute;
 		width: 0;
 		height: 2px;
-		left: 1px;
+		left: 6px;
 		bottom: 0;
 		background-color: rgba($first-color, 1);
 		transition: all 0.5s ease-in;
@@ -318,7 +318,7 @@
 	}
 
 	&:hover::after {
-		width: 190px;
+		width: 177px;
 		transition: all 0.5s ease-in;
 	}
 

@@ -539,10 +539,6 @@ button:active {
   transition: all 0.5s ease-in;
 }
 
-.simplebar-track {
-  overflow: scrollfor;
-}
-
 .performer1,
 .performer3,
 .performer5,
@@ -1582,10 +1578,10 @@ div[data-custom-properties="[object Object]"] {
 .accordeon-link::before {
   content: '';
   position: absolute;
-  width: 200px;
+  width: 181px;
   height: 30px;
   top: -5px;
-  left: 0;
+  left: 4px;
   border: 1px solid rgba(157, 92, 208, 0);
   -webkit-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
@@ -1597,7 +1593,7 @@ div[data-custom-properties="[object Object]"] {
   position: absolute;
   width: 0;
   height: 2px;
-  left: 1px;
+  left: 6px;
   bottom: 0;
   background-color: #9d5cd0;
   -webkit-transition: all 0.5s ease-in;
@@ -1620,7 +1616,7 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .accordeon-link:hover::after {
-  width: 190px;
+  width: 177px;
   -webkit-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
@@ -2324,7 +2320,7 @@ input[type="checkbox"]:checked + .editions__label::before {
 
 .projects__swiper-button3.swiper-button .swiper-button-prev.swiper-button-prev-st.button3-prev:focus,
 .projects__swiper-button3.swiper-button .swiper-button-next.swiper-button-next-st.button3-next:focus {
-  background-color: btn-slider-color2;
+  background-color: #ececec;
   border: 2px solid #7943a4;
   -webkit-transition: all .5s ease-in;
   -o-transition: all .5s ease-in;
