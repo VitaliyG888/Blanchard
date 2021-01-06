@@ -29,6 +29,10 @@
 		padding-bottom: 113px;
 	}
 
+	.first .first__title {
+		margin-left: -3px;
+	}
+
 	.first__description {
 		letter-spacing: -0.1px;
 		margin-bottom: 135px;
@@ -131,18 +135,14 @@
 		max-width: 668px;
 		width: 100%;
 		margin-left: 0;
-		margin-bottom: 49px;
+		margin-bottom: 47px;
 
 		.accordeon-section {
 			width: 100%;
 
-			.accordeon-item.flex {
-				width: 100%;
-
-				.accordeon-link {
-					width: 210px;
-
-				}
+			.accordeon-item {
+				grid-template-columns: 239px 243px 185px;
+				grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px;
 			}
 		}
 	}
@@ -168,7 +168,7 @@
 	}
 
 	.developments__card {
-		max-width: 317px;
+		width: 317px;
 	}
 
 	.developments__card:not(:nth-child(3n + 3)) {
@@ -181,6 +181,10 @@
 
 	.card3 {
 		display: none;
+	}
+
+	.developments__card .developments__header {
+		width: 250px;
 	}
 
 	.developments_card .developments__signature {
@@ -315,6 +319,10 @@
 
 	.contacts .contacts__map.map .map__right {
 		width: 44.2vw;
+	}
+
+	.contacts .contacts__container .contacts__block {
+		padding-bottom: 125px;
 	}
 
 	.contacts .contacts__container .contacts__block .contacts_name {

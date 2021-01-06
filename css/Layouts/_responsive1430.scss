@@ -196,17 +196,14 @@
 	}
 
 	.accordeon-item {
-		width: 560px;
-	}
-
-	.accordeon-link {
-		width: 230px;
+		grid-template-columns: 252px 184px;
+		grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
 	}
 
 	/* developments section */
 
 	.developments__card {
-		max-width: 290px;
+		width: 290px;
 
 		.developments__picture {
 			height: 200px;
@@ -265,7 +262,7 @@
 	}
 
 	.editions__img {
-		height: 320px;
+		height: 322px;
 		margin-bottom: 14px;
 	}
 

@@ -83,7 +83,7 @@ function requestUrl() {
 						let accordeonContent = document.createElement("div");
 						let accordeonItem = document.createElement("div");
 						accordeonContent.classList.add("accordeon-content", "js-content");
-						accordeonItem.classList.add("accordeon-item", "flex");
+						accordeonItem.classList.add("accordeon-item");
 						accordionBtn.innerHTML = item.title;
 						if (i == 0) {
 							accordionSection.classList.add("accordeon-section", "js-section", "active");

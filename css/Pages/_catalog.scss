@@ -158,7 +158,7 @@
 }
 
 .catalog__card.card {
-	margin-right: 49px;
+	margin-right: 50px;
 
 	& img {
 		max-width: 750px;
@@ -182,19 +182,13 @@
 	margin-bottom: 9px;
 }
 
-
-
-.accordeon {
-	max-width: 800px;
-}
-
 .accordeon-section {
 	width: 100%;
 	position: relative;
 }
 
 .accordeon-title {
-	padding: 38px 0 43.5px;
+	padding: 38px 0 43.3px;
 	width: 100%;
 	border: none;
 	border-bottom: 1px solid $Black;
@@ -217,7 +211,7 @@
 		height: 12px;
 		width: 12px;
 		margin-right: 8px;
-		margin-top: 10px;
+		margin-top: 12px;
 		border-left: 1px solid $Black;
 		border-bottom: 1px solid $Black;
 		transform: rotate(-45deg);
@@ -268,10 +262,11 @@
 }
 
 .accordeon-item {
-	position: relative;
-	flex-wrap: wrap;
-	padding: 28px 0 24px;
-	width: 800px;
+	display: grid;
+	grid-template-columns: 258px 258px 284px;
+	grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px;
+	grid-auto-flow: column;
+	padding: 30px 0 25px;
 }
 
 .accordeon-link {

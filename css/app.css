@@ -1436,7 +1436,7 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .catalog__card.card {
-  margin-right: 49px;
+  margin-right: 50px;
 }
 
 .catalog__card.card img {
@@ -1460,17 +1460,13 @@ div[data-custom-properties="[object Object]"] {
   margin-bottom: 9px;
 }
 
-.accordeon {
-  max-width: 800px;
-}
-
 .accordeon-section {
   width: 100%;
   position: relative;
 }
 
 .accordeon-title {
-  padding: 38px 0 43.5px;
+  padding: 38px 0 43.3px;
   width: 100%;
   border: none;
   border-bottom: 1px solid #000000;
@@ -1494,7 +1490,7 @@ div[data-custom-properties="[object Object]"] {
   height: 12px;
   width: 12px;
   margin-right: 8px;
-  margin-top: 10px;
+  margin-top: 12px;
   border-left: 1px solid #000000;
   border-bottom: 1px solid #000000;
   -webkit-transform: rotate(-45deg);
@@ -1554,11 +1550,14 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .accordeon-item {
-  position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 28px 0 24px;
-  width: 800px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 258px 258px 284px;
+      grid-template-columns: 258px 258px 284px;
+  -ms-grid-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px;
+      grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px;
+  grid-auto-flow: column;
+  padding: 30px 0 25px;
 }
 
 .accordeon-link {
@@ -2441,7 +2440,7 @@ input[type="checkbox"]:checked + .editions__label::before {
 .contacts__form .contacts__button {
   width: 157px;
   height: 59px;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   background: none;
   border: 2px solid #9d5cd0;
   border-radius: 100px;
@@ -2496,11 +2495,11 @@ input[type="checkbox"]:checked + .editions__label::before {
 .contacts__map.map .map__right {
   border-left: 2px solid #cacaca;
   height: 700px;
-  width: 63.5vw;
+  width: 64vw;
 }
 
 .contacts__map.map .map__left {
-  width: 36.5vw;
+  width: 36vw;
   height: 100%;
   z-index: -100;
 }
@@ -2749,7 +2748,7 @@ input[type="checkbox"]:checked + .editions__label::before {
     max-width: 900px;
   }
   .developments__card {
-    width: 430px;
+    width: 400px;
   }
   .developments__card:not(:nth-child(3n + 3)) {
     margin-right: 35px;
@@ -2924,14 +2923,14 @@ input[type="checkbox"]:checked + .editions__label::before {
     max-width: 437px;
   }
   .accordeon-item {
-    width: 560px;
-  }
-  .accordeon-link {
-    width: 230px;
+    -ms-grid-columns: 252px 184px;
+        grid-template-columns: 252px 184px;
+    -ms-grid-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
+        grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
   }
   /* developments section */
   .developments__card {
-    max-width: 290px;
+    width: 290px;
   }
   .developments__card .developments__picture {
     height: 200px;
@@ -2981,7 +2980,7 @@ input[type="checkbox"]:checked + .editions__label::before {
     margin-right: 14px;
   }
   .editions__img {
-    height: 320px;
+    height: 322px;
     margin-bottom: 14px;
   }
   .editions__checkboks {
@@ -3068,6 +3067,9 @@ input[type="checkbox"]:checked + .editions__label::before {
     padding-top: 114px;
     padding-bottom: 113px;
   }
+  .first .first__title {
+    margin-left: -3px;
+  }
   .first__description {
     letter-spacing: -0.1px;
     margin-bottom: 135px;
@@ -3147,16 +3149,16 @@ input[type="checkbox"]:checked + .editions__label::before {
     max-width: 668px;
     width: 100%;
     margin-left: 0;
-    margin-bottom: 49px;
+    margin-bottom: 47px;
   }
   .catalog__artists.accordeon .accordeon-section {
     width: 100%;
   }
-  .catalog__artists.accordeon .accordeon-section .accordeon-item.flex {
-    width: 100%;
-  }
-  .catalog__artists.accordeon .accordeon-section .accordeon-item.flex .accordeon-link {
-    width: 210px;
+  .catalog__artists.accordeon .accordeon-section .accordeon-item {
+    -ms-grid-columns: 239px 243px 185px;
+        grid-template-columns: 239px 243px 185px;
+    -ms-grid-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px;
+        grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px;
   }
   .catalog__card.card {
     max-width: 668px;
@@ -3173,7 +3175,7 @@ input[type="checkbox"]:checked + .editions__label::before {
     margin-bottom: 16px;
   }
   .developments__card {
-    max-width: 317px;
+    width: 317px;
   }
   .developments__card:not(:nth-child(3n + 3)) {
     margin-right: 0;
@@ -3183,6 +3185,9 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .card3 {
     display: none;
+  }
+  .developments__card .developments__header {
+    width: 250px;
   }
   .developments_card .developments__signature {
     margin-bottom: -16px;
@@ -3291,6 +3296,9 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .contacts .contacts__map.map .map__right {
     width: 44.2vw;
+  }
+  .contacts .contacts__container .contacts__block {
+    padding-bottom: 125px;
   }
   .contacts .contacts__container .contacts__block .contacts_name {
     margin-bottom: 6px;
