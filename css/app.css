@@ -1591,6 +1591,19 @@ div[data-custom-properties="[object Object]"] {
   transition: all 0.5s ease-in;
 }
 
+.accordeon-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 8px;
+  bottom: 0;
+  background-color: #9d5cd0;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
 .accordeon-link:focus::before {
   border: 1px solid #9d5cd0;
   -webkit-transition: all 0.5s ease-in;
@@ -1605,25 +1618,33 @@ div[data-custom-properties="[object Object]"] {
   transition: color 0.5s ease-in;
 }
 
-.accordeon-link:active {
-  border: 1px solid #9d5cd0;
+.accordeon-link:hover::after {
+  width: 190px;
   -webkit-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
 
-.accordeon-section.js-section.active .accordeon-title {
+.accordeon-link:active {
+  font-weight: 600;
+  color: #7943a4;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.accordeon-section.active .accordeon-title {
   border-bottom: none;
 }
 
-.accordeon-section.js-section.active .accordeon-title::before {
+.accordeon-section.active .accordeon-title::before {
   content: "";
   position: absolute;
-  right: 10px;
   height: 12px;
   width: 12px;
+  right: 10px;
   margin-left: 4px;
-  margin-top: 17px;
+  margin-top: 14px;
   border-right: 1px solid #000000;
   border-top: 1px solid #000000;
   border-left: none;
@@ -1633,12 +1654,12 @@ div[data-custom-properties="[object Object]"] {
           transform: rotate(-45deg);
 }
 
-.accordeon-section.js-section.active .accordeon-title:hover::before {
+.accordeon-section.active .accordeon-title:hover::before {
   border-right: 1px solid #ffffff;
   border-top: 1px solid #ffffff;
 }
 
-.accordeon-section.js-section.active .accordeon-content.js-content {
+.accordeon-section.active .accordeon-content.js-content {
   border-top: 1px solid #9d5cd0;
   border-bottom: 1px solid #9d5cd0;
 }

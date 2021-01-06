@@ -299,6 +299,17 @@
 		transition: all 0.5s ease-in;
 	}
 
+	&::after {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 2px;
+		left: 8px;
+		bottom: 0;
+		background-color: rgba($first-color, 1);
+		transition: all 0.5s ease-in;
+	}
+
 	&:focus::before {
 		border: 1px solid rgba($first-color, 1);
 		transition: all 0.5s ease-in;
@@ -309,24 +320,30 @@
 		transition: color 0.5s ease-in;
 	}
 
+	&:hover::after {
+		width: 190px;
+		transition: all 0.5s ease-in;
+	}
+
 	&:active {
-		border: 1px solid rgba($first-color, 1);
+		font-weight: 600;
+		color: $second-color;
 		transition: all 0.5s ease-in;
 	}
 }
 
-.accordeon-section.js-section.active {
+.accordeon-section.active {
 	.accordeon-title {
 		border-bottom: none;
 
 		&::before {
 			content: "";
 			position: absolute;
-			right: 10px;
 			height: 12px;
 			width: 12px;
+			right: 10px;
 			margin-left: 4px;
-			margin-top: 17px;
+			margin-top: 14px;
 			border-right: 1px solid $Black;
 			border-top: 1px solid $Black;
 			border-left: none;
