@@ -1,21 +1,85 @@
-document.addEventListener('DOMContentLoaded', function () {
+const accordion = document.querySelector('.accordeon');
+let tabNav = document.querySelectorAll('.tab-nav__link');
+let dataTable;
+let requestURL;
+let tabName;
+let accordionSection;
 
-	const accordion = document.querySelector('.accordeon');
-	let dataTable,
+requestUrl();
 
-		requestURL = 'data.json',
-		request = new XMLHttpRequest();
+
+let tab = function () {
+	let tabContent = document.querySelectorAll('.tab');
+
+	tabNav.forEach(item => {
+		item.addEventListener('click', selectTabNav)
+	});
+
+	function selectTabNav() {
+		tabNav.forEach(item => {
+			item.classList.remove('is-active__border');
+		});
+		this.classList.add('is-active__border');
+		tabName = this.getAttribute('data-tab-name');
+		selectTabContent(tabName);
+
+		let fot = document.querySelectorAll('.accordeon-section');
+		fot.forEach(elem => {
+			elem.remove();
+		})
+
+
+		requestUrl();
+	}
+
+	function selectTabContent(tabName) {
+		tabContent.forEach(item => {
+			item.classList.contains(tabName) ? item.classList.add('is-active__description') : item.classList.remove('is-active__description');
+		})
+	}
+
+
+};
+
+function requestUrl() {
+	tabNav.forEach(el => {
+		if (el.classList.contains('is-active__border')) {
+			tabName = el.getAttribute('data-tab-name');
+			return tabName;
+		}
+	})
+	console.log(tabName);
+
+	switch (tabName) {
+		case 'tab1':
+			requestURL = 'data1.json';
+			break;
+		case 'tab2':
+			requestURL = 'data2.json';
+			break;
+		case 'tab3':
+			requestURL = 'data3.json';
+			break;
+		case 'tab4':
+			requestURL = 'data4.json';
+			break;
+		case 'tab5':
+			requestURL = 'data5.json';
+			break;
+	}
+	console.log(requestURL);
+	request = new XMLHttpRequest();
 	request.open('GET', requestURL);
 	request.onload = function (e) {
 		if (request.readyState === 4) {
 			if (request.status === 200) {
 				dataTable = JSON.parse(request.responseText);
 
-				function accordionSection() {
+				function accordionSectionBuild() {
 					for (let i = dataTable.contentDdata.length - 1; i >= 0; i--) {
 						let item = dataTable.contentDdata[i];
 
-						let accordionSection = document.createElement("div");
+						accordionSection = document.createElement("div");
 						let accordionBtn = document.createElement("button");
 						let accordeonContent = document.createElement("div");
 						let accordeonItem = document.createElement("div");
@@ -43,7 +107,9 @@ document.addEventListener('DOMContentLoaded', function () {
 						}
 					}
 				}
-				accordionSection();
+
+				accordionSectionBuild();
+
 				let accordeonSectionAll = document.querySelectorAll('.js-section'),
 					accordeonTitleAll = document.querySelectorAll('.accordeon-title');
 
@@ -68,7 +134,6 @@ document.addEventListener('DOMContentLoaded', function () {
 										accordeonLink = item.querySelectorAll('.accordeon-link');
 
 									[].forEach.call(accordeonLink, function (link) {
-										console.log(event.target.className == link.className);
 										if (event.target.className == link.className) {
 											event.stopPropagation();
 											console.log(event);
@@ -106,4 +171,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		console.error(request.statusText);
 	};
 	request.send();
-});
+}
+
+tab();
