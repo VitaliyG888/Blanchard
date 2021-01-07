@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 							for (let j = 0; j < Object.values(item.content).length; j++) {
 								let contentBtn = document.createElement('button');
-								contentBtn.classList.add("accordeon-link");
+								contentBtn.classList.add("accordeon-link", "reset-btn");
 								contentBtn.innerHTML = Object.values(item.content)[j];
 								accordeonItem.append(contentBtn);
 							}

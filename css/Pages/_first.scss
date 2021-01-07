@@ -29,18 +29,6 @@
 	animation: backgroundAnimation 30s linear infinite;
 }
 
-.background__first--1 {
-	background-image: url("../image/birmingham-museums-trust.jpg");
-}
-
-.background__first--2 {
-	background-image: url("../image/bacground2.jpg");
-}
-
-.background__first--3 {
-	background-image: url("../image/background3.jpg");
-}
-
 @-webkit-keyframes backgroundAnimation {
 	from {
 		background-size: 100% 100%;

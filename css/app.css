@@ -696,18 +696,6 @@ button:active {
   animation: backgroundAnimation 30s linear infinite;
 }
 
-.background__first--1 {
-  background-image: url("../image/birmingham-museums-trust.jpg");
-}
-
-.background__first--2 {
-  background-image: url("../image/bacground2.jpg");
-}
-
-.background__first--3 {
-  background-image: url("../image/background3.jpg");
-}
-
 @-webkit-keyframes backgroundAnimation {
   from {
     background-size: 100% 100%;
@@ -2561,10 +2549,10 @@ input[type="checkbox"]:checked + .editions__label::before {
   right: 5px;
   width: 28px;
   height: 3.65px;
-  background: #ffffff;
-  -webkit-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
+  background-color: #ffffff;
+  -webkit-transition: background-color 0.7s ease-in-out;
+  -o-transition: background-color 0.7s ease-in-out;
+  transition: background-color 0.7s ease-in-out;
 }
 
 .nav-toggle span::before {
@@ -2575,10 +2563,10 @@ input[type="checkbox"]:checked + .editions__label::before {
   width: 24px;
   height: 3.65px;
   display: block;
-  background: #ffffff;
-  -webkit-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
+  background-color: #ffffff;
+  -webkit-transition: background-color 0.7s ease-in-out;
+  -o-transition: background-color 0.7s ease-in-out;
+  transition: background-color 0.7s ease-in-out;
 }
 
 .nav-toggle span::after {
@@ -2589,37 +2577,31 @@ input[type="checkbox"]:checked + .editions__label::before {
   width: 36px;
   height: 3.65px;
   display: block;
-  background: #ffffff;
-  -webkit-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
+  background-color: #ffffff;
+  -webkit-transition: background-color 0.7s ease-in-out;
+  -o-transition: background-color 0.7s ease-in-out;
+  transition: background-color 0.7s ease-in-out;
 }
 
 .nav-toggle:hover span {
-  height: 0;
+  background-color: #9d5cd0;
+  -webkit-transition: background-color 0.7s ease-in-out;
+  -o-transition: background-color 0.7s ease-in-out;
+  transition: background-color 0.7s ease-in-out;
 }
 
 .nav-toggle:hover span::before {
-  top: 0;
-  width: 36px;
   background-color: #9d5cd0;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
+  -webkit-transition: background-color 0.7s ease-in-out;
+  -o-transition: background-color 0.7s ease-in-out;
+  transition: background-color 0.7s ease-in-out;
 }
 
 .nav-toggle:hover span::after {
-  bottom: -4px;
   background-color: #9d5cd0;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
+  -webkit-transition: background-color 0.7s ease-in-out;
+  -o-transition: background-color 0.7s ease-in-out;
+  transition: background-color 0.7s ease-in-out;
 }
 
 .menu-toggle__header {
@@ -3027,7 +3009,7 @@ input[type="checkbox"]:checked + .editions__label::before {
   .contacts .contacts__container .contacts__block {
     width: 382px;
     padding-top: 125px;
-    padding-bottom: 122px;
+    padding-bottom: 125px;
   }
   .contacts__form {
     width: 337px;

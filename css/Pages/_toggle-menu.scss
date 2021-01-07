@@ -16,8 +16,8 @@
 		right: 5px;
 		width: 28px;
 		height: 3.65px;
-		background: $Wight;
-		@include transition(all, 0.7s);
+		background-color: $Wight;
+		@include transition(background-color, 0.7s);
 
 		&::before {
 			content: "";
@@ -27,8 +27,8 @@
 			width: 24px;
 			height: 3.65px;
 			display: block;
-			background: $Wight;
-			@include transition(all, 0.7s);
+			background-color: $Wight;
+			@include transition(background-color, 0.7s);
 		}
 
 		&::after {
@@ -39,28 +39,24 @@
 			width: 36px;
 			height: 3.65px;
 			display: block;
-			background: $Wight;
-			@include transition(all, 0.7s);
+			background-color: $Wight;
+			@include transition(background-color, 0.7s);
 		}
 	}
 
 	&:hover span {
-		height: 0;
+		background-color: $first-color;
+		@include transition(background-color, 0.7s);
 	}
 
 	&:hover span::before {
-		top: 0;
-		width: 36px;
 		background-color: $first-color;
-		transform: rotate(45deg);
-		@include transition(all, 0.7s);
+		@include transition(background-color, 0.7s);
 	}
 
 	&:hover span::after {
-		bottom: -4px;
 		background-color: $first-color;
-		transform: rotate(-45deg);
-		@include transition(all, 0.7s);
+		@include transition(background-color, 0.7s);
 	}
 }
 

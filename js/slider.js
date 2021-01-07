@@ -6,7 +6,8 @@ var swiper0 = new Swiper('#slider0', {
 		delay: 10000,
 	},
 	effect: 'fade',
-	loop: true,
+	preloadImages: false,
+	lazy: true
 });
 
 
