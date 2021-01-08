@@ -1420,12 +1420,12 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .catalog__card.card {
-  max-width: 750px;
+  width: 750px;
   margin-right: 50px;
 }
 
 .catalog__card.card img {
-  max-width: 750px;
+  width: 750px;
   height: 470px;
   -o-object-fit: cover;
   object-fit: cover;

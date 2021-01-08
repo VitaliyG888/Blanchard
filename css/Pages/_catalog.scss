@@ -158,11 +158,11 @@
 }
 
 .catalog__card.card {
-	max-width: 750px;
+	width: 750px;
 	margin-right: 50px;
 
 	& img {
-		max-width: 750px;
+		width: 750px;
 		height: 470px;
 		-o-object-fit: cover;
 		object-fit: cover;

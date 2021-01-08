@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			fot.forEach(elem => {
 				elem.remove();
 			})
+
 			requestUrl();
 		}
 
@@ -70,7 +71,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			if (request.readyState === 4) {
 				if (request.status === 200) {
 					dataTable = JSON.parse(request.responseText);
-					let namberTab = requestURL.replace(/[^\d]/g, '');
 
 					function accordionSectionBuild() {
 						for (let i = dataTable.contentDdata.length - 1; i >= 0; i--) {
@@ -104,6 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
 							}
 						}
 					}
+
 					accordionSectionBuild();
 
 					let accordeonSectionAll = document.querySelectorAll('.js-section'),
@@ -151,78 +152,13 @@ document.addEventListener('DOMContentLoaded', function () {
 											this.querySelector('.js-content').style.maxHeight = item.querySelector('.js-content >*').clientHeight + 'px'
 										}
 									}
+
 									event.stopPropagation();
 								})
 							})
 						})
 					}
 					accordeonActiveit();
-
-					let trabAcc = function () {
-						request2 = new XMLHttpRequest();
-						request2.open('GET', `data-name-${namberTab}.json`);
-						request2.onload = function (e) {
-							if (request2.readyState === 4) {
-								if (request2.status === 200) {
-									let dataTable2 = JSON.parse(request2.responseText);
-
-									console.log(dataTable2["catalog card"][0]);
-									let activeLinkAccordion = document.querySelectorAll(".accordeon-link");
-
-									activeLinkAccordion.forEach(item => {
-										item.addEventListener('click', function (el) {
-											let linkName = (el.target.className.replace(/[^\d]/g, '')) - 1;
-											bildingCard(linkName);
-										});
-									});
-
-									let bildingCard = function (number = 0) {
-										const accordeonCard = document.querySelector('.card');
-										if (document.querySelector('.card__img')) {
-											document.querySelector('.card__img').remove();
-										}
-										if (document.querySelector('.card__title')) {
-											document.querySelector('.card__title').remove();
-										}
-										if (document.querySelector('.card__date')) {
-											document.querySelector('.card__date').remove();
-										}
-										if (document.querySelector('.card__description')) {
-											document.querySelector('.card__description').remove();
-										}
-
-										let cardImg = document.createElement("img");
-										cardImg.classList.add('card__img');
-										cardImg.src = (dataTable2["catalog card"][number].foto)
-										let cardTitle = document.createElement("h3");
-										cardTitle.classList.add('card__title');
-										cardTitle.innerHTML = dataTable2["catalog card"][number].names
-										console.log(cardTitle.innerHTML);
-										let cardDate = document.createElement("span");
-										cardDate.classList.add('card__date', 'signature');
-										cardDate.innerHTML = dataTable2["catalog card"][number].date
-										let cardDescription = document.createElement("p");
-										cardDescription.classList.add('card__description');
-										cardDescription.innerHTML = dataTable2["catalog card"][number].descriptions
-
-										accordeonCard.prepend(cardImg);
-										accordeonCard.append(cardTitle);
-										accordeonCard.append(cardDate);
-										accordeonCard.append(cardDescription);
-
-									};
-
-								} else {
-									console.error(request2.statusText);
-								}
-							}
-						};
-						request2.onerror = function (e) {
-							console.error(request2.statusText);
-						};
-						request2.send();
-					}
-					trabAcc();
 				} else {
 					console.error(request.statusText);
 				}
