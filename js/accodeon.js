@@ -220,14 +220,13 @@ document.addEventListener('DOMContentLoaded', function () {
 			this.classList.add('is-active__border');
 			tabName = this.getAttribute('data-tab-name');
 			selectTabContent(tabName);
-			bildingCard();
 
 			let fot = document.querySelectorAll('.accordeon-section');
 			fot.forEach(elem => {
 				elem.remove();
 			})
 			requestUrl();
-			trabAcc();
+			bildingCard();
 		}
 
 		function selectTabContent(tabName) {
