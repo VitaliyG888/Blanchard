@@ -166,12 +166,13 @@ document.addEventListener('DOMContentLoaded', function () {
 								if (request2.status === 200) {
 									let dataTable2 = JSON.parse(request2.responseText);
 
-									console.log(dataTable2["catalog card"][0]);
 									let activeLinkAccordion = document.querySelectorAll(".accordeon-link");
+									console.log(activeLinkAccordion);
 
 									activeLinkAccordion.forEach(item => {
 										item.addEventListener('click', function (el) {
 											let linkName = (el.target.className.replace(/[^\d]/g, '')) - 1;
+											console.log(linkName);
 											bildingCard(linkName);
 										});
 									});
