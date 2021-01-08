@@ -167,6 +167,8 @@
 		-o-object-fit: cover;
 		object-fit: cover;
 		margin-bottom: 33px;
+		-webkit-animation: description 1s ease-in;
+		animation: description 1s ease-in;
 	}
 }
 
@@ -174,13 +176,22 @@
 	margin-left: 3px;
 }
 
+.card__description {
+	-webkit-animation: description 1s ease-in;
+	animation: description 1s ease-in;
+}
+
 .card__title {
 	margin-bottom: 13px;
+	-webkit-animation: description 1s ease-in;
+	animation: description 1s ease-in;
 }
 
 .card__date {
 	display: block;
 	margin-bottom: 9px;
+	-webkit-animation: description 1s ease-in;
+	animation: description 1s ease-in;
 }
 
 .accordeon-section {

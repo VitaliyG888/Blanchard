@@ -1430,19 +1430,30 @@ div[data-custom-properties="[object Object]"] {
   -o-object-fit: cover;
   object-fit: cover;
   margin-bottom: 33px;
+  -webkit-animation: description 1s ease-in;
+  animation: description 1s ease-in;
 }
 
 .catalog__content {
   margin-left: 3px;
 }
 
+.card__description {
+  -webkit-animation: description 1s ease-in;
+  animation: description 1s ease-in;
+}
+
 .card__title {
   margin-bottom: 13px;
+  -webkit-animation: description 1s ease-in;
+  animation: description 1s ease-in;
 }
 
 .card__date {
   display: block;
   margin-bottom: 9px;
+  -webkit-animation: description 1s ease-in;
+  animation: description 1s ease-in;
 }
 
 .accordeon-section {
@@ -2901,8 +2912,8 @@ input[type="checkbox"]:checked + .editions__label::before {
     max-width: 437px;
   }
   .accordeon-item {
-    -ms-grid-columns: 245px 192px;
-        grid-template-columns: 245px 192px;
+    -ms-grid-columns: 244px 192px;
+        grid-template-columns: 244px 192px;
     -ms-grid-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
         grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
   }
