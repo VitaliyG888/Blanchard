@@ -33,6 +33,195 @@
               "names": "Boltraffio Giovanni",
               "date": "1466 oder 1467, Mailand - 1516",
               "descriptions": "Vasari berichtet, dass der Künstler aus einer aristokratischen Familie stammte. In den Traditionen von Foppa, Bernardo Zenale und Ambrogio Bergognone aufgewachsen, wurde er in Leonardos Werkstatt ausgebildet. Sein erstes Werk Die Auferstehung Christi, des heiligen Leonard und des heiligen Lucia wurde 1491 zusammen mit Marco d'Ojono für die Mailänder Kirche San Giovanni sul Muro ausgeführt."
+            },
+            {
+              "id": "6",
+              "foto": "image/Vecchietta1.jpg",
+              "names": "Vecchietta",
+              "date": "um 1410, Siena - 6. Juni 1480",
+              "descriptions": "Giorgio Vasari informiert in seinen Biografien über Vecchietta und beschreibt ihn als einen düsteren und nicht geselligen Mann, der ewig in Gedanken versunken ist und daher nicht lange lebte. Spätere Forscher versuchten, den names dieses Künstlers mit Archivdaten zu verknüpfen."
+            },
+            {
+              "id": "7",
+              "foto": "image/Giorgione.jpg",
+              "names": "Giorgione",
+              "date": "1477 / 1478-1510",
+              "descriptions": "Giorgione wurde in der kleinen Stadt Castelfranco Veneto in der Nähe von Venedig geboren. 1493 zog er nach Venedig und wurde Schüler von Giovanni Bellini. 1497 erschien sein erstes unabhängiges Werk - Christus trägt das Kreuz . Laut Vasari traf er sich im April 1500 mit Leonardo da Vinci. "
+            },
+            {
+              "id": "8",
+              "foto": "image/Francesco.jpg",
+              "names": "Pesellino",
+              "date": "um 1422 Florenz - gest. 1457",
+              "descriptions": "Der italienische Kunsthistoriker Giorgio Vasari hat eine kurze Biographie des Künstlers zusammengestellt, in der er begeistert von seiner Arbeit spricht, die aber gleichzeitig alles durcheinander gebracht zu haben scheint."
+            },
+            {
+              "id": "9",
+              "foto": "image/Girlandajo.jpg",
+              "names": "Dominico Ghirlandaio",
+              "date": "2. Juni 1448 - 11. Januar 1494",
+              "descriptions": "Einer der führenden florentinischen Künstler Quattrocento, der Gründer der künstlerischen Dynastie, der von seinem Bruder David und seinem Sohn Ridolfo weitergeführt wurde. Der Leiter der Kunstwerkstatt, in der der junge Michelangelo ein Jahr lang berufliche Fähigkeiten beherrschte. Der Autor von Fresko-Zyklen, in denen konvex, mit allen möglichen Details zeigt das häusliche Leben biblischer Figuren (ihre Rolle spielen edle Bürger von Florenz in damaligen Kostümen)"
+            },
+            {
+              "id": "10",
+              "foto": "image/benedetto01.jpg",
+              "names": "Benedetto di Bindo",
+              "date": "1385–1417",
+              "descriptions": "Italienischer Maler der sienesischen Schule für italienisch-byzantinische und gotische Kunst. Geboren um 1385 in Castiglione di Valdorcia bei Siena. Über die Karriere des Künstlers gibt es nur sehr wenige verlässliche Informationen. Sein Name taucht erstmals 1409 in den sienesischen Dokumenten auf Zahlung von Benedetto di Bindo Geld für die Arbeit im Dom in Siena. Dort schuf Benedetto 1411-1412 zusammen mit einer Gruppe von Künstlern Fresken in drei Sakristei-Kapellen."
+            },
+            {
+              "id": "11",
+              "foto": "image/Milano_affresco.jpg",
+              "names": "Bergangone Ambradjo",
+              "date": "1470 - 1523/1524",
+              "descriptions": "Obwohl er fast ein Zeitgenosse von Leonardo da Vinci war, malte er in einem Stil, der der lombardischen Kunst von Vincenzo Foppa und Bernardino Zenale vor der Renaissance näher kam. Die Daten seiner Geburt und seines Todes sind unbekannt; Er soll in Fossano im Piemont geboren worden sein und sein Name ist auf seine künstlerische Zugehörigkeit zur burgundischen Schule zurückzuführen."
+            },
+            {
+              "id": "12",
+              "foto": "image/thumbnail.jpg",
+              "names": "Bissolo, Francesco",
+              "date": "1470 — 1554",
+              "descriptions": "Der Sohn des Künstlers. Ein Schüler von Giovanni Bellini. Ab 1490 zog er in Bellinis Werkstatt. Von 1492 bis 1530 arbeitete er in Venedig. Unterstützung des Lehrers bei der Dekoration des Großen Ratesaals des Dogenpalastes (Venedig). Beteiligte sich an der Schaffung von Dekorationen für die Kirche Il Redentore in Venedig."
+            },
+            {
+              "id": "13",
+              "foto": "image/7kyfkolkbm.jpeg",
+              "names": "Boltraffio Giovanni",
+              "date": "1466 oder 1467, Mailand - 1516",
+              "descriptions": "Vasari berichtet, dass der Künstler aus einer aristokratischen Familie stammte. In den Traditionen von Foppa, Bernardo Zenale und Ambrogio Bergognone aufgewachsen, wurde er in Leonardos Werkstatt ausgebildet. Sein erstes Werk Die Auferstehung Christi, des heiligen Leonard und des heiligen Lucia wurde 1491 zusammen mit Marco d'Ojono für die Mailänder Kirche San Giovanni sul Muro ausgeführt."
+            },
+            {
+              "id": "14",
+              "foto": "image/Vecchietta1.jpg",
+              "names": "Vecchietta",
+              "date": "um 1410, Siena - 6. Juni 1480",
+              "descriptions": "Giorgio Vasari informiert in seinen Biografien über Vecchietta und beschreibt ihn als einen düsteren und nicht geselligen Mann, der ewig in Gedanken versunken ist und daher nicht lange lebte. Spätere Forscher versuchten, den names dieses Künstlers mit Archivdaten zu verknüpfen."
+            },
+            {
+              "id": "15",
+              "foto": "image/Giorgione.jpg",
+              "names": "Giorgione",
+              "date": "1477 / 1478-1510",
+              "descriptions": "Giorgione wurde in der kleinen Stadt Castelfranco Veneto in der Nähe von Venedig geboren. 1493 zog er nach Venedig und wurde Schüler von Giovanni Bellini. 1497 erschien sein erstes unabhängiges Werk - Christus trägt das Kreuz . Laut Vasari traf er sich im April 1500 mit Leonardo da Vinci. "
+            },
+            {
+              "id": "16",
+              "foto": "image/Francesco.jpg",
+              "names": "Pesellino",
+              "date": "um 1422 Florenz - gest. 1457",
+              "descriptions": "Der italienische Kunsthistoriker Giorgio Vasari hat eine kurze Biographie des Künstlers zusammengestellt, in der er begeistert von seiner Arbeit spricht, die aber gleichzeitig alles durcheinander gebracht zu haben scheint."
+            },
+            {
+              "id": "17",
+              "foto": "image/Girlandajo.jpg",
+              "names": "Dominico Ghirlandaio",
+              "date": "2. Juni 1448 - 11. Januar 1494",
+              "descriptions": "Einer der führenden florentinischen Künstler Quattrocento, der Gründer der künstlerischen Dynastie, der von seinem Bruder David und seinem Sohn Ridolfo weitergeführt wurde. Der Leiter der Kunstwerkstatt, in der der junge Michelangelo ein Jahr lang berufliche Fähigkeiten beherrschte. Der Autor von Fresko-Zyklen, in denen konvex, mit allen möglichen Details zeigt das häusliche Leben biblischer Figuren (ihre Rolle spielen edle Bürger von Florenz in damaligen Kostümen)"
+            },
+            {
+              "id": "18",
+              "foto": "image/benedetto01.jpg",
+              "names": "Benedetto di Bindo",
+              "date": "1385–1417",
+              "descriptions": "Italienischer Maler der sienesischen Schule für italienisch-byzantinische und gotische Kunst. Geboren um 1385 in Castiglione di Valdorcia bei Siena. Über die Karriere des Künstlers gibt es nur sehr wenige verlässliche Informationen. Sein Name taucht erstmals 1409 in den sienesischen Dokumenten auf Zahlung von Benedetto di Bindo Geld für die Arbeit im Dom in Siena. Dort schuf Benedetto 1411-1412 zusammen mit einer Gruppe von Künstlern Fresken in drei Sakristei-Kapellen."
+            },
+            {
+              "id": "19",
+              "foto": "image/Milano_affresco.jpg",
+              "names": "Bergangone Ambradjo",
+              "date": "1470 - 1523/1524",
+              "descriptions": "Obwohl er fast ein Zeitgenosse von Leonardo da Vinci war, malte er in einem Stil, der der lombardischen Kunst von Vincenzo Foppa und Bernardino Zenale vor der Renaissance näher kam. Die Daten seiner Geburt und seines Todes sind unbekannt; Er soll in Fossano im Piemont geboren worden sein und sein Name ist auf seine künstlerische Zugehörigkeit zur burgundischen Schule zurückzuführen."
+            },
+            {
+              "id": "20",
+              "foto": "image/thumbnail.jpg",
+              "names": "Bissolo, Francesco",
+              "date": "1470 — 1554",
+              "descriptions": "Der Sohn des Künstlers. Ein Schüler von Giovanni Bellini. Ab 1490 zog er in Bellinis Werkstatt. Von 1492 bis 1530 arbeitete er in Venedig. Unterstützung des Lehrers bei der Dekoration des Großen Ratesaals des Dogenpalastes (Venedig). Beteiligte sich an der Schaffung von Dekorationen für die Kirche Il Redentore in Venedig."
+            },
+            {
+              "id": "21",
+              "foto": "image/7kyfkolkbm.jpeg",
+              "names": "Boltraffio Giovanni",
+              "date": "1466 oder 1467, Mailand - 1516",
+              "descriptions": "Vasari berichtet, dass der Künstler aus einer aristokratischen Familie stammte. In den Traditionen von Foppa, Bernardo Zenale und Ambrogio Bergognone aufgewachsen, wurde er in Leonardos Werkstatt ausgebildet. Sein erstes Werk Die Auferstehung Christi, des heiligen Leonard und des heiligen Lucia wurde 1491 zusammen mit Marco d'Ojono für die Mailänder Kirche San Giovanni sul Muro ausgeführt."
+            },
+            {
+              "id": "22",
+              "foto": "image/Vecchietta1.jpg",
+              "names": "Vecchietta",
+              "date": "um 1410, Siena - 6. Juni 1480",
+              "descriptions": "Giorgio Vasari informiert in seinen Biografien über Vecchietta und beschreibt ihn als einen düsteren und nicht geselligen Mann, der ewig in Gedanken versunken ist und daher nicht lange lebte. Spätere Forscher versuchten, den names dieses Künstlers mit Archivdaten zu verknüpfen."
+            },
+            {
+              "id": "23",
+              "foto": "image/Giorgione.jpg",
+              "names": "Giorgione",
+              "date": "1477 / 1478-1510",
+              "descriptions": "Giorgione wurde in der kleinen Stadt Castelfranco Veneto in der Nähe von Venedig geboren. 1493 zog er nach Venedig und wurde Schüler von Giovanni Bellini. 1497 erschien sein erstes unabhängiges Werk - Christus trägt das Kreuz . Laut Vasari traf er sich im April 1500 mit Leonardo da Vinci. "
+            },
+            {
+              "id": "24",
+              "foto": "image/Francesco.jpg",
+              "names": "Pesellino",
+              "date": "um 1422 Florenz - gest. 1457",
+              "descriptions": "Der italienische Kunsthistoriker Giorgio Vasari hat eine kurze Biographie des Künstlers zusammengestellt, in der er begeistert von seiner Arbeit spricht, die aber gleichzeitig alles durcheinander gebracht zu haben scheint."
+            },
+            {
+              "id": "25",
+              "foto": "image/Girlandajo.jpg",
+              "names": "Dominico Ghirlandaio",
+              "date": "2. Juni 1448 - 11. Januar 1494",
+              "descriptions": "Einer der führenden florentinischen Künstler Quattrocento, der Gründer der künstlerischen Dynastie, der von seinem Bruder David und seinem Sohn Ridolfo weitergeführt wurde. Der Leiter der Kunstwerkstatt, in der der junge Michelangelo ein Jahr lang berufliche Fähigkeiten beherrschte. Der Autor von Fresko-Zyklen, in denen konvex, mit allen möglichen Details zeigt das häusliche Leben biblischer Figuren (ihre Rolle spielen edle Bürger von Florenz in damaligen Kostümen)"
+            },
+            {
+              "id": "26",
+              "foto": "image/benedetto01.jpg",
+              "names": "Benedetto di Bindo",
+              "date": "1385–1417",
+              "descriptions": "Italienischer Maler der sienesischen Schule für italienisch-byzantinische und gotische Kunst. Geboren um 1385 in Castiglione di Valdorcia bei Siena. Über die Karriere des Künstlers gibt es nur sehr wenige verlässliche Informationen. Sein Name taucht erstmals 1409 in den sienesischen Dokumenten auf Zahlung von Benedetto di Bindo Geld für die Arbeit im Dom in Siena. Dort schuf Benedetto 1411-1412 zusammen mit einer Gruppe von Künstlern Fresken in drei Sakristei-Kapellen."
+            },
+            {
+              "id": "27",
+              "foto": "image/Milano_affresco.jpg",
+              "names": "Bergangone Ambradjo",
+              "date": "1470 - 1523/1524",
+              "descriptions": "Obwohl er fast ein Zeitgenosse von Leonardo da Vinci war, malte er in einem Stil, der der lombardischen Kunst von Vincenzo Foppa und Bernardino Zenale vor der Renaissance näher kam. Die Daten seiner Geburt und seines Todes sind unbekannt; Er soll in Fossano im Piemont geboren worden sein und sein Name ist auf seine künstlerische Zugehörigkeit zur burgundischen Schule zurückzuführen."
+            },
+            {
+              "id": "28",
+              "foto": "image/thumbnail.jpg",
+              "names": "Bissolo, Francesco",
+              "date": "1470 — 1554",
+              "descriptions": "Der Sohn des Künstlers. Ein Schüler von Giovanni Bellini. Ab 1490 zog er in Bellinis Werkstatt. Von 1492 bis 1530 arbeitete er in Venedig. Unterstützung des Lehrers bei der Dekoration des Großen Ratesaals des Dogenpalastes (Venedig). Beteiligte sich an der Schaffung von Dekorationen für die Kirche Il Redentore in Venedig."
+            },
+            {
+              "id": "29",
+              "foto": "image/7kyfkolkbm.jpeg",
+              "names": "Boltraffio Giovanni",
+              "date": "1466 oder 1467, Mailand - 1516",
+              "descriptions": "Vasari berichtet, dass der Künstler aus einer aristokratischen Familie stammte. In den Traditionen von Foppa, Bernardo Zenale und Ambrogio Bergognone aufgewachsen, wurde er in Leonardos Werkstatt ausgebildet. Sein erstes Werk Die Auferstehung Christi, des heiligen Leonard und des heiligen Lucia wurde 1491 zusammen mit Marco d'Ojono für die Mailänder Kirche San Giovanni sul Muro ausgeführt."
+            },
+            {
+              "id": "30",
+              "foto": "image/Vecchietta1.jpg",
+              "names": "Vecchietta",
+              "date": "um 1410, Siena - 6. Juni 1480",
+              "descriptions": "Giorgio Vasari informiert in seinen Biografien über Vecchietta und beschreibt ihn als einen düsteren und nicht geselligen Mann, der ewig in Gedanken versunken ist und daher nicht lange lebte. Spätere Forscher versuchten, den names dieses Künstlers mit Archivdaten zu verknüpfen."
+            },
+            {
+              "id": "31",
+              "foto": "image/Giorgione.jpg",
+              "names": "Giorgione",
+              "date": "1477 / 1478-1510",
+              "descriptions": "Giorgione wurde in der kleinen Stadt Castelfranco Veneto in der Nähe von Venedig geboren. 1493 zog er nach Venedig und wurde Schüler von Giovanni Bellini. 1497 erschien sein erstes unabhängiges Werk - Christus trägt das Kreuz . Laut Vasari traf er sich im April 1500 mit Leonardo da Vinci. "
+            },
+            {
+              "id": "32",
+              "foto": "image/Francesco.jpg",
+              "names": "Pesellino",
+              "date": "um 1422 Florenz - gest. 1457",
+              "descriptions": "Der italienische Kunsthistoriker Giorgio Vasari hat eine kurze Biographie des Künstlers zusammengestellt, in der er begeistert von seiner Arbeit spricht, die aber gleichzeitig alles durcheinander gebracht zu haben scheint."
             }
           ]
 }

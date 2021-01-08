@@ -33,6 +33,195 @@
               "names": "Boltraffio Giovanni",
               "date": "1466 ou 1467, Milan - 1516",
               "descriptions": "Vasari rapporte que l'artiste est issu d'une famille aristocratique. Élevé dans les traditions de Foppa, Bernardo Zenale et Ambrogio Bergognone, il a été formé dans l'atelier de Léonard. Son premier ouvrage, La Résurrection du Christ, Saint-Léonard et Sainte-Lucie, fut exécuté en 1491 avec Marco d'Ojono pour l'église de Milan de San Giovanni sul Muro."
+            },
+            {
+              "id": "6",
+              "foto": "image/Vecchietta1.jpg",
+              "names": "Vecchietta",
+              "date": "vers 1410, Sienne - 6 juin 1480",
+              "descriptions": "Giorgio Vasari informe sur Vecchietta dans ses Biographies et le décrit comme un homme sombre et insociable, éternellement plongé dans ses pensées, et n'a donc pas vécu longtemps. Des chercheurs ultérieurs ont tenté de relier le nom de cet artiste à des données d'archives."
+            },
+            {
+              "id": "7",
+              "foto": "image/Giorgione.jpg",
+              "noms": "Giorgione",
+              "date": "1477 / 1478-1510",
+              "descriptions": "Giorgione est né dans la petite ville de Castelfranco Veneto près de Venise. En 1493, il a déménagé à Venise et est devenu un élève de Giovanni Bellini. En 1497 son premier travail indépendant est apparu - Le Christ portant la croix. Selon Vasari, en avril 1500, il a rencontré avec Léonard de Vinci. "
+            },
+            {
+              "id": "8",
+              "foto": "image/Francesco.jpg",
+              "names": "Pesellino",
+              "date": "c. 1422 Florence - d. 1457",
+              "descriptions": "L'historien de l'art italien Giorgio Vasari a compilé une courte biographie de l'artiste, dans laquelle il parle avec enthousiasme de son travail, mais en même temps, il semble y avoir tout mélangé."
+            },
+            {
+              "id": "9",
+              "foto": "image/Vecchietta.jpg",
+              "names": "Dominico Ghirlandaio",
+              "date": "2 juin 1448 - 11 janvier 1494",
+              "descriptions": "L'un des principaux artistes florentins Quattrocento, le fondateur de la dynastie artistique, qui a été poursuivi par son frère David et son fils Ridolfo. Le chef de l'atelier d'art, où le jeune Michel-Ange a maîtrisé les compétences professionnelles pendant un an. L'auteur de cycles de fresques dans lesquels convexes, avec toutes sortes de détails montre la vie à la maison de personnages bibliques (leur rôle est joué par de nobles citoyens de Florence en costumes de cette époque)"
+            },
+            {
+              "id": "10",
+              "foto": "image/benedetto01.jpg",
+              "names": "Benedetto di Bindo",
+              "date": "1385–1417",
+              "descriptions": "Peintre italien de l'école siennoise d'art italo-byzantin et gothique. Né dans la ville de Castiglione di Valdorcia, près de Sienne, vers 1385. Il existe très peu d'informations fiables sur la carrière de l'artiste. Son nom apparaît pour la première fois dans les documents siennois en 1409, ils rapportent paiement de Benedetto di Bindo pour le travail dans le Duomo de Sienne. Là, en 1411-1412, Benedetto et un groupe d'artistes ont créé des fresques dans trois chapelles de la sacristie."
+            },
+            {
+              "id": "11",
+              "foto": "image/Milano_affresco.jpg",
+              "names": "Bergangone Ambradjo",
+              "date": "1470 - 1523/1524",
+              "descriptions": "Bien qu'il soit presque un contemporain de Léonard de Vinci, il peint dans un style plus proche de l'art pré-Renaissance, lombard de Vincenzo Foppa et Bernardino Zenale. Les dates de sa naissance et de sa mort sont inconnues; Il serait né à Fossano dans le Piémont et son nom est dû à son affiliation artistique avec l'école bourguignonne."
+            },
+            {
+              "id": "12",
+              "foto": "image/thumbnail.jpg",
+              "names": "Bissolo, Francesco",
+              "date": "1470 — 1554",
+              "descriptions": "Le fils de l'artiste. Un élève de Giovanni Bellini. À partir de 1490, il s'installe dans l'atelier de Bellini. De 1492 à 1530, il travaille à Venise. A aidé le professeur à décorer la grande salle du Conseil du Palais des Doges (Venise). Participation à la création de décorations pour l'église de Il Redentore à Venise."
+            },
+            {
+              "id": "13",
+              "foto": "image/7kyfkolkbm.jpeg",
+              "names": "Boltraffio Giovanni",
+              "date": "1466 ou 1467, Milan - 1516",
+              "descriptions": "Vasari rapporte que l'artiste est issu d'une famille aristocratique. Élevé dans les traditions de Foppa, Bernardo Zenale et Ambrogio Bergognone, il a été formé dans l'atelier de Léonard. Son premier ouvrage, La Résurrection du Christ, Saint-Léonard et Sainte-Lucie, fut exécuté en 1491 avec Marco d'Ojono pour l'église de Milan de San Giovanni sul Muro."
+            },
+            {
+              "id": "14",
+              "foto": "image/Vecchietta1.jpg",
+              "names": "Vecchietta",
+              "date": "vers 1410, Sienne - 6 juin 1480",
+              "descriptions": "Giorgio Vasari informe sur Vecchietta dans ses Biographies et le décrit comme un homme sombre et insociable, éternellement plongé dans ses pensées, et n'a donc pas vécu longtemps. Des chercheurs ultérieurs ont tenté de relier le nom de cet artiste à des données d'archives."
+            },
+            {
+              "id": "15",
+              "foto": "image/Giorgione.jpg",
+              "noms": "Giorgione",
+              "date": "1477 / 1478-1510",
+              "descriptions": "Giorgione est né dans la petite ville de Castelfranco Veneto près de Venise. En 1493, il a déménagé à Venise et est devenu un élève de Giovanni Bellini. En 1497 son premier travail indépendant est apparu - Le Christ portant la croix. Selon Vasari, en avril 1500, il a rencontré avec Léonard de Vinci. "
+            },
+            {
+              "id": "16",
+              "foto": "image/Francesco.jpg",
+              "names": "Pesellino",
+              "date": "c. 1422 Florence - d. 1457",
+              "descriptions": "L'historien de l'art italien Giorgio Vasari a compilé une courte biographie de l'artiste, dans laquelle il parle avec enthousiasme de son travail, mais en même temps, il semble y avoir tout mélangé."
+            },
+            {
+              "id": "17",
+              "foto": "image/Girlandajo.jpg",
+              "names": "Dominico Ghirlandaio",
+              "date": "2 juin 1448 - 11 janvier 1494",
+              "descriptions": "L'un des principaux artistes florentins Quattrocento, le fondateur de la dynastie artistique, qui a été poursuivi par son frère David et son fils Ridolfo. Le chef de l'atelier d'art, où le jeune Michel-Ange a maîtrisé les compétences professionnelles pendant un an. L'auteur de cycles de fresques dans lesquels convexes, avec toutes sortes de détails montre la vie à la maison de personnages bibliques (leur rôle est joué par de nobles citoyens de Florence en costumes de cette époque)"
+            },
+            {
+              "id": "18",
+              "foto": "image/benedetto01.jpg",
+              "names": "Benedetto di Bindo",
+              "date": "1385–1417",
+              "descriptions": "Peintre italien de l'école siennoise d'art italo-byzantin et gothique. Né dans la ville de Castiglione di Valdorcia, près de Sienne, vers 1385. Il existe très peu d'informations fiables sur la carrière de l'artiste. Son nom apparaît pour la première fois dans les documents siennois en 1409, ils rapportent paiement de Benedetto di Bindo pour le travail dans le Duomo de Sienne. Là, en 1411-1412, Benedetto et un groupe d'artistes ont créé des fresques dans trois chapelles de la sacristie."
+            },
+            {
+              "id": "19",
+              "foto": "image/Milano_affresco.jpg",
+              "names": "Bergangone Ambradjo",
+              "date": "1470 - 1523/1524",
+              "descriptions": "Bien qu'il soit presque un contemporain de Léonard de Vinci, il peint dans un style plus proche de l'art pré-Renaissance, lombard de Vincenzo Foppa et Bernardino Zenale. Les dates de sa naissance et de sa mort sont inconnues; Il serait né à Fossano dans le Piémont et son nom est dû à son affiliation artistique avec l'école bourguignonne."
+            },
+            {
+              "id": "20",
+              "foto": "image/thumbnail.jpg",
+              "names": "Bissolo, Francesco",
+              "date": "1470 — 1554",
+              "descriptions": "Le fils de l'artiste. Un élève de Giovanni Bellini. À partir de 1490, il s'installe dans l'atelier de Bellini. De 1492 à 1530, il travaille à Venise. A aidé le professeur à décorer la grande salle du Conseil du Palais des Doges (Venise). Participation à la création de décorations pour l'église de Il Redentore à Venise."
+            },
+            {
+              "id": "21",
+              "foto": "image/7kyfkolkbm.jpeg",
+              "names": "Boltraffio Giovanni",
+              "date": "1466 ou 1467, Milan - 1516",
+              "descriptions": "Vasari rapporte que l'artiste est issu d'une famille aristocratique. Élevé dans les traditions de Foppa, Bernardo Zenale et Ambrogio Bergognone, il a été formé dans l'atelier de Léonard. Son premier ouvrage, La Résurrection du Christ, Saint-Léonard et Sainte-Lucie, fut exécuté en 1491 avec Marco d'Ojono pour l'église de Milan de San Giovanni sul Muro."
+            },
+            {
+              "id": "22",
+              "foto": "image/Vecchietta1.jpg",
+              "names": "Vecchietta",
+              "date": "vers 1410, Sienne - 6 juin 1480",
+              "descriptions": "Giorgio Vasari informe sur Vecchietta dans ses Biographies et le décrit comme un homme sombre et insociable, éternellement plongé dans ses pensées, et n'a donc pas vécu longtemps. Des chercheurs ultérieurs ont tenté de relier le nom de cet artiste à des données d'archives."
+            },
+            {
+              "id": "23",
+              "foto": "image/Giorgione.jpg",
+              "noms": "Giorgione",
+              "date": "1477 / 1478-1510",
+              "descriptions": "Giorgione est né dans la petite ville de Castelfranco Veneto près de Venise. En 1493, il a déménagé à Venise et est devenu un élève de Giovanni Bellini. En 1497 son premier travail indépendant est apparu - Le Christ portant la croix. Selon Vasari, en avril 1500, il a rencontré avec Léonard de Vinci. "
+            },
+            {
+              "id": "24",
+              "foto": "image/Francesco.jpg",
+              "names": "Pesellino",
+              "date": "c. 1422 Florence - d. 1457",
+              "descriptions": "L'historien de l'art italien Giorgio Vasari a compilé une courte biographie de l'artiste, dans laquelle il parle avec enthousiasme de son travail, mais en même temps, il semble y avoir tout mélangé."
+            },
+            {
+              "id": "25",
+              "foto": "image/Girlandajo.jpg",
+              "names": "Dominico Ghirlandaio",
+              "date": "2 juin 1448 - 11 janvier 1494",
+              "descriptions": "L'un des principaux artistes florentins Quattrocento, le fondateur de la dynastie artistique, qui a été poursuivi par son frère David et son fils Ridolfo. Le chef de l'atelier d'art, où le jeune Michel-Ange a maîtrisé les compétences professionnelles pendant un an. L'auteur de cycles de fresques dans lesquels convexes, avec toutes sortes de détails montre la vie à la maison de personnages bibliques (leur rôle est joué par de nobles citoyens de Florence en costumes de cette époque)"
+            },
+            {
+              "id": "26",
+              "foto": "image/benedetto01.jpg",
+              "names": "Benedetto di Bindo",
+              "date": "1385–1417",
+              "descriptions": "Peintre italien de l'école siennoise d'art italo-byzantin et gothique. Né dans la ville de Castiglione di Valdorcia, près de Sienne, vers 1385. Il existe très peu d'informations fiables sur la carrière de l'artiste. Son nom apparaît pour la première fois dans les documents siennois en 1409, ils rapportent paiement de Benedetto di Bindo pour le travail dans le Duomo de Sienne. Là, en 1411-1412, Benedetto et un groupe d'artistes ont créé des fresques dans trois chapelles de la sacristie."
+            },
+            {
+              "id": "27",
+              "foto": "image/Milano_affresco.jpg",
+              "names": "Bergangone Ambradjo",
+              "date": "1470 - 1523/1524",
+              "descriptions": "Bien qu'il soit presque un contemporain de Léonard de Vinci, il peint dans un style plus proche de l'art pré-Renaissance, lombard de Vincenzo Foppa et Bernardino Zenale. Les dates de sa naissance et de sa mort sont inconnues; Il serait né à Fossano dans le Piémont et son nom est dû à son affiliation artistique avec l'école bourguignonne."
+            },
+            {
+              "id": "28",
+              "foto": "image/thumbnail.jpg",
+              "names": "Bissolo, Francesco",
+              "date": "1470 — 1554",
+              "descriptions": "Le fils de l'artiste. Un élève de Giovanni Bellini. À partir de 1490, il s'installe dans l'atelier de Bellini. De 1492 à 1530, il travaille à Venise. A aidé le professeur à décorer la grande salle du Conseil du Palais des Doges (Venise). Participation à la création de décorations pour l'église de Il Redentore à Venise."
+            },
+            {
+              "id": "29",
+              "foto": "image/7kyfkolkbm.jpeg",
+              "names": "Boltraffio Giovanni",
+              "date": "1466 ou 1467, Milan - 1516",
+              "descriptions": "Vasari rapporte que l'artiste est issu d'une famille aristocratique. Élevé dans les traditions de Foppa, Bernardo Zenale et Ambrogio Bergognone, il a été formé dans l'atelier de Léonard. Son premier ouvrage, La Résurrection du Christ, Saint-Léonard et Sainte-Lucie, fut exécuté en 1491 avec Marco d'Ojono pour l'église de Milan de San Giovanni sul Muro."
+            },
+            {
+              "id": "30",
+              "foto": "image/Vecchietta1.jpg",
+              "names": "Vecchietta",
+              "date": "vers 1410, Sienne - 6 juin 1480",
+              "descriptions": "Giorgio Vasari informe sur Vecchietta dans ses Biographies et le décrit comme un homme sombre et insociable, éternellement plongé dans ses pensées, et n'a donc pas vécu longtemps. Des chercheurs ultérieurs ont tenté de relier le nom de cet artiste à des données d'archives."
+            },
+            {
+              "id": "31",
+              "foto": "image/Giorgione.jpg",
+              "noms": "Giorgione",
+              "date": "1477 / 1478-1510",
+              "descriptions": "Giorgione est né dans la petite ville de Castelfranco Veneto près de Venise. En 1493, il a déménagé à Venise et est devenu un élève de Giovanni Bellini. En 1497 son premier travail indépendant est apparu - Le Christ portant la croix. Selon Vasari, en avril 1500, il a rencontré avec Léonard de Vinci. "
+            },
+            {
+              "id": "32",
+              "foto": "image/Francesco.jpg",
+              "names": "Pesellino",
+              "date": "c. 1422 Florence - d. 1457",
+              "descriptions": "L'historien de l'art italien Giorgio Vasari a compilé une courte biographie de l'artiste, dans laquelle il parle avec enthousiasme de son travail, mais en même temps, il semble y avoir tout mélangé."
             }
           ]
 }

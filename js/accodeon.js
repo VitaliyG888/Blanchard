@@ -1,240 +1,247 @@
 document.addEventListener('DOMContentLoaded', function () {
-	const accordion = document.querySelector('.accordeon');
-	let tabNav = document.querySelectorAll('.tab-nav__link');
-	let dataTable;
-	let requestURL;
-	let tabName;
-	let accordionSection;
-	let bildingCard;
+  const accordion = document.querySelector('.accordeon');
+  let tabNav = document.querySelectorAll('.tab-nav__link');
+  let dataTable;
+  let requestURL;
+  let namberTab;
+  let tabName;
+  let accordionSection;
+  let accordionSectionBuild;
+  let trabAcc;
+  let tab;
+  let tabIndex;
+  let dataTable2;
 
-	requestUrl();
 
-	function requestUrl() {
-		tabNav.forEach(el => {
-			if (el.classList.contains('is-active__border')) {
-				tabName = el.getAttribute('data-tab-name');
-				return tabName;
-			}
-		})
+  accordionSectionBuild = function () {
+    for (let i = dataTable.contentDdata.length - 1; i >= 0; i--) {
+      let item = dataTable.contentDdata[i];
 
-		switch (tabName) {
-			case 'tab1':
-				requestURL = 'data1.json';
-				break;
-			case 'tab2':
-				requestURL = 'data2.json';
-				break;
-			case 'tab3':
-				requestURL = 'data3.json';
-				break;
-			case 'tab4':
-				requestURL = 'data4.json';
-				break;
-			case 'tab5':
-				requestURL = 'data5.json';
-				break;
-		};
+      accordionSection = document.createElement("div");
+      let accordionBtn = document.createElement("button");
+      let accordeonContent = document.createElement("div");
+      let accordeonItem = document.createElement("div");
+      accordeonContent.classList.add("accordeon-content", "js-content");
+      accordeonItem.classList.add("accordeon-item");
+      accordionBtn.innerHTML = item.title;
+      if (i == 0) {
+        accordionSection.classList.add("accordeon-section", "js-section", "active");
+        accordionBtn.classList.add("accordeon-title", "accordeon-title--first");
+      } else {
+        accordionSection.classList.add("accordeon-section", "js-section");
+        accordionBtn.classList.add("accordeon-title");
+      }
 
-		request = new XMLHttpRequest();
-		request.open('GET', requestURL);
-		request.onload = function (e) {
-			if (request.readyState === 4) {
-				if (request.status === 200) {
-					dataTable = JSON.parse(request.responseText);
-					let namberTab = requestURL.replace(/[^\d]/g, '');
+      accordion.prepend(accordionSection);
+      accordionSection.prepend(accordionBtn);
+      accordionSection.append(accordeonContent);
+      accordeonContent.prepend(accordeonItem);
 
-					function accordionSectionBuild() {
-						for (let i = dataTable.contentDdata.length - 1; i >= 0; i--) {
-							let item = dataTable.contentDdata[i];
+      for (let j = 0; j < Object.values(item.content).length; j++) {
+        let contentBtn = document.createElement('button');
+        contentBtn.classList.add("accordeon-link", "reset-btn", `${Object.keys(item.content)[j]}`);
+        contentBtn.innerHTML = Object.values(item.content)[j];
+        accordeonItem.append(contentBtn);
+      }
+    }
+  };
 
-							accordionSection = document.createElement("div");
-							let accordionBtn = document.createElement("button");
-							let accordeonContent = document.createElement("div");
-							let accordeonItem = document.createElement("div");
-							accordeonContent.classList.add("accordeon-content", "js-content");
-							accordeonItem.classList.add("accordeon-item");
-							accordionBtn.innerHTML = item.title;
-							if (i == 0) {
-								accordionSection.classList.add("accordeon-section", "js-section", "active");
-								accordionBtn.classList.add("accordeon-title", "accordeon-title--first");
-							} else {
-								accordionSection.classList.add("accordeon-section", "js-section");
-								accordionBtn.classList.add("accordeon-title");
-							}
+  let bildingCard = function (number = 0) {
+    console.log(number);
+    const accordeonCard = document.querySelector('.card');
+    if (document.querySelector('.card__img')) {
+      document.querySelector('.card__img').remove();
+    }
+    if (document.querySelector('.card__title')) {
+      document.querySelector('.card__title').remove();
+    }
+    if (document.querySelector('.card__date')) {
+      document.querySelector('.card__date').remove();
+    }
+    if (document.querySelector('.card__description')) {
+      document.querySelector('.card__description').remove();
+    }
 
-							accordion.prepend(accordionSection);
-							accordionSection.prepend(accordionBtn);
-							accordionSection.append(accordeonContent);
-							accordeonContent.prepend(accordeonItem);
+    let cardImg = document.createElement("img");
+    cardImg.classList.add('card__img');
+    cardImg.src = (dataTable2["catalog card"][number].foto)
+    let cardTitle = document.createElement("h3");
+    cardTitle.classList.add('card__title');
+    cardTitle.innerHTML = dataTable2["catalog card"][number].names
+    console.log(cardTitle.innerHTML);
+    let cardDate = document.createElement("span");
+    cardDate.classList.add('card__date', 'signature');
+    cardDate.innerHTML = dataTable2["catalog card"][number].date
+    let cardDescription = document.createElement("p");
+    cardDescription.classList.add('card__description');
+    cardDescription.innerHTML = dataTable2["catalog card"][number].descriptions
 
-							for (let j = 0; j < Object.values(item.content).length; j++) {
-								let contentBtn = document.createElement('button');
-								contentBtn.classList.add("accordeon-link", "reset-btn", `${Object.keys(item.content)[j]}`);
-								contentBtn.innerHTML = Object.values(item.content)[j];
-								accordeonItem.append(contentBtn);
-							}
-						}
-					}
-					accordionSectionBuild();
+    accordeonCard.prepend(cardImg);
+    accordeonCard.append(cardTitle);
+    accordeonCard.append(cardDate);
+    accordeonCard.append(cardDescription);
 
-					let accordeonSectionAll = document.querySelectorAll('.js-section'),
-						accordeonTitleAll = document.querySelectorAll('.accordeon-title');
+  };
 
-					let accordeonActiveit = function () {
+  trabAcc = function (index = 1) {
+    request2 = new XMLHttpRequest();
+    request2.open('GET', `data-name-${index}.json`);
+    console.log(`data-name-${index}.json`);
+    request2.onload = function (e) {
+      if (request2.readyState === 4) {
+        if (request2.status === 200) {
+          dataTable2 = JSON.parse(request2.responseText);
+          bildingCard();
 
-						[].forEach.call(accordeonSectionAll, function (item, index) {
-							if (!index == 0) {
+          let activeLinkAccordion = document.querySelectorAll(".accordeon-link");
 
-								item.querySelector('.js-content').style.maxHeight = '0px'
-							} else if (index == 0) {
-								item.querySelector('.js-content').style.maxHeight = item.querySelector('.js-content >*').clientHeight + 'px'
-								item.classList.add('active');
-							}
+          activeLinkAccordion.forEach(item => {
+            item.addEventListener('click', function (el) {
+              let linkName = (el.target.className.replace(/[^\d]/g, '')) - 1;
+              bildingCard(linkName);
+            });
+          });
 
-							item.addEventListener('click', function (event) {
+        } else {
+          console.error(request2.statusText);
+        }
+      }
+    };
+    request2.onerror = function (e) {
+      console.error(request2.statusText);
+    };
+    request2.send();
+  }
 
-								accordeonTitleAll.forEach((elem) => {
 
-									if (event.target == elem) {
+  let requestUrl = function () {
+    tabNav.forEach(el => {
+      if (el.classList.contains('is-active__border')) {
+        tabName = el.getAttribute('data-tab-name');
+        return tabName;
+      }
+    })
 
-										let activeItem = item.classList.contains('active'),
-											accordeonLink = item.querySelectorAll('.accordeon-link');
+    switch (tabName) {
+      case 'tab1':
+        requestURL = 'data1.json';
+        break;
+      case 'tab2':
+        requestURL = 'data2.json';
+        break;
+      case 'tab3':
+        requestURL = 'data3.json';
+        break;
+      case 'tab4':
+        requestURL = 'data4.json';
+        break;
+      case 'tab5':
+        requestURL = 'data5.json';
+        break;
+    };
 
-										[].forEach.call(accordeonLink, function (link) {
-											if (event.target.className == link.className) {
-												event.stopPropagation();
-												console.log(event);
-											}
-										})
+    request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.onload = function (e) {
+      if (request.readyState === 4) {
+        if (request.status === 200) {
+          dataTable = JSON.parse(request.responseText);
+          namberTab = requestURL.replace(/[^\d]/g, '');
 
-										accordeonSectionAll.forEach(function (section) {
-											section.querySelector('.js-content').style.maxHeight = '0px'
-											if (section.classList.contains('active')) {
-												section.classList.remove('active')
-											}
-										})
+          accordionSectionBuild();
 
-										if (activeItem) {
-											this.classList.remove('active');
-											this.querySelector('.js-content').style.maxHeight = '0px'
-										} else {
-											this.classList.add('active');
-											this.querySelector('.js-content').style.maxHeight = item.querySelector('.js-content >*').clientHeight + 'px'
-										}
-									}
-									event.stopPropagation();
-								})
-							})
-						})
-					}
-					accordeonActiveit();
+          let accordeonSectionAll = document.querySelectorAll('.js-section'),
+            accordeonTitleAll = document.querySelectorAll('.accordeon-title');
 
-					let trabAcc = function () {
-						request2 = new XMLHttpRequest();
-						request2.open('GET', `data-name-${namberTab}.json`);
-						request2.onload = function (e) {
-							if (request2.readyState === 4) {
-								if (request2.status === 200) {
-									let dataTable2 = JSON.parse(request2.responseText);
+          let accordeonActiveit = function () {
+            [].forEach.call(accordeonSectionAll, function (item, index) {
+              if (!index == 0) {
+                item.querySelector('.js-content').style.maxHeight = '0px'
+              } else if (index == 0) {
+                item.querySelector('.js-content').style.maxHeight = item.querySelector('.js-content >*').clientHeight + 'px'
+                item.classList.add('active');
+              }
 
-									let activeLinkAccordion = document.querySelectorAll(".accordeon-link");
-									console.log(activeLinkAccordion);
+              item.addEventListener('click', function (event) {
+                accordeonTitleAll.forEach((elem) => {
+                  if (event.target == elem) {
+                    let activeItem = item.classList.contains('active'),
+                      accordeonLink = item.querySelectorAll('.accordeon-link');
 
-									activeLinkAccordion.forEach(item => {
-										item.addEventListener('click', function (el) {
-											let linkName = (el.target.className.replace(/[^\d]/g, '')) - 1;
-											console.log(linkName);
-											bildingCard(linkName);
-										});
-									});
+                    [].forEach.call(accordeonLink, function (link) {
+                      if (event.target.className == link.className) {
+                        event.stopPropagation();
+                        console.log(event);
+                      }
+                    })
 
-									bildingCard = function (number = 0) {
-										const accordeonCard = document.querySelector('.card');
-										if (document.querySelector('.card__img')) {
-											document.querySelector('.card__img').remove();
-										}
-										if (document.querySelector('.card__title')) {
-											document.querySelector('.card__title').remove();
-										}
-										if (document.querySelector('.card__date')) {
-											document.querySelector('.card__date').remove();
-										}
-										if (document.querySelector('.card__description')) {
-											document.querySelector('.card__description').remove();
-										}
+                    accordeonSectionAll.forEach(function (section) {
+                      section.querySelector('.js-content').style.maxHeight = '0px'
+                      if (section.classList.contains('active')) {
+                        section.classList.remove('active')
+                      }
+                    })
 
-										let cardImg = document.createElement("img");
-										cardImg.classList.add('card__img');
-										cardImg.src = (dataTable2["catalog card"][number].foto)
-										let cardTitle = document.createElement("h3");
-										cardTitle.classList.add('card__title');
-										cardTitle.innerHTML = dataTable2["catalog card"][number].names
-										console.log(cardTitle.innerHTML);
-										let cardDate = document.createElement("span");
-										cardDate.classList.add('card__date', 'signature');
-										cardDate.innerHTML = dataTable2["catalog card"][number].date
-										let cardDescription = document.createElement("p");
-										cardDescription.classList.add('card__description');
-										cardDescription.innerHTML = dataTable2["catalog card"][number].descriptions
+                    if (activeItem) {
+                      this.classList.remove('active');
+                      this.querySelector('.js-content').style.maxHeight = '0px'
+                    } else {
+                      this.classList.add('active');
+                      this.querySelector('.js-content').style.maxHeight = item.querySelector('.js-content >*').clientHeight + 'px'
+                    }
+                  }
+                  event.stopPropagation();
+                })
+              })
+            })
+          };
+          accordeonActiveit();
+          trabAcc(namberTab);
 
-										accordeonCard.prepend(cardImg);
-										accordeonCard.append(cardTitle);
-										accordeonCard.append(cardDate);
-										accordeonCard.append(cardDescription);
+        } else {
+          console.error(request.statusText);
+        }
+      }
+    };
+    request.onerror = function (e) {
+      console.error(request.statusText);
+    };
+    request.send();
+  }
 
-									};
+  tab = function () {
+    let tabContent = document.querySelectorAll('.tab');
 
-								} else {
-									console.error(request2.statusText);
-								}
-							}
-						};
-						request2.onerror = function (e) {
-							console.error(request2.statusText);
-						};
-						request2.send();
-					}
-					trabAcc();
-				} else {
-					console.error(request.statusText);
-				}
-			}
-		};
-		request.onerror = function (e) {
-			console.error(request.statusText);
-		};
-		request.send();
-	}
+    tabNav.forEach(item => {
+      item.addEventListener('click', selectTabNav)
+    });
 
-	let tab = function () {
-		let tabContent = document.querySelectorAll('.tab');
+    function selectTabNav() {
+      tabNav.forEach(item => {
+        item.classList.remove('is-active__border');
+      });
+      this.classList.add('is-active__border');
+      tabName = this.getAttribute('data-tab-name');
+      selectTabContent(tabName);
 
-		tabNav.forEach(item => {
-			item.addEventListener('click', selectTabNav)
-		});
+      let fot = document.querySelectorAll('.accordeon-section');
+      fot.forEach(elem => {
+        elem.remove();
+      })
+      requestUrl();
+      tabIndex = tabName.replace(/[^\d]/g, '');
+      console.log(tabIndex);
+      bildingCard();
+    }
 
-		function selectTabNav() {
-			tabNav.forEach(item => {
-				item.classList.remove('is-active__border');
-			});
-			this.classList.add('is-active__border');
-			tabName = this.getAttribute('data-tab-name');
-			selectTabContent(tabName);
+    function selectTabContent(tabName) {
+      tabContent.forEach(item => {
+        item.classList.contains(tabName) ? item.classList.add('is-active__description') : item.classList.remove('is-active__description');
+      })
+    }
+  };
 
-			let fot = document.querySelectorAll('.accordeon-section');
-			fot.forEach(elem => {
-				elem.remove();
-			})
-			requestUrl();
-			bildingCard();
-		}
+  requestUrl();
 
-		function selectTabContent(tabName) {
-			tabContent.forEach(item => {
-				item.classList.contains(tabName) ? item.classList.add('is-active__description') : item.classList.remove('is-active__description');
-			})
-		}
-	};
-
-	tab();
+  tab();
 });
