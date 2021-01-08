@@ -1549,7 +1549,6 @@ div[data-custom-properties="[object Object]"] {
   position: relative;
   display: block;
   background: none;
-  width: 262px;
   margin-bottom: 10px;
   margin-left: -5px;
   cursor: pointer;
@@ -1566,7 +1565,7 @@ div[data-custom-properties="[object Object]"] {
 .accordeon-link::before {
   content: '';
   position: absolute;
-  width: 181px;
+  width: 193px;
   height: 30px;
   top: -5px;
   left: 4px;
@@ -1604,7 +1603,7 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .accordeon-link:hover::after {
-  width: 177px;
+  width: 190px;
   -webkit-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
@@ -2902,8 +2901,8 @@ input[type="checkbox"]:checked + .editions__label::before {
     max-width: 437px;
   }
   .accordeon-item {
-    -ms-grid-columns: 252px 184px;
-        grid-template-columns: 252px 184px;
+    -ms-grid-columns: 245px 192px;
+        grid-template-columns: 245px 192px;
     -ms-grid-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
         grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
   }

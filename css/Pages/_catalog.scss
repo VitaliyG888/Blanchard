@@ -274,7 +274,6 @@
 	position: relative;
 	display: block;
 	background: none;
-	width: 262px;
 	margin-bottom: 10px;
 	margin-left: -5px;
 	cursor: pointer;
@@ -288,7 +287,7 @@
 	&::before {
 		content: '';
 		position: absolute;
-		width: 181px;
+		width: 193px;
 		height: 30px;
 		top: -5px;
 		left: 4px;
@@ -318,7 +317,7 @@
 	}
 
 	&:hover::after {
-		width: 177px;
+		width: 190px;
 		transition: all 0.5s ease-in;
 	}
 
