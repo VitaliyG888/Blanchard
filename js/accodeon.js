@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	let namberTab;
 	let tabName;
 	let accordionSection;
-	let tab;
 	let tabIndex;
 	let dataTable2;
 
@@ -45,7 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	};
 
 	let bildingCard = function (number = 0) {
-		console.log(number);
 		const accordeonCard = document.querySelector('.card');
 		if (document.querySelector('.card__img')) {
 			document.querySelector('.card__img').remove();
@@ -66,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		let cardTitle = document.createElement("h3");
 		cardTitle.classList.add('card__title');
 		cardTitle.innerHTML = dataTable2["catalog card"][number].names
-		console.log(cardTitle.innerHTML);
 		let cardDate = document.createElement("span");
 		cardDate.classList.add('card__date', 'signature');
 		cardDate.innerHTML = dataTable2["catalog card"][number].date
@@ -84,7 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	let trabAcc = function (index = 1) {
 		request2 = new XMLHttpRequest();
 		request2.open('GET', `data-name-${index}.json`);
-		console.log(`data-name-${index}.json`);
 		request2.onload = function (e) {
 			if (request2.readyState === 4) {
 				if (request2.status === 200) {
@@ -109,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			console.error(request2.statusText);
 		};
 		request2.send();
-	}
+	};
 
 
 	let requestUrl = function () {
@@ -205,9 +201,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			console.error(request.statusText);
 		};
 		request.send();
-	}
+	};
 
-	tab = function () {
+	let tab = function () {
 		let tabContent = document.querySelectorAll('.tab');
 
 		tabNav.forEach(item => {
