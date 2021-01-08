@@ -223,9 +223,6 @@ document.addEventListener('DOMContentLoaded', function () {
 				elem.remove();
 			})
 			requestUrl();
-			tabIndex = tabName.replace(/[^\d]/g, '');
-			console.log(tabIndex);
-			bildingCard();
 		}
 
 		function selectTabContent(tabName) {
