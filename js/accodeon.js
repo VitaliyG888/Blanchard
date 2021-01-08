@@ -5,38 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	let requestURL;
 	let tabName;
 	let accordionSection;
+	let bildingCard;
 
 	requestUrl();
-
-
-	let tab = function () {
-		let tabContent = document.querySelectorAll('.tab');
-
-		tabNav.forEach(item => {
-			item.addEventListener('click', selectTabNav)
-		});
-
-		function selectTabNav() {
-			tabNav.forEach(item => {
-				item.classList.remove('is-active__border');
-			});
-			this.classList.add('is-active__border');
-			tabName = this.getAttribute('data-tab-name');
-			selectTabContent(tabName);
-
-			let fot = document.querySelectorAll('.accordeon-section');
-			fot.forEach(elem => {
-				elem.remove();
-			})
-			requestUrl();
-		}
-
-		function selectTabContent(tabName) {
-			tabContent.forEach(item => {
-				item.classList.contains(tabName) ? item.classList.add('is-active__description') : item.classList.remove('is-active__description');
-			})
-		}
-	};
 
 	function requestUrl() {
 		tabNav.forEach(el => {
@@ -177,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
 										});
 									});
 
-									let bildingCard = function (number = 0) {
+									bildingCard = function (number = 0) {
 										const accordeonCard = document.querySelector('.card');
 										if (document.querySelector('.card__img')) {
 											document.querySelector('.card__img').remove();
@@ -234,6 +205,37 @@ document.addEventListener('DOMContentLoaded', function () {
 		};
 		request.send();
 	}
+
+	let tab = function () {
+		let tabContent = document.querySelectorAll('.tab');
+
+		tabNav.forEach(item => {
+			item.addEventListener('click', selectTabNav)
+		});
+
+		function selectTabNav() {
+			tabNav.forEach(item => {
+				item.classList.remove('is-active__border');
+			});
+			this.classList.add('is-active__border');
+			tabName = this.getAttribute('data-tab-name');
+			selectTabContent(tabName);
+			bildingCard();
+
+			let fot = document.querySelectorAll('.accordeon-section');
+			fot.forEach(elem => {
+				elem.remove();
+			})
+			requestUrl();
+			trabAcc();
+		}
+
+		function selectTabContent(tabName) {
+			tabContent.forEach(item => {
+				item.classList.contains(tabName) ? item.classList.add('is-active__description') : item.classList.remove('is-active__description');
+			})
+		}
+	};
 
 	tab();
 });
