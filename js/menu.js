@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const close = document.querySelector('.js-close');
 	const menu = document.querySelector('.menu-toggle');
 	const nav = document.querySelector('.header__nav');
+	const admission = document.querySelector('.header__admission');
 	const body = document.body;
 
 	let keys = {
@@ -13,14 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	function showMenu() {
 		menu.classList.add('menu--showed');
 		body.style.overflow = 'hidden';
-		document.querySelector('.menu-toggle__header').after(nav);
+		document.querySelector('.menu-toggle').appendChild(nav);
+		document.querySelector('.menu-toggle').appendChild(admission);
 		nav.classList.add('nav--showed');
 
 		document.querySelector('.header__close').style.display = 'block';
-		document.querySelector('.nav-toggle').style.display = 'none';
-		document.querySelector('.admission').style.display = 'block';
-		document.querySelector('.search__magnifier').style.display = 'none';
-		document.querySelector('.header__logo').style.marginRight = '40px';
+		admission.style.display = 'block';
 
 		document.addEventListener('keydown', function (e) {
 			if (e.keyCode == keys.ESC) {
@@ -33,11 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		menu.classList.remove('menu--showed');
 		body.style.overflow = 'initial';
 		document.querySelector('.header__logo').after(nav);
+		document.querySelector('.header__container').appendChild(admission);
 		document.querySelector('.header__close').style.display = 'none';
-		document.querySelector('.nav-toggle').style.display = 'block';
-		document.querySelector('.admission').style.display = 'none';
-		document.querySelector('.search__magnifier').style.display = 'block';
-		document.querySelector('.header__logo').style.marginRight = '110px';
+		admission.style.display = 'none';
 		document.querySelector('.header__nav').classList.remove('nav--showed')
 	}
 

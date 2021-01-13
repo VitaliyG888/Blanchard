@@ -13,7 +13,6 @@
 }
 
 .header__logo {
-	z-index: 200;
 	width: 173px;
 	height: 40px;
 }
@@ -42,12 +41,12 @@
 		width: 125%;
 		height: 30px;
 		opacity: 0;
-		transition: opacity .5s ease-in;
+		transition: opacity 0.5s ease-in;
 	}
 
 	&:focus::before {
 		opacity: 1;
-		transition: opacity .5s ease-in;
+		transition: opacity 0.5s ease-in;
 	}
 
 	&:hover {
@@ -61,7 +60,7 @@
 	}
 }
 
-.admission {
+.header__admission {
 	position: relative;
 	font-weight: 400;
 	font-size: 18px;
@@ -73,7 +72,7 @@
 		position: absolute;
 		margin: -4px -7px;
 		border: 2px solid $second-color;
-		width: 125%;
+		width: 90px;
 		height: 30px;
 		opacity: 0;
 		transition: opacity 0.5s ease-in;
@@ -131,13 +130,12 @@
 
 .nether__item:hover .nether__choice {
 	transform: scaleY(1);
-	transition: transform 0.6s ease-in-out;
-	transition-delay: 0.5s;
+	transition: transform 0.5s ease-in-out;
 }
 
 .nether__item:hover .nether__style {
 	color: $first-color;
-	transition: color 0.7s ease-in;
+	transition: color 0.5s ease-in;
 
 	&::after {
 		margin-bottom: 0;
@@ -146,7 +144,7 @@
 		border-right: 1px solid;
 		border-bottom: none;
 		border-left: none;
-		transition: border-color 0.6s ease-in-out;
+		transition: border-color 0.5s ease-in-out;
 	}
 }
 
@@ -208,14 +206,13 @@
 	position: absolute;
 	z-index: 10;
 	margin-top: 26px;
-	margin-left: -60px;
 	padding: 40px;
 	width: 300px;
 	max-height: 300px;
 	background: rgba($Black, 0.4);
 	transform: scaleY(0);
 	transform-origin: 0 0;
-	transition: transform 0.6s ease-in;
+	transition: transform 0.5s ease-in;
 
 	.simplebar-scrollbar::before {
 		left: 0;
@@ -224,8 +221,9 @@
 		bottom: 0;
 		border-radius: 0;
 		width: 2px;
-		background: $first-color;
+		background-color: $Wight;
 		opacity: 1;
+		transition: background-color 0.3s ease-in;
 	}
 
 	.simplebar-track.simplebar-vertical .simplebar-scrollbar::before {

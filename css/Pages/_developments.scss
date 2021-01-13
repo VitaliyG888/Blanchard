@@ -9,14 +9,17 @@
 	margin-bottom: 15px;
 }
 
-.developments__news {
-	margin-bottom: 30px;
+.swiper-wrapper.development__slider {
+	margin-bottom: 50px;
+	margin-left: 3px;
+	flex-wrap: wrap;
 }
 
 .developments__card {
 	position: relative;
-	width: 500px;
-	margin-bottom: 20px;
+	width: 499px;
+	height: auto;
+	box-sizing: border-box;
 	border: 1px solid $Grey;
 
 	&:not(:nth-child(3n + 3)) {
@@ -98,11 +101,11 @@
 	}
 }
 
-.card4 {
+.developments__card:nth-child(4) {
 	display: none;
 }
 
-.card5 {
+.developments__card:nth-child(5) {
 	display: none;
 }
 

@@ -17,20 +17,21 @@ var swiper1 = new Swiper('#slider1', {
 	slidesPerColumn: 1,
 	spaceBetween: 34,
 	slidesPerGroup: 1,
-	observer: true,
 
 	breakpoints: {
-		550: {
+		750: {
 			slidesPerView: 2,
 			slidesPerColumn: 2,
 			spaceBetween: 34,
 			slidesPerGroup: 2,
+			observer: true,
 		},
 		1430: {
 			slidesPerView: 3,
 			slidesPerColumn: 2,
 			spaceBetween: 50,
 			slidesPerGroup: 3,
+			observer: true,
 		},
 	},
 
@@ -52,68 +53,85 @@ var swiper1 = new Swiper('#slider1', {
 	},
 });
 
-var swiper2 = new Swiper('#slider2', {
+let mySwiper2 = function () {
+	if (window.innerWidth >= 750) {
+		var swiper2 = new Swiper('#slider2', {
 
-	slidesPerView: 1,
-	spaceBetween: 50,
-	watchOverflow: true,
-	observer: true,
-	loop: true,
+			breakpoints: {
+				750: {
+					slidesPerView: 2,
+					spaceBetween: 34,
+				},
+				970: {
+					slidesPerView: 2,
+					spaceBetween: 50,
+				},
+				1430: {
+					slidesPerView: 3,
+					slidesPerColumn: 1,
+					slidesPerGroup: 1,
+					spaceBetween: 50,
+				},
+			},
+			autoplay: {
+				delay: 6000,
+				disableOnInteraction: false,
+			},
 
-	breakpoints: {
-		550: {
-			slidesPerView: 2,
-			spaceBetween: 34,
-		},
-		970: {
-			slidesPerView: 2,
-			spaceBetween: 50,
-		},
-		1430: {
-			slidesPerView: 3,
-			slidesPerColumn: 1,
-			slidesPerGroup: 1,
-			spaceBetween: 50,
-		},
-	},
-	autoplay: {
-		delay: 6000,
-		disableOnInteraction: false,
-	},
-
-	navigation: {
-		nextEl: '.button2-next.swiper-button-next',
-		prevEl: '.button2-prev.swiper-button-prev',
-	},
+			navigation: {
+				nextEl: '.button2-next.swiper-button-next',
+				prevEl: '.button2-prev.swiper-button-prev',
+			},
 
 
-	pagination: {
-		el: '.pagination2.swiper-pagination',
-		clickable: true,
-		type: 'fraction',
-	},
-});
+			pagination: {
+				el: '.pagination2.swiper-pagination',
+				clickable: true,
+				type: 'fraction',
+			},
+
+		});
+
+		swiper2.on('resize', function () {
+			if (innerWidth < 750) {
+				swiper2.destroy();
+			}
+		});
+	}
+}
+
+window.addEventListener('resize', () => {
+	mySwiper2();
+})
+
+mySwiper2();
+
+
+
+
 
 var swiper3 = new Swiper('#slider3', {
 	slidesPerView: 1,
 	spaceBetween: 34,
-	observer: true,
 	loop: true,
 
 	breakpoints: {
-		550: {
+		750: {
 			slidesPerView: 2,
 			spaceBetween: 34,
+			observer: true,
 		},
 		970: {
 			slidesPerView: 2,
 			spaceBetween: 50,
+			observer: true,
 		},
 		1430: {
 			slidesPerView: 3,
 			slidesPerColumn: 1,
 			slidesPerGroup: 1,
 			spaceBetween: 50,
+			observer: true,
 		},
 	},
 

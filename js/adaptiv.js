@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	let screenWidth1650 = window.matchMedia('(max-width: 1650px)'),
 		screenWidth1430 = window.matchMedia('(max-width: 1430px)'),
+		screenWidth750 = window.matchMedia('(max-width: 750px)'),
 		headerNav = document.querySelector('#header-nav'),
 		searchBtn = document.querySelector('#search-btn'),
 		headerSearchInput = document.querySelector('#header__search-input');
@@ -100,11 +101,29 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (e.matches) {
 			headerNav.after(searchBtn);
 			document.querySelector('.header__burger').style.display = 'block';
-			document.querySelector('.admission').style.display = 'none';
+			document.querySelector('.header__admission').style.display = 'none';
 		} else {
 			headerSearchInput.after(searchBtn);
 			document.querySelector('.header__burger').style.display = 'none';
-			document.querySelector('.admission').style.display = 'block';
+			document.querySelector('.header__admission').style.display = 'block';
+		}
+	})
+
+	if (document.documentElement.clientWidth < 750) {
+		document.querySelector('.contacts__title').after(document.querySelector('.contacts__address'));
+		document.querySelector('.contacts__title').after(document.querySelector('.contacts__name'));
+	} else {
+		document.querySelector('.contacts__block').prepend(document.querySelector('.contacts__address'));
+		document.querySelector('.contacts__block').prepend(document.querySelector('.contacts__name'));
+	}
+
+	screenWidth750.addEventListener('change', function (el) {
+		if (el.matches) {
+			document.querySelector('.contacts__title').after(document.querySelector('.contacts__address'));
+			document.querySelector('.contacts__title').after(document.querySelector('.contacts__name'));
+		} else {
+			document.querySelector('.contacts__block').prepend(document.querySelector('.contacts__address'));
+			document.querySelector('.contacts__block').prepend(document.querySelector('.contacts__name'));
 		}
 	})
 })

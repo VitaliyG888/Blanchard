@@ -12,7 +12,7 @@
 		padding-bottom: 29px;
 
 		.header__logo {
-			margin-left: 7px;
+			margin-right: 103px;
 		}
 
 		.header__burger {
@@ -65,12 +65,12 @@
 		margin-bottom: 14px;
 
 		&.swiper {
-			padding-top: 17px;
+			padding-top: 10px;
 		}
 	}
 
 	.gallery__swiper-button1.swiper-button {
-		margin-bottom: 22px;
+		margin-bottom: 27px;
 	}
 
 	.swiper-container#slider1 {
@@ -86,13 +86,8 @@
 		right: 11px;
 	}
 
-	.swiper-pagination-st {
-		top: -13px;
-
-		&.swiper-pagination-fraction {
-			font-size: 16px;
-		}
-
+	.swiper-pagination-st.swiper-pagination-fraction {
+		font-size: 16px;
 	}
 
 	.gallery__description {
@@ -180,7 +175,7 @@
 	}
 
 	.developments__card {
-		width: 317px;
+		width: 316px;
 	}
 
 	.developments__card:not(:nth-child(3n + 3)) {
@@ -191,7 +186,7 @@
 		margin-right: 32px;
 	}
 
-	.card3 {
+	.developments__card:nth-child(3) {
 		display: none;
 	}
 
@@ -331,7 +326,7 @@
 	}
 
 	.projects__swiper-button3.swiper-button {
-		top: -7px;
+		bottom: 7px;
 	}
 
 	.swiper-button-prev.swiper-button-prev-st.button3-prev,

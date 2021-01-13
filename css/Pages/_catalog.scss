@@ -110,8 +110,8 @@
 }
 
 .is-active__border {
-	-webkit-animation: border 1s ease-in;
-	animation: border 1s ease-in;
+	-webkit-animation: border 0.5s ease-in;
+	animation: border 0.5s ease-in;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
@@ -151,8 +151,8 @@
 
 .is-active__description {
 	display: block;
-	-webkit-animation: description 1s ease-in;
-	animation: description 1s ease-in;
+	-webkit-animation: description 0.5s ease-in;
+	animation: description 0.5s ease-in;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
@@ -167,8 +167,8 @@
 		-o-object-fit: cover;
 		object-fit: cover;
 		margin-bottom: 33px;
-		-webkit-animation: description 1s ease-in;
-		animation: description 1s ease-in;
+		-webkit-animation: description 0.5s ease-in;
+		animation: description 0.5s ease-in;
 	}
 }
 
@@ -177,21 +177,21 @@
 }
 
 .card__description {
-	-webkit-animation: description 1s ease-in;
-	animation: description 1s ease-in;
+	-webkit-animation: description 0.5s ease-in;
+	animation: description 0.5s ease-in;
 }
 
 .card__title {
 	margin-bottom: 13px;
-	-webkit-animation: description 1s ease-in;
-	animation: description 1s ease-in;
+	-webkit-animation: description 0.5s ease-in;
+	animation: description 0.5s ease-in;
 }
 
 .card__date {
 	display: block;
 	margin-bottom: 9px;
-	-webkit-animation: description 1s ease-in;
-	animation: description 1s ease-in;
+	-webkit-animation: description 0.5s ease-in;
+	animation: description 0.5s ease-in;
 }
 
 .accordeon-section {

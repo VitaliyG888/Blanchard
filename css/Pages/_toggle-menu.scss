@@ -17,7 +17,7 @@
 		width: 28px;
 		height: 3.65px;
 		background-color: $Wight;
-		@include transition(background-color, 0.7s);
+		@include transition(background-color, 0.5s);
 
 		&::before {
 			content: "";
@@ -28,7 +28,7 @@
 			height: 3.65px;
 			display: block;
 			background-color: $Wight;
-			@include transition(background-color, 0.7s);
+			@include transition(background-color, 0.5s);
 		}
 
 		&::after {
@@ -40,30 +40,24 @@
 			height: 3.65px;
 			display: block;
 			background-color: $Wight;
-			@include transition(background-color, 0.7s);
+			@include transition(background-color, 0.5s);
 		}
 	}
 
 	&:hover span {
 		background-color: $first-color;
-		@include transition(background-color, 0.7s);
+		@include transition(background-color, 0.5s);
 	}
 
 	&:hover span::before {
 		background-color: $first-color;
-		@include transition(background-color, 0.7s);
+		@include transition(background-color, 0.5s);
 	}
 
 	&:hover span::after {
 		background-color: $first-color;
-		@include transition(background-color, 0.7s);
+		@include transition(background-color, 0.5s);
 	}
-}
-
-.menu-toggle__header {
-	width: 100%;
-	height: 100px;
-	background-color: $Black;
 }
 
 .close__line {
@@ -87,9 +81,9 @@
 .header__close {
 	position: relative;
 	display: none;
-	margin-top: -10px;
 	width: 36px;
 	height: 36px;
+	margin-bottom: 55px;
 	z-index: 100;
 	border: none;
 	background: none;
@@ -107,16 +101,19 @@
 
 .menu-toggle {
 	position: fixed;
-	left: -250vw;
+	left: -150vw;
 	top: 0;
-	z-index: 15;
 	width: 100%;
 	height: 100vh;
-	background-color: $first-color;
-	transition: left 1s;
+	padding-top: 25px;
+	padding-left: 65px;
+	overflow-y: scroll;
+	z-index: 15;
+	background-color: rgba(0, 0, 0, 0.9);
+	transition: left 0.5s;
 }
 
 .menu-toggle.menu--showed {
 	left: 0;
-	transition: left 1s;
+	transition: left 0.5s;
 }

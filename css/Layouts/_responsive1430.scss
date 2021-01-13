@@ -30,22 +30,62 @@
 
 	.nav-prime__list {
 		flex-direction: column;
+		margin-bottom: 73px;
 	}
 
 	.nav-prime__link {
-		font-size: 32px;
+		font-size: 24px;
 
 		&:hover {
 			color: $second-color;
 		}
 	}
 
+	.nav-prime__item:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	@-webkit-keyframes show-menu {
+		0% {
+			opacity: 0;
+		}
+
+		30% {
+			opacity: 0.2;
+		}
+
+		70% {
+			opacity: 0.6;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes show-menu {
+		0% {
+			opacity: 0;
+		}
+
+		90% {
+			opacity: 0.1;
+		}
+
+		95% {
+			opacity: 0.3;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
 	.nav--showed {
 		display: block;
-		position: absolute;
-		left: 30vw;
-		top: 15vw;
 		z-index: 20;
+		-webkit-animation: show-menu 0.5s ease-in;
+		animation: show-menu 0.5s ease-in;
 	}
 
 	.nav-prime__link::before {
@@ -61,6 +101,12 @@
 	.header__admission {
 		display: none;
 		z-index: 100;
+		border: 2px solid $first-color;
+		border-radius: 100px;
+		padding: 19px 88px;
+		margin-bottom: 30px;
+		-webkit-animation: show-menu 0.5s ease-in;
+		animation: show-menu 0.5s ease-in;
 	}
 
 	.header__admission.active-reversed {
@@ -82,7 +128,7 @@
 
 			rect,
 			path {
-				transition: all .7s ease-in;
+				transition: all 0.5s ease-in;
 			}
 		}
 
@@ -91,7 +137,7 @@
 			rect,
 			path {
 				fill: $first-color;
-				transition: all .7s ease-in;
+				transition: all 0.5s ease-in;
 			}
 		}
 
@@ -100,7 +146,7 @@
 			rect,
 			path {
 				fill: $second-color;
-				transition: all .7s ease-in;
+				transition: all 0.5s ease-in;
 			}
 		}
 	}
@@ -109,7 +155,6 @@
 		display: none;
 	}
 
-	/* first section */
 
 	.first .first__container {
 		padding-top: 114px;
@@ -121,7 +166,7 @@
 		margin-bottom: 11px;
 	}
 
-	.first .first__description {
+	.first__description {
 		max-width: 693px;
 		margin-bottom: 132px;
 	}
@@ -162,7 +207,6 @@
 		top: 609px;
 	}
 
-	/* catalog section */
 
 	.catalog__container {
 		padding-top: 70px;
@@ -200,10 +244,9 @@
 		grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
 	}
 
-	/* developments section */
 
 	.developments__card {
-		width: 290px;
+		width: 289px;
 
 		.developments__picture {
 			height: 200px;
@@ -236,7 +279,6 @@
 		margin-bottom: 30px;
 	}
 
-	/* editions section */
 
 	.swiper-container#slider2 {
 		max-width: 630px;
@@ -284,7 +326,6 @@
 		margin-right: 58px;
 	}
 
-	/* projects section */
 
 	.projects__container {
 		padding-bottom: 4px;
@@ -314,7 +355,6 @@
 		margin-top: -33px;
 	}
 
-	/* contacts section */
 
 	.contacts__title {
 		margin-bottom: 12px;

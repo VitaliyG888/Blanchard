@@ -16,14 +16,11 @@
 	<header class="header">
 		<div class="header__higher higher">
 			<div class="container header__container flex">
+
 				<button class="header__burger nav-toggle js-burger reset-btn" aria-label="Открыть меню">
 					<span></span>
 				</button>
 
-				<button class="header__close js-close reset-btn" aria-label="Закрыть меню">
-					<span class="close__line"></span>
-					<span class="close__line"></span>
-				</button>
 				<a href="#" class="header__logo">
 					<img src="image/logo2.png" alt="logo" aria-label="Логотип">
 				</a>
@@ -52,15 +49,18 @@
 						</li>
 					</ul>
 				</nav>
-				<a href="#" class="admission header__admission"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+				<button href="#" class="header__admission reset-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
 						viewBox="0 0 13 13" width="13" height="13">
 						<path fill="white"
 							d="M 5.12056 9.09278 L 6.13889 10.1111 L 9.75 6.5 L 6.13889 2.88889 L 5.12056 3.90722 L 6.98389 5.77778 H 0 V 7.22222 H 6.98389 L 5.12056 9.09278 Z M 11.5556 0 H 1.44444 C 0.642778 0 0 0.65 0 1.44444 V 4.33333 H 1.44444 V 1.44444 H 11.5556 V 11.5556 H 1.44444 V 8.66667 H 0 V 11.5556 C 0 12.35 0.642778 13 1.44444 13 H 11.5556 C 12.35 13 13 12.35 13 11.5556 V 1.44444 C 13 0.65 12.35 0 11.5556 0 Z" />
-					</svg>Войти</a>
+					</svg>Войти</button>
 			</div>
 		</div>
 		<div class="menu-toggle">
-			<div class="menu-toggle__header"></div>
+			<button class="header__close js-close reset-btn" aria-label="Закрыть меню">
+				<span class="close__line"></span>
+				<span class="close__line"></span>
+			</button>
 		</div>
 		<div class="header__nether nether">
 			<div class="container nether__container flex">
@@ -264,16 +264,18 @@
 	<section class="first">
 		<div class="first__swiper background swiper-container" id="slider0">
 			<div class="background__slider swiper-wrapper">
-				<div class="swiper-slide background__first background__first--1 swiper-lazy"
-					data-background="image/birmingham-museums-trust.jpg">
+				<div class="swiper-slide background__first background__first--1">
+					<img data-src="image/birmingham-museums-trust.jpg" data-srcset="image/birmingham-museums-trust.webp"
+						class="swiper-lazy background__img">
 					<div class="swiper-lazy-preloader"></div>
 				</div>
-				<div class="swiper-slide background__first background__first--2 swiper-lazy"
-					data-background="image/bacground2.jpg">
+				<div class="swiper-slide background__first background__first--2">
+					<img data-src="image/bacground2.jpg" data-srcset="image/bacground2.webp" class="swiper-lazy background__img">
 					<div class="swiper-lazy-preloader"></div>
 				</div>
-				<div class="swiper-slide background__first background__first--3 swiper-lazy"
-					data-background="image/background3.jpg">
+				<div class="swiper-slide background__first background__first--3">
+					<img data-src="image/background3.jpg" data-srcset="image/background3.webp"
+						class="swiper-lazy background__img">
 					<div class="swiper-lazy-preloader"></div>
 				</div>
 			</div>
@@ -441,87 +443,91 @@
 	<section class="developments">
 		<div class="container developments__container">
 			<h2 class="developments__title title">События</h2>
-			<div class="developments__news flex">
-				<div class="developments__card card1">
-					<picture class="developments__picture">
-						<source class="developments__img" srcset="image/dev1.webp">
-						<img class="developments__img" src="image/dev1.jpg" alt="Книжная гравюра в живом восприятии">
-					</picture>
-					<div class="developments__card--down">
-						<span class="developments__signature signature">Музей им. Щусева<br>с 20 марта по 30 апреля</span>
-						<h3 class="developments__header">Книжная гравюра в живом восприятии</h3>
-						<p class="developmets__descriptions" id="card1Description">Один из ведущих флорентийских художников
-							Кватроченто,
-							основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава
-							художественной мастерской, где юный Микеланджело.</p>
-						<a class="developments__link link1" href="#">Подробнее</a>
+			<div id="slider4" class="developments__news swiper-container" data-mobile='false'>
+				<div class="swiper-wrapper development__slider flex">
+
+					<div class="developments__card card__slider4 swiper-slide">
+						<picture class="developments__picture">
+							<source class="developments__img" srcset="image/dev1.webp">
+							<img class="developments__img" src="image/dev1.jpg" alt="Книжная гравюра в живом восприятии">
+						</picture>
+						<div class="developments__card--down">
+							<span class="developments__signature signature">Музей им. Щусева<br>с 20 марта по 30 апреля</span>
+							<h3 class="developments__header">Книжная гравюра в живом восприятии</h3>
+							<p class="developmets__descriptions" id="card1Description">Один из ведущих флорентийских художников
+								Кватроченто,
+								основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава
+								художественной мастерской, где юный Микеланджело.</p>
+							<a class="developments__link link1" href="#">Подробнее</a>
+						</div>
 					</div>
-				</div>
-				<div class="developments__card card2">
-					<picture class="developments__picture">
-						<source class="developments__img" srcset="image/dev2.webp">
-						<img class="developments__img" src="image/dev2.jpg"
-							alt="«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.">
-					</picture>
-					<div class="developments__card--down">
-						<span class="developments__signature signature">ММОМА<br>24 марта 19:00</span>
-						<h3 class="developments__header">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-						<p class="developmets__descriptions" id="card2Description">Высокий уровень вовлечения представителей
-							целевой аудитории
-							является четким доказательством простого факта: постоянный количественный рост и сфера нашей
-							активности представляет собой интересный эксперимент проверки новых принципов формирования...
-						</p>
-						<a class="developments__link link2" href="#">Подробнее</a>
+					<div class="developments__card card__slider4 swiper-slide">
+						<picture class="developments__picture">
+							<source class="developments__img" srcset="image/dev2.webp">
+							<img class="developments__img" src="image/dev2.jpg"
+								alt="«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.">
+						</picture>
+						<div class="developments__card--down">
+							<span class="developments__signature signature">ММОМА<br>24 марта 19:00</span>
+							<h3 class="developments__header">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+							<p class="developmets__descriptions" id="card2Description">Высокий уровень вовлечения представителей
+								целевой аудитории
+								является четким доказательством простого факта: постоянный количественный рост и сфера нашей
+								активности представляет собой интересный эксперимент проверки новых принципов формирования...
+							</p>
+							<a class="developments__link link2" href="#">Подробнее</a>
+						</div>
 					</div>
-				</div>
-				<div class="developments__card card3">
-					<picture class="developments__picture">
-						<source class="developments__img" srcset="image/dev3.webp">
-						<img class="developments__img" src="image/dev3.jpg" alt="Выставка «Формация 2020»">
-					</picture>
-					<div class="developments__card--down">
-						<span class="developments__signature signature">Еврейский музей<br>с 31 марта по 21 апреля</span>
-						<h3 class="developments__header">Выставка «Формация 2020»</h3>
-						<p class="developmets__descriptions" id="card3Description">Идейные соображения высшего порядка, а
-							также современная
-							методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как
-							перспективное планирование играет определяющее значение для новых принципов формирования
-							материально-технической и кадровой базы.</p>
-						<a class="developments__link link3" href="#">Подробнее</a>
+					<div class="developments__card card__slider4 swiper-slide">
+						<picture class="developments__picture">
+							<source class="developments__img" srcset="image/dev3.webp">
+							<img class="developments__img" src="image/dev3.jpg" alt="Выставка «Формация 2020»">
+						</picture>
+						<div class="developments__card--down">
+							<span class="developments__signature signature">Еврейский музей<br>с 31 марта по 21 апреля</span>
+							<h3 class="developments__header">Выставка «Формация 2020»</h3>
+							<p class="developmets__descriptions" id="card3Description">Идейные соображения высшего порядка, а
+								также современная
+								методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как
+								перспективное планирование играет определяющее значение для новых принципов формирования
+								материально-технической и кадровой базы.</p>
+							<a class="developments__link link3" href="#">Подробнее</a>
+						</div>
 					</div>
-				</div>
-				<div class="developments__card card4">
-					<picture class="developments__picture">
-						<source class="developments__img" srcset="image/dev4.webp">
-						<img class="developments__img" src="image/dev4.jpg" alt="XXIV Международная биеннале молодого искусства">
-					</picture>
-					<div class="developments__card--down">
-						<span class="developments__signature signature">Третьяковка на Крымском валу<br> с 30 марта по 30
-							апреля</span>
-						<h3 class="developments__header">XXIV Международная биеннале молодого искусства</h3>
-						<p class="developmets__descriptions" id="card4Description">Внезапно, реплицированные с зарубежных
-							источников, современные исследования представляют собой не что иное, как квинтэссенцию победы
-							маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и
-							финансовых....</p>
-						<a class="developments__link link4" href="#">Подробнее</a>
+					<div class="developments__card card__slider4 swiper-slide">
+						<picture class="developments__picture">
+							<source class="developments__img" srcset="image/dev4.webp">
+							<img class="developments__img" src="image/dev4.jpg" alt="XXIV Международная биеннале молодого искусства">
+						</picture>
+						<div class="developments__card--down">
+							<span class="developments__signature signature">Третьяковка на Крымском валу<br> с 30 марта по 30
+								апреля</span>
+							<h3 class="developments__header">XXIV Международная биеннале молодого искусства</h3>
+							<p class="developmets__descriptions" id="card4Description">Внезапно, реплицированные с зарубежных
+								источников, современные исследования представляют собой не что иное, как квинтэссенцию победы
+								маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и
+								финансовых....</p>
+							<a class="developments__link link4" href="#">Подробнее</a>
+						</div>
 					</div>
-				</div>
-				<div class="developments__card card5">
-					<picture class="developments__picture">
-						<source class="developments__img" srcset="image/dev5.webp">
-						<img class="developments__img" src="image/dev5.jpg"
-							alt="Джон Винзор. Фотографии из серии «Метафора серебра»">
-					</picture>
-					<div class="developments__card--down">
-						<span class="developments__signature signature">ММАМ<br>с 8 апреля по 20 мая</span>
-						<h3 class="developments__header">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-						<p class="developmets__descriptions" id="card5Description">Один из ведущих флорентийских художников
-							Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын
-							Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
-						<a class="developments__link link5" href="#">Подробнее</a>
+					<div class="developments__card card__slider4 swiper-slide">
+						<picture class="developments__picture">
+							<source class="developments__img" srcset="image/dev5.webp">
+							<img class="developments__img" src="image/dev5.jpg"
+								alt="Джон Винзор. Фотографии из серии «Метафора серебра»">
+						</picture>
+						<div class="developments__card--down">
+							<span class="developments__signature signature">ММАМ<br>с 8 апреля по 20 мая</span>
+							<h3 class="developments__header">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+							<p class="developmets__descriptions" id="card5Description">Один из ведущих флорентийских художников
+								Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын
+								Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
+							<a class="developments__link link5" href="#">Подробнее</a>
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="pagination4 swiper-pagination"></div>
 			<button class="developments__btn" aria-label="Показать все события">Все события</button>
 		</div>
 	</section>
@@ -816,6 +822,7 @@
 	<script src="js/map.js"></script>
 	<script src="js/event.js"></script>
 	<script src="js/adaptiv.js"></script>
+	<script src="js/mobail-slider.js"></script>
 
 </body>
 

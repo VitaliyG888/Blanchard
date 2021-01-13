@@ -1,7 +1,7 @@
 /* gallery section */
 
 .gallery {
-	background-image: url(../image/backg_gallary.jpg);
+	background-image: url('../image/backg_gallary.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 
@@ -127,17 +127,12 @@ div {
 }
 
 .gallery__showing.swiper {
-	padding-top: 47px;
+	padding-top: 45px;
 }
 
 .gallery__swiper-button1 {
-	margin-bottom: 24px;
-}
-
-.swiper-pagination-fraction {
-	left: -2px;
-	bottom: 14px;
-	width: 89px;
+	margin-bottom: 26px;
+	align-items: center;
 }
 
 .swiper-button-next-st,
@@ -149,48 +144,48 @@ div {
 	border-radius: 100px;
 	background-color: $btn-slider-color;
 	padding: 3px 10px;
-	@include transition(all, 0.5s);
+	@include transition(all, 0.3s);
 }
 
-.swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
-	left: 7px;
-	right: auto;
+.swiper-button-prev {
+	margin-right: 28px;
 }
+
+.swiper-container-rtl .swiper-button-next {}
 
 .swiper-button-next-st:focus,
 .swiper-button-prev-st:focus {
 	outline: none;
 	border: 2px solid $second-color;
 	background-color: $btn-slider-color2;
-	@include transition(all, 0.5s);
+	@include transition(all, 0.3s);
 }
 
 .swiper-button-next-st:focus::after,
 .swiper-button-prev-st:focus::after {
 	color: $Black;
-	@include transition(color, 0.5s);
+	@include transition(color, 0.3s);
 }
 
 .swiper-button-next-st:hover,
 .swiper-button-prev-st:hover {
 	color: $Wight;
 	background-color: $first-color;
-	@include transition(all, 0.5s);
+	@include transition(all, 0.3s);
 }
 
 .swiper-button-next-st:active,
 .swiper-button-prev-st:active {
 	border: 2px solid $extra-lite;
 	background-color: $second-color;
-	@include transition(all, 0.5s);
+	@include transition(all, 0.3s);
 }
 
 .swiper-button-next-st::after,
 .swiper-button-prev-st::after {
 	font-size: 10px;
 	color: $Wight;
-	@include transition(color, 0.5s);
+	@include transition(color, 0.3s);
 }
 
 .swiper-button-next.swiper-button-next-st:hover::after,
@@ -198,13 +193,17 @@ div {
 .swiper-button-next.swiper-button-next-st:active::after,
 .swiper-button-prev.swiper-button-prev-st:active::after {
 	color: $Wight;
-	@include transition(color, 0.5s);
+	@include transition(color, 0.3s);
 }
 
 .swiper-pagination-st {
 	position: relative;
 
 	&.swiper-pagination-fraction {
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		margin-right: 31px;
 		color: $Wight;
 		font-size: 14px;
 	}
@@ -223,7 +222,7 @@ div {
 	height: 350px;
 	box-sizing: border-box;
 	cursor: pointer;
-	@include transition(all, 0.7s);
+	@include transition(all, 0.5s);
 
 	&::before {
 		content: "";
@@ -235,7 +234,7 @@ div {
 		z-index: 2;
 		background-color: $extra-lite;
 		opacity: 0;
-		@include transition(opacity, 0.7s);
+		@include transition(opacity, 0.5s);
 	}
 
 	&::after {
@@ -252,7 +251,7 @@ div {
 		background-size: cover;
 		background-repeat: no-repeat;
 		opacity: 0;
-		@include transition(opacity, 0.7s);
+		@include transition(opacity, 0.5s);
 	}
 
 	&:focus {
@@ -261,18 +260,18 @@ div {
 
 	&::before {
 		opacity: 0;
-		@include transition(opacity, 0.7s);
+		@include transition(opacity, 0.5s);
 	}
 
 
 	&:hover::after {
 		opacity: 1;
-		@include transition(opacity, 0.7s);
+		@include transition(opacity, 0.5s);
 	}
 
 	&:active::before {
 		opacity: 0.4;
-		@include transition(opacity, 0.7s);
+		@include transition(opacity, 0.5s);
 	}
 }
 

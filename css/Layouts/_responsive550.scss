@@ -1,0 +1,260 @@
+@media (max-width: 550px) {
+	.container {
+		width: 320px;
+	}
+
+	.header__container {
+		padding-left: 17px;
+	}
+
+	.header__container .header__burger {
+		margin-right: 0;
+		margin-top: -7px;
+	}
+
+	.header__container .header__logo {
+		margin-right: 0;
+	}
+
+	.swiper-container#slider1 {
+		width: 292px;
+	}
+
+	.gallery .gallery__container {
+		padding-bottom: 70px;
+	}
+
+	.gallery__choice {
+		margin-bottom: 108px;
+	}
+
+	.swiper-slide.gallery__slider {
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.catalog__container {
+		padding-top: 72px;
+		padding-left: 9px;
+	}
+
+	.catalog__header {
+		margin-bottom: 13px;
+	}
+
+	.catalog__title {
+		margin-left: 4px;
+		margin-bottom: 10px;
+		line-height: 32px;
+	}
+
+	.catalog__transfer {
+		width: 291px;
+		margin: 0;
+	}
+
+	.tab-nav__link {
+		width: 44px;
+		height: 44px;
+		background-size: 32px;
+	}
+
+	.tab-nav__link::before {
+		width: 32px;
+		height: 32px;
+		left: 4px;
+		top: 4px;
+	}
+
+	.tab-nav__link::after {
+		width: 32px;
+		height: 32px;
+		left: 4px;
+		top: 4px;
+	}
+
+	.catalog__language:not(:last-child) {
+		margin-right: 20.5px;
+	}
+
+	.catalog__artists.accordeon {
+		margin-bottom: 52px;
+	}
+
+	.catalog__artists.accordeon .accordeon-section .accordeon-item {
+		-ms-grid-columns: 239px;
+		grid-template-columns: 239px;
+		-ms-grid-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
+		grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
+		padding: 21px 0 16px;
+	}
+
+	.accordeon-title {
+		padding: 20px 0px 21px 4px;
+		font-weight: 600;
+		font-size: 18px;
+	}
+
+	.accordeon-title::after {
+		width: 30px;
+		height: 30px;
+		top: 20px;
+	}
+
+	.accordeon-title::before {
+		width: 8px;
+		height: 8px;
+		right: 3px;
+		margin-top: 10px;
+		margin-left: 4px;
+	}
+
+	.accordeon-section.active .accordeon-title::before {
+		width: 8px;
+		height: 8px;
+		right: 3px;
+		margin-top: 12px;
+	}
+
+	.catalog__card.card {
+		margin-left: 3px;
+
+		img {
+			width: 290px;
+			height: 181px;
+			margin-bottom: 23px;
+		}
+	}
+
+	.card__title {
+		margin-bottom: 18px;
+	}
+
+	.developments__container {
+		padding-top: 50px;
+		padding-bottom: 48px;
+	}
+
+	.developments__title {
+		margin-bottom: 11px;
+		letter-spacing: -1px;
+	}
+
+	.developments__news {
+		width: 290px;
+	}
+
+	.developments__card .developments__card--down {
+		padding: 16px 11px 72px 28px;
+	}
+
+	.developments__card .developments__header {
+		margin-bottom: 35px;
+	}
+
+	.developments__card .developmets__descriptions {
+		width: 230px;
+	}
+
+	.developments__card .developments__link {
+		bottom: 50px;
+	}
+
+	.developments__news {
+		margin-bottom: 14px;
+	}
+
+	.pagination4 .swiper-pagination-bullet {
+		width: 10px;
+		height: 10px;
+	}
+
+	.editions__container {
+		padding-top: 50px;
+	}
+
+	.editions__choice {
+		width: 290px;
+	}
+
+	.editions__number {
+		width: 70px;
+	}
+
+	.editions__input {
+		margin-left: 5px;
+	}
+
+	.swiper-slider.editions__slider {
+		width: 130px;
+	}
+
+	.editions__showing {
+		margin: 0;
+	}
+
+	.swiper-slide.editions__slider {
+		width: 130px;
+		height: 275px;
+	}
+
+	.editions__img {
+		height: 144px;
+	}
+
+	.editions__order {
+		padding: 8px 32px;
+	}
+
+	.swiper-container#slider3 {
+		max-width: 195px;
+		height: 65px;
+	}
+
+	.swiper-slide.projects__slider {
+		height: 65px;
+	}
+
+	.swiper-slide.projects__slider {
+		background-size: 195px 65px;
+		background-position: center;
+	}
+
+	.projects__showing {
+		position: relative;
+	}
+
+	.projects__swiper-button3.swiper-button {
+		bottom: 27px;
+	}
+
+	.contacts__form {
+		width: 290px;
+	}
+
+	.contacts__form .contacts__input {
+		font-size: 14px;
+	}
+
+	.contacts__form .contacts__button {
+		width: 128px;
+		height: 40px;
+		font-size: 14px;
+	}
+
+	.footer,
+	.footer__container {
+		width: 100%;
+		height: 70px;
+	}
+
+	.footer__logo {
+		width: 97px;
+		height: 22px;
+	}
+
+	.footer__link img {
+		width: 25px;
+		height: 25px;
+	}
+}

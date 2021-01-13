@@ -158,7 +158,8 @@ input[type="checkbox"]:checked+.editions__label::before {
 }
 
 .editions__input {
-	margin-top: 7px;
+	margin-top: auto;
+	margin-bottom: auto;
 	margin-left: 21px;
 	font-weight: 400;
 	font-size: 16px;
@@ -213,7 +214,7 @@ input[type="checkbox"]:checked+.editions__label::before {
 	}
 }
 
-.editions__to {
+.editions__input:not(:first-child) {
 	margin-left: 12px;
 }
 
