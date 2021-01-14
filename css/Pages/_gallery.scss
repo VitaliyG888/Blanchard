@@ -407,7 +407,53 @@ div {
 	letter-spacing: 0.4px;
 	color: $Wight;
 
-	a {
+	.gallery__description--authorization {
+		position: relative;
+		background: none;
+		border: none;
+		cursor: pointer;
 		color: $first-lite;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 122px;
+			height: 30px;
+			top: -5px;
+			left: 4px;
+			border: 1px solid rgba($first-color, 0);
+			transition: all 0.3s ease-in;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 2px;
+			left: 6px;
+			bottom: 0;
+			background-color: rgba($first-color, 1);
+			transition: all 0.3s ease-in;
+		}
+
+		&:focus::before {
+			border: 1px solid rgba($first-color, 1);
+			transition: all 0.3s ease-in;
+		}
+
+		&:hover {
+			color: $first-color;
+			transition: color 0.3s ease-in;
+		}
+
+		&:hover::after {
+			width: 117px;
+			transition: all 0.3s ease-in;
+		}
+
+		&:active {
+			color: $second-color;
+			transition: all 0.3s ease-in;
+		}
 	}
 }
