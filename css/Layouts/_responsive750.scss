@@ -181,6 +181,19 @@
 		margin-right: 30px;
 	}
 
+	.editions__list {
+		flex-wrap: wrap;
+	}
+
+	.editions__checkboks span {
+		top: 112px;
+	}
+
+	.editions__priceform {
+		top: 521px;
+	}
+
+
 	.editions__img {
 		height: 242px;
 		margin-bottom: 9px;
@@ -266,15 +279,16 @@
 
 	.contacts__map.map {
 		position: relative;
+		width: 100%;
+		height: 400px;
 	}
 
 	.map__left {
 		display: none;
 	}
 
-	.contacts__map.map {
-		width: 100%;
-		height: 400px;
+	.contacts .contacts__container .contacts__block {
+		padding-top: 40px;
 	}
 
 	.contacts .contacts__map.map .map__right {
