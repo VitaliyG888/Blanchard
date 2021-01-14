@@ -239,20 +239,12 @@
 		width: 437px;
 	}
 
-	// .catalog__artists.accordeon {
-	// 	max-width: 437px;
-	// }
-
 	.accordeon-item {
 		grid-template-columns: repeat(2, 200px);
 		grid-template-rows: repeat(12, 32px);
 		grid-column-gap: 37px;
 	}
 
-
-	.swiper-wrapper.development__slider {
-		margin-bottom: 21px;
-	}
 
 	.developments__card {
 		width: 289px;

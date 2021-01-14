@@ -26,7 +26,7 @@
 
 	.first .first__container {
 		padding-top: 114px;
-		padding-bottom: 111px;
+		padding-bottom: 113px;
 	}
 
 	.first .first__title {
@@ -143,17 +143,19 @@
 		width: 100%;
 		margin-left: 0;
 		margin-bottom: 47px;
-
-		.accordeon-section {
-			width: 100%;
-
-			.accordeon-item {
-				grid-template-columns: repeat(3, 200px);
-				grid-template-rows: repeat(9, 32px);
-				grid-column-gap: 34px;
-			}
-		}
 	}
+
+	.accordeon-section {
+		width: 100%;
+	}
+
+	.accordeon-item {
+		grid-template-columns: repeat(3, 200px);
+		grid-template-rows: repeat(9, 32px);
+		grid-column-gap: 34px;
+	}
+
+
 
 	.catalog__card.card {
 		max-width: 668px;
@@ -167,199 +169,194 @@
 	// developments section
 
 	.developments__container {
-		padding-top: 72px;
+		padding-top: 68px;
 		padding-bottom: 84px;
-		padding-left: 13px;
 	}
-}
 
-.developments__title {
-	margin-bottom: 16px;
-}
+	.developments__title {
+		margin-bottom: 16px;
+	}
 
-.swiper-wrapper.development__slider {
-	margin-bottom: 50px;
-}
+	.developments__card {
+		width: 316px;
+	}
 
-.developments__card {
-	width: 316px;
-}
+	.developments__card:not(:nth-child(3n + 3)) {
+		margin-right: 0;
+	}
 
-.developments__card:not(:nth-child(3n + 3)) {
-	margin-right: 0;
-}
+	.developments__card:not(:nth-child(2n + 2)) {
+		margin-right: 32px;
+	}
 
-.developments__card:not(:nth-child(2n + 2)) {
-	margin-right: 33px;
-}
+	.developments__card:nth-child(3) {
+		display: none;
+	}
 
-.developments__card:nth-child(3) {
-	display: none;
-}
+	.developments__card .developments__card--down {
+		padding: 14px 17px 137px 35px;
+	}
 
-.developments__card .developments__card--down {
-	padding: 14px 17px 137px 34px;
-}
+	.developments__card .developments__link {
+		bottom: 47px;
+	}
 
-.developments__card .developments__link {
-	bottom: 50px;
-}
+	.developments__card .developmets__descriptions {
+		width: 250px;
+	}
 
-.developments__card .developmets__descriptions {
-	width: 250px;
-}
+	.developments__card .developments__header {
+		width: 250px;
+	}
 
-.developments__card .developments__header {
-	width: 250px;
-}
+	.developments_card .developments__signature {
+		margin-bottom: -16px;
+	}
 
-.developments_card .developments__signature {
-	margin-bottom: -16px;
-}
+	.developments__news {
+		margin-bottom: 33px;
+	}
 
-.developments__news {
-	margin-bottom: 0;
-}
+	// editions section
 
-// editions section
+	.editions__container {
+		padding-bottom: 78px;
+	}
 
-.editions__container {
-	padding-bottom: 78px;
-}
+	.editions__blocks {
+		flex-wrap: wrap;
 
-.editions__blocks {
-	flex-wrap: wrap;
+		.editions__block--left {
+			padding-top: 30px;
+			width: 100%;
+		}
+	}
 
-	.editions__block--left {
-		padding-top: 30px;
+	.editions__checkboks {
+		margin-bottom: 104px;
+		padding-top: 25px;
 		width: 100%;
-	}
-}
 
-.editions__checkboks {
-	margin-bottom: 104px;
-	padding-top: 25px;
-	width: 100%;
-
-	span {
-		position: absolute;
-		top: 166px;
-		margin-top: 0;
-	}
-}
-
-.editions__list {
-	display: flex;
-
-	.editions__list--1 {
-		width: 134px;
-		margin-right: 57px;
+		span {
+			position: absolute;
+			top: 166px;
+			margin-top: 0;
+		}
 	}
 
-	.editions__list--2 {
-		width: 297px;
-		margin-right: 43px;
+	.editions__list {
+		display: flex;
+
+		.editions__list--1 {
+			width: 134px;
+			margin-right: 57px;
+		}
+
+		.editions__list--2 {
+			width: 297px;
+			margin-right: 43px;
+		}
+
+		.editions__list--3 {
+			width: 222px;
+		}
 	}
 
-	.editions__list--3 {
-		width: 222px;
+	.editions__label {
+		margin-bottom: 14px;
 	}
-}
 
-.editions__label {
-	margin-bottom: 14px;
-}
+	.editions__priceform {
+		flex-direction: column;
+		align-items: flex-start;
+		left: 15px;
+		top: 353px;
+	}
 
-.editions__priceform {
-	flex-direction: column;
-	align-items: flex-start;
-	left: 15px;
-	top: 353px;
-}
+	.editions__img {
+		margin-bottom: 11px;
+	}
 
-.editions__img {
-	margin-bottom: 11px;
-}
+	.editions__price {
+		margin-bottom: 14px;
+	}
 
-.editions__price {
-	margin-bottom: 14px;
-}
+	.swiper-container#slider2 {
+		max-width: 614px;
+	}
 
-.swiper-container#slider2 {
-	max-width: 614px;
-}
+	.swiper-slide.editions__slider {
+		height: 436px;
+	}
 
-.swiper-slide.editions__slider {
-	height: 436px;
-}
+	.editions__swiper-button2 {
+		margin-left: -41px;
+	}
 
-.editions__swiper-button2 {
-	margin-left: -41px;
-}
+	.editions__showing {
+		margin-left: 31px;
+		margin-top: 73px;
+	}
 
-.editions__showing {
-	margin-left: 31px;
-	margin-top: 73px;
-}
+	// progects section
 
-// progects section
+	.tooltip3::before {
+		top: -57px;
+	}
 
-.tooltip3::before {
-	top: -57px;
-}
+	.tooltip1::before {
+		top: -73px;
+	}
 
-.tooltip1::before {
-	top: -73px;
-}
+	.projects__descriptions {
+		letter-spacing: 0.4px;
+		margin-bottom: 37px;
+	}
 
-.projects__descriptions {
-	letter-spacing: 0.4px;
-	margin-bottom: 37px;
-}
+	.projects__partners {
+		margin-bottom: 40px;
+	}
 
-.projects__partners {
-	margin-bottom: 40px;
-}
+	.swiper-container#slider3 {
+		max-width: 562px;
+		margin-bottom: 80px;
+		margin-top: 7px;
+		height: 106px;
+	}
 
-.swiper-container#slider3 {
-	max-width: 562px;
-	margin-bottom: 80px;
-	margin-top: 7px;
-	height: 106px;
-}
+	.swiper-slide.projects__slider {
+		height: 106px;
+	}
 
-.swiper-slide.projects__slider {
-	height: 106px;
-}
+	.projects__swiper-button3.swiper-button {
+		bottom: 7px;
+	}
 
-.projects__swiper-button3.swiper-button {
-	bottom: 7px;
-}
+	.swiper-button-prev.swiper-button-prev-st.button3-prev,
+	.swiper-button-next.swiper-button-next-st.button3-next {
+		margin-top: -38px;
+	}
 
-.swiper-button-prev.swiper-button-prev-st.button3-prev,
-.swiper-button-next.swiper-button-next-st.button3-next {
-	margin-top: -38px;
-}
+	// contacts section
 
-// contacts section
+	.contacts__title {
+		margin-bottom: 13px;
+	}
 
-.contacts__title {
-	margin-bottom: 13px;
-}
+	.contacts .contacts__map.map .map__left {
+		width: 55.8vw;
+	}
 
-.contacts .contacts__map.map .map__left {
-	width: 55.8vw;
-}
+	.contacts .contacts__map.map .map__right {
+		width: 44.2vw;
+	}
 
-.contacts .contacts__map.map .map__right {
-	width: 44.2vw;
-}
+	.contacts .contacts__container .contacts__block {
+		padding-bottom: 125px;
+	}
 
-.contacts .contacts__container .contacts__block {
-	padding-bottom: 125px;
-}
+	.contacts .contacts__container .contacts__block .contacts_name {
+		margin-bottom: 6px;
 
-.contacts .contacts__container .contacts__block .contacts_name {
-	margin-bottom: 6px;
-
+	}
 }

@@ -417,12 +417,12 @@ div {
 		&::before {
 			content: '';
 			position: absolute;
-			width: 122px;
+			width: 123px;
 			height: 30px;
 			top: -5px;
 			left: 4px;
 			border: 1px solid rgba($first-color, 0);
-			transition: all 0.3s ease-in;
+			transition: all 0.5s ease-in;
 		}
 
 		&::after {
@@ -433,27 +433,27 @@ div {
 			left: 6px;
 			bottom: 0;
 			background-color: rgba($first-color, 1);
-			transition: all 0.3s ease-in;
+			transition: all 0.5s ease-in;
 		}
 
 		&:focus::before {
 			border: 1px solid rgba($first-color, 1);
-			transition: all 0.3s ease-in;
+			transition: all 0.5s ease-in;
 		}
 
 		&:hover {
 			color: $first-color;
-			transition: color 0.3s ease-in;
+			transition: color 0.5s ease-in;
 		}
 
 		&:hover::after {
-			width: 117px;
-			transition: all 0.3s ease-in;
+			width: 118px;
+			transition: all 0.5s ease-in;
 		}
 
 		&:active {
 			color: $second-color;
-			transition: all 0.3s ease-in;
+			transition: all 0.5s ease-in;
 		}
 	}
 }

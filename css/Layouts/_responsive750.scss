@@ -167,7 +167,7 @@
 		display: none;
 	}
 
-	.catalog__artists.accordeon .accordeon-section .accordeon-item {
+	.accordeon-item {
 		grid-template-columns: repeat(2, 200px);
 		grid-template-rows: repeat(12, 32px);
 		grid-column-gap: 50px;
