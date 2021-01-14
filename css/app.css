@@ -1406,7 +1406,7 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .accordeon-section {
-  width: 100%;
+  width: 802px;
   position: relative;
 }
 
@@ -1497,12 +1497,13 @@ div[data-custom-properties="[object Object]"] {
 .accordeon-item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 258px 258px 284px;
-      grid-template-columns: 258px 258px 284px;
-  -ms-grid-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px;
-      grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px;
+  -ms-grid-columns: (200px)[3];
+      grid-template-columns: repeat(3, 200px);
+  -ms-grid-rows: (32px)[9];
+      grid-template-rows: repeat(9, 32px);
   grid-auto-flow: column;
   padding: 30px 0 25px;
+  grid-column-gap: 58px;
 }
 
 .accordeon-link {
@@ -1525,7 +1526,7 @@ div[data-custom-properties="[object Object]"] {
 .accordeon-link::before {
   content: '';
   position: absolute;
-  width: 193px;
+  width: 200px;
   height: 30px;
   top: -5px;
   left: 4px;
@@ -2682,8 +2683,11 @@ input[type="checkbox"]:checked + .editions__label::before {
   .catalog__card.card img {
     width: 650px;
   }
-  .catalog__artists.accordeon {
-    max-width: 697px;
+  .accordeon-section {
+    width: 697px;
+  }
+  .accordeon-item {
+    grid-column-gap: 46px;
   }
   .swiper-container#slider2 {
     max-width: 900px;
@@ -2895,14 +2899,15 @@ input[type="checkbox"]:checked + .editions__label::before {
     width: 437px;
     height: 274px;
   }
-  .catalog__artists.accordeon {
-    max-width: 437px;
+  .accordeon-section {
+    width: 437px;
   }
   .accordeon-item {
-    -ms-grid-columns: 244px 192px;
-        grid-template-columns: 244px 192px;
-    -ms-grid-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
-        grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
+    -ms-grid-columns: (200px)[2];
+        grid-template-columns: repeat(2, 200px);
+    -ms-grid-rows: (32px)[12];
+        grid-template-rows: repeat(12, 32px);
+    grid-column-gap: 37px;
   }
   .developments__card {
     width: 289px;
@@ -3037,7 +3042,7 @@ input[type="checkbox"]:checked + .editions__label::before {
   }
   .first .first__container {
     padding-top: 114px;
-    padding-bottom: 113px;
+    padding-bottom: 111px;
   }
   .first .first__title {
     margin-left: -3px;
@@ -3132,10 +3137,11 @@ input[type="checkbox"]:checked + .editions__label::before {
     width: 100%;
   }
   .catalog__artists.accordeon .accordeon-section .accordeon-item {
-    -ms-grid-columns: 239px 243px 185px;
-        grid-template-columns: 239px 243px 185px;
-    -ms-grid-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px;
-        grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px;
+    -ms-grid-columns: (200px)[3];
+        grid-template-columns: repeat(3, 200px);
+    -ms-grid-rows: (32px)[9];
+        grid-template-rows: repeat(9, 32px);
+    grid-column-gap: 34px;
   }
   .catalog__card.card {
     max-width: 668px;
@@ -3179,7 +3185,7 @@ input[type="checkbox"]:checked + .editions__label::before {
     margin-bottom: -16px;
   }
   .developments__news {
-    margin-bottom: 33px;
+    margin-bottom: 1px;
   }
   .editions__container {
     padding-bottom: 78px;
@@ -3448,10 +3454,11 @@ input[type="checkbox"]:checked + .editions__label::before {
     display: none;
   }
   .catalog__artists.accordeon .accordeon-section .accordeon-item {
-    -ms-grid-columns: 239px 243px;
-    grid-template-columns: 239px 243px;
-    -ms-grid-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
-    grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
+    -ms-grid-columns: (200px)[2];
+        grid-template-columns: repeat(2, 200px);
+    -ms-grid-rows: (32px)[12];
+        grid-template-rows: repeat(12, 32px);
+    grid-column-gap: 50px;
   }
   .swiper-slide.editions__slider {
     width: 220px;
@@ -3607,10 +3614,10 @@ input[type="checkbox"]:checked + .editions__label::before {
     margin-bottom: 52px;
   }
   .catalog__artists.accordeon .accordeon-section .accordeon-item {
-    -ms-grid-columns: 239px;
-    grid-template-columns: 239px;
-    -ms-grid-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
-    grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
+    -ms-grid-columns: 200px;
+        grid-template-columns: 200px;
+    -ms-grid-rows: (32px)[24];
+        grid-template-rows: repeat(24, 32px);
     padding: 21px 0 16px;
   }
   .accordeon-title {

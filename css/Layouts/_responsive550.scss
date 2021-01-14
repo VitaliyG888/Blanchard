@@ -82,10 +82,8 @@
 	}
 
 	.catalog__artists.accordeon .accordeon-section .accordeon-item {
-		-ms-grid-columns: 239px;
-		grid-template-columns: 239px;
-		-ms-grid-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
-		grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
+		grid-template-columns: 200px;
+		grid-template-rows: repeat(24, 32px);
 		padding: 21px 0 16px;
 	}
 

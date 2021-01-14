@@ -52,8 +52,12 @@
 		}
 	}
 
-	.catalog__artists.accordeon {
-		max-width: 697px;
+	.accordeon-section {
+		width: 697px;
+	}
+
+	.accordeon-item {
+		grid-column-gap: 46px;
 	}
 
 	.swiper-container#slider2 {
