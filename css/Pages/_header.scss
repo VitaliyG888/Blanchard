@@ -279,6 +279,10 @@
 			transition: all 0.5s ease-in;
 		}
 	}
+
+	&:hover .simplebar-scrollbar::before {
+		background-color: $first-color;
+	}
 }
 
 .performer1,

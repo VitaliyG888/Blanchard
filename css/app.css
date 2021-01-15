@@ -498,6 +498,10 @@ button:active {
   transition: all 0.5s ease-in;
 }
 
+.nether__choice:hover .simplebar-scrollbar::before {
+  background-color: #9d5cd0;
+}
+
 .performer1,
 .performer3,
 .performer5,
