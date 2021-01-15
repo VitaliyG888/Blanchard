@@ -18,6 +18,7 @@
 
 	.swiper-container#slider1 {
 		width: 292px;
+		height: 367px;
 	}
 
 	.gallery .gallery__container {
@@ -26,11 +27,6 @@
 
 	.gallery__choice {
 		margin-bottom: 108px;
-	}
-
-	.swiper-slide.gallery__slider {
-		background-repeat: no-repeat;
-		background-size: cover;
 	}
 
 	.catalog__container {
@@ -82,7 +78,7 @@
 	}
 
 	.catalog__artists.accordeon .accordeon-section .accordeon-item {
-		grid-template-columns: 200px;
+		grid-template-columns: 209px;
 		grid-template-rows: repeat(24, 32px);
 		padding: 21px 0 16px;
 	}

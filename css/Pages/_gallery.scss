@@ -14,7 +14,7 @@
 }
 
 .gallery__title {
-	margin-bottom: 23px;
+	margin-bottom: 25px;
 	font-weight: 400;
 	font-size: 48px;
 	line-height: 65px;
@@ -151,8 +151,6 @@ div {
 	margin-right: 28px;
 }
 
-.swiper-container-rtl .swiper-button-next {}
-
 .swiper-button-next-st:focus,
 .swiper-button-prev-st:focus {
 	outline: none;
@@ -210,6 +208,7 @@ div {
 }
 
 .swiper-container#slider1 {
+	position: initial;
 	overflow: hidden;
 	padding-left: 5px;
 	width: 1155px;

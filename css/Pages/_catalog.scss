@@ -39,7 +39,7 @@
 		border: 2px solid;
 		border-color: transparent;
 		border-radius: 100px;
-		transition: border-color 0.5s linear;
+		transition: border-color 0.3s linear;
 	}
 
 	&::before {
@@ -54,17 +54,17 @@
 		border-radius: 100px;
 		box-shadow: 0px 0px 19px -2px;
 		color: transparent;
-		transition: color 0.5s linear;
+		transition: color 0.3s linear;
 	}
 
 	&:hover::before {
 		color: $Black;
-		transition: color 0.5s linear;
+		transition: color 0.3s linear;
 	}
 
 	&:active::after {
 		border-color: $first-color;
-		transition: border-color 0.5s linear;
+		transition: border-color 0.3s linear;
 	}
 
 	&:focus {
@@ -110,8 +110,8 @@
 }
 
 .is-active__border {
-	-webkit-animation: border 0.5s ease-in;
-	animation: border 0.5s ease-in;
+	-webkit-animation: border 0.3s ease-in;
+	animation: border 0.3s ease-in;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
@@ -151,8 +151,8 @@
 
 .is-active__description {
 	display: block;
-	-webkit-animation: description 0.5s ease-in;
-	animation: description 0.5s ease-in;
+	-webkit-animation: description 0.3s ease-in;
+	animation: description 0.3s ease-in;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
@@ -167,8 +167,8 @@
 		-o-object-fit: cover;
 		object-fit: cover;
 		margin-bottom: 33px;
-		-webkit-animation: description 0.5s ease-in;
-		animation: description 0.5s ease-in;
+		-webkit-animation: description 0.3s ease-in;
+		animation: description 0.3s ease-in;
 	}
 }
 
@@ -177,21 +177,21 @@
 }
 
 .card__description {
-	-webkit-animation: description 0.5s ease-in;
-	animation: description 0.5s ease-in;
+	-webkit-animation: description 0.3s ease-in;
+	animation: description 0.3s ease-in;
 }
 
 .card__title {
 	margin-bottom: 13px;
-	-webkit-animation: description 0.5s ease-in;
-	animation: description 0.5s ease-in;
+	-webkit-animation: description 0.3s ease-in;
+	animation: description 0.3s ease-in;
 }
 
 .card__date {
 	display: block;
 	margin-bottom: 9px;
-	-webkit-animation: description 0.5s ease-in;
-	animation: description 0.5s ease-in;
+	-webkit-animation: description 0.3s ease-in;
+	animation: description 0.3s ease-in;
 }
 
 .accordeon-section {
@@ -243,17 +243,17 @@
 
 	&:hover {
 		color: $first-color;
-		@include transition (color, 0.5s);
+		@include transition (color, 0.3s);
 
 		&::after {
 			background-color: $first-color;
-			@include transition(all, 0.5s);
+			@include transition(all, 0.3s);
 		}
 
 		&::before {
 			border-left: 1px solid $Wight;
 			border-bottom: 1px solid $Wight;
-			@include transition (all, 0.5s);
+			@include transition (all, 0.3s);
 		}
 	}
 
@@ -270,16 +270,16 @@
 .accordeon-content {
 	max-height: 0;
 	overflow: hidden;
-	@include transition (all, 0.5s);
+	@include transition (all, 0.3s);
 }
 
 .accordeon-item {
 	display: grid;
-	grid-template-columns: repeat(3, 200px);
+	grid-template-columns: repeat(3, 209px);
 	grid-template-rows: repeat(9, 32px);
 	grid-auto-flow: column;
 	padding: 30px 0 25px;
-	grid-column-gap: 58px;
+	grid-column-gap: 48px;
 }
 
 .accordeon-link {
@@ -294,17 +294,17 @@
 	text-align: left;
 	color: #333333;
 	border: 1px solid rgba($first-color, 0);
-	@include transition(all, 0.5s);
+	@include transition(all, 0.3s);
 
 	&::before {
 		content: '';
 		position: absolute;
-		width: 193px;
+		width: 209px;
 		height: 30px;
 		top: -5px;
 		left: 4px;
 		border: 1px solid rgba($first-color, 0);
-		transition: all 0.5s ease-in;
+		transition: all 0.3s ease-in;
 	}
 
 	&::after {
@@ -315,28 +315,28 @@
 		left: 6px;
 		bottom: 0;
 		background-color: rgba($first-color, 1);
-		transition: all 0.5s ease-in;
+		transition: all 0.3s ease-in;
 	}
 
 	&:focus::before {
 		border: 1px solid rgba($first-color, 1);
-		transition: all 0.5s ease-in;
+		transition: all 0.3s ease-in;
 	}
 
 	&:hover {
 		color: $first-color;
-		transition: color 0.5s ease-in;
+		transition: color 0.3s ease-in;
 	}
 
 	&:hover::after {
-		width: 190px;
-		transition: all 0.5s ease-in;
+		width: 202px;
+		transition: all 0.3s ease-in;
 	}
 
 	&:active {
 		font-weight: 600;
 		color: $second-color;
-		transition: all 0.5s ease-in;
+		transition: all 0.3s ease-in;
 	}
 }
 
