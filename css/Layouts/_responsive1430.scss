@@ -334,7 +334,17 @@
 	}
 
 	.tooltip1::before {
-		top: -57px;
+		top: -44px;
+	}
+
+	.tooltip2::before {
+		width: 324px;
+		left: -151px;
+		top: -40px;
+	}
+
+	.tooltip3::before {
+		top: -28px;
 	}
 
 	.projects__tooltip::after {

@@ -22,10 +22,6 @@
 	margin-right: 101px;
 }
 
-.editions__check {
-	display: none;
-}
-
 .editions__docket {
 	display: block;
 	margin-bottom: 14px;
@@ -93,6 +89,11 @@
 .editions__check:checked+.editions__label {
 	color: $first-lite;
 	transition: all 0.3s ease-in;
+}
+
+.editions__check[type="checkbox"]:focus+.editions__label::before {
+	outline: 3px solid $first-color;
+	border: none;
 }
 
 .editions__label:hover {

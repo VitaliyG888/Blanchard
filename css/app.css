@@ -1895,10 +1895,6 @@ div[data-custom-properties="[object Object]"] {
   margin-right: 101px;
 }
 
-.editions__check {
-  display: none;
-}
-
 .editions__docket {
   display: block;
   margin-bottom: 14px;
@@ -1978,6 +1974,11 @@ div[data-custom-properties="[object Object]"] {
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+}
+
+.editions__check[type="checkbox"]:focus + .editions__label::before {
+  outline: 3px solid #9d5cd0;
+  border: none;
 }
 
 .editions__label:hover {
@@ -3315,7 +3316,15 @@ div[data-custom-properties="[object Object]"] {
     letter-spacing: 0;
   }
   .tooltip1::before {
-    top: -57px;
+    top: -44px;
+  }
+  .tooltip2::before {
+    width: 324px;
+    left: -151px;
+    top: -40px;
+  }
+  .tooltip3::before {
+    top: -28px;
   }
   .projects__tooltip::after {
     display: none;
@@ -3591,10 +3600,14 @@ div[data-custom-properties="[object Object]"] {
     margin-top: 73px;
   }
   .tooltip3::before {
-    top: -57px;
+    left: -20px;
+    top: -41px;
+  }
+  .tooltip2::before {
+    top: -62px;
   }
   .tooltip1::before {
-    top: -73px;
+    top: -46px;
   }
   .projects__descriptions {
     letter-spacing: 0.4px;
@@ -3879,6 +3892,20 @@ div[data-custom-properties="[object Object]"] {
     width: 12px;
     height: 12px;
   }
+  .tooltip1::before {
+    left: -102px;
+    top: -55px;
+    width: 214px;
+  }
+  .tooltip2::before {
+    width: 239px;
+    left: -112px;
+    top: -59px;
+  }
+  .tooltip3::before {
+    width: 153px;
+    left: -14px;
+  }
   .swiper-container#slider3 {
     max-width: 390px;
   }
@@ -4078,6 +4105,9 @@ div[data-custom-properties="[object Object]"] {
   }
   .projects__swiper-button3.swiper-button {
     bottom: 27px;
+  }
+  .tooltip3::before {
+    left: -113px;
   }
   .contacts__form {
     width: 290px;

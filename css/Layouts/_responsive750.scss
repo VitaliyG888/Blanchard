@@ -280,6 +280,23 @@
 		}
 	}
 
+	.tooltip1::before {
+		left: -102px;
+		top: -55px;
+		width: 214px;
+	}
+
+	.tooltip2::before {
+		width: 239px;
+		left: -112px;
+		top: -59px;
+	}
+
+	.tooltip3::before {
+		width: 153px;
+		left: -14px;
+	}
+
 	.swiper-container#slider3 {
 		max-width: 390px;
 	}
