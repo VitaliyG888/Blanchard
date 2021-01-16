@@ -1,7 +1,7 @@
 /* gallery section */
 
 .gallery {
-	background-image: url('../image/backg_gallary.jpg');
+	background-image: url("../image/backg_gallary.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 
@@ -52,6 +52,10 @@
 	padding: 5px 15px 5px 9px;
 	color: $Wight;
 	padding-right: 15px;
+
+	&:focus .choices__list {
+		color: $first-color;
+	}
 }
 
 .is-open .choices__inner,
@@ -91,6 +95,10 @@
 
 .choices__list {
 	color: $Wight;
+}
+
+.choices:focus .choices__list {
+	color: $first-color;
 }
 
 .choices__placeholder {
@@ -144,7 +152,7 @@ div {
 	border-radius: 100px;
 	background-color: $btn-slider-color;
 	padding: 3px 10px;
-	@include transition(all, 0.3s);
+	@include transition(all, 0.2s);
 }
 
 .swiper-button-prev {
@@ -156,34 +164,34 @@ div {
 	outline: none;
 	border: 2px solid $second-color;
 	background-color: $btn-slider-color2;
-	@include transition(all, 0.3s);
+	@include transition(all, 0.2s);
 }
 
 .swiper-button-next-st:focus::after,
 .swiper-button-prev-st:focus::after {
 	color: $Black;
-	@include transition(color, 0.3s);
+	@include transition(color, 0.2s);
 }
 
 .swiper-button-next-st:hover,
 .swiper-button-prev-st:hover {
 	color: $Wight;
 	background-color: $first-color;
-	@include transition(all, 0.3s);
+	@include transition(all, 0.2s);
 }
 
 .swiper-button-next-st:active,
 .swiper-button-prev-st:active {
 	border: 2px solid $extra-lite;
 	background-color: $second-color;
-	@include transition(all, 0.3s);
+	@include transition(all, 0.2s);
 }
 
 .swiper-button-next-st::after,
 .swiper-button-prev-st::after {
 	font-size: 10px;
 	color: $Wight;
-	@include transition(color, 0.3s);
+	@include transition(color, 0.2s);
 }
 
 .swiper-button-next.swiper-button-next-st:hover::after,
@@ -191,7 +199,7 @@ div {
 .swiper-button-next.swiper-button-next-st:active::after,
 .swiper-button-prev.swiper-button-prev-st:active::after {
 	color: $Wight;
-	@include transition(color, 0.3s);
+	@include transition(color, 0.2s);
 }
 
 .swiper-pagination-st {
@@ -221,7 +229,7 @@ div {
 	height: 350px;
 	box-sizing: border-box;
 	cursor: pointer;
-	@include transition(all, 0.5s);
+	@include transition(all, 0.3s);
 
 	&::before {
 		content: "";
@@ -233,7 +241,7 @@ div {
 		z-index: 2;
 		background-color: $extra-lite;
 		opacity: 0;
-		@include transition(opacity, 0.5s);
+		@include transition(opacity, 0.3s);
 	}
 
 	&::after {
@@ -250,7 +258,7 @@ div {
 		background-size: cover;
 		background-repeat: no-repeat;
 		opacity: 0;
-		@include transition(opacity, 0.5s);
+		@include transition(opacity, 0.3s);
 	}
 
 	&:focus {
@@ -259,18 +267,18 @@ div {
 
 	&::before {
 		opacity: 0;
-		@include transition(opacity, 0.5s);
+		@include transition(opacity, 0.3s);
 	}
 
 
 	&:hover::after {
 		opacity: 1;
-		@include transition(opacity, 0.5s);
+		@include transition(opacity, 0.3s);
 	}
 
 	&:active::before {
 		opacity: 0.4;
-		@include transition(opacity, 0.5s);
+		@include transition(opacity, 0.3s);
 	}
 }
 
@@ -421,7 +429,7 @@ div {
 			top: -5px;
 			left: 4px;
 			border: 1px solid rgba($first-color, 0);
-			transition: all 0.5s ease-in;
+			transition: all 0.2s ease-in;
 		}
 
 		&::after {
@@ -432,27 +440,27 @@ div {
 			left: 6px;
 			bottom: 0;
 			background-color: rgba($first-color, 1);
-			transition: all 0.5s ease-in;
+			transition: all 0.2s ease-in;
 		}
 
 		&:focus::before {
 			border: 1px solid rgba($first-color, 1);
-			transition: all 0.5s ease-in;
+			transition: all 0.2s ease-in;
 		}
 
 		&:hover {
 			color: $first-color;
-			transition: color 0.5s ease-in;
+			transition: color 0.2s ease-in;
 		}
 
 		&:hover::after {
 			width: 118px;
-			transition: all 0.5s ease-in;
+			transition: all 0.2s ease-in;
 		}
 
 		&:active {
 			color: $second-color;
-			transition: all 0.5s ease-in;
+			transition: all 0.2s ease-in;
 		}
 	}
 }

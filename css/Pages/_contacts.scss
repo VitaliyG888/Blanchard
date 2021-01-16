@@ -67,16 +67,19 @@
 		font-size: 18px;
 		text-align: center;
 		color: $first-color;
+		transition: all 0.3s ease-in-out;
 
 		&:hover {
 			background-color: $first-color;
-			color: #ffffff;
-			transition: all 0.5s ease-in-out;
+			color: $Wight;
+			transition: all 0.3s ease-in-out;
 		}
 
 		&:focus {
 			background-color: $second-color;
 			border-color: $extra-lite;
+			color: $Wight;
+			transition: all 0.3s ease-in-out;
 		}
 	}
 
@@ -96,9 +99,54 @@
 	box-sizing: border-box !important;
 }
 
-
 .contacts__whats {
 	margin-right: 20px;
+}
+
+
+.contacts__whats,
+.contacts__teleg {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		display: block;
+		left: 1px;
+		top: 1px;
+		width: 38px;
+		height: 38px;
+		background: transparent;
+		border-radius: 100px;
+		box-shadow: 0px 0px 15px -3px;
+		color: transparent;
+		transition: color 0.2s linear;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		display: block;
+		left: 0;
+		top: 0;
+		width: 40px;
+		height: 40px;
+		background: transparent;
+		border: 3px solid;
+		border-color: transparent;
+		border-radius: 100px;
+		transition: border-color 0.2s linear;
+	}
+
+	&:hover::before {
+		color: $Black;
+		transition: color 0.2s linear;
+	}
+
+	&:focus::after {
+		border-color: $first-color;
+		transition: border-color 0.2s linear;
+	}
 }
 
 

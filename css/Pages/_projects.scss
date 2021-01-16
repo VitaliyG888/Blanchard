@@ -71,6 +71,14 @@
 	svg {
 		width: 18px;
 		height: 18px;
+
+		.filled-circle {
+			fill: none;
+		}
+
+		.letter {
+			fill: $first-color;
+		}
 	}
 
 	&::before {
@@ -80,11 +88,9 @@
 		font-weight: 600;
 		font-size: 12px;
 		line-height: 16px;
-		text-align: center;
 		content: attr(aria-label);
 		padding: 9px;
-		text-transform: none;
-		transition: all 0.5s ease;
+		transition: all 0.3s ease;
 	}
 
 	&::after {
@@ -94,18 +100,12 @@
 		border-top: 11px solid $Grey;
 		border-right: 11px solid transparent;
 		border-left: 11px solid transparent;
-		font-size: 0;
-		line-height: 0;
 		margin-left: -5px;
-		width: 0;
 	}
 
 	&::before,
 	&::after {
-		font-family: monospace;
-		color: $tool-color;
 		opacity: 0;
-		pointer-events: none;
 		text-align: center;
 	}
 
@@ -115,7 +115,18 @@
 		&::before,
 		&::after {
 			opacity: 1;
-			@include transition(opacity, 0.5s);
+			@include transition(opacity, 0.3s);
+		}
+
+		svg {
+
+			.filled-circle {
+				fill: $first-color;
+			}
+
+			.letter {
+				fill: $Wight;
+			}
 		}
 	}
 
@@ -124,20 +135,56 @@
 		&::before,
 		&::after {
 			opacity: 1;
-			@include transition(opacity, 0.5s);
+			@include transition(opacity, 0.3s);
+		}
+
+		svg {
+
+			.filled-circle {
+				fill: $first-color;
+			}
+
+			.letter {
+				fill: $Wight;
+			}
 		}
 	}
 }
 
 .projects__link {
+	position: relative;
 	color: $first-color;
 
-	&:hover {
-		text-decoration: underline;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 254px;
+		height: 33px;
+		top: -5px;
+		left: -3px;
+		border: 1px solid rgba(157, 92, 208, 0);
+		transition: all 0.2s ease-in;
 	}
 
-	&:active {
-		color: $second-color;
+	&::after {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 2px;
+		left: 0px;
+		bottom: 0;
+		background-color: $first-color;
+		transition: all 0.2s ease-in;
+	}
+
+	&:hover::after {
+		width: 247px;
+		transition: all 0.2s ease-in;
+	}
+
+	&:focus::before {
+		border: 2px solid rgba(157, 92, 208, 1);
+		transition: all 0.2s ease-in;
 	}
 }
 
@@ -155,12 +202,12 @@
 	box-sizing: border-box;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
-	transition: all 0.5s ease-in;
+	transition: all 0.3s ease-in;
 
 	&:hover {
 		-webkit-filter: grayscale(0);
 		filter: grayscale(0);
-		transition: all 0.5s ease-in;
+		transition: all 0.3s ease-in;
 		cursor: pointer;
 	}
 }
@@ -214,38 +261,38 @@
 		position: absolute;
 		top: 83px;
 		background-color: $btn-slider-color2;
-		transition: all .5s ease-in;
+		transition: all 0.2s ease-in;
 
 		&::after {
 			color: $Black;
-			transition: color .5s ease-in;
+			transition: color 0.2s ease-in;
 		}
 
 		&:focus {
 			background-color: $btn-slider-color2;
 			border: 2px solid $second-color;
-			transition: all .5s ease-in;
+			transition: all 0.2s ease-in;
 		}
 
 		&:hover {
 			background-color: $first-color;
-			transition: all .5s ease-in;
+			transition: all 0.2s ease-in;
 		}
 
 		&:hover::after {
 			color: $Wight;
-			transition: color .5s ease-in;
+			transition: color 0.2s ease-in;
 		}
 
 		&:active {
 			border: 2px solid $extra-lite;
 			background-color: $second-color;
-			transition: all .5s ease-in;
+			transition: all 0.2s ease-in;
 		}
 
 		&:active::after {
 			color: $Wight;
-			transition: color .5s ease-in;
+			transition: color 0.2s ease-in;
 		}
 	}
 }

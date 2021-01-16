@@ -72,6 +72,9 @@
 		display: block;
 		position: absolute;
 		bottom: 42px;
+		background: transparent;
+		border: none;
+		cursor: pointer;
 		line-height: 23px;
 		color: $first-color;
 
@@ -79,24 +82,27 @@
 			content: "";
 			display: block;
 			position: relative;
-			width: 88px;
+			width: 97px;
 			border-bottom: 1px solid $first-color;
-			transition: all 0.5s ease-in-out;
+			transition: all 0.3s ease-in-out;
 		}
 
 		&:hover {
 			font-weight: 700;
-			transition: all 0.5s ease-in-out;
+			transition: all 0.3s ease-in-out;
+
+			&::after {
+				border-bottom: 2px solid $first-color;
+			}
 		}
 
 		&:active {
 			color: $second-color;
-			transition: color 0.5s ease-in-out;
+			transition: color 0.3s ease-in-out;
 		}
 
 		&:focus {
 			outline: 2px solid $second-color;
-			transition: all 0.5s ease-in-out;
 		}
 	}
 }
@@ -123,16 +129,23 @@
 	background: none;
 	border: 2px solid $first-color;
 	border-radius: 100px;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 
 	&:hover {
 		background-color: $first-color;
 		color: $Wight;
-		transition: all 0.5s ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
 
 	&:active {
 		border: 3px solid $extra-lite;
 		background-color: $second-color;
+	}
+
+	&:focus {
+		background-color: $first-color;
+		border: 3px solid $extra-lite;
+		color: $Wight;
+		transition: all 0.3s ease-in-out;
 	}
 }

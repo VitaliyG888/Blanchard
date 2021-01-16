@@ -337,6 +337,10 @@
 		top: -57px;
 	}
 
+	.projects__tooltip::after {
+		display: none;
+	}
+
 	.swiper-container#slider3 {
 		max-width: 818px;
 		height: 128px;
