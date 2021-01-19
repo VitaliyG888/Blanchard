@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	let namberTab;
 	let tabName;
 	let accordionSection;
-	let tabIndex;
 	let dataTable2;
 
 

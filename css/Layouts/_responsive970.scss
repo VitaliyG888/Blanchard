@@ -35,11 +35,12 @@
 
 	.first__description {
 		letter-spacing: -0.1px;
-		margin-bottom: 135px;
+		margin-bottom: 131px;
 	}
 
 	.about__container {
-		padding-bottom: 72px;
+		padding-top: 81px;
+		padding-bottom: 69px;
 
 		.about__description {
 			max-width: 666px;
@@ -194,7 +195,7 @@
 	}
 
 	.developments__card .developments__card--down {
-		padding: 14px 17px 137px 35px;
+		padding: 15px 17px 137px 33px;
 	}
 
 	.developments__card .developments__link {
@@ -211,10 +212,6 @@
 
 	.developments_card .developments__signature {
 		margin-bottom: -16px;
-	}
-
-	.developments__news {
-		margin-bottom: 33px;
 	}
 
 	// editions section
@@ -290,7 +287,9 @@
 	}
 
 	.editions__swiper-button2 {
-		margin-left: -41px;
+		margin-left: -42px;
+		margin-top: -14px;
+		margin-bottom: 26px;
 	}
 
 	.editions__showing {
@@ -344,20 +343,19 @@
 
 	// contacts section
 
-	.contacts__title {
-		margin-bottom: 13px;
-	}
-
-	.contacts .contacts__map.map .map__left {
-		width: 55.8vw;
-	}
-
-	.contacts .contacts__map.map .map__right {
-		width: 44.2vw;
+	.contacts__container {
+		width: 100%;
+		margin: 0;
+		padding-right: 0;
+		padding-left: calc((100vw - 682px)/2);
 	}
 
 	.contacts .contacts__container .contacts__block {
-		padding-bottom: 125px;
+		margin-right: 42px;
+	}
+
+	.contacts__title {
+		margin-bottom: 13px;
 	}
 
 	.contacts .contacts__container .contacts__block .contacts_name {

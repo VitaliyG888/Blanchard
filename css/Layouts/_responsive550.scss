@@ -226,6 +226,17 @@
 		left: -113px;
 	}
 
+	.contacts__container {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		flex-direction: column-reverse;
+	}
+
+	.contacts .contacts__container .contacts__block {
+		width: 320px;
+	}
+
 	.contacts__form {
 		width: 290px;
 	}

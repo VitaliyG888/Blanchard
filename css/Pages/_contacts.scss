@@ -5,9 +5,18 @@
 	border-top: 1px solid $Grey;
 }
 
+.contacts__container {
+	max-width: 100%;
+	margin: 0;
+	padding-left: calc((100vw - 1618px)/2);
+	padding-right: 0;
+	align-items: stretch;
+}
+
 .contacts__block {
 	padding-top: 125px;
 	padding-bottom: 123px;
+	margin-right: 121px;
 }
 
 .contacts__name {
@@ -151,23 +160,7 @@
 
 
 .contacts__map.map {
-	position: absolute;
-	display: flex;
 	width: 100%;
-	height: 700px;
-
-
-	.map__right {
-		border-left: 2px solid $Grey;
-		height: 700px;
-		width: 64vw;
-	}
-
-	.map__left {
-		width: 36vw;
-		height: 100%;
-		z-index: -100;
-	}
 }
 
 [class*="ground-pane"] {

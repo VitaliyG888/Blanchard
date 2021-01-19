@@ -365,30 +365,25 @@
 		margin-top: -33px;
 	}
 
+	.contacts__container {
+		width: 100%;
+		margin: 0;
+		padding-right: 0;
+		padding-left: calc((100vw - 941px)/2);
+	}
 
 	.contacts__title {
 		margin-bottom: 12px;
 	}
 
-	.contacts__container {
-		max-height: 700px;
-	}
-
 	.contacts .contacts__container .contacts__block {
 		width: 382px;
+		margin-right: 100px;
 		padding-top: 125px;
 		padding-bottom: 125px;
 	}
 
 	.contacts__form {
 		width: 337px;
-	}
-
-	.contacts .contacts__map.map .map__left {
-		width: 47.3vw;
-	}
-
-	.contacts .contacts__map.map .map__right {
-		width: 52.7vw;
 	}
 }
