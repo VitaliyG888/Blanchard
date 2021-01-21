@@ -226,6 +226,10 @@
 		left: -113px;
 	}
 
+	.projects__descriptions {
+		max-width: 290px;
+	}
+
 	.contacts__container {
 		width: 100%;
 		margin: 0;
@@ -265,5 +269,10 @@
 	.footer__link img {
 		width: 25px;
 		height: 25px;
+	}
+
+	.footer__link::after {
+		width: 32px;
+		height: 32px;
 	}
 }

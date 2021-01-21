@@ -153,18 +153,9 @@
 
 .projects__link {
 	position: relative;
+	outline: 2px solid rgba(157, 92, 208, 0);
 	color: $first-color;
-
-	&::before {
-		content: '';
-		position: absolute;
-		width: 254px;
-		height: 33px;
-		top: -5px;
-		left: -3px;
-		border: 1px solid rgba(157, 92, 208, 0);
-		transition: all 0.2s ease-in;
-	}
+	transition: all 0.2s ease-in;
 
 	&::after {
 		content: '';
@@ -182,8 +173,8 @@
 		transition: all 0.2s ease-in;
 	}
 
-	&:focus::before {
-		border: 2px solid rgba(157, 92, 208, 1);
+	&:focus {
+		outline: 2px solid rgba(157, 92, 208, 1);
 		transition: all 0.2s ease-in;
 	}
 }
