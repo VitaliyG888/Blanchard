@@ -40,7 +40,6 @@
 	}
 
 	.catalog__title {
-		margin-left: 4px;
 		margin-bottom: 10px;
 		line-height: 32px;
 	}
@@ -48,6 +47,7 @@
 	.catalog__transfer {
 		width: 291px;
 		margin: 0;
+		margin-left: -5px;
 	}
 
 	.tab-nav__link {
@@ -70,12 +70,17 @@
 		top: 4px;
 	}
 
+	.accordeon-section {
+		width: 292px;
+		margin-left: -4px;
+	}
+
 	.catalog__language:not(:last-child) {
 		margin-right: 20.5px;
 	}
 
 	.catalog__artists.accordeon {
-		margin-bottom: 52px;
+		margin-bottom: 49px;
 	}
 
 	.catalog__artists.accordeon .accordeon-section .accordeon-item {
@@ -85,7 +90,7 @@
 	}
 
 	.accordeon-title {
-		padding: 20px 0px 21px 4px;
+		padding: 20.5px 0px 21px 3px;
 		font-weight: 600;
 		font-size: 18px;
 	}
@@ -112,7 +117,7 @@
 	}
 
 	.catalog__card.card {
-		margin-left: 3px;
+		margin-left: -2px;
 
 		img {
 			width: 290px;
@@ -123,6 +128,7 @@
 
 	.card__title {
 		margin-bottom: 18px;
+		font-size: 24px;
 	}
 
 	.developments__container {
@@ -153,10 +159,6 @@
 
 	.developments__card .developments__link {
 		bottom: 50px;
-	}
-
-	.developments__news {
-		margin-bottom: 14px;
 	}
 
 	.pagination4 .swiper-pagination-bullet {
@@ -198,7 +200,7 @@
 	}
 
 	.editions__order {
-		padding: 8px 32px;
+		padding: 10px 34px;
 	}
 
 	.swiper-container#slider3 {
@@ -213,6 +215,10 @@
 	.swiper-slide.projects__slider {
 		background-size: 195px 65px;
 		background-position: center;
+	}
+
+	h3 {
+		font-size: 18px;
 	}
 
 	.projects__showing {
@@ -242,6 +248,10 @@
 		width: 320px;
 	}
 
+	.contacts__map.map {
+		height: 320px;
+	}
+
 	.contacts__form {
 		width: 290px;
 	}
@@ -250,9 +260,14 @@
 		font-size: 14px;
 	}
 
+	.contacts__form .contacts__tweet {
+		margin-bottom: 14px;
+	}
+
 	.contacts__form .contacts__button {
 		width: 128px;
 		height: 40px;
+		margin-bottom: 24px;
 		font-size: 14px;
 	}
 
