@@ -3551,11 +3551,6 @@ div[data-custom-properties="[object Object]"] {
     padding-top: 23px;
     width: 100%;
   }
-  .editions__checkboks span {
-    position: absolute;
-    top: 166px;
-    margin-top: 0;
-  }
   .editions__docket {
     margin-left: -5px;
   }
@@ -3834,6 +3829,7 @@ div[data-custom-properties="[object Object]"] {
     width: 100%;
   }
   .editions__label {
+    position: relative;
     width: 100%;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -3844,10 +3840,27 @@ div[data-custom-properties="[object Object]"] {
   .editions__label:first-child {
     border-top: none;
   }
+  .editions__label span {
+    position: absolute;
+    top: -8px;
+    right: 7px;
+    font-size: 27px;
+    color: rgba(194, 131, 243, 0);
+    -webkit-transition: color 0.2s ease-in;
+    -o-transition: color 0.2s ease-in;
+    transition: color 0.2s ease-in;
+  }
+  .editions__check:checked + .editions__label span {
+    color: #c283f3;
+    -webkit-transition: color 0.2s ease-in;
+    -o-transition: color 0.2s ease-in;
+    transition: color 0.2s ease-in;
+  }
   .editions__checkboks {
     margin-bottom: 10px;
   }
   .editions__docket {
+    position: relative;
     width: 100%;
     padding: 13px 0;
     margin-bottom: 0;
@@ -3857,8 +3870,34 @@ div[data-custom-properties="[object Object]"] {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     cursor: pointer;
   }
+  .editions__docket::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    right: 10px;
+    margin-left: 4px;
+    margin-top: 0;
+    border-right: none;
+    border-top: none;
+    border-left: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
   .editions__docket.active {
     margin-bottom: 14px;
+  }
+  .editions__docket.active::before {
+    margin-top: 7px;
+    border-right: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-left: none;
+    border-bottom: none;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   .editions__priceform {
     position: relative;
