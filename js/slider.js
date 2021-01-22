@@ -10,9 +10,7 @@ var swiper0 = new Swiper('#slider0', {
 	lazy: true
 });
 
-
 var swiper1 = new Swiper('#slider1', {
-
 	slidesPerView: 1,
 	slidesPerColumn: 1,
 	spaceBetween: 34,
@@ -83,7 +81,6 @@ let mySwiper2 = function () {
 				prevEl: '.button2-prev.swiper-button-prev',
 			},
 
-
 			pagination: {
 				el: '.pagination2.swiper-pagination',
 				clickable: true,
@@ -103,7 +100,6 @@ let mySwiper2 = function () {
 window.addEventListener('resize', () => {
 	mySwiper2();
 })
-
 mySwiper2();
 
 
