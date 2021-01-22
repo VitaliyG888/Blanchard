@@ -8,8 +8,55 @@ document.addEventListener('DOMContentLoaded', function () {
 		headerClose = document.querySelector('.header__close'),
 		headerAdmission = document.querySelector('.header__admission'),
 		headerLogo = document.querySelector('.header__logo'),
-		menuToggle = document.querySelector('.menu__toggle'),
 		headerSearchInput = document.querySelector('#header__search-input');
+
+	const editAccAdapt = function () {
+		let editionsCheckAll = document.querySelectorAll('.editions__check'),
+			editionsList3 = document.querySelector('.editions__list--3');
+
+		[].forEach.call(editionsCheckAll, function (item) {
+			let editionsLabelChecked = document.querySelector(`[for="${item.id}"]`);
+			editionsList3.append(item);
+			editionsList3.append(editionsLabelChecked);
+		});
+
+		document.querySelector('.editions__list--1').remove();
+		document.querySelector('.editions__list--2').remove();
+
+		let accEditContent = document.querySelector('.editions__list'),
+			accEditTitle = document.querySelector('.editions__docket');
+
+		let accordeonActiveit = function () {
+			let editionsCheckboks = document.querySelector('.editions__checkboks');
+
+			accEditContent.style.maxHeight = '0px';
+
+			accEditTitle.addEventListener('click', function () {
+
+				[].forEach.call(editionsCheckAll, function (item) {
+
+					let editionsLabelChecked = document.querySelector(`[for="${item.id}"]`);
+
+					if (item.checked) {
+						editionsCheckboks.append(item);
+						editionsCheckboks.append(editionsLabelChecked);
+					} else {
+						editionsList3.append(item);
+						editionsList3.append(editionsLabelChecked);
+					}
+				})
+
+				if (this.classList.contains('active')) {
+					this.classList.remove('active');
+					accEditContent.style.maxHeight = '0px'
+				} else {
+					this.classList.add('active');
+					accEditContent.style.maxHeight = document.querySelector('.editions__list >*').clientHeight + 'px'
+				}
+			})
+		}
+		accordeonActiveit();
+	};
 
 	if (document.documentElement.clientWidth < 1650) {
 		document.querySelector("#card1Description").innerHTML = "Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава...";
@@ -94,21 +141,19 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 
-	if (document.documentElement.clientWidth < 750) {
+	if (document.documentElement.clientWidth < 730) {
 		document.querySelector('.contacts__title').after(document.querySelector('.contacts__address'));
 		document.querySelector('.contacts__title').after(document.querySelector('.contacts__name'));
-	} else {
-		document.querySelector('.contacts__block').prepend(document.querySelector('.contacts__address'));
-		document.querySelector('.contacts__block').prepend(document.querySelector('.contacts__name'));
+		editAccAdapt();
 	}
 
 	screenWidth750.addEventListener('change', function (el) {
 		if (el.matches) {
 			document.querySelector('.contacts__title').after(document.querySelector('.contacts__address'));
 			document.querySelector('.contacts__title').after(document.querySelector('.contacts__name'));
+			editAccAdapt();
 		} else {
-			document.querySelector('.contacts__block').prepend(document.querySelector('.contacts__address'));
-			document.querySelector('.contacts__block').prepend(document.querySelector('.contacts__name'));
+			window.location.reload();
 		}
 	});
 });

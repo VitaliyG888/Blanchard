@@ -1,9 +1,10 @@
 @media (max-width: 750px) {
 	.container {
-		width: 530px;
+		width: 550px;
 	}
 
 	.header__container {
+		width: calc(100% - 6rem);
 		align-items: inherit;
 		padding-top: 12px;
 		padding-bottom: 9px;
@@ -180,24 +181,58 @@
 		grid-column-gap: 78px;
 	}
 
-	.swiper-slide.editions__slider {
-		width: 220px;
-	}
-
-	.swiper-slide.editions__slider:not(:nth-child(2n + 2)) {
-		margin-right: 30px;
-	}
 
 	.editions__list {
 		flex-wrap: wrap;
+		margin-bottom: 14px;
+		padding-left: 2px;
+		overflow: hidden;
+
+
+		.editions__list--3 {
+			width: 100%;
+		}
 	}
 
-	.editions__checkboks span {
-		top: 112px;
+	.editions__label {
+		width: 100%;
+		padding-bottom: 10px;
+		// margin-bottom: 0;
+		border-bottom: 1px solid rgba($Wight, 0.5);
+
+		&::before {
+			margin-bottom: 10px;
+		}
+
+		&:first-child {
+			border-top: none;
+		}
+	}
+
+	.editions__checkboks {
+		margin-bottom: 10px;
+	}
+
+	.editions__docket {
+		width: 100%;
+		padding: 13px 0;
+		margin-bottom: 0;
+		margin-left: 0;
+		text-align: left;
+		border-top: 1px solid rgba($Wight, 0.5);
+		border-bottom: 1px solid rgba($Wight, 0.5);
+		cursor: pointer;
+	}
+
+	.editions__docket.active {
+		margin-bottom: 14px;
 	}
 
 	.editions__priceform {
-		top: 521px;
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-bottom: 20px;
 	}
 
 
@@ -218,6 +253,14 @@
 	.editions__order {
 		padding: 14px 68px;
 		font-size: 12px;
+	}
+
+	.swiper-slide.editions__slider {
+		width: 220px;
+	}
+
+	.swiper-slide.editions__slider:not(:nth-child(2n + 2)) {
+		margin-right: 30px;
 	}
 
 
@@ -249,9 +292,10 @@
 	}
 
 	.swiper-wrapper.development__slider {
+		flex-wrap: nowrap;
 		width: 100%;
 		margin: 0;
-		flex-wrap: nowrap;
+		margin-bottom: 20px;
 
 		.developments__card {
 			margin-right: 0;
@@ -320,5 +364,26 @@
 		margin: 0;
 		padding: 0;
 		flex-direction: column-reverse;
+	}
+
+	.footer,
+	.footer__container {
+		width: 100%;
+		height: 70px;
+	}
+
+	.footer__logo {
+		width: 97px;
+		height: 22px;
+	}
+
+	.footer__link img {
+		width: 25px;
+		height: 25px;
+	}
+
+	.footer__link::after {
+		width: 32px;
+		height: 32px;
 	}
 }

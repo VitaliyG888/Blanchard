@@ -224,14 +224,14 @@
 		flex-wrap: wrap;
 
 		.editions__block--left {
-			padding-top: 30px;
+			padding-top: 0;
 			width: 100%;
 		}
 	}
 
 	.editions__checkboks {
 		margin-bottom: 104px;
-		padding-top: 25px;
+		padding-top: 23px;
 		width: 100%;
 
 		span {
@@ -241,7 +241,11 @@
 		}
 	}
 
-	.editions__list {
+	.editions__docket {
+		margin-left: -5px;
+	}
+
+	.editions__list--content {
 		display: flex;
 
 		.editions__list--1 {

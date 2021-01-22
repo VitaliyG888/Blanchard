@@ -1,9 +1,10 @@
 @media (max-width: 1430px) {
 	.container {
-		width: 955px;
+		width: 1000px;
 	}
 
 	.header__container {
+		width: calc(100% - 8rem);
 		padding-top: 29px;
 		padding-right: 8px;
 		padding-bottom: 29px;
@@ -389,5 +390,9 @@
 
 	.contacts__form {
 		width: 337px;
+	}
+
+	.footer__container {
+		width: calc(100% - 8rem);
 	}
 }
