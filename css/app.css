@@ -4205,7 +4205,7 @@ div[data-custom-properties="[object Object]"] {
     line-height: 16px;
   }
   .about__container .about__description {
-    max-width: 291px;
+    max-width: 85%;
     font-size: 14px;
     line-height: 28px;
   }
@@ -4422,6 +4422,9 @@ div[data-custom-properties="[object Object]"] {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+  .about__container .about__description {
+    max-width: 291px;
   }
   .swiper-slide.editions__slider {
     width: 130px;
