@@ -2,8 +2,10 @@ let flag = 0;
 
 window.addEventListener('scroll', function () {
 	let scrollY = window.scrollY;
-	let mapOffset = document.querySelector('#YMapsID').offsetTop;
-	if ((scrollY >= mapOffset - 500) && (flag == 0)) {
+	let contactsOffset = document.querySelector('.contacts').offsetTop;
+	console.log(contactsOffset);
+	console.log(scrollY);
+	if ((scrollY >= contactsOffset - 1000) && (flag == 0)) {
 		ymaps.ready(function () {
 			var myMap = new ymaps.Map("YMapsID", {
 				center: [55.758747, 37.601187],
@@ -23,7 +25,7 @@ window.addEventListener('scroll', function () {
 				searchControlProvider: 'yandex#search'
 			}
 		});
-
 		flag = 1;
 	}
-})
+
+});
