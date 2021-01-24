@@ -360,9 +360,9 @@ input[type="number"]:focus {
   font-weight: 400;
   font-size: 18px;
   color: #ffffff;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
 }
 
 .nether__item .nether__style::before {
@@ -417,9 +417,9 @@ input[type="number"]:focus {
   border-right: 1px solid #7943a4;
   border-bottom: none;
   border-left: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
 }
 
 .nether__choice {
@@ -491,13 +491,16 @@ input[type="number"]:focus {
   width: 220px;
   height: 40px;
   color: #ffffff;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: border-color 0.2s ease-in;
+  -o-transition: border-color 0.2s ease-in;
+  transition: border-color 0.2s ease-in;
+  -webkit-transition: background-color 0.2s ease-in;
+  -o-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .nether__choice .nether__artist:focus {
-  border-color: #9d5cd0;
+  border-color: #7943a4;
   -webkit-transition: border-color 0.2s ease-in;
   -o-transition: border-color 0.2s ease-in;
   transition: border-color 0.2s ease-in;
@@ -514,9 +517,12 @@ input[type="number"]:focus {
   background-color: #9d5cd0;
   border-color: #d1a9f0;
   opacity: 0.4;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: border-color 0.2s ease-in;
+  -o-transition: border-color 0.2s ease-in;
+  transition: border-color 0.2s ease-in;
+  -webkit-transition: background-color 0.2s ease-in;
+  -o-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .nether__choice:hover .simplebar-scrollbar::before {
@@ -545,9 +551,9 @@ input[type="number"]:focus {
   position: relative;
   outline: 2px solid rgba(157, 92, 208, 0);
   padding-left: 44px;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: outline-color 0.2s ease-in;
+  -o-transition: outline-color 0.2s ease-in;
+  transition: outline-color 0.2s ease-in;
 }
 
 .search .search__magnifier {
@@ -592,9 +598,9 @@ input[type="number"]:focus {
 
 .search:focus-within {
   outline: 2px solid #9d5cd0;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: outline-color 0.2s ease-in;
+  -o-transition: outline-color 0.2s ease-in;
+  transition: outline-color 0.2s ease-in;
 }
 
 .search:hover .search__input {
@@ -954,9 +960,12 @@ div[data-custom-properties="[object Object]"] {
   outline: none;
   border: 2px solid #7943a4;
   background-color: #ececec;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: border-color 0.2s ease-in-out;
+  -o-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .swiper-button-next-st:focus::after,
@@ -971,18 +980,24 @@ div[data-custom-properties="[object Object]"] {
 .swiper-button-prev-st:hover {
   color: #ffffff;
   background-color: #9d5cd0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 .swiper-button-next-st:active,
 .swiper-button-prev-st:active {
   border: 2px solid #d1a9f0;
   background-color: #7943a4;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: border-color 0.2s ease-in-out;
+  -o-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .swiper-button-next-st::after,
@@ -1032,9 +1047,9 @@ div[data-custom-properties="[object Object]"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .swiper-slide.gallery__slider::before {
@@ -1071,10 +1086,6 @@ div[data-custom-properties="[object Object]"] {
   -webkit-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
-}
-
-.swiper-slide.gallery__slider:focus {
-  border: 3px solid #7943a4;
 }
 
 .swiper-slide.gallery__slider::before {
@@ -1247,9 +1258,9 @@ div[data-custom-properties="[object Object]"] {
   top: -5px;
   left: 4px;
   border: 1px solid rgba(157, 92, 208, 0);
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: border-color 0.2s ease-in;
+  -o-transition: border-color 0.2s ease-in;
+  transition: border-color 0.2s ease-in;
 }
 
 .gallery__description .gallery__description--authorization::after {
@@ -1260,16 +1271,16 @@ div[data-custom-properties="[object Object]"] {
   left: 6px;
   bottom: 0;
   background-color: #9d5cd0;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: width 0.2s ease-in;
+  -o-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
 }
 
 .gallery__description .gallery__description--authorization:focus::before {
   border: 1px solid #9d5cd0;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: border-color 0.2s ease-in;
+  -o-transition: border-color 0.2s ease-in;
+  transition: border-color 0.2s ease-in;
 }
 
 .gallery__description .gallery__description--authorization:hover {
@@ -1281,16 +1292,16 @@ div[data-custom-properties="[object Object]"] {
 
 .gallery__description .gallery__description--authorization:hover::after {
   width: 118px;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: width 0.2s ease-in;
+  -o-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
 }
 
 .gallery__description .gallery__description--authorization:active {
   color: #7943a4;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
 }
 
 /* catalog section */
@@ -1558,17 +1569,17 @@ div[data-custom-properties="[object Object]"] {
 
 .accordeon-title:hover::after {
   background-color: #9d5cd0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .accordeon-title:hover::before {
   border-left: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: border-color 0.2s ease-in-out;
+  -o-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
 }
 
 .accordeon-title:active::after {
@@ -1587,9 +1598,9 @@ div[data-custom-properties="[object Object]"] {
 .accordeon-content {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: max-height 0.4s ease-in-out;
+  -o-transition: max-height 0.4s ease-in-out;
+  transition: max-height 0.4s ease-in-out;
 }
 
 .accordeon-item {
@@ -1615,10 +1626,12 @@ div[data-custom-properties="[object Object]"] {
   font-size: 16px;
   text-align: left;
   color: #333333;
-  border: 1px solid rgba(157, 92, 208, 0);
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: font-weight 0.2s ease-in;
+  -o-transition: font-weight 0.2s ease-in;
+  transition: font-weight 0.2s ease-in;
+  -webkit-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
 }
 
 .accordeon-link::before {
@@ -1629,9 +1642,9 @@ div[data-custom-properties="[object Object]"] {
   top: -5px;
   left: 4px;
   border: 1px solid rgba(157, 92, 208, 0);
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: border-color 0.2s ease-in;
+  -o-transition: border-color 0.2s ease-in;
+  transition: border-color 0.2s ease-in;
 }
 
 .accordeon-link::after {
@@ -1642,16 +1655,16 @@ div[data-custom-properties="[object Object]"] {
   left: 6px;
   bottom: 0;
   background-color: #9d5cd0;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: width 0.2s ease-in;
+  -o-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
 }
 
 .accordeon-link:focus::before {
   border: 1px solid #9d5cd0;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: border-color 0.2s ease-in;
+  -o-transition: border-color 0.2s ease-in;
+  transition: border-color 0.2s ease-in;
 }
 
 .accordeon-link:hover {
@@ -1663,17 +1676,20 @@ div[data-custom-properties="[object Object]"] {
 
 .accordeon-link:hover::after {
   width: 202px;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: width 0.2s ease-in;
+  -o-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
 }
 
 .accordeon-link:active {
   font-weight: 600;
   color: #7943a4;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: font-weight 0.2s ease-in;
+  -o-transition: font-weight 0.2s ease-in;
+  transition: font-weight 0.2s ease-in;
+  -webkit-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
 }
 
 .accordeon-section.active .accordeon-title {
@@ -1789,6 +1805,10 @@ div[data-custom-properties="[object Object]"] {
   cursor: pointer;
   line-height: 23px;
   color: #9d5cd0;
+  outline: 2px solid rgba(121, 67, 164, 0);
+  -webkit-transition: outline-color 0.2s ease-in;
+  -o-transition: outline-color 0.2s ease-in;
+  transition: outline-color 0.2s ease-in;
 }
 
 .developments__card .developments__link::after {
@@ -1804,13 +1824,16 @@ div[data-custom-properties="[object Object]"] {
 
 .developments__card .developments__link:hover {
   font-weight: 700;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: font-weight 0.3s ease-in-out;
+  -o-transition: font-weight 0.3s ease-in-out;
+  transition: font-weight 0.3s ease-in-out;
 }
 
 .developments__card .developments__link:hover::after {
   border-bottom: 2px solid #9d5cd0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .developments__card .developments__link:active {
@@ -1822,6 +1845,9 @@ div[data-custom-properties="[object Object]"] {
 
 .developments__card .developments__link:focus {
   outline: 2px solid #7943a4;
+  -webkit-transition: outline-color 0.2s ease-in;
+  -o-transition: outline-color 0.2s ease-in;
+  transition: outline-color 0.2s ease-in;
 }
 
 .developments__card:nth-child(4) {
@@ -1846,31 +1872,52 @@ div[data-custom-properties="[object Object]"] {
   background: none;
   border: 2px solid #9d5cd0;
   border-radius: 100px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .developments__btn:hover {
   background-color: #9d5cd0;
   color: #ffffff;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .developments__btn:active {
   border: 3px solid #d1a9f0;
   background-color: #7943a4;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
 }
 
 .developments__btn:focus {
   background-color: #9d5cd0;
   border: 3px solid #d1a9f0;
   color: #ffffff;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 /* editions section */
@@ -1917,9 +1964,9 @@ div[data-custom-properties="[object Object]"] {
   margin-bottom: 14.2px;
   cursor: pointer;
   color: #ffffff;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
 }
 
 .editions__label.lable__last {
@@ -1937,9 +1984,13 @@ div[data-custom-properties="[object Object]"] {
   bottom: 4px;
   background: none;
   border: 1px solid #ffffff;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  outline: 3px solid rgba(157, 92, 208, 0);
+  -webkit-transition: border-color 0.3s ease-in;
+  -o-transition: border-color 0.3s ease-in;
+  transition: border-color 0.3s ease-in;
+  -webkit-transition: outline-color 0.3s ease-in;
+  -o-transition: outline-color 0.3s ease-in;
+  transition: outline-color 0.3s ease-in;
 }
 
 .editions__label::after {
@@ -1952,64 +2003,67 @@ div[data-custom-properties="[object Object]"] {
   height: 6px;
   border-radius: 50%;
   background-color: #ffffff;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: background-color 0.3s ease-in;
+  -o-transition: background-color 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
 }
 
 .editions__check:checked + .editions__label::before {
   border-color: #c283f3;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: border-color 0.3s ease-in;
+  -o-transition: border-color 0.3s ease-in;
+  transition: border-color 0.3s ease-in;
 }
 
 .editions__check:checked + .editions__label::after {
   display: block;
   background-color: #c283f3;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: background-color 0.3s ease-in;
+  -o-transition: background-color 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
 }
 
 .editions__check:checked + .editions__label {
   color: #c283f3;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
 }
 
 .editions__check[type="checkbox"]:focus + .editions__label::before {
   outline: 3px solid #9d5cd0;
   border: none;
+  -webkit-transition: outline-color 0.3s ease-in;
+  -o-transition: outline-color 0.3s ease-in;
+  transition: outline-color 0.3s ease-in;
 }
 
 .editions__label:hover {
   color: #c283f3;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
 }
 
 .editions__label:hover::before {
   border-color: #c283f3;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: border-color 0.3s ease-in;
+  -o-transition: border-color 0.3s ease-in;
+  transition: border-color 0.3s ease-in;
 }
 
 .editions__label:active {
   color: #7943a4;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
 }
 
 .editions__label:active::before {
   border-color: #7943a4;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: border-color 0.3s ease-in;
+  -o-transition: border-color 0.3s ease-in;
+  transition: border-color 0.3s ease-in;
 }
 
 .editions__label span {
@@ -2199,29 +2253,44 @@ div[data-custom-properties="[object Object]"] {
   font-size: 16px;
   text-align: center;
   color: #ffffff;
-  background: none;
+  background: transparent;
   border: 3px solid #9d5cd0;
   border-radius: 100px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
 }
 
 .editions__order:hover {
   background-color: #9d5cd0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .editions__order:active {
   background: #7943a4;
   border: 3px solid #d1a9f0;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
 }
 
 .editions__order:focus {
   background: #7943a4;
   border: 3px solid #d1a9f0;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
 }
 
 .swiper-container#slider2 {
@@ -2315,9 +2384,6 @@ div[data-custom-properties="[object Object]"] {
   line-height: 16px;
   content: attr(aria-label);
   padding: 9px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 .tooltip-toggle::after {
@@ -2373,9 +2439,9 @@ div[data-custom-properties="[object Object]"] {
   position: relative;
   outline: 2px solid rgba(157, 92, 208, 0);
   color: #9d5cd0;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: outline-color 0.2s ease-in;
+  -o-transition: outline-color 0.2s ease-in;
+  transition: outline-color 0.2s ease-in;
 }
 
 .projects__link::after {
@@ -2386,23 +2452,23 @@ div[data-custom-properties="[object Object]"] {
   left: 0px;
   bottom: 0;
   background-color: #9d5cd0;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: width 0.2s ease-in;
+  -o-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
 }
 
 .projects__link:hover::after {
   width: 247px;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: width 0.2s ease-in;
+  -o-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
 }
 
 .projects__link:focus {
   outline: 2px solid #9d5cd0;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: outline-color 0.2s ease-in;
+  -o-transition: outline-color 0.2s ease-in;
+  transition: outline-color 0.2s ease-in;
 }
 
 .swiper-slide.projects__slider {
@@ -2491,9 +2557,9 @@ div[data-custom-properties="[object Object]"] {
   position: absolute;
   top: 83px;
   background-color: #ececec;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: background-color 0.2s ease-in;
+  -o-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .projects__swiper-button3.swiper-button .swiper-button-prev.swiper-button-prev-st.button3-prev::after,
@@ -2508,17 +2574,20 @@ div[data-custom-properties="[object Object]"] {
 .projects__swiper-button3.swiper-button .swiper-button-next.swiper-button-next-st.button3-next:focus {
   background-color: #ececec;
   border: 2px solid #7943a4;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: background-color 0.2s ease-in;
+  -o-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+  -webkit-transition: border-color 0.2s ease-in;
+  -o-transition: border-color 0.2s ease-in;
+  transition: border-color 0.2s ease-in;
 }
 
 .projects__swiper-button3.swiper-button .swiper-button-prev.swiper-button-prev-st.button3-prev:hover,
 .projects__swiper-button3.swiper-button .swiper-button-next.swiper-button-next-st.button3-next:hover {
   background-color: #9d5cd0;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: background-color 0.2s ease-in;
+  -o-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .projects__swiper-button3.swiper-button .swiper-button-prev.swiper-button-prev-st.button3-prev:hover::after,
@@ -2533,9 +2602,12 @@ div[data-custom-properties="[object Object]"] {
 .projects__swiper-button3.swiper-button .swiper-button-next.swiper-button-next-st.button3-next:active {
   border: 2px solid #d1a9f0;
   background-color: #7943a4;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: border-color 0.2s ease-in;
+  -o-transition: border-color 0.2s ease-in;
+  transition: border-color 0.2s ease-in;
+  -webkit-transition: background-color 0.2s ease-in;
+  -o-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .projects__swiper-button3.swiper-button .swiper-button-prev.swiper-button-prev-st.button3-prev:active::after,
@@ -2643,26 +2715,35 @@ div[data-custom-properties="[object Object]"] {
   font-size: 18px;
   text-align: center;
   color: #9d5cd0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .contacts__form .contacts__button:hover {
   background-color: #9d5cd0;
   color: #ffffff;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .contacts__form .contacts__button:focus {
   background-color: #7943a4;
   border-color: #d1a9f0;
   color: #ffffff;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .contacts__form .contacts__tweet {
@@ -3792,7 +3873,7 @@ div[data-custom-properties="[object Object]"] {
   .first__description {
     width: 324px;
     margin-bottom: 27px;
-    padding: 13px 18px;
+    padding: 13px 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -4199,7 +4280,6 @@ div[data-custom-properties="[object Object]"] {
   .first__description {
     width: 305px;
     margin-bottom: 27px;
-    padding: 13px 18px;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
@@ -4422,6 +4502,9 @@ div[data-custom-properties="[object Object]"] {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+  .first__description {
+    padding: 13px 18px;
   }
   .about__container .about__description {
     max-width: 291px;

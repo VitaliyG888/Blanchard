@@ -76,19 +76,22 @@
 		font-size: 18px;
 		text-align: center;
 		color: $first-color;
-		transition: all 0.3s ease-in-out;
+		transition: color 0.3s ease-in-out;
+		transition: background-color 0.3s ease-in-out;
 
 		&:hover {
 			background-color: $first-color;
 			color: $Wight;
-			transition: all 0.3s ease-in-out;
+			transition: color 0.3s ease-in-out;
+			transition: background-color 0.3s ease-in-out;
 		}
 
 		&:focus {
 			background-color: $second-color;
 			border-color: $extra-lite;
 			color: $Wight;
-			transition: all 0.3s ease-in-out;
+			transition: color 0.3s ease-in-out;
+			transition: background-color 0.3s ease-in-out;
 		}
 	}
 

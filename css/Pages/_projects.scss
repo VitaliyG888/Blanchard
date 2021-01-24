@@ -90,7 +90,6 @@
 		line-height: 16px;
 		content: attr(aria-label);
 		padding: 9px;
-		transition: all 0.3s ease;
 	}
 
 	&::after {
@@ -155,7 +154,7 @@
 	position: relative;
 	outline: 2px solid rgba(157, 92, 208, 0);
 	color: $first-color;
-	transition: all 0.2s ease-in;
+	transition: outline-color 0.2s ease-in;
 
 	&::after {
 		content: '';
@@ -165,17 +164,17 @@
 		left: 0px;
 		bottom: 0;
 		background-color: $first-color;
-		transition: all 0.2s ease-in;
+		transition: width 0.2s ease-in;
 	}
 
 	&:hover::after {
 		width: 247px;
-		transition: all 0.2s ease-in;
+		transition: width 0.2s ease-in;
 	}
 
 	&:focus {
 		outline: 2px solid rgba(157, 92, 208, 1);
-		transition: all 0.2s ease-in;
+		transition: outline-color 0.2s ease-in;
 	}
 }
 
@@ -252,7 +251,7 @@
 		position: absolute;
 		top: 83px;
 		background-color: $btn-slider-color2;
-		transition: all 0.2s ease-in;
+		transition: background-color 0.2s ease-in;
 
 		&::after {
 			color: $Black;
@@ -262,12 +261,13 @@
 		&:focus {
 			background-color: $btn-slider-color2;
 			border: 2px solid $second-color;
-			transition: all 0.2s ease-in;
+			transition: background-color 0.2s ease-in;
+			transition: border-color 0.2s ease-in;
 		}
 
 		&:hover {
 			background-color: $first-color;
-			transition: all 0.2s ease-in;
+			transition: background-color 0.2s ease-in;
 		}
 
 		&:hover::after {
@@ -278,7 +278,8 @@
 		&:active {
 			border: 2px solid $extra-lite;
 			background-color: $second-color;
-			transition: all 0.2s ease-in;
+			transition: border-color 0.2s ease-in;
+			transition: background-color 0.2s ease-in;
 		}
 
 		&:active::after {

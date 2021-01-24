@@ -43,7 +43,7 @@
 	margin-bottom: 14.2px;
 	cursor: pointer;
 	color: $Wight;
-	transition: all 0.3s ease-in;
+	transition: color 0.3s ease-in;
 
 	&.lable__last {
 		margin-bottom: 0;
@@ -60,7 +60,9 @@
 		bottom: 4px;
 		background: none;
 		border: 1px solid $Wight;
-		transition: all 0.3s ease-in;
+		outline: 3px solid rgba($first-color, 0);
+		transition: border-color 0.3s ease-in;
+		transition: outline-color 0.3s ease-in;
 	}
 
 	&::after {
@@ -73,49 +75,50 @@
 		height: 6px;
 		border-radius: 50%;
 		background-color: $Wight;
-		transition: all 0.3s ease-in;
+		transition: background-color 0.3s ease-in;
 	}
 }
 
 .editions__check:checked+.editions__label::before {
 	border-color: $first-lite;
-	transition: all 0.3s ease-in;
+	transition: border-color 0.3s ease-in;
 }
 
 .editions__check:checked+.editions__label::after {
 	display: block;
 	background-color: $first-lite;
-	transition: all 0.3s ease-in;
+	transition: background-color 0.3s ease-in;
 }
 
 .editions__check:checked+.editions__label {
 	color: $first-lite;
-	transition: all 0.3s ease-in;
+	transition: color 0.3s ease-in;
 }
 
 .editions__check[type="checkbox"]:focus+.editions__label::before {
-	outline: 3px solid $first-color;
+	outline: 3px solid rgba($first-color, 1);
 	border: none;
+	transition: outline-color 0.3s ease-in;
 }
 
 .editions__label:hover {
 	color: $first-lite;
-	transition: all 0.3s ease-in;
+	transition: color 0.3s ease-in;
 }
 
 .editions__label:hover::before {
 	border-color: $first-lite;
-	transition: all 0.3s ease-in;
+	transition: border-color 0.3s ease-in;
 }
 
 .editions__label:active {
 	color: $second-color;
-	transition: all 0.3s ease-in;
+	transition: color 0.3s ease-in;
 }
 
 .editions__label:active::before {
 	border-color: $second-color;
-	transition: all 0.3s ease-in;
+	transition: border-color 0.3s ease-in;
 }
 
 .editions__label span {
@@ -308,24 +311,30 @@
 	font-size: 16px;
 	text-align: center;
 	color: $Wight;
-	background: none;
+	background: transparent;
 	border: 3px solid $first-color;
 	border-radius: 100px;
-	transition: all 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
+	transition: border-color 0.3s ease-in-out;
+
 
 	&:hover {
 		background-color: $first-color;
-		transition: all 0.3s ease-in-out;
+		transition: background-color 0.3s ease-in-out;
 	}
 
 	&:active {
 		background: $second-color;
 		border: 3px solid $extra-lite;
+		transition: background-color 0.3s ease-in-out;
+		transition: border-color 0.3s ease-in-out;
 	}
 
 	&:focus {
 		background: $second-color;
 		border: 3px solid $extra-lite;
+		transition: background-color 0.3s ease-in-out;
+		transition: border-color 0.3s ease-in-out;
 	}
 }
 
