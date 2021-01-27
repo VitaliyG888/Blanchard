@@ -16,11 +16,6 @@
 		margin-right: 0;
 	}
 
-	.swiper-container#slider1 {
-		width: 292px;
-		height: 367px;
-	}
-
 	.first .first__title {
 		width: 261px;
 		margin-left: 3px;
@@ -42,6 +37,11 @@
 		max-width: 85%;
 		font-size: 14px;
 		line-height: 28px;
+	}
+
+	.swiper-container#slider1 {
+		width: 292px;
+		height: 367px;
 	}
 
 	.gallery .gallery__container {

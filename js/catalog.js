@@ -158,7 +158,15 @@ document.addEventListener('DOMContentLoaded', function () {
 							item.addEventListener('click', function (event) {
 								accordeonTitleAll.forEach((elem) => {
 									if (event.target == elem) {
-										let activeItem = item.classList.contains('active');
+										let activeItem = item.classList.contains('active'),
+											accordeonLink = item.querySelectorAll('.accordeon-link');
+
+										[].forEach.call(accordeonLink, function (link) {
+											if (event.target.className == link.className) {
+												event.stopPropagation();
+												console.log(event);
+											}
+										})
 
 										accordeonSectionAll.forEach(function (section) {
 											section.querySelector('.js-content').style.maxHeight = '0px'

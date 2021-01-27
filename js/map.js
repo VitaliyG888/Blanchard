@@ -3,8 +3,6 @@ let flag = 0;
 window.addEventListener('scroll', function () {
 	let scrollY = window.scrollY;
 	let contactsOffset = document.querySelector('.contacts').offsetTop;
-	console.log(contactsOffset);
-	console.log(scrollY);
 	if ((scrollY >= contactsOffset - 1000) && (flag == 0)) {
 		ymaps.ready(function () {
 			var myMap = new ymaps.Map("YMapsID", {
