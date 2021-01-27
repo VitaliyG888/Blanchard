@@ -197,7 +197,6 @@ input[type="number"]:focus {
 	letter-spacing: 0.15px;
 	color: #ffffff;
 	-webkit-transition: color 0.3s ease-in-out;
-	-o-transition: color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
 }
 
@@ -210,28 +209,24 @@ input[type="number"]:focus {
 	height: 30px;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s ease-in;
-	-o-transition: opacity 0.3s ease-in;
 	transition: opacity 0.3s ease-in;
 }
 
 .nav-prime__link:focus::before {
 	opacity: 1;
 	-webkit-transition: opacity 0.3s ease-in;
-	-o-transition: opacity 0.3s ease-in;
 	transition: opacity 0.3s ease-in;
 }
 
 .nav-prime__link:hover {
 	color: #9d5cd0;
 	-webkit-transition: color 0.3s ease-in-out;
-	-o-transition: color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
 }
 
 .nav-prime__link:active {
 	color: #7943a4;
 	-webkit-transition: color 0.3s ease-in-out;
-	-o-transition: color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
 }
 
@@ -242,7 +237,6 @@ input[type="number"]:focus {
 	font-size: 18px;
 	color: #ffffff;
 	-webkit-transition: color 0.3s ease-in-out;
-	-o-transition: color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
 }
 
@@ -255,7 +249,6 @@ input[type="number"]:focus {
 	height: 30px;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s ease-in;
-	-o-transition: opacity 0.3s ease-in;
 	transition: opacity 0.3s ease-in;
 }
 
@@ -266,42 +259,36 @@ input[type="number"]:focus {
 .header__admission svg path {
 	fill: #ffffff;
 	-webkit-transition: fill 0.3s ease-in;
-	-o-transition: fill 0.3s ease-in;
 	transition: fill 0.3s ease-in;
 }
 
 .header__admission:focus::before {
 	opacity: 1;
 	-webkit-transition: opacity 0.3s ease-in;
-	-o-transition: opacity 0.3s ease-in;
 	transition: opacity 0.3s ease-in;
 }
 
 .header__admission:hover {
 	color: #9d5cd0;
 	-webkit-transition: color 0.3s ease-in-out;
-	-o-transition: color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
 }
 
 .header__admission:hover svg path {
 	fill: #9d5cd0;
 	-webkit-transition: fill 0.3s ease-in;
-	-o-transition: fill 0.3s ease-in;
 	transition: fill 0.3s ease-in;
 }
 
 .header__admission:active {
 	color: #7943a4;
 	-webkit-transition: color 0.3s ease-in-out;
-	-o-transition: color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
 }
 
 .header__admission:active svg path {
 	fill: #7943a4;
 	-webkit-transition: fill 0.3s ease-in;
-	-o-transition: fill 0.3s ease-in;
 	transition: fill 0.3s ease-in;
 }
 
@@ -327,11 +314,9 @@ input[type="number"]:focus {
 .nether__item:hover .nether__choice,
 .nether__item:focus .nether__choice {
 	-webkit-transform: scaleY(1);
-	-ms-transform: scaleY(1);
 	transform: scaleY(1);
 	-webkit-transition: -webkit-transform 0.4s ease-in-out;
 	transition: -webkit-transform 0.4s ease-in-out;
-	-o-transition: transform 0.4s ease-in-out;
 	transition: transform 0.4s ease-in-out;
 	transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
@@ -339,7 +324,6 @@ input[type="number"]:focus {
 .nether__item:hover .nether__style {
 	color: #9d5cd0;
 	-webkit-transition: color 0.3s ease-in;
-	-o-transition: color 0.3s ease-in;
 	transition: color 0.3s ease-in;
 }
 
@@ -351,7 +335,6 @@ input[type="number"]:focus {
 	border-bottom: none;
 	border-left: none;
 	-webkit-transition: border-color 0.3s ease-in-out;
-	-o-transition: border-color 0.3s ease-in-out;
 	transition: border-color 0.3s ease-in-out;
 }
 
@@ -362,7 +345,6 @@ input[type="number"]:focus {
 	font-size: 18px;
 	color: #ffffff;
 	-webkit-transition: color 0.3s ease-in;
-	-o-transition: color 0.3s ease-in;
 	transition: color 0.3s ease-in;
 }
 
@@ -376,7 +358,6 @@ input[type="number"]:focus {
 	height: 30px;
 	opacity: 0;
 	-webkit-transition: opasity 0.3s ease-in;
-	-o-transition: opasity 0.3s ease-in;
 	transition: opasity 0.3s ease-in;
 }
 
@@ -391,24 +372,20 @@ input[type="number"]:focus {
 	width: 8px;
 	height: 8px;
 	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	-webkit-transition: border-color 0.3s ease-in-out;
-	-o-transition: border-color 0.3s ease-in-out;
 	transition: border-color 0.3s ease-in-out;
 }
 
 .nether__item .nether__style:focus::before {
 	opacity: 1;
 	-webkit-transition: opasity 0.3s ease-in;
-	-o-transition: opasity 0.3s ease-in;
 	transition: opasity 0.3s ease-in;
 }
 
 .nether__item .nether__style:active {
 	color: #7943a4;
 	-webkit-transition: color 0.3s ease-in;
-	-o-transition: color 0.3s ease-in;
 	transition: color 0.3s ease-in;
 }
 
@@ -419,7 +396,6 @@ input[type="number"]:focus {
 	border-bottom: none;
 	border-left: none;
 	-webkit-transition: border-color 0.3s ease-in-out;
-	-o-transition: border-color 0.3s ease-in-out;
 	transition: border-color 0.3s ease-in-out;
 }
 
@@ -432,14 +408,11 @@ input[type="number"]:focus {
 	max-height: 300px;
 	background: rgba(0, 0, 0, 0.4);
 	-webkit-transform: scaleY(0);
-	-ms-transform: scaleY(0);
 	transform: scaleY(0);
 	-webkit-transform-origin: 0 0;
-	-ms-transform-origin: 0 0;
 	transform-origin: 0 0;
 	-webkit-transition: -webkit-transform 0.3s ease-in;
 	transition: -webkit-transform 0.3s ease-in;
-	-o-transition: transform 0.3s ease-in;
 	transition: transform 0.3s ease-in;
 	transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
@@ -454,7 +427,6 @@ input[type="number"]:focus {
 	background-color: #ffffff;
 	opacity: 1;
 	-webkit-transition: background-color 0.3s ease-in;
-	-o-transition: background-color 0.3s ease-in;
 	transition: background-color 0.3s ease-in;
 }
 
@@ -493,24 +465,20 @@ input[type="number"]:focus {
 	height: 40px;
 	color: #ffffff;
 	-webkit-transition: border-color 0.2s ease-in;
-	-o-transition: border-color 0.2s ease-in;
 	transition: border-color 0.2s ease-in;
 	-webkit-transition: background-color 0.2s ease-in;
-	-o-transition: background-color 0.2s ease-in;
 	transition: background-color 0.2s ease-in;
 }
 
 .nether__choice .nether__artist:focus {
 	border-color: #7943a4;
 	-webkit-transition: border-color 0.2s ease-in;
-	-o-transition: border-color 0.2s ease-in;
 	transition: border-color 0.2s ease-in;
 }
 
 .nether__choice .nether__artist:hover {
 	border-color: #9d5cd0;
 	-webkit-transition: border-color 0.2s ease-in;
-	-o-transition: border-color 0.2s ease-in;
 	transition: border-color 0.2s ease-in;
 }
 
@@ -519,10 +487,8 @@ input[type="number"]:focus {
 	border-color: #d1a9f0;
 	opacity: 0.4;
 	-webkit-transition: border-color 0.2s ease-in;
-	-o-transition: border-color 0.2s ease-in;
 	transition: border-color 0.2s ease-in;
 	-webkit-transition: background-color 0.2s ease-in;
-	-o-transition: background-color 0.2s ease-in;
 	transition: background-color 0.2s ease-in;
 }
 
@@ -553,7 +519,6 @@ input[type="number"]:focus {
 	outline: 2px solid rgba(157, 92, 208, 0);
 	padding-left: 44px;
 	-webkit-transition: outline-color 0.2s ease-in;
-	-o-transition: outline-color 0.2s ease-in;
 	transition: outline-color 0.2s ease-in;
 }
 
@@ -577,7 +542,6 @@ input[type="number"]:focus {
 	color: rgba(255, 255, 255, 0.85);
 	background: none;
 	-webkit-transition: border-color 0.2s ease-in;
-	-o-transition: border-color 0.2s ease-in;
 	transition: border-color 0.2s ease-in;
 }
 
@@ -600,14 +564,12 @@ input[type="number"]:focus {
 .search:focus-within {
 	outline: 2px solid #9d5cd0;
 	-webkit-transition: outline-color 0.2s ease-in;
-	-o-transition: outline-color 0.2s ease-in;
 	transition: outline-color 0.2s ease-in;
 }
 
 .search:hover .search__input {
 	border-bottom: 1px solid #9d5cd0;
 	-webkit-transition: border-color 0.2s ease-in;
-	-o-transition: border-color 0.2s ease-in;
 	transition: border-color 0.2s ease-in;
 }
 
@@ -615,7 +577,6 @@ input[type="number"]:focus {
 .search .search__magnifier--path {
 	fill: #ffffff;
 	-webkit-transition: fill 0.2s ease-in;
-	-o-transition: fill 0.2s ease-in;
 	transition: fill 0.2s ease-in;
 }
 
@@ -623,14 +584,12 @@ input[type="number"]:focus {
 .search:hover .search__magnifier--path {
 	fill: #9d5cd0;
 	-webkit-transition: fill 0.2s ease-in;
-	-o-transition: fill 0.2s ease-in;
 	transition: fill 0.2s ease-in;
 }
 
 .search:active .search__input {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.85);
 	-webkit-transition: border-color 0.2s ease-in;
-	-o-transition: border-color 0.2s ease-in;
 	transition: border-color 0.2s ease-in;
 }
 
@@ -638,7 +597,6 @@ input[type="number"]:focus {
 .search:active .search__magnifier--path {
 	fill: #7943a4;
 	-webkit-transition: fill 0.2s ease-in;
-	-o-transition: fill 0.2s ease-in;
 	transition: fill 0.2s ease-in;
 }
 
@@ -759,7 +717,6 @@ from {
 	color: #ffffff;
 	background-color: #9d5cd0;
 	-webkit-transition: all 0.3s ease-in;
-	-o-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
 }
 
@@ -767,14 +724,12 @@ from {
 	border: 3px solid #7943a4;
 	background-color: #9d5cd0;
 	-webkit-transition: all 0.3s ease-in;
-	-o-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
 }
 
 .first__subscription:hover {
 	border: 3px solid #d1a9f0;
 	-webkit-transition: all 0.3s ease-in;
-	-o-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
 }
 
@@ -782,7 +737,6 @@ from {
 	border: 3px solid #d1a9f0;
 	background-color: #7943a4;
 	-webkit-transition: all 0.3s ease-in;
-	-o-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
 }
 
@@ -931,7 +885,6 @@ div[data-custom-properties="[object Object]"] {
 	border-top: 1px solid #ffffff;
 	border-right: 1px solid #ffffff;
 	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 
@@ -939,7 +892,6 @@ div[data-custom-properties="[object Object]"] {
 	border-bottom: 1px solid #ffffff;
 	border-left: 1px solid #ffffff;
 	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 
@@ -965,7 +917,6 @@ div[data-custom-properties="[object Object]"] {
 	background-color: #666666;
 	padding: 3px 10px;
 	-webkit-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
 
@@ -979,10 +930,8 @@ div[data-custom-properties="[object Object]"] {
 	border: 2px solid #7943a4;
 	background-color: #ececec;
 	-webkit-transition: border-color 0.2s ease-in-out;
-	-o-transition: border-color 0.2s ease-in-out;
 	transition: border-color 0.2s ease-in-out;
 	-webkit-transition: background-color 0.2s ease-in-out;
-	-o-transition: background-color 0.2s ease-in-out;
 	transition: background-color 0.2s ease-in-out;
 }
 
@@ -990,7 +939,6 @@ div[data-custom-properties="[object Object]"] {
 .swiper-button-prev-st:focus::after {
 	color: #000000;
 	-webkit-transition: color 0.2s ease-in-out;
-	-o-transition: color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out;
 }
 
@@ -999,10 +947,8 @@ div[data-custom-properties="[object Object]"] {
 	color: #ffffff;
 	background-color: #9d5cd0;
 	-webkit-transition: background-color 0.2s ease-in-out;
-	-o-transition: background-color 0.2s ease-in-out;
 	transition: background-color 0.2s ease-in-out;
 	-webkit-transition: color 0.2s ease-in-out;
-	-o-transition: color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out;
 }
 
@@ -1011,10 +957,8 @@ div[data-custom-properties="[object Object]"] {
 	border: 2px solid #d1a9f0;
 	background-color: #7943a4;
 	-webkit-transition: border-color 0.2s ease-in-out;
-	-o-transition: border-color 0.2s ease-in-out;
 	transition: border-color 0.2s ease-in-out;
 	-webkit-transition: background-color 0.2s ease-in-out;
-	-o-transition: background-color 0.2s ease-in-out;
 	transition: background-color 0.2s ease-in-out;
 }
 
@@ -1023,7 +967,6 @@ div[data-custom-properties="[object Object]"] {
 	font-size: 10px;
 	color: #ffffff;
 	-webkit-transition: color 0.2s ease-in-out;
-	-o-transition: color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out;
 }
 
@@ -1033,7 +976,6 @@ div[data-custom-properties="[object Object]"] {
 .swiper-button-prev.swiper-button-prev-st:active::after {
 	color: #ffffff;
 	-webkit-transition: color 0.2s ease-in-out;
-	-o-transition: color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out;
 }
 
@@ -1066,7 +1008,6 @@ div[data-custom-properties="[object Object]"] {
 	box-sizing: border-box;
 	cursor: pointer;
 	-webkit-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 }
 
@@ -1081,7 +1022,6 @@ div[data-custom-properties="[object Object]"] {
 	background-color: #d1a9f0;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 }
 
@@ -1092,7 +1032,6 @@ div[data-custom-properties="[object Object]"] {
 	top: 50%;
 	z-index: 2;
 	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	width: 310px;
 	height: 310px;
@@ -1102,28 +1041,24 @@ div[data-custom-properties="[object Object]"] {
 	background-repeat: no-repeat;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 }
 
 .swiper-slide.gallery__slider::before {
 	opacity: 0;
 	-webkit-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 }
 
 .swiper-slide.gallery__slider:hover::after {
 	opacity: 1;
 	-webkit-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 }
 
 .swiper-slide.gallery__slider:active::before {
 	opacity: 0.4;
 	-webkit-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 }
 
@@ -1277,7 +1212,6 @@ div[data-custom-properties="[object Object]"] {
 	left: 4px;
 	border: 1px solid rgba(157, 92, 208, 0);
 	-webkit-transition: border-color 0.2s ease-in;
-	-o-transition: border-color 0.2s ease-in;
 	transition: border-color 0.2s ease-in;
 }
 
@@ -1290,35 +1224,30 @@ div[data-custom-properties="[object Object]"] {
 	bottom: 0;
 	background-color: #9d5cd0;
 	-webkit-transition: width 0.2s ease-in;
-	-o-transition: width 0.2s ease-in;
 	transition: width 0.2s ease-in;
 }
 
 .gallery__description .gallery__description--authorization:focus::before {
 	border: 1px solid #9d5cd0;
 	-webkit-transition: border-color 0.2s ease-in;
-	-o-transition: border-color 0.2s ease-in;
 	transition: border-color 0.2s ease-in;
 }
 
 .gallery__description .gallery__description--authorization:hover {
 	color: #9d5cd0;
 	-webkit-transition: color 0.2s ease-in;
-	-o-transition: color 0.2s ease-in;
 	transition: color 0.2s ease-in;
 }
 
 .gallery__description .gallery__description--authorization:hover::after {
 	width: 118px;
 	-webkit-transition: width 0.2s ease-in;
-	-o-transition: width 0.2s ease-in;
 	transition: width 0.2s ease-in;
 }
 
 .gallery__description .gallery__description--authorization:active {
 	color: #7943a4;
 	-webkit-transition: color 0.2s ease-in;
-	-o-transition: color 0.2s ease-in;
 	transition: color 0.2s ease-in;
 }
 
@@ -1368,7 +1297,6 @@ div[data-custom-properties="[object Object]"] {
 	border-color: transparent;
 	border-radius: 100px;
 	-webkit-transition: border-color 0.2s linear;
-	-o-transition: border-color 0.2s linear;
 	transition: border-color 0.2s linear;
 }
 
@@ -1386,28 +1314,24 @@ div[data-custom-properties="[object Object]"] {
 	box-shadow: 0px 0px 19px -2px;
 	color: transparent;
 	-webkit-transition: color 0.2s linear;
-	-o-transition: color 0.2s linear;
 	transition: color 0.2s linear;
 }
 
 .tab-nav__link:hover::before {
 	color: #000000;
 	-webkit-transition: color 0.2s linear;
-	-o-transition: color 0.2s linear;
 	transition: color 0.2s linear;
 }
 
 .tab-nav__link:active::after {
 	border-color: #9d5cd0;
 	-webkit-transition: border-color 0.2s linear;
-	-o-transition: border-color 0.2s linear;
 	transition: border-color 0.2s linear;
 }
 
 .tab-nav__link:focus::after {
 	border-color: #9d5cd0;
 	-webkit-transition: border-color 0.2s linear;
-	-o-transition: border-color 0.2s linear;
 	transition: border-color 0.2s linear;
 }
 
@@ -1566,7 +1490,6 @@ div[data-custom-properties="[object Object]"] {
 	border-left: 1px solid #000000;
 	border-bottom: 1px solid #000000;
 	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 
@@ -1585,14 +1508,12 @@ div[data-custom-properties="[object Object]"] {
 .accordeon-title:hover {
 	color: #9d5cd0;
 	-webkit-transition: color 0.2s ease-in-out;
-	-o-transition: color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out;
 }
 
 .accordeon-title:hover::after {
 	background-color: #9d5cd0;
 	-webkit-transition: background-color 0.2s ease-in-out;
-	-o-transition: background-color 0.2s ease-in-out;
 	transition: background-color 0.2s ease-in-out;
 }
 
@@ -1600,7 +1521,6 @@ div[data-custom-properties="[object Object]"] {
 	border-left: 1px solid #ffffff;
 	border-bottom: 1px solid #ffffff;
 	-webkit-transition: border-color 0.2s ease-in-out;
-	-o-transition: border-color 0.2s ease-in-out;
 	transition: border-color 0.2s ease-in-out;
 }
 
@@ -1621,7 +1541,6 @@ div[data-custom-properties="[object Object]"] {
 	max-height: 0;
 	overflow: hidden;
 	-webkit-transition: max-height 0.4s ease-in-out;
-	-o-transition: max-height 0.4s ease-in-out;
 	transition: max-height 0.4s ease-in-out;
 }
 
@@ -1647,10 +1566,8 @@ div[data-custom-properties="[object Object]"] {
 	text-align: left;
 	color: #333333;
 	-webkit-transition: font-weight 0.2s ease-in;
-	-o-transition: font-weight 0.2s ease-in;
 	transition: font-weight 0.2s ease-in;
 	-webkit-transition: color 0.2s ease-in;
-	-o-transition: color 0.2s ease-in;
 	transition: color 0.2s ease-in;
 }
 
@@ -1663,7 +1580,6 @@ div[data-custom-properties="[object Object]"] {
 	left: 4px;
 	border: 1px solid rgba(157, 92, 208, 0);
 	-webkit-transition: border-color 0.2s ease-in;
-	-o-transition: border-color 0.2s ease-in;
 	transition: border-color 0.2s ease-in;
 }
 
@@ -1676,28 +1592,24 @@ div[data-custom-properties="[object Object]"] {
 	bottom: 0;
 	background-color: #9d5cd0;
 	-webkit-transition: width 0.2s ease-in;
-	-o-transition: width 0.2s ease-in;
 	transition: width 0.2s ease-in;
 }
 
 .accordeon-link:focus::before {
 	border: 1px solid #9d5cd0;
 	-webkit-transition: border-color 0.2s ease-in;
-	-o-transition: border-color 0.2s ease-in;
 	transition: border-color 0.2s ease-in;
 }
 
 .accordeon-link:hover {
 	color: #9d5cd0;
 	-webkit-transition: color 0.2s ease-in;
-	-o-transition: color 0.2s ease-in;
 	transition: color 0.2s ease-in;
 }
 
 .accordeon-link:hover::after {
 	width: 202px;
 	-webkit-transition: width 0.2s ease-in;
-	-o-transition: width 0.2s ease-in;
 	transition: width 0.2s ease-in;
 }
 
@@ -1705,10 +1617,8 @@ div[data-custom-properties="[object Object]"] {
 	font-weight: 600;
 	color: #7943a4;
 	-webkit-transition: font-weight 0.2s ease-in;
-	-o-transition: font-weight 0.2s ease-in;
 	transition: font-weight 0.2s ease-in;
 	-webkit-transition: color 0.2s ease-in;
-	-o-transition: color 0.2s ease-in;
 	transition: color 0.2s ease-in;
 }
 
@@ -1729,7 +1639,6 @@ div[data-custom-properties="[object Object]"] {
 	border-left: none;
 	border-bottom: none;
 	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 
@@ -1827,7 +1736,6 @@ div[data-custom-properties="[object Object]"] {
 	color: #9d5cd0;
 	outline: 2px solid rgba(121, 67, 164, 0);
 	-webkit-transition: outline-color 0.2s ease-in;
-	-o-transition: outline-color 0.2s ease-in;
 	transition: outline-color 0.2s ease-in;
 }
 
@@ -1838,35 +1746,30 @@ div[data-custom-properties="[object Object]"] {
 	width: 97px;
 	border-bottom: 1px solid #9d5cd0;
 	-webkit-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
 
 .developments__card .developments__link:hover {
 	font-weight: 700;
 	-webkit-transition: font-weight 0.3s ease-in-out;
-	-o-transition: font-weight 0.3s ease-in-out;
 	transition: font-weight 0.3s ease-in-out;
 }
 
 .developments__card .developments__link:hover::after {
 	border-bottom: 2px solid #9d5cd0;
 	-webkit-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
 
 .developments__card .developments__link:active {
 	color: #7943a4;
 	-webkit-transition: color 0.3s ease-in-out;
-	-o-transition: color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
 }
 
 .developments__card .developments__link:focus {
 	outline: 2px solid #7943a4;
 	-webkit-transition: outline-color 0.2s ease-in;
-	-o-transition: outline-color 0.2s ease-in;
 	transition: outline-color 0.2s ease-in;
 }
 
@@ -1893,13 +1796,10 @@ div[data-custom-properties="[object Object]"] {
 	border: 2px solid #9d5cd0;
 	border-radius: 100px;
 	-webkit-transition: background-color 0.3s ease-in-out;
-	-o-transition: background-color 0.3s ease-in-out;
 	transition: background-color 0.3s ease-in-out;
 	-webkit-transition: border-color 0.3s ease-in-out;
-	-o-transition: border-color 0.3s ease-in-out;
 	transition: border-color 0.3s ease-in-out;
 	-webkit-transition: color 0.3s ease-in-out;
-	-o-transition: color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
 }
 
@@ -1907,10 +1807,8 @@ div[data-custom-properties="[object Object]"] {
 	background-color: #9d5cd0;
 	color: #ffffff;
 	-webkit-transition: background-color 0.3s ease-in-out;
-	-o-transition: background-color 0.3s ease-in-out;
 	transition: background-color 0.3s ease-in-out;
 	-webkit-transition: color 0.3s ease-in-out;
-	-o-transition: color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
 }
 
@@ -1918,10 +1816,8 @@ div[data-custom-properties="[object Object]"] {
 	border: 3px solid #d1a9f0;
 	background-color: #7943a4;
 	-webkit-transition: background-color 0.3s ease-in-out;
-	-o-transition: background-color 0.3s ease-in-out;
 	transition: background-color 0.3s ease-in-out;
 	-webkit-transition: border-color 0.3s ease-in-out;
-	-o-transition: border-color 0.3s ease-in-out;
 	transition: border-color 0.3s ease-in-out;
 }
 
@@ -1930,13 +1826,10 @@ div[data-custom-properties="[object Object]"] {
 	border: 3px solid #d1a9f0;
 	color: #ffffff;
 	-webkit-transition: background-color 0.3s ease-in-out;
-	-o-transition: background-color 0.3s ease-in-out;
 	transition: background-color 0.3s ease-in-out;
 	-webkit-transition: border-color 0.3s ease-in-out;
-	-o-transition: border-color 0.3s ease-in-out;
 	transition: border-color 0.3s ease-in-out;
 	-webkit-transition: color 0.3s ease-in-out;
-	-o-transition: color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
 }
 
@@ -1985,7 +1878,6 @@ div[data-custom-properties="[object Object]"] {
 	cursor: pointer;
 	color: #ffffff;
 	-webkit-transition: color 0.3s ease-in;
-	-o-transition: color 0.3s ease-in;
 	transition: color 0.3s ease-in;
 }
 
@@ -2006,10 +1898,8 @@ div[data-custom-properties="[object Object]"] {
 	border: 1px solid #ffffff;
 	outline: 3px solid rgba(157, 92, 208, 0);
 	-webkit-transition: border-color 0.3s ease-in;
-	-o-transition: border-color 0.3s ease-in;
 	transition: border-color 0.3s ease-in;
 	-webkit-transition: outline-color 0.3s ease-in;
-	-o-transition: outline-color 0.3s ease-in;
 	transition: outline-color 0.3s ease-in;
 }
 
@@ -2024,14 +1914,12 @@ div[data-custom-properties="[object Object]"] {
 	border-radius: 50%;
 	background-color: #ffffff;
 	-webkit-transition: background-color 0.3s ease-in;
-	-o-transition: background-color 0.3s ease-in;
 	transition: background-color 0.3s ease-in;
 }
 
 .editions__check:checked+.editions__label::before {
 	border-color: #c283f3;
 	-webkit-transition: border-color 0.3s ease-in;
-	-o-transition: border-color 0.3s ease-in;
 	transition: border-color 0.3s ease-in;
 }
 
@@ -2039,14 +1927,12 @@ div[data-custom-properties="[object Object]"] {
 	display: block;
 	background-color: #c283f3;
 	-webkit-transition: background-color 0.3s ease-in;
-	-o-transition: background-color 0.3s ease-in;
 	transition: background-color 0.3s ease-in;
 }
 
 .editions__check:checked+.editions__label {
 	color: #c283f3;
 	-webkit-transition: color 0.3s ease-in;
-	-o-transition: color 0.3s ease-in;
 	transition: color 0.3s ease-in;
 }
 
@@ -2054,35 +1940,30 @@ div[data-custom-properties="[object Object]"] {
 	outline: 3px solid #9d5cd0;
 	border: none;
 	-webkit-transition: outline-color 0.3s ease-in;
-	-o-transition: outline-color 0.3s ease-in;
 	transition: outline-color 0.3s ease-in;
 }
 
 .editions__label:hover {
 	color: #c283f3;
 	-webkit-transition: color 0.3s ease-in;
-	-o-transition: color 0.3s ease-in;
 	transition: color 0.3s ease-in;
 }
 
 .editions__label:hover::before {
 	border-color: #c283f3;
 	-webkit-transition: border-color 0.3s ease-in;
-	-o-transition: border-color 0.3s ease-in;
 	transition: border-color 0.3s ease-in;
 }
 
 .editions__label:active {
 	color: #7943a4;
 	-webkit-transition: color 0.3s ease-in;
-	-o-transition: color 0.3s ease-in;
 	transition: color 0.3s ease-in;
 }
 
 .editions__label:active::before {
 	border-color: #7943a4;
 	-webkit-transition: border-color 0.3s ease-in;
-	-o-transition: border-color 0.3s ease-in;
 	transition: border-color 0.3s ease-in;
 }
 
@@ -2277,17 +2158,14 @@ div[data-custom-properties="[object Object]"] {
 	border: 3px solid #9d5cd0;
 	border-radius: 100px;
 	-webkit-transition: background-color 0.3s ease-in-out;
-	-o-transition: background-color 0.3s ease-in-out;
 	transition: background-color 0.3s ease-in-out;
 	-webkit-transition: border-color 0.3s ease-in-out;
-	-o-transition: border-color 0.3s ease-in-out;
 	transition: border-color 0.3s ease-in-out;
 }
 
 .editions__order:hover {
 	background-color: #9d5cd0;
 	-webkit-transition: background-color 0.3s ease-in-out;
-	-o-transition: background-color 0.3s ease-in-out;
 	transition: background-color 0.3s ease-in-out;
 }
 
@@ -2295,10 +2173,8 @@ div[data-custom-properties="[object Object]"] {
 	background: #7943a4;
 	border: 3px solid #d1a9f0;
 	-webkit-transition: background-color 0.3s ease-in-out;
-	-o-transition: background-color 0.3s ease-in-out;
 	transition: background-color 0.3s ease-in-out;
 	-webkit-transition: border-color 0.3s ease-in-out;
-	-o-transition: border-color 0.3s ease-in-out;
 	transition: border-color 0.3s ease-in-out;
 }
 
@@ -2306,10 +2182,8 @@ div[data-custom-properties="[object Object]"] {
 	background: #7943a4;
 	border: 3px solid #d1a9f0;
 	-webkit-transition: background-color 0.3s ease-in-out;
-	-o-transition: background-color 0.3s ease-in-out;
 	transition: background-color 0.3s ease-in-out;
 	-webkit-transition: border-color 0.3s ease-in-out;
-	-o-transition: border-color 0.3s ease-in-out;
 	transition: border-color 0.3s ease-in-out;
 }
 
@@ -2430,7 +2304,6 @@ div[data-custom-properties="[object Object]"] {
 .tooltip-toggle:focus::after {
 	opacity: 1;
 	-webkit-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 }
 
@@ -2446,7 +2319,6 @@ div[data-custom-properties="[object Object]"] {
 .tooltip-toggle:hover::after {
 	opacity: 1;
 	-webkit-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 }
 
@@ -2463,7 +2335,6 @@ div[data-custom-properties="[object Object]"] {
 	outline: 2px solid rgba(157, 92, 208, 0);
 	color: #9d5cd0;
 	-webkit-transition: outline-color 0.2s ease-in;
-	-o-transition: outline-color 0.2s ease-in;
 	transition: outline-color 0.2s ease-in;
 }
 
@@ -2476,21 +2347,18 @@ div[data-custom-properties="[object Object]"] {
 	bottom: 0;
 	background-color: #9d5cd0;
 	-webkit-transition: width 0.2s ease-in;
-	-o-transition: width 0.2s ease-in;
 	transition: width 0.2s ease-in;
 }
 
 .projects__link:hover::after {
 	width: 247px;
 	-webkit-transition: width 0.2s ease-in;
-	-o-transition: width 0.2s ease-in;
 	transition: width 0.2s ease-in;
 }
 
 .projects__link:focus {
 	outline: 2px solid #9d5cd0;
 	-webkit-transition: outline-color 0.2s ease-in;
-	-o-transition: outline-color 0.2s ease-in;
 	transition: outline-color 0.2s ease-in;
 }
 
@@ -2517,7 +2385,6 @@ div[data-custom-properties="[object Object]"] {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: all 0.3s ease-in;
-	-o-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
 }
 
@@ -2525,7 +2392,6 @@ div[data-custom-properties="[object Object]"] {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 	-webkit-transition: all 0.3s ease-in;
-	-o-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
 	cursor: pointer;
 }
@@ -2581,7 +2447,6 @@ div[data-custom-properties="[object Object]"] {
 	top: 83px;
 	background-color: #ececec;
 	-webkit-transition: background-color 0.2s ease-in;
-	-o-transition: background-color 0.2s ease-in;
 	transition: background-color 0.2s ease-in;
 }
 
@@ -2589,7 +2454,6 @@ div[data-custom-properties="[object Object]"] {
 .projects__swiper-button3.swiper-button .swiper-button-next.swiper-button-next-st.button3-next::after {
 	color: #000000;
 	-webkit-transition: color 0.2s ease-in;
-	-o-transition: color 0.2s ease-in;
 	transition: color 0.2s ease-in;
 }
 
@@ -2598,10 +2462,8 @@ div[data-custom-properties="[object Object]"] {
 	background-color: #ececec;
 	border: 2px solid #7943a4;
 	-webkit-transition: background-color 0.2s ease-in;
-	-o-transition: background-color 0.2s ease-in;
 	transition: background-color 0.2s ease-in;
 	-webkit-transition: border-color 0.2s ease-in;
-	-o-transition: border-color 0.2s ease-in;
 	transition: border-color 0.2s ease-in;
 }
 
@@ -2609,7 +2471,6 @@ div[data-custom-properties="[object Object]"] {
 .projects__swiper-button3.swiper-button .swiper-button-next.swiper-button-next-st.button3-next:hover {
 	background-color: #9d5cd0;
 	-webkit-transition: background-color 0.2s ease-in;
-	-o-transition: background-color 0.2s ease-in;
 	transition: background-color 0.2s ease-in;
 }
 
@@ -2617,7 +2478,6 @@ div[data-custom-properties="[object Object]"] {
 .projects__swiper-button3.swiper-button .swiper-button-next.swiper-button-next-st.button3-next:hover::after {
 	color: #ffffff;
 	-webkit-transition: color 0.2s ease-in;
-	-o-transition: color 0.2s ease-in;
 	transition: color 0.2s ease-in;
 }
 
@@ -2626,10 +2486,8 @@ div[data-custom-properties="[object Object]"] {
 	border: 2px solid #d1a9f0;
 	background-color: #7943a4;
 	-webkit-transition: border-color 0.2s ease-in;
-	-o-transition: border-color 0.2s ease-in;
 	transition: border-color 0.2s ease-in;
 	-webkit-transition: background-color 0.2s ease-in;
-	-o-transition: background-color 0.2s ease-in;
 	transition: background-color 0.2s ease-in;
 }
 
@@ -2637,7 +2495,6 @@ div[data-custom-properties="[object Object]"] {
 .projects__swiper-button3.swiper-button .swiper-button-next.swiper-button-next-st.button3-next:active::after {
 	color: #ffffff;
 	-webkit-transition: color 0.2s ease-in;
-	-o-transition: color 0.2s ease-in;
 	transition: color 0.2s ease-in;
 }
 
@@ -2739,10 +2596,8 @@ div[data-custom-properties="[object Object]"] {
 	text-align: center;
 	color: #9d5cd0;
 	-webkit-transition: color 0.3s ease-in-out;
-	-o-transition: color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
 	-webkit-transition: background-color 0.3s ease-in-out;
-	-o-transition: background-color 0.3s ease-in-out;
 	transition: background-color 0.3s ease-in-out;
 }
 
@@ -2750,10 +2605,8 @@ div[data-custom-properties="[object Object]"] {
 	background-color: #9d5cd0;
 	color: #ffffff;
 	-webkit-transition: color 0.3s ease-in-out;
-	-o-transition: color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
 	-webkit-transition: background-color 0.3s ease-in-out;
-	-o-transition: background-color 0.3s ease-in-out;
 	transition: background-color 0.3s ease-in-out;
 }
 
@@ -2762,10 +2615,8 @@ div[data-custom-properties="[object Object]"] {
 	border-color: #d1a9f0;
 	color: #ffffff;
 	-webkit-transition: color 0.3s ease-in-out;
-	-o-transition: color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
 	-webkit-transition: background-color 0.3s ease-in-out;
-	-o-transition: background-color 0.3s ease-in-out;
 	transition: background-color 0.3s ease-in-out;
 }
 
@@ -2809,7 +2660,6 @@ div[data-custom-properties="[object Object]"] {
 	box-shadow: 0px 0px 15px -3px;
 	color: transparent;
 	-webkit-transition: color 0.2s linear;
-	-o-transition: color 0.2s linear;
 	transition: color 0.2s linear;
 }
 
@@ -2827,7 +2677,6 @@ div[data-custom-properties="[object Object]"] {
 	border-color: transparent;
 	border-radius: 100px;
 	-webkit-transition: border-color 0.2s linear;
-	-o-transition: border-color 0.2s linear;
 	transition: border-color 0.2s linear;
 }
 
@@ -2835,7 +2684,6 @@ div[data-custom-properties="[object Object]"] {
 .contacts__teleg:hover::before {
 	color: #000000;
 	-webkit-transition: color 0.2s linear;
-	-o-transition: color 0.2s linear;
 	transition: color 0.2s linear;
 }
 
@@ -2843,7 +2691,6 @@ div[data-custom-properties="[object Object]"] {
 .contacts__teleg:focus::after {
 	border-color: #9d5cd0;
 	-webkit-transition: border-color 0.2s linear;
-	-o-transition: border-color 0.2s linear;
 	transition: border-color 0.2s linear;
 }
 
@@ -2896,7 +2743,6 @@ div[data-custom-properties="[object Object]"] {
 .footer__link {
 	position: relative;
 	-webkit-transition: border-color 0.2s linear;
-	-o-transition: border-color 0.2s linear;
 	transition: border-color 0.2s linear;
 }
 
@@ -2913,14 +2759,12 @@ div[data-custom-properties="[object Object]"] {
 	border-color: transparent;
 	border-radius: 100px;
 	-webkit-transition: border-color 0.2s linear;
-	-o-transition: border-color 0.2s linear;
 	transition: border-color 0.2s linear;
 }
 
 .footer__link:focus::after {
 	border-color: #ffffff;
 	-webkit-transition: border-color 0.2s linear;
-	-o-transition: border-color 0.2s linear;
 	transition: border-color 0.2s linear;
 }
 
@@ -2948,7 +2792,6 @@ div[data-custom-properties="[object Object]"] {
 	height: 3.65px;
 	background-color: #ffffff;
 	-webkit-transition: background-color 0.5s ease-in-out;
-	-o-transition: background-color 0.5s ease-in-out;
 	transition: background-color 0.5s ease-in-out;
 }
 
@@ -2962,7 +2805,6 @@ div[data-custom-properties="[object Object]"] {
 	display: block;
 	background-color: #ffffff;
 	-webkit-transition: background-color 0.5s ease-in-out;
-	-o-transition: background-color 0.5s ease-in-out;
 	transition: background-color 0.5s ease-in-out;
 }
 
@@ -2976,28 +2818,24 @@ div[data-custom-properties="[object Object]"] {
 	display: block;
 	background-color: #ffffff;
 	-webkit-transition: background-color 0.5s ease-in-out;
-	-o-transition: background-color 0.5s ease-in-out;
 	transition: background-color 0.5s ease-in-out;
 }
 
 .nav-toggle:hover span {
 	background-color: #9d5cd0;
 	-webkit-transition: background-color 0.5s ease-in-out;
-	-o-transition: background-color 0.5s ease-in-out;
 	transition: background-color 0.5s ease-in-out;
 }
 
 .nav-toggle:hover span::before {
 	background-color: #9d5cd0;
 	-webkit-transition: background-color 0.5s ease-in-out;
-	-o-transition: background-color 0.5s ease-in-out;
 	transition: background-color 0.5s ease-in-out;
 }
 
 .nav-toggle:hover span::after {
 	background-color: #9d5cd0;
 	-webkit-transition: background-color 0.5s ease-in-out;
-	-o-transition: background-color 0.5s ease-in-out;
 	transition: background-color 0.5s ease-in-out;
 }
 
@@ -3009,19 +2847,16 @@ div[data-custom-properties="[object Object]"] {
 	height: 3.5px;
 	background-color: #ffffff;
 	-webkit-transition: all 0.5s ease-in;
-	-o-transition: all 0.5s ease-in;
 	transition: all 0.5s ease-in;
 }
 
 .close__line:nth-child(1) {
 	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 
 .close__line:nth-child(2) {
 	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 
@@ -3035,7 +2870,6 @@ div[data-custom-properties="[object Object]"] {
 	border: none;
 	background: none;
 	-webkit-transition: all 0.5s ease-in;
-	-o-transition: all 0.5s ease-in;
 	transition: all 0.5s ease-in;
 }
 
@@ -3046,7 +2880,6 @@ div[data-custom-properties="[object Object]"] {
 .header__close:hover .close__line {
 	background-color: #9d5cd0;
 	-webkit-transition: all 0.5s ease-in;
-	-o-transition: all 0.5s ease-in;
 	transition: all 0.5s ease-in;
 }
 
@@ -3062,14 +2895,12 @@ div[data-custom-properties="[object Object]"] {
 	z-index: 15;
 	background-color: rgba(0, 0, 0, 0.9);
 	-webkit-transition: left 0.5s;
-	-o-transition: left 0.5s;
 	transition: left 0.5s;
 }
 
 .menu-toggle.menu--showed {
 	left: 0;
 	-webkit-transition: left 0.5s;
-	-o-transition: left 0.5s;
 	transition: left 0.5s;
 }
 
@@ -3384,7 +3215,6 @@ div[data-custom-properties="[object Object]"] {
 	.search__magnifier svg rect,
 	.search__magnifier svg path {
 		-webkit-transition: all 0.5s ease-in;
-		-o-transition: all 0.5s ease-in;
 		transition: all 0.5s ease-in;
 	}
 
@@ -3392,7 +3222,6 @@ div[data-custom-properties="[object Object]"] {
 	.search__magnifier:hover svg path {
 		fill: #9d5cd0;
 		-webkit-transition: all 0.5s ease-in;
-		-o-transition: all 0.5s ease-in;
 		transition: all 0.5s ease-in;
 	}
 
@@ -3400,7 +3229,6 @@ div[data-custom-properties="[object Object]"] {
 	.search__magnifier:active svg path {
 		fill: #7943a4;
 		-webkit-transition: all 0.5s ease-in;
-		-o-transition: all 0.5s ease-in;
 		transition: all 0.5s ease-in;
 	}
 
@@ -4316,14 +4144,12 @@ div[data-custom-properties="[object Object]"] {
 		font-size: 27px;
 		color: rgba(194, 131, 243, 0);
 		-webkit-transition: color 0.2s ease-in;
-		-o-transition: color 0.2s ease-in;
 		transition: color 0.2s ease-in;
 	}
 
 	.editions__check:checked+.editions__label span {
 		color: #c283f3;
 		-webkit-transition: color 0.2s ease-in;
-		-o-transition: color 0.2s ease-in;
 		transition: color 0.2s ease-in;
 	}
 
@@ -4357,7 +4183,6 @@ div[data-custom-properties="[object Object]"] {
 		border-left: 1px solid #ffffff;
 		border-bottom: 1px solid #ffffff;
 		-webkit-transform: rotate(-45deg);
-		-ms-transform: rotate(-45deg);
 		transform: rotate(-45deg);
 	}
 
@@ -4390,7 +4215,6 @@ div[data-custom-properties="[object Object]"] {
 		border-left: none;
 		border-bottom: none;
 		-webkit-transform: rotate(-45deg);
-		-ms-transform: rotate(-45deg);
 		transform: rotate(-45deg);
 	}
 
