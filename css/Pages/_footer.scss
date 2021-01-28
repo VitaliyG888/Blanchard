@@ -20,27 +20,26 @@
 
 .footer__link {
   position: relative;
+  display: inline-block;
   width: 47px;
   height: 47px;
   transition: border-color 0.2s linear;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     left: -4px;
     top: -4px;
-    display: block;
     border: 1px solid;
     border-color: transparent;
     border-radius: 100px;
-    width: 53px;
-    height: 53px;
-    background: transparent;
+    width: 54px;
+    height: 54px;
     transition: border-color 0.2s linear;
   }
 }
 
-.footer__link:focus::after {
+.footer__link:focus::before {
   border-color: $Wight;
   transition: border-color 0.2s linear;
 }

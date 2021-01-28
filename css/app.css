@@ -2495,27 +2495,26 @@ div[data-custom-properties="[object Object]"] {
 
 .footer__link {
   position: relative;
+  display: inline-block;
   width: 47px;
   height: 47px;
   transition: border-color 0.2s linear;
 }
 
-.footer__link::after {
+.footer__link::before {
   content: "";
   position: absolute;
   left: -4px;
   top: -4px;
-  display: block;
   border: 1px solid;
   border-color: transparent;
   border-radius: 100px;
-  width: 53px;
-  height: 53px;
-  background: transparent;
+  width: 54px;
+  height: 54px;
   transition: border-color 0.2s linear;
 }
 
-.footer__link:focus::after {
+.footer__link:focus::before {
   border-color: #ffffff;
   transition: border-color 0.2s linear;
 }
@@ -3737,8 +3736,8 @@ div[data-custom-properties="[object Object]"] {
     padding-left: 17px;
   }
   .header__container .header__burger {
-    margin-right: 0;
     margin-top: -7px;
+    margin-right: 0;
   }
   .header__container .header__logo {
     margin-right: 0;
@@ -3748,17 +3747,17 @@ div[data-custom-properties="[object Object]"] {
     height: 367px;
   }
   .first .first__title {
-    width: 261px;
-    margin-left: 3px;
     margin-bottom: 0;
+    margin-left: 3px;
+    width: 261px;
     font-size: 32px;
     line-height: 39px;
     letter-spacing: 0.1px;
   }
   .first__description {
-    width: 305px;
     margin-bottom: 27px;
     padding: 13px 18px;
+    width: 305px;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
@@ -3787,9 +3786,9 @@ div[data-custom-properties="[object Object]"] {
     line-height: 32px;
   }
   .catalog__transfer {
-    width: 291px;
     margin: 0;
     margin-left: -5px;
+    width: 291px;
   }
   .tab-nav__link {
     width: 44px;
@@ -3797,20 +3796,20 @@ div[data-custom-properties="[object Object]"] {
     background-size: 32px;
   }
   .tab-nav__link::before {
-    width: 32px;
-    height: 32px;
     left: 4px;
     top: 4px;
+    width: 32px;
+    height: 32px;
   }
   .tab-nav__link::after {
-    width: 32px;
-    height: 32px;
     left: 4px;
     top: 4px;
+    width: 32px;
+    height: 32px;
   }
   .accordeon-section {
-    width: 292px;
     margin-left: -4px;
+    width: 292px;
   }
   .catalog__language:not(:last-child) {
     margin-right: 20.5px;
@@ -3829,30 +3828,30 @@ div[data-custom-properties="[object Object]"] {
     font-size: 18px;
   }
   .accordeon-title::after {
+    top: 20px;
     width: 30px;
     height: 30px;
-    top: 20px;
   }
   .accordeon-title::before {
-    width: 8px;
-    height: 8px;
     right: 3px;
     margin-top: 10px;
     margin-left: 4px;
-  }
-  .accordeon-section.active .accordeon-title::before {
     width: 8px;
     height: 8px;
+  }
+  .accordeon-section.active .accordeon-title::before {
     right: 3px;
     margin-top: 12px;
+    width: 8px;
+    height: 8px;
   }
   .catalog__card.card {
     margin-left: -2px;
   }
   .catalog__card.card img {
+    margin-bottom: 23px;
     width: 290px;
     height: 181px;
-    margin-bottom: 23px;
   }
   .card__title {
     margin-bottom: 18px;
@@ -3914,15 +3913,13 @@ div[data-custom-properties="[object Object]"] {
     padding: 10px 34px;
   }
   .swiper-container#slider3 {
+    height: 65px;
     max-width: 195px;
-    height: 65px;
   }
   .swiper-slide.projects__slider {
     height: 65px;
-  }
-  .swiper-slide.projects__slider {
-    background-size: 195px 65px;
     background-position: center;
+    background-size: 195px 65px;
   }
   h3 {
     font-size: 18px;
@@ -3940,10 +3937,10 @@ div[data-custom-properties="[object Object]"] {
     max-width: 290px;
   }
   .contacts__container {
-    width: 100%;
+    flex-direction: column-reverse;
     margin: 0;
     padding: 0;
-    flex-direction: column-reverse;
+    width: 100%;
   }
   .contacts .contacts__container .contacts__block {
     width: 320px;
@@ -3961,9 +3958,9 @@ div[data-custom-properties="[object Object]"] {
     margin-bottom: 14px;
   }
   .contacts__form .contacts__button {
+    margin-bottom: 24px;
     width: 128px;
     height: 40px;
-    margin-bottom: 24px;
     font-size: 14px;
   }
   .contacts__odrercall,
@@ -3974,9 +3971,9 @@ div[data-custom-properties="[object Object]"] {
 
 @media (max-width: 410px) {
   .container {
-    width: 292px;
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
+    width: 292px;
   }
   .swiper-slide.editions__slider {
     width: 130px;
@@ -3989,8 +3986,8 @@ div[data-custom-properties="[object Object]"] {
     width: 100%;
   }
   .contacts .contacts__container .contacts__block {
-    width: 292px;
     margin: 0 auto;
     padding-bottom: 39px;
+    width: 292px;
   }
 }

@@ -13,9 +13,9 @@ $tool-color:#efefef;
 $lite-grey:#e5e5e5;
 
 @mixin transition($property, $time) {
-	transition: $property $time ease-in-out;
+  transition: $property $time ease-in-out;
 }
 
 @mixin spaces-between {
-	justify-content: space-between;
+  justify-content: space-between;
 }
