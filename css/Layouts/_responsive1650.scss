@@ -20,7 +20,7 @@
 	}
 
 	.swiper-container#slider1 {
-		width: 970px;
+		width: 1000px;
 		height: 610px;
 	}
 
@@ -66,10 +66,10 @@
 
 	.developments__card {
 
-		width: 420px;
+		width: 400px;
 
-		.developments__card--down {
-			padding: 14px 25px 89px 60px;
+		&:not(:nth-child(3n + 3)) {
+			margin-right: 35px;
 		}
 
 		.developmets__descriptions {

@@ -78,8 +78,6 @@
 		cursor: pointer;
 		line-height: 23px;
 		color: $first-color;
-		outline: 2px solid rgba($second-color, 0);
-		transition: outline-color 0.2s ease-in;
 
 		&::after {
 			content: "";
@@ -92,11 +90,10 @@
 
 		&:hover {
 			font-weight: 700;
-			transition: font-weight 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
 
 			&::after {
 				border-bottom: 2px solid $first-color;
-				transition: all 0.3s ease-in-out;
 			}
 		}
 
@@ -106,8 +103,7 @@
 		}
 
 		&:focus {
-			outline: 2px solid rgba($second-color, 1);
-			transition: outline-color 0.2s ease-in;
+			outline: 2px solid $second-color;
 		}
 	}
 }
@@ -134,30 +130,23 @@
 	background: none;
 	border: 2px solid $first-color;
 	border-radius: 100px;
-	transition: background-color 0.3s ease-in-out;
-	transition: border-color 0.3s ease-in-out;
-	transition: color 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 
 	&:hover {
 		background-color: $first-color;
 		color: $Wight;
-		transition: background-color 0.3s ease-in-out;
-		transition: color 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
 
 	&:active {
 		border: 3px solid $extra-lite;
 		background-color: $second-color;
-		transition: background-color 0.3s ease-in-out;
-		transition: border-color 0.3s ease-in-out;
 	}
 
 	&:focus {
 		background-color: $first-color;
 		border: 3px solid $extra-lite;
 		color: $Wight;
-		transition: background-color 0.3s ease-in-out;
-		transition: border-color 0.3s ease-in-out;
-		transition: color 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
 }

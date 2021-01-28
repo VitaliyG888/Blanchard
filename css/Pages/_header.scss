@@ -160,7 +160,7 @@
 	font-weight: 400;
 	font-size: 18px;
 	color: $Wight;
-	transition: color 0.3s ease-in;
+	transition: all 0.3s ease-in;
 
 	&::before {
 		content: "";
@@ -171,7 +171,7 @@
 		width: 115%;
 		height: 30px;
 		opacity: 0;
-		transition: opacity 0.3s ease-in;
+		transition: opasity 0.3s ease-in;
 	}
 
 	&::after {
@@ -190,7 +190,7 @@
 
 	&:focus::before {
 		opacity: 1;
-		transition: opacity 0.3s ease-in;
+		transition: opasity 0.3s ease-in;
 	}
 
 	&:active {
@@ -203,7 +203,7 @@
 			border-right: 1px solid $second-color;
 			border-bottom: none;
 			border-left: none;
-			transition: border-color 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
 		}
 	}
 }
@@ -266,11 +266,10 @@
 		width: 220px;
 		height: 40px;
 		color: $Wight;
-		transition: border-color 0.2s ease-in;
-		transition: background-color 0.2s ease-in;
+		transition: all 0.2s ease-in;
 
 		&:focus {
-			border-color: $second-color;
+			border-color: $first-color;
 			transition: border-color 0.2s ease-in;
 		}
 
@@ -283,9 +282,7 @@
 			background-color: $first-color;
 			border-color: $extra-lite;
 			opacity: 0.4;
-			transition: border-color 0.2s ease-in;
-			transition: background-color 0.2s ease-in;
-
+			transition: all 0.2s ease-in;
 		}
 	}
 
@@ -316,7 +313,7 @@
 	position: relative;
 	outline: 2px solid rgba($first-color, 0);
 	padding-left: 44px;
-	transition: outline-color 0.2s ease-in;
+	transition: all 0.2s ease-in;
 
 	.search__magnifier {
 		position: absolute;
@@ -362,7 +359,7 @@
 
 	&:focus-within {
 		outline: 2px solid rgba($first-color, 1);
-		transition: outline-color 0.2s ease-in;
+		transition: all 0.2s ease-in;
 	}
 
 	&:hover .search__input {
