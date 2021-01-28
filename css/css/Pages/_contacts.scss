@@ -6,17 +6,17 @@
 }
 
 .contacts__container {
-  max-width: 100%;
-  margin: 0;
-  padding-left: calc((100vw - 1618px)/2);
-  padding-right: 0;
   align-items: stretch;
+  margin: 0;
+  padding-right: 0;
+  padding-left: calc((100vw - 1618px)/2);
+  max-width: 100%;
 }
 
 .contacts__block {
+  margin-right: 121px;
   padding-top: 125px;
   padding-bottom: 123px;
-  margin-right: 121px;
 }
 
 .contacts__name {
@@ -41,22 +41,22 @@
 }
 
 .contacts__form {
-  flex-direction: column;
   position: relative;
+  flex-direction: column;
   width: 400px;
 
   .contacts__input {
-    display: block;
     position: relative;
-    width: 100%;
-    height: 40px;
+    display: block;
     margin-bottom: 24px;
-    padding-left: 20px;
     border: 1px solid $Black;
     border-radius: 100px;
+    padding-left: 20px;
+    width: 100%;
+    height: 40px;
     font-family: "Open Sans";
-    font-style: normal;
     font-weight: 400;
+    font-style: normal;
     font-size: 16px;
     color: $signature-color;
   }
@@ -66,28 +66,28 @@
   }
 
   .contacts__button {
-    width: 157px;
-    height: 59px;
     margin-bottom: 40px;
-    background: none;
     border: 2px solid $first-color;
     border-radius: 100px;
+    width: 157px;
+    height: 59px;
     font-weight: 700;
     font-size: 18px;
     text-align: center;
     color: $first-color;
+    background: none;
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      background-color: $first-color;
       color: $Wight;
+      background-color: $first-color;
       transition: all 0.3s ease-in-out;
     }
 
     &:focus {
-      background-color: $second-color;
       border-color: $extra-lite;
       color: $Wight;
+      background-color: $second-color;
       transition: all 0.3s ease-in-out;
     }
   }
@@ -98,8 +98,8 @@
 }
 
 .js-validate-error-label {
-  font-size: 12px;
   margin-bottom: 7px;
+  font-size: 12px;
 }
 
 .contacts__input.js-validate-error-field {
@@ -112,38 +112,37 @@
   margin-right: 20px;
 }
 
-
 .contacts__whats,
 .contacts__teleg {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
-    display: block;
     left: 1px;
     top: 1px;
+    display: block;
+    border-radius: 100px;
     width: 38px;
     height: 38px;
-    background: transparent;
-    border-radius: 100px;
     box-shadow: 0px 0px 15px -3px;
     color: transparent;
+    background: transparent;
     transition: color 0.2s linear;
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
-    display: block;
     left: 0;
     top: 0;
-    width: 40px;
-    height: 40px;
-    background: transparent;
+    display: block;
     border: 3px solid;
     border-color: transparent;
     border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
     transition: border-color 0.2s linear;
   }
 
@@ -157,7 +156,6 @@
     transition: border-color 0.2s linear;
   }
 }
-
 
 .contacts__map.map {
   width: 100%;
