@@ -844,14 +844,14 @@ div[data-custom-properties="[object Object]"] {
 .swiper-button-prev-st:hover {
   color: #ffffff;
   background-color: #9d5cd0;
-  transition: all 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .swiper-button-next-st:active,
 .swiper-button-prev-st:active {
   border: 2px solid #d1a9f0;
   background-color: #7943a4;
-  transition: all 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .swiper-button-next-st::after,
@@ -1341,10 +1341,6 @@ div[data-custom-properties="[object Object]"] {
   cursor: pointer;
 }
 
-.accordeon-title.active {
-  border-bottom: none;
-}
-
 .accordeon-title::before {
   content: "";
   position: absolute;
@@ -1370,14 +1366,13 @@ div[data-custom-properties="[object Object]"] {
   background-color: #ececec;
 }
 
+.accordeon-title:focus {
+  color: #7943a4;
+}
+
 .accordeon-title:hover {
   color: #9d5cd0;
   transition: color 0.2s ease-in-out;
-}
-
-.accordeon-title:hover::after {
-  background-color: #9d5cd0;
-  transition: background-color 0.2s ease-in-out;
 }
 
 .accordeon-title:hover::before {
@@ -1386,17 +1381,22 @@ div[data-custom-properties="[object Object]"] {
   transition: border-color 0.2s ease-in-out;
 }
 
+.accordeon-title:hover::after {
+  background-color: #9d5cd0;
+  transition: background-color 0.2s ease-in-out;
+}
+
 .accordeon-title:active::after {
   border: 2px solid #d1a9f0;
   background-color: #7943a4;
 }
 
-.accordeon-title.accordeon-title--first {
-  border-top: 1px solid #000000;
+.accordeon-title.active {
+  border-bottom: none;
 }
 
-.accordeon-title:focus {
-  color: #7943a4;
+.accordeon-title.accordeon-title--first {
+  border-top: 1px solid #000000;
 }
 
 .accordeon-content {
