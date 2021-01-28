@@ -1,0 +1,26 @@
+@media (max-width: 410px) {
+	.container {
+		width: 292px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.swiper-slide.editions__slider {
+		width: 130px;
+		height: 275px;
+	}
+
+	.editions__img {
+		height: 144px;
+	}
+
+	.contacts__container {
+		width: 100%;
+	}
+
+	.contacts .contacts__container .contacts__block {
+		width: 292px;
+		margin: 0 auto;
+		padding-bottom: 39px;
+	}
+}

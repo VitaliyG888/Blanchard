@@ -1,0 +1,71 @@
+@media (max-width: 410px) {
+	.container {
+		width: 292px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.first .first__container {
+		padding-left: 0;
+	}
+
+	.first__swiper {
+		height: 355px;
+	}
+
+	.background1 {
+		background-image: url("../image/birmingham-museums-trust3.jpg");
+	}
+
+	.background2 {
+		background-image: url("../image/background2-3.jpg");
+	}
+
+	.background3 {
+		background-image: url("../image/background3-3.jpg");
+	}
+
+	.first__block-down {
+		align-items: center;
+		text-align: center;
+	}
+
+	.first__description {
+		padding: 13px 18px;
+	}
+
+	.about__container .about__description {
+		max-width: 291px;
+	}
+
+	.swiper-slide.editions__slider {
+		width: 130px;
+		height: 275px;
+	}
+
+	.accordeon-section {
+		width: 292px;
+
+	}
+
+	.catalog__card.card {
+
+		img {
+			width: 290px;
+		}
+	}
+
+	.editions__img {
+		height: 144px;
+	}
+
+	.contacts__container {
+		width: 100%;
+	}
+
+	.contacts .contacts__container .contacts__block {
+		width: 292px;
+		margin: 0 auto;
+		padding-bottom: 39px;
+	}
+}

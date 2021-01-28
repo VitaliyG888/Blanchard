@@ -1,0 +1,377 @@
+/* catalog section */
+
+.catalog__container {
+	padding-bottom: 0;
+	padding-top: 79px;
+	padding-left: 12px;
+}
+
+.catalog__header {
+	margin-bottom: 15px;
+	align-items: center;
+}
+
+.catalog__title {
+	margin-right: 33px;
+}
+
+.catalog__transfer {
+	width: 450px;
+	justify-content: space-between;
+}
+
+.tab-nav__link {
+	position: relative;
+	height: 66px;
+	width: 66px;
+	border-radius: 50%;
+	border: 2px solid rgba($first-color, 0);
+
+	&::after {
+		content: '';
+		position: absolute;
+		display: block;
+		left: 9px;
+		top: 9px;
+		width: 45px;
+		height: 45px;
+		background: transparent;
+		border: 2px solid;
+		border-color: transparent;
+		border-radius: 100px;
+		transition: border-color 0.2s linear;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		display: block;
+		left: 9px;
+		top: 9px;
+		width: 45px;
+		height: 45px;
+		background: transparent;
+		border-radius: 100px;
+		box-shadow: 0px 0px 19px -2px;
+		color: transparent;
+		transition: color 0.2s linear;
+	}
+
+	&:hover::before {
+		color: $Black;
+		transition: color 0.2s linear;
+	}
+
+	&:active::after {
+		border-color: $first-color;
+		transition: border-color 0.2s linear;
+	}
+
+	&:focus::after {
+		border-color: $first-color;
+		transition: border-color 0.2s linear;
+	}
+}
+
+.catalog__france {
+	background: no-repeat (center / 45px) url("../image/france.png");
+}
+
+.catalog__germany {
+	background: no-repeat (center / 45px) url("../image/germany.png");
+}
+
+.catalog__italy {
+	background: no-repeat (center / 45px) url("../image/italy.png");
+}
+
+.catalog__russia {
+	background: no-repeat (center / 45px) url("../image/russia.png");
+
+}
+
+@-webkit-keyframes border {
+	0% {
+		border-color: rgba($first-color, 0);
+	}
+
+	100% {
+		border-color: rgba($first-color, 1);
+	}
+}
+
+@keyframes border {
+	0% {
+		border-color: rgba($first-color, 0);
+	}
+
+	100% {
+		border-color: rgba($first-color, 1);
+	}
+}
+
+.is-active__border {
+	-webkit-animation: border 0.2s ease-in;
+	animation: border 0.2s ease-in;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+.catalog__spain {
+	background: no-repeat (center / 45px) url("../image/spain.png");
+}
+
+.catalog__description {
+	display: none;
+	max-width: 1080px;
+	margin-bottom: 50px;
+	margin-left: 2px;
+	height: 117px;
+	opacity: 0;
+}
+
+@-webkit-keyframes description {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes description {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.is-active__description {
+	display: block;
+	-webkit-animation: description 0.4s ease-in;
+	animation: description 0.4s ease-in;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+.catalog__card.card {
+	width: 750px;
+	margin-right: 50px;
+
+	& img {
+		width: 750px;
+		height: 470px;
+		-o-object-fit: cover;
+		object-fit: cover;
+		margin-bottom: 33px;
+		-webkit-animation: description 0.4s ease-in;
+		animation: description 0.4s ease-in;
+	}
+}
+
+.catalog__content {
+	margin-left: 3px;
+}
+
+.card__description {
+	-webkit-animation: description 0.4s ease-in;
+	animation: description 0.4s ease-in;
+}
+
+.card__title {
+	margin-bottom: 13px;
+	-webkit-animation: description 0.4s ease-in;
+	animation: description 0.4s ease-in;
+}
+
+.card__date {
+	display: block;
+	margin-bottom: 9px;
+	-webkit-animation: description 0.4s ease-in;
+	animation: description 0.4s ease-in;
+}
+
+.accordeon-section {
+	position: relative;
+	width: 800px;
+}
+
+.accordeon-title {
+	padding: 38px 0 43.3px;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid $Black;
+	background: none;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
+	color: $Darck-grey;
+	cursor: pointer;
+	text-align: left;
+
+	&.active {
+		border-bottom: none;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		right: 10px;
+		height: 12px;
+		width: 12px;
+		margin-right: 8px;
+		margin-top: 12px;
+		border-left: 1px solid $Black;
+		border-bottom: 1px solid $Black;
+		transform: rotate(-45deg);
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 30px;
+		width: 50px;
+		height: 50px;
+		border-radius: 100px;
+		background-color: $btn-slider-color2;
+		z-index: -2;
+	}
+
+	&:hover {
+		color: $first-color;
+		@include transition (color, 0.2s);
+
+		&::after {
+			background-color: $first-color;
+			@include transition(background-color, 0.2s);
+		}
+
+		&::before {
+			border-left: 1px solid $Wight;
+			border-bottom: 1px solid $Wight;
+			@include transition (border-color, 0.2s);
+		}
+	}
+
+	&:active::after {
+		background-color: $second-color;
+		border: 2px solid $extra-lite;
+	}
+
+	&.accordeon-title--first {
+		border-top: 1px solid $Black;
+	}
+
+	&:focus {
+		color: $second-color;
+	}
+}
+
+.accordeon-content {
+	max-height: 0;
+	overflow: hidden;
+	@include transition (max-height, 0.4s);
+}
+
+.accordeon-item {
+	display: grid;
+	grid-template-columns: repeat(3, 209px);
+	grid-template-rows: repeat(9, 32px);
+	grid-auto-flow: column;
+	padding: 30px 0 25px;
+	grid-column-gap: 48px;
+}
+
+.accordeon-link {
+	position: relative;
+	display: block;
+	background: none;
+	margin-bottom: 10px;
+	margin-left: -5px;
+	cursor: pointer;
+	font-weight: normal;
+	font-size: 16px;
+	text-align: left;
+	color: $Darck-grey;
+	transition: font-weight 0.2s ease-in, color 0.2s ease-in;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 209px;
+		height: 30px;
+		top: -5px;
+		left: 4px;
+		border: 1px solid rgba($first-color, 0);
+		transition: border-color 0.2s ease-in;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 2px;
+		left: 6px;
+		bottom: 0;
+		background-color: rgba($first-color, 1);
+		transition: width 0.2s ease-in;
+	}
+
+	&:focus::before {
+		border: 1px solid rgba($first-color, 1);
+		transition: border-color 0.2s ease-in;
+	}
+
+	&:hover {
+		color: $first-color;
+		transition: color 0.2s ease-in;
+	}
+
+	&:hover::after {
+		width: 202px;
+		transition: width 0.2s ease-in;
+	}
+
+	&:active {
+		font-weight: 600;
+		color: $second-color;
+		transition: font-weight 0.2s ease-in, color 0.2s ease-in;
+	}
+}
+
+.accordeon-section.active {
+
+	.accordeon-title {
+		border-bottom: none;
+
+		&::before {
+			content: "";
+			position: absolute;
+			height: 12px;
+			width: 12px;
+			right: 10px;
+			margin-left: 4px;
+			margin-top: 14px;
+			border-right: 1px solid $Black;
+			border-top: 1px solid $Black;
+			border-left: none;
+			border-bottom: none;
+			transform: rotate(-45deg);
+		}
+
+		&:hover::before {
+			border-right: 1px solid $Wight;
+			border-top: 1px solid $Wight;
+		}
+	}
+
+	.accordeon-content.js-content {
+		border-top: 1px solid $first-color;
+		border-bottom: 1px solid $first-color;
+	}
+}

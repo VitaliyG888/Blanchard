@@ -1,0 +1,21 @@
+$first-color: #9d5cd0;
+$first-lite: #c283f3;
+$extra-lite: #d1a9f0;
+$second-color: #7943a4;
+$Black: #000000;
+$Wight: #ffffff;
+$Grey: #cacaca;
+$signature-color: #999999;
+$btn-slider-color:#666666;
+$btn-slider-color2:#ececec;
+$Darck-grey: #333333;
+$tool-color:#efefef;
+$lite-grey:#e5e5e5;
+
+@mixin transition($property, $time) {
+	transition: $property $time ease-in-out;
+}
+
+@mixin spaces-between {
+	justify-content: space-between;
+}

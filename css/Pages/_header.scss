@@ -1,0 +1,403 @@
+/* header */
+
+.header__higher {
+	background-color: $Black;
+}
+
+.header__container {
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-right: 14px;
+	padding-bottom: 30px;
+}
+
+.header__logo {
+	width: 173px;
+	height: 40px;
+
+	&:focus {
+		outline: 1px solid $first-color;
+	}
+}
+
+.header__nav {
+	margin-right: 100px;
+}
+
+.nav-prime__item:not(:last-child) {
+	margin-right: 62px;
+}
+
+.nav-prime__link {
+	position: relative;
+	font-weight: 600;
+	font-size: 18px;
+	letter-spacing: 0.15px;
+	color: $Wight;
+	transition: color 0.3s ease-in-out;
+
+	&::before {
+		content: "";
+		position: absolute;
+		margin: -4px -7px;
+		border: 2px solid $second-color;
+		width: 125%;
+		height: 30px;
+		opacity: 0;
+		transition: opacity 0.3s ease-in;
+	}
+
+	&:focus::before {
+		opacity: 1;
+		transition: opacity 0.3s ease-in;
+	}
+
+	&:hover {
+		color: $first-color;
+		transition: color 0.3s ease-in-out;
+	}
+
+	&:active {
+		color: $second-color;
+		transition: color 0.3s ease-in-out;
+	}
+}
+
+.header__admission {
+	position: relative;
+	padding: 0;
+	font-weight: 400;
+	font-size: 18px;
+	color: $Wight;
+	transition: color 0.3s ease-in-out;
+
+	&::before {
+		content: "";
+		position: absolute;
+		margin: -4px -7px;
+		border: 2px solid $second-color;
+		width: 90px;
+		height: 30px;
+		opacity: 0;
+		transition: opacity 0.3s ease-in;
+	}
+
+	svg {
+		margin-right: 7px;
+	}
+
+	svg path {
+		fill: $Wight;
+		transition: fill 0.3s ease-in;
+	}
+
+	&:focus::before {
+		opacity: 1;
+		transition: opacity 0.3s ease-in;
+	}
+
+	&:hover {
+		color: $first-color;
+		transition: color 0.3s ease-in-out;
+
+		svg path {
+			fill: $first-color;
+			transition: fill 0.3s ease-in;
+		}
+	}
+
+	&:active {
+		color: $second-color;
+		transition: color 0.3s ease-in-out;
+
+		svg path {
+			fill: $second-color;
+			transition: fill 0.3s ease-in;
+		}
+	}
+}
+
+.header__nether {
+	background-color: rgba($Black, 0.5);
+}
+
+.nether__container {
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 19px;
+	padding-bottom: 21px;
+}
+
+.nether__item:not(:last-child) {
+	margin-right: 102px;
+}
+
+.nether__item:hover .nether__choice,
+.nether__item:focus .nether__choice {
+	transform: scaleY(1);
+	transition: transform 0.4s ease-in-out;
+}
+
+.nether__item:hover .nether__style {
+	color: $first-color;
+	transition: color 0.3s ease-in;
+
+	&::after {
+		margin-bottom: 0;
+		border-color: rgba($first-color, 1);
+		border-top: 1px solid;
+		border-right: 1px solid;
+		border-bottom: none;
+		border-left: none;
+		transition: border-color 0.3s ease-in-out;
+	}
+}
+
+.nether__item .nether__style {
+	position: relative;
+	padding-bottom: 22px;
+	font-weight: 400;
+	font-size: 18px;
+	color: $Wight;
+	transition: color 0.3s ease-in;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: -6px;
+		top: 0;
+		border: 2px solid $first-color;
+		width: 115%;
+		height: 30px;
+		opacity: 0;
+		transition: opasity 0.3s ease-in;
+	}
+
+	&::after {
+		content: "";
+		display: inline-block;
+		margin-bottom: 3px;
+		margin-left: 4px;
+		border-color: rgba($Wight, 1);
+		border-bottom: 1px solid;
+		border-left: 1px solid;
+		width: 8px;
+		height: 8px;
+		transform: rotate(-45deg);
+		transition: border-color 0.3s ease-in-out;
+	}
+
+	&:focus::before {
+		opacity: 1;
+		transition: opasity 0.3s ease-in;
+	}
+
+	&:active {
+		color: $second-color;
+		transition: color 0.3s ease-in;
+
+		&::after {
+			margin-bottom: 0;
+			border-top: 1px solid $second-color;
+			border-right: 1px solid $second-color;
+			border-bottom: none;
+			border-left: none;
+			transition: border-color 0.3s ease-in-out;
+		}
+	}
+}
+
+.nether__choice {
+	position: absolute;
+	z-index: 10;
+	margin-top: 26px;
+	padding: 40px;
+	width: 300px;
+	max-height: 300px;
+	background: rgba($Black, 0.4);
+	transform: scaleY(0);
+	transform-origin: 0 0;
+	transition: transform 0.3s ease-in;
+
+	.simplebar-scrollbar::before {
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		border-radius: 0;
+		width: 2px;
+		background-color: $Wight;
+		opacity: 1;
+		transition: background-color 0.3s ease-in;
+	}
+
+	.simplebar-track.simplebar-vertical .simplebar-scrollbar::before {
+		top: 0;
+		bottom: 0;
+	}
+
+	.simplebar-track.simplebar-vertical {
+		right: 20px;
+		top: 40px;
+		bottom: 40px;
+		width: 2px;
+		background-color: $Black;
+	}
+
+	.nether__performer {
+		position: relative;
+		margin-bottom: 20px;
+		width: 220px;
+		height: 40px;
+		font-weight: 600;
+		color: $Wight;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.nether__artist {
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: block;
+		border: 2px solid transparent;
+		padding: 7px 0 7px 14px;
+		width: 220px;
+		height: 40px;
+		color: $Wight;
+		transition: border-color 0.2s ease-in;
+		transition: background-color 0.2s ease-in;
+
+		&:focus {
+			border-color: $second-color;
+			transition: border-color 0.2s ease-in;
+		}
+
+		&:hover {
+			border-color: $first-color;
+			transition: border-color 0.2s ease-in;
+		}
+
+		&:active {
+			background-color: $first-color;
+			border-color: $extra-lite;
+			opacity: 0.4;
+			transition: border-color 0.2s ease-in;
+			transition: background-color 0.2s ease-in;
+
+		}
+	}
+
+	&:hover .simplebar-scrollbar::before {
+		background-color: $first-color;
+	}
+}
+
+.performer1,
+.performer3,
+.performer5,
+.performer7,
+.performer9,
+.performer11 {
+	background-image: url("../image/first-choice1.jpg");
+}
+
+.performer2,
+.performer4,
+.performer6,
+.performer8,
+.performer10,
+.performer12 {
+	background-image: url("../image/first-choice3.jpg");
+}
+
+.search {
+	position: relative;
+	outline: 2px solid rgba($first-color, 0);
+	padding-left: 44px;
+	transition: outline-color 0.2s ease-in;
+
+	.search__magnifier {
+		position: absolute;
+		left: 8px;
+		top: 8px;
+		display: block;
+		border: none;
+		background: transparent;
+	}
+
+	.search__input {
+		margin-top: 6px;
+		margin-right: 3px;
+		border: none;
+		border-bottom: 1px solid rgba($Wight, 0.85);
+		width: 218px;
+		font-size: 18px;
+		line-height: 22px;
+		color: rgba($Wight, 0.85);
+		background: none;
+		transition: border-color 0.2s ease-in;
+
+		&::-webkit-input-placeholder {
+			font-family: "Open sans";
+		}
+
+		&::-moz-placeholder {
+			font-family: "Open sans";
+		}
+
+		&:-ms-input-placeholder {
+			font-family: "Open sans";
+		}
+
+		&::-ms-input-placeholder {
+			font-family: "Open sans";
+		}
+
+		&::placeholder {
+			font-family: "Open sans";
+		}
+	}
+
+	&:focus-within {
+		outline: 2px solid rgba($first-color, 1);
+		transition: outline-color 0.2s ease-in;
+	}
+
+	&:hover .search__input {
+		border-bottom: 1px solid $first-color;
+		transition: border-color 0.2s ease-in;
+	}
+
+	.search__magnifier--rect,
+	.search__magnifier--path {
+		fill: $Wight;
+		transition: fill 0.2s ease-in;
+	}
+
+	&:hover .search__magnifier--rect,
+	&:hover .search__magnifier--path {
+		fill: $first-color;
+		transition: fill 0.2s ease-in;
+	}
+
+	&:active .search__input {
+		border-bottom: 1px solid rgba($Wight, 0.85);
+		transition: border-color 0.2s ease-in;
+	}
+
+	&:active .search__magnifier--rect,
+	&:active .search__magnifier--path {
+		fill: $second-color;
+		transition: fill 0.2s ease-in;
+	}
+}
+
+.header__burger {
+	display: none;
+}
+
+.header__close {
+	display: none;
+}

@@ -1,0 +1,227 @@
+{"catalog card": [
+            {
+              "id": "1",
+              "foto": "image/Girlandajo.jpg",
+              "names": "Dominico Ghirlandaio",
+              "date": "2 giugno 1448 - 11 gennaio 1494",
+              "descriptions": "Uno dei principali artisti fiorentini del Quattrocento, fondatore della dinastia artistica, continuata dal fratello David e dal figlio Ridolfo. Il capo della bottega d'arte, dove il giovane Michelangelo ha acquisito competenze professionali per un anno. L'autore di cicli di affreschi in cui convessi, con ogni sorta di dettagli mostra la vita domestica di personaggi biblici (nel loro ruolo sono i nobili cittadini di Firenze in costumi dell'epoca)"
+            },
+            {
+              "id": "2",
+              "foto": "image/benedetto01.jpg",
+              "names": "Benedetto di Bindo",
+              "date": "1385–1417",
+              "descriptions": "Pittore italiano della scuola senese di arte italo-bizantina e gotica. Nato nel comune di Castiglione di Valdorcia, vicino a Siena, intorno al 1385. Ci sono pochissime informazioni affidabili sulla carriera dell'artista. Il suo nome compare per la prima volta nei documenti senesi nel 1409, riferiscono pagamento di denaro a Benedetto di Bindo per lavori nel Duomo di Siena. Qui nel 1411-1412 Benedetto insieme ad un gruppo di artisti realizzò affreschi in tre cappelle della sacrestia."
+            },
+            {
+              "id": "3",
+              "foto": "image/Milano_affresco.jpg",
+              "names": "Bergangone Ambradjo",
+              "date": "1470 - 1523/1524",
+              "descriptions": "Sebbene fosse quasi un contemporaneo di Leonardo da Vinci, dipinse in uno stile più vicino all'arte lombarda pre-rinascimentale di Vincenzo Foppa e Bernardino Zenale. Le date della sua nascita e morte sono sconosciute; Si dice che sia nato a Fossano in Piemonte e il suo nome è dovuto alla sua affiliazione artistica con la scuola borgognona."
+            },
+            {
+              "id": "4",
+              "foto": "image/thumbnail.jpg",
+              "names": "Bissolo, Francesco",
+              "date": "1470 — 1554",
+              "descriptions": "Il figlio dell'artista. Uno studente di Giovanni Bellini. Dal 1490 si trasferisce nella bottega di Bellini. Dal 1492 al 1530 lavorò a Venezia. Ha assistito il maestro nella decorazione della Sala del Gran Consiglio di Palazzo Ducale (Venezia). Ha partecipato alla realizzazione degli addobbi per la Chiesa del Redentore a Venezia."
+            },
+            {
+              "id": "5",
+              "foto": "image/7kyfkolkbm.jpeg",
+              "names": "Boltraffio Giovanni",
+              "date": "1466 o 1467, Milano - 1516",
+              "descriptions": "Vasari riferisce che l'artista proveniva da una famiglia aristocratica. Cresciuto nella tradizione di Foppa, Bernardo Zenale e Ambrogio Bergognone, si forma nella bottega di Leonardo. La sua prima opera, La Resurrezione di Cristo, San Leonardo e Santa Lucia, fu eseguita nel 1491 insieme a Marco d'Ojono per la chiesa milanese di San Giovanni sul Muro."
+            },
+            {
+              "id": "6",
+              "foto": "image/Vecchietta1.jpg",
+              "names": "Vecchietta",
+              "data": "c. 1410, Siena - 6 giugno 1480",
+              "descriptions": "Giorgio Vasari racconta il Vecchietta nelle sue Biografie e lo descrive come un uomo cupo e asociale, eternamente immerso nel pensiero, e quindi non vissuto a lungo. Successivamente i ricercatori hanno cercato di collegare il nome di questo artista con eventuali dati d'archivio"
+            },
+            {
+              "id": "7",
+              "foto": "image/Giorgione.jpg",
+              "names": "Giorgione",
+              "data": "1477 / 1478-1510",
+              "descriptions": "Giorgione nacque nel piccolo paese di Castelfranco Veneto vicino a Venezia. Nel 1493 si trasferì a Venezia e divenne allievo di Giovanni Bellini. Nel 1497 apparve la sua prima opera indipendente - Cristo che porta la croce . Secondo Vasari, nell'aprile 1500 si incontrò con Leonardo da Vinci. "
+            },
+            {
+              "id": "8",
+              "foto": "image/Francesco.jpg",
+              "names": "Pesellino",
+              "data": "c. 1422 Firenze - m. 1457",
+              "descriptions": "Lo storico dell'arte italiano Giorgio Vasari ha compilato una breve biografia dell'artista, in cui parla con entusiasmo del suo lavoro, ma allo stesso tempo sembra averci mescolato tutto"
+            },
+            {
+              "id": "9",
+              "foto": "image/Girlandajo.jpg",
+              "names": "Dominico Ghirlandaio",
+              "date": "2 giugno 1448 - 11 gennaio 1494",
+              "descriptions": "Uno dei principali artisti fiorentini del Quattrocento, fondatore della dinastia artistica, continuata dal fratello David e dal figlio Ridolfo. Il capo della bottega d'arte, dove il giovane Michelangelo ha acquisito competenze professionali per un anno. L'autore di cicli di affreschi in cui convessi, con ogni sorta di dettagli mostra la vita domestica di personaggi biblici (nel loro ruolo sono i nobili cittadini di Firenze in costumi dell'epoca)"
+            },
+            {
+              "id": "10",
+              "foto": "image/benedetto01.jpg",
+              "names": "Benedetto di Bindo",
+              "date": "1385–1417",
+              "descriptions": "Pittore italiano della scuola senese di arte italo-bizantina e gotica. Nato nel comune di Castiglione di Valdorcia, vicino a Siena, intorno al 1385. Ci sono pochissime informazioni affidabili sulla carriera dell'artista. Il suo nome compare per la prima volta nei documenti senesi nel 1409, riferiscono pagamento di denaro a Benedetto di Bindo per lavori nel Duomo di Siena. Qui nel 1411-1412 Benedetto insieme ad un gruppo di artisti realizzò affreschi in tre cappelle della sacrestia."
+            },
+            {
+              "id": "11",
+              "foto": "image/Milano_affresco.jpg",
+              "names": "Bergangone Ambradjo",
+              "date": "1470 - 1523/1524",
+              "descriptions": "Sebbene fosse quasi un contemporaneo di Leonardo da Vinci, dipinse in uno stile più vicino all'arte lombarda pre-rinascimentale di Vincenzo Foppa e Bernardino Zenale. Le date della sua nascita e morte sono sconosciute; Si dice che sia nato a Fossano in Piemonte e il suo nome è dovuto alla sua affiliazione artistica con la scuola borgognona."
+            },
+            {
+              "id": "12",
+              "foto": "image/thumbnail.jpg",
+              "names": "Bissolo, Francesco",
+              "date": "1470 — 1554",
+              "descriptions": "Il figlio dell'artista. Uno studente di Giovanni Bellini. Dal 1490 si trasferisce nella bottega di Bellini. Dal 1492 al 1530 lavorò a Venezia. Ha assistito il maestro nella decorazione della Sala del Gran Consiglio di Palazzo Ducale (Venezia). Ha partecipato alla realizzazione degli addobbi per la Chiesa del Redentore a Venezia."
+            },
+            {
+              "id": "13",
+              "foto": "image/7kyfkolkbm.jpeg",
+              "names": "Boltraffio Giovanni",
+              "date": "1466 o 1467, Milano - 1516",
+              "descriptions": "Vasari riferisce che l'artista proveniva da una famiglia aristocratica. Cresciuto nella tradizione di Foppa, Bernardo Zenale e Ambrogio Bergognone, si forma nella bottega di Leonardo. La sua prima opera, La Resurrezione di Cristo, San Leonardo e Santa Lucia, fu eseguita nel 1491 insieme a Marco d'Ojono per la chiesa milanese di San Giovanni sul Muro."
+            },
+            {
+              "id": "14",
+              "foto": "image/Vecchietta1.jpg",
+              "names": "Vecchietta",
+              "data": "c. 1410, Siena - 6 giugno 1480",
+              "descriptions": "Giorgio Vasari racconta il Vecchietta nelle sue Biografie e lo descrive come un uomo cupo e asociale, eternamente immerso nel pensiero, e quindi non vissuto a lungo. Successivamente i ricercatori hanno cercato di collegare il nome di questo artista con eventuali dati d'archivio"
+            },
+            {
+              "id": "15",
+              "foto": "image/Giorgione.jpg",
+              "names": "Giorgione",
+              "data": "1477 / 1478-1510",
+              "descriptions": "Giorgione nacque nel piccolo paese di Castelfranco Veneto vicino a Venezia. Nel 1493 si trasferì a Venezia e divenne allievo di Giovanni Bellini. Nel 1497 apparve la sua prima opera indipendente - Cristo che porta la croce . Secondo Vasari, nell'aprile 1500 si incontrò con Leonardo da Vinci. "
+            },
+            {
+              "id": "16",
+              "foto": "image/Francesco.jpg",
+              "names": "Pesellino",
+              "data": "c. 1422 Firenze - m. 1457",
+              "descriptions": "Lo storico dell'arte italiano Giorgio Vasari ha compilato una breve biografia dell'artista, in cui parla con entusiasmo del suo lavoro, ma allo stesso tempo sembra averci mescolato tutto"
+            },
+            {
+              "id": "17",
+              "foto": "image/Girlandajo.jpg",
+              "names": "Dominico Ghirlandaio",
+              "date": "2 giugno 1448 - 11 gennaio 1494",
+              "descriptions": "Uno dei principali artisti fiorentini del Quattrocento, fondatore della dinastia artistica, continuata dal fratello David e dal figlio Ridolfo. Il capo della bottega d'arte, dove il giovane Michelangelo ha acquisito competenze professionali per un anno. L'autore di cicli di affreschi in cui convessi, con ogni sorta di dettagli mostra la vita domestica di personaggi biblici (nel loro ruolo sono i nobili cittadini di Firenze in costumi dell'epoca)"
+            },
+            {
+              "id": "18",
+              "foto": "image/benedetto01.jpg",
+              "names": "Benedetto di Bindo",
+              "date": "1385–1417",
+              "descriptions": "Pittore italiano della scuola senese di arte italo-bizantina e gotica. Nato nel comune di Castiglione di Valdorcia, vicino a Siena, intorno al 1385. Ci sono pochissime informazioni affidabili sulla carriera dell'artista. Il suo nome compare per la prima volta nei documenti senesi nel 1409, riferiscono pagamento di denaro a Benedetto di Bindo per lavori nel Duomo di Siena. Qui nel 1411-1412 Benedetto insieme ad un gruppo di artisti realizzò affreschi in tre cappelle della sacrestia."
+            },
+            {
+              "id": "19",
+              "foto": "image/Milano_affresco.jpg",
+              "names": "Bergangone Ambradjo",
+              "date": "1470 - 1523/1524",
+              "descriptions": "Sebbene fosse quasi un contemporaneo di Leonardo da Vinci, dipinse in uno stile più vicino all'arte lombarda pre-rinascimentale di Vincenzo Foppa e Bernardino Zenale. Le date della sua nascita e morte sono sconosciute; Si dice che sia nato a Fossano in Piemonte e il suo nome è dovuto alla sua affiliazione artistica con la scuola borgognona."
+            },
+            {
+              "id": "20",
+              "foto": "image/thumbnail.jpg",
+              "names": "Bissolo, Francesco",
+              "date": "1470 — 1554",
+              "descriptions": "Il figlio dell'artista. Uno studente di Giovanni Bellini. Dal 1490 si trasferisce nella bottega di Bellini. Dal 1492 al 1530 lavorò a Venezia. Ha assistito il maestro nella decorazione della Sala del Gran Consiglio di Palazzo Ducale (Venezia). Ha partecipato alla realizzazione degli addobbi per la Chiesa del Redentore a Venezia."
+            },
+            {
+              "id": "21",
+              "foto": "image/7kyfkolkbm.jpeg",
+              "names": "Boltraffio Giovanni",
+              "date": "1466 o 1467, Milano - 1516",
+              "descriptions": "Vasari riferisce che l'artista proveniva da una famiglia aristocratica. Cresciuto nella tradizione di Foppa, Bernardo Zenale e Ambrogio Bergognone, si forma nella bottega di Leonardo. La sua prima opera, La Resurrezione di Cristo, San Leonardo e Santa Lucia, fu eseguita nel 1491 insieme a Marco d'Ojono per la chiesa milanese di San Giovanni sul Muro."
+            },
+            {
+              "id": "22",
+              "foto": "image/Vecchietta1.jpg",
+              "names": "Vecchietta",
+              "data": "c. 1410, Siena - 6 giugno 1480",
+              "descriptions": "Giorgio Vasari racconta il Vecchietta nelle sue Biografie e lo descrive come un uomo cupo e asociale, eternamente immerso nel pensiero, e quindi non vissuto a lungo. Successivamente i ricercatori hanno cercato di collegare il nome di questo artista con eventuali dati d'archivio"
+            },
+            {
+              "id": "23",
+              "foto": "image/Giorgione.jpg",
+              "names": "Giorgione",
+              "data": "1477 / 1478-1510",
+              "descriptions": "Giorgione nacque nel piccolo paese di Castelfranco Veneto vicino a Venezia. Nel 1493 si trasferì a Venezia e divenne allievo di Giovanni Bellini. Nel 1497 apparve la sua prima opera indipendente - Cristo che porta la croce . Secondo Vasari, nell'aprile 1500 si incontrò con Leonardo da Vinci. "
+            },
+            {
+              "id": "24",
+              "foto": "image/Francesco.jpg",
+              "names": "Pesellino",
+              "data": "c. 1422 Firenze - m. 1457",
+              "descriptions": "Lo storico dell'arte italiano Giorgio Vasari ha compilato una breve biografia dell'artista, in cui parla con entusiasmo del suo lavoro, ma allo stesso tempo sembra averci mescolato tutto"
+            },
+            {
+              "id": "25",
+              "foto": "image/Girlandajo.jpg",
+              "names": "Dominico Ghirlandaio",
+              "date": "2 giugno 1448 - 11 gennaio 1494",
+              "descriptions": "Uno dei principali artisti fiorentini del Quattrocento, fondatore della dinastia artistica, continuata dal fratello David e dal figlio Ridolfo. Il capo della bottega d'arte, dove il giovane Michelangelo ha acquisito competenze professionali per un anno. L'autore di cicli di affreschi in cui convessi, con ogni sorta di dettagli mostra la vita domestica di personaggi biblici (nel loro ruolo sono i nobili cittadini di Firenze in costumi dell'epoca)"
+            },
+            {
+              "id": "26",
+              "foto": "image/benedetto01.jpg",
+              "names": "Benedetto di Bindo",
+              "date": "1385–1417",
+              "descriptions": "Pittore italiano della scuola senese di arte italo-bizantina e gotica. Nato nel comune di Castiglione di Valdorcia, vicino a Siena, intorno al 1385. Ci sono pochissime informazioni affidabili sulla carriera dell'artista. Il suo nome compare per la prima volta nei documenti senesi nel 1409, riferiscono pagamento di denaro a Benedetto di Bindo per lavori nel Duomo di Siena. Qui nel 1411-1412 Benedetto insieme ad un gruppo di artisti realizzò affreschi in tre cappelle della sacrestia."
+            },
+            {
+              "id": "27",
+              "foto": "image/Milano_affresco.jpg",
+              "names": "Bergangone Ambradjo",
+              "date": "1470 - 1523/1524",
+              "descriptions": "Sebbene fosse quasi un contemporaneo di Leonardo da Vinci, dipinse in uno stile più vicino all'arte lombarda pre-rinascimentale di Vincenzo Foppa e Bernardino Zenale. Le date della sua nascita e morte sono sconosciute; Si dice che sia nato a Fossano in Piemonte e il suo nome è dovuto alla sua affiliazione artistica con la scuola borgognona."
+            },
+            {
+              "id": "28",
+              "foto": "image/thumbnail.jpg",
+              "names": "Bissolo, Francesco",
+              "date": "1470 — 1554",
+              "descriptions": "Il figlio dell'artista. Uno studente di Giovanni Bellini. Dal 1490 si trasferisce nella bottega di Bellini. Dal 1492 al 1530 lavorò a Venezia. Ha assistito il maestro nella decorazione della Sala del Gran Consiglio di Palazzo Ducale (Venezia). Ha partecipato alla realizzazione degli addobbi per la Chiesa del Redentore a Venezia."
+            },
+            {
+              "id": "29",
+              "foto": "image/7kyfkolkbm.jpeg",
+              "names": "Boltraffio Giovanni",
+              "date": "1466 o 1467, Milano - 1516",
+              "descriptions": "Vasari riferisce che l'artista proveniva da una famiglia aristocratica. Cresciuto nella tradizione di Foppa, Bernardo Zenale e Ambrogio Bergognone, si forma nella bottega di Leonardo. La sua prima opera, La Resurrezione di Cristo, San Leonardo e Santa Lucia, fu eseguita nel 1491 insieme a Marco d'Ojono per la chiesa milanese di San Giovanni sul Muro."
+            },
+            {
+              "id": "30",
+              "foto": "image/Vecchietta1.jpg",
+              "names": "Vecchietta",
+              "data": "c. 1410, Siena - 6 giugno 1480",
+              "descriptions": "Giorgio Vasari racconta il Vecchietta nelle sue Biografie e lo descrive come un uomo cupo e asociale, eternamente immerso nel pensiero, e quindi non vissuto a lungo. Successivamente i ricercatori hanno cercato di collegare il nome di questo artista con eventuali dati d'archivio"
+            },
+            {
+              "id": "31",
+              "foto": "image/Giorgione.jpg",
+              "names": "Giorgione",
+              "data": "1477 / 1478-1510",
+              "descriptions": "Giorgione nacque nel piccolo paese di Castelfranco Veneto vicino a Venezia. Nel 1493 si trasferì a Venezia e divenne allievo di Giovanni Bellini. Nel 1497 apparve la sua prima opera indipendente - Cristo che porta la croce . Secondo Vasari, nell'aprile 1500 si incontrò con Leonardo da Vinci. "
+            },
+            {
+              "id": "32",
+              "foto": "image/Francesco.jpg",
+              "names": "Pesellino",
+              "data": "c. 1422 Firenze - m. 1457",
+              "descriptions": "Lo storico dell'arte italiano Giorgio Vasari ha compilato una breve biografia dell'artista, in cui parla con entusiasmo del suo lavoro, ma allo stesso tempo sembra averci mescolato tutto"
+            }
+          ]
+}

@@ -1,0 +1,177 @@
+/* contacts section */
+
+.contacts {
+	position: relative;
+	border-top: 1px solid $Grey;
+}
+
+.contacts__container {
+	max-width: 100%;
+	margin: 0;
+	padding-left: calc((100vw - 1618px)/2);
+	padding-right: 0;
+	align-items: stretch;
+}
+
+.contacts__block {
+	padding-top: 125px;
+	padding-bottom: 123px;
+	margin-right: 121px;
+}
+
+.contacts__name {
+	display: block;
+	margin-bottom: 13px;
+}
+
+.contacts__address {
+	display: block;
+	margin-bottom: 37px;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.contacts__odrercall,
+.contacts__docket {
+	display: block;
+	margin-bottom: 19px;
+	font-weight: 400;
+	font-size: 24px;
+	color: #333333;
+}
+
+.contacts__form {
+	flex-direction: column;
+	position: relative;
+	width: 400px;
+
+	.contacts__input {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 40px;
+		margin-bottom: 24px;
+		padding-left: 20px;
+		border: 1px solid $Black;
+		border-radius: 100px;
+		font-family: "Open Sans";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		color: $signature-color;
+	}
+
+	.contacts__tel {
+		margin-bottom: 21px;
+	}
+
+	.contacts__button {
+		width: 157px;
+		height: 59px;
+		margin-bottom: 40px;
+		background: none;
+		border: 2px solid $first-color;
+		border-radius: 100px;
+		font-weight: 700;
+		font-size: 18px;
+		text-align: center;
+		color: $first-color;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			background-color: $first-color;
+			color: $Wight;
+			transition: all 0.3s ease-in-out;
+		}
+
+		&:focus {
+			background-color: $second-color;
+			border-color: $extra-lite;
+			color: $Wight;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	.contacts__tweet {
+		margin-bottom: 18px;
+	}
+}
+
+.js-validate-error-label {
+	font-size: 12px;
+	margin-bottom: 7px;
+}
+
+.contacts__input.js-validate-error-field {
+	margin-bottom: 7px !important;
+	border: 2px solid rgb(184, 17, 17) !important;
+	box-sizing: border-box !important;
+}
+
+.contacts__whats {
+	margin-right: 20px;
+}
+
+
+.contacts__whats,
+.contacts__teleg {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		display: block;
+		left: 1px;
+		top: 1px;
+		width: 38px;
+		height: 38px;
+		background: transparent;
+		border-radius: 100px;
+		box-shadow: 0px 0px 15px -3px;
+		color: transparent;
+		transition: color 0.2s linear;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		display: block;
+		left: 0;
+		top: 0;
+		width: 40px;
+		height: 40px;
+		background: transparent;
+		border: 3px solid;
+		border-color: transparent;
+		border-radius: 100px;
+		transition: border-color 0.2s linear;
+	}
+
+	&:hover::before {
+		color: $Black;
+		transition: color 0.2s linear;
+	}
+
+	&:focus::after {
+		border-color: $first-color;
+		transition: border-color 0.2s linear;
+	}
+}
+
+
+.contacts__map.map {
+	width: 100%;
+}
+
+[class*="ground-pane"] {
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+}
+
+.ymaps-2-1-78-copyright__link,
+.ymaps-2-1-78-map-copyrights-promo,
+.ymaps-2-1-78-copyright.ymaps-2-1-78-copyright_logo_no,
+.ymaps-2-1-78-gotoymaps,
+.ymaps-2-1-78-gototech {
+	display: none !important;
+}
