@@ -1,152 +1,152 @@
 /* developments section */
 
 .developments__container {
-	padding-bottom: 80px;
-	padding-top: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .developments__title {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .swiper-wrapper.development__slider {
-	margin-bottom: 49px;
-	margin-left: 3px;
-	flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 49px;
+  margin-left: 3px;
 }
 
 .developments__card {
-	position: relative;
-	width: 499px;
-	height: auto;
-	box-sizing: border-box;
-	border: 1px solid $Grey;
+  position: relative;
+  border: 1px solid $Grey;
+  width: 499px;
+  height: auto;
+  box-sizing: border-box;
 
-	&:not(:nth-child(3n + 3)) {
-		margin-right: 50px;
-	}
+  &:not(:nth-child(3n + 3)) {
+    margin-right: 50px;
+  }
 
-	.developments__picture {
-		display: block;
-		width: 100%;
-		height: 300px;
-	}
+  .developments__picture {
+    display: block;
+    width: 100%;
+    height: 300px;
+  }
 
-	.developments__img {
-		width: 100%;
-		height: 100%;
-	}
+  .developments__img {
+    width: 100%;
+    height: 100%;
+  }
 
-	.developments__card--down {
-		padding: 14px 17px 89px 50px;
-	}
+  .developments__card--down {
+    padding: 14px 17px 89px 50px;
+  }
 
-	.developments__header {
-		margin-bottom: 0;
-	}
+  .developments__header {
+    margin-bottom: 0;
+  }
 
-	.developments__signature {
-		display: block;
-		position: relative;
-		text-align: right;
-		margin-bottom: 3px;
-		line-height: 16px;
-	}
+  .developments__signature {
+    position: relative;
+    display: block;
+    margin-bottom: 3px;
+    line-height: 16px;
+    text-align: right;
+  }
 
-	.developments__header {
-		line-height: 33px;
-	}
+  .developments__header {
+    line-height: 33px;
+  }
 
-	.developmets__descriptions {
-		display: block;
-		position: relative;
-		width: 400px;
-		font-weight: normal;
-		font-size: 16px;
-		line-height: 32px;
-		color: $Darck-grey;
-		margin-top: 3px;
-	}
+  .developmets__descriptions {
+    display: block;
+    position: relative;
+    width: 400px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: $Darck-grey;
+    margin-top: 3px;
+  }
 
-	.developments__link {
-		display: block;
-		position: absolute;
-		padding: 0;
-		bottom: 42px;
-		background: transparent;
-		border: none;
-		cursor: pointer;
-		line-height: 23px;
-		color: $first-color;
+  .developments__link {
+    display: block;
+    position: absolute;
+    padding: 0;
+    bottom: 42px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    line-height: 23px;
+    color: $first-color;
 
-		&::after {
-			content: "";
-			display: block;
-			position: relative;
-			width: 97px;
-			border-bottom: 1px solid $first-color;
-			transition: all 0.3s ease-in-out;
-		}
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      width: 97px;
+      border-bottom: 1px solid $first-color;
+      transition: all 0.3s ease-in-out;
+    }
 
-		&:hover {
-			font-weight: 700;
-			transition: all 0.3s ease-in-out;
+    &:hover {
+      font-weight: 700;
+      transition: all 0.3s ease-in-out;
 
-			&::after {
-				border-bottom: 2px solid $first-color;
-			}
-		}
+      &::after {
+        border-bottom: 2px solid $first-color;
+      }
+    }
 
-		&:active {
-			color: $second-color;
-			transition: color 0.3s ease-in-out;
-		}
+    &:active {
+      color: $second-color;
+      transition: color 0.3s ease-in-out;
+    }
 
-		&:focus {
-			outline: 2px solid $second-color;
-		}
-	}
+    &:focus {
+      outline: 2px solid $second-color;
+    }
+  }
 }
 
 .developments__card:nth-child(4) {
-	display: none;
+  display: none;
 }
 
 .developments__card:nth-child(5) {
-	display: none;
+  display: none;
 }
 
 .developments__btn {
-	position: relative;
-	display: block;
-	text-align: center;
-	margin: 0 auto;
-	font-weight: bold;
-	font-size: 18px;
-	color: $first-color;
-	line-height: 25px;
-	padding: 15px 33px;
-	cursor: pointer;
-	background: none;
-	border: 2px solid $first-color;
-	border-radius: 100px;
-	transition: all 0.3s ease-in-out;
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 18px;
+  color: $first-color;
+  line-height: 25px;
+  padding: 15px 33px;
+  cursor: pointer;
+  background: none;
+  border: 2px solid $first-color;
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
 
-	&:hover {
-		background-color: $first-color;
-		color: $Wight;
-		transition: all 0.3s ease-in-out;
-	}
+  &:hover {
+    background-color: $first-color;
+    color: $Wight;
+    transition: all 0.3s ease-in-out;
+  }
 
-	&:active {
-		border: 3px solid $extra-lite;
-		background-color: $second-color;
-	}
+  &:active {
+    border: 3px solid $extra-lite;
+    background-color: $second-color;
+  }
 
-	&:focus {
-		background-color: $first-color;
-		border: 3px solid $extra-lite;
-		color: $Wight;
-		transition: all 0.3s ease-in-out;
-	}
+  &:focus {
+    background-color: $first-color;
+    border: 3px solid $extra-lite;
+    color: $Wight;
+    transition: all 0.3s ease-in-out;
+  }
 }
