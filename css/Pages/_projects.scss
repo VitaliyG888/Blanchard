@@ -1,303 +1,301 @@
 /* projects section */
 
 .projects__container {
-	padding-left: 11px;
-	padding-top: 80px;
-	padding-bottom: 0;
+  padding-top: 80px;
+  padding-bottom: 0;
+  padding-left: 11px;
 }
 
 .projects__title {
-	margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .projects__descriptions {
-	margin-left: 2px;
-	margin-bottom: 33px;
-	max-width: 1060px;
-	letter-spacing: 0.1px;
+  margin-bottom: 33px;
+  margin-left: 2px;
+  max-width: 1060px;
+  letter-spacing: 0.1px;
 }
 
 .projects__partners {
-	margin-bottom: 34px;
-	line-height: 8px;
+  margin-bottom: 34px;
+  line-height: 8px;
 }
 
 .projects__tooltip svg {
-	position: relative;
-	display: inline-block;
-	top: 5px;
+  top: 5px;
+  position: relative;
+  display: inline-block;
 }
 
 .tooltip1 {
-	&::before {
-		left: -125px;
-		top: -59px;
-		width: 265px;
-	}
+  &::before {
+    left: -125px;
+    top: -59px;
+    width: 265px;
+  }
 
-	&::after {
-		top: -11px;
-	}
+  &::after {
+    top: -11px;
+  }
 }
 
 .tooltip2 {
-	&::before {
-		left: -124px;
-		top: -74px;
-		width: 265px;
-	}
+  &::before {
+    left: -124px;
+    top: -74px;
+    width: 265px;
+  }
 
-	&::after {
-		top: -10px;
-	}
+  &::after {
+    top: -10px;
+  }
 }
 
 .tooltip3 {
-	&::before {
-		left: -106px;
-		top: -43px;
-		width: 232px;
-	}
+  &::before {
+    left: -106px;
+    top: -43px;
+    width: 232px;
+  }
 
-	&::after {
-		top: -11px;
-	}
+  &::after {
+    top: -11px;
+  }
 }
 
 .tooltip-toggle {
-	position: relative;
-	cursor: pointer;
+  position: relative;
+  cursor: pointer;
 
-	svg {
-		width: 18px;
-		height: 18px;
+  svg {
+    width: 18px;
+    height: 18px;
 
-		.filled-circle {
-			fill: none;
-		}
+    .filled-circle {
+      fill: none;
+    }
 
-		.letter {
-			fill: $first-color;
-		}
-	}
+    .letter {
+      fill: $first-color;
+    }
+  }
 
-	&::before {
-		position: absolute;
-		color: $Wight;
-		background-color: $Grey;
-		font-weight: 600;
-		font-size: 12px;
-		line-height: 16px;
-		content: attr(aria-label);
-		padding: 9px;
-		transition: all 0.3s ease;
-	}
+  &::before {
+    content: attr(data-label);
+    position: absolute;
+    padding: 9px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: $Wight;
+    background-color: $Grey;
+    transition: all 0.3s ease;
+  }
 
-	&::after {
-		content: " ";
-		position: absolute;
-		left: 4px;
-		border-top: 11px solid $Grey;
-		border-right: 11px solid transparent;
-		border-left: 11px solid transparent;
-		margin-left: -5px;
-	}
+  &::after {
+    content: " ";
+    position: absolute;
+    left: 4px;
+    margin-left: -5px;
+    border-top: 11px solid $Grey;
+    border-right: 11px solid transparent;
+    border-left: 11px solid transparent;
+  }
 
-	&::before,
-	&::after {
-		opacity: 0;
-		text-align: center;
-	}
+  &::before,
+  &::after {
+    text-align: center;
+    opacity: 0;
+  }
 
-	&:focus {
-		outline: none;
+  &:focus {
+    outline: none;
 
-		&::before,
-		&::after {
-			opacity: 1;
-			@include transition(opacity, 0.3s);
-		}
+    &::before,
+    &::after {
+      opacity: 1;
+      @include transition(opacity, 0.3s);
+    }
 
-		svg {
+    svg {
+      .filled-circle {
+        fill: $first-color;
+      }
 
-			.filled-circle {
-				fill: $first-color;
-			}
+      .letter {
+        fill: $Wight;
+      }
+    }
+  }
 
-			.letter {
-				fill: $Wight;
-			}
-		}
-	}
+  &:hover {
 
-	&:hover {
+    &::before,
+    &::after {
+      opacity: 1;
+      @include transition(opacity, 0.3s);
+    }
 
-		&::before,
-		&::after {
-			opacity: 1;
-			@include transition(opacity, 0.3s);
-		}
+    svg {
+      .filled-circle {
+        fill: $first-color;
+      }
 
-		svg {
-
-			.filled-circle {
-				fill: $first-color;
-			}
-
-			.letter {
-				fill: $Wight;
-			}
-		}
-	}
+      .letter {
+        fill: $Wight;
+      }
+    }
+  }
 }
 
 .projects__link {
-	position: relative;
-	outline: 2px solid rgba(157, 92, 208, 0);
-	color: $first-color;
-	transition: all 0.2s ease-in;
+  position: relative;
+  outline: 2px solid rgba(157, 92, 208, 0);
+  color: $first-color;
+  transition: all 0.2s ease-in;
 
-	&::after {
-		content: '';
-		position: absolute;
-		width: 0;
-		height: 2px;
-		left: 0px;
-		bottom: 0;
-		background-color: $first-color;
-		transition: all 0.2s ease-in;
-	}
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: $first-color;
+    transition: all 0.2s ease-in;
+  }
 
-	&:hover::after {
-		width: 247px;
-		transition: all 0.2s ease-in;
-	}
+  &:hover::after {
+    width: 247px;
+    transition: all 0.2s ease-in;
+  }
 
-	&:focus {
-		outline: 2px solid rgba(157, 92, 208, 1);
-		transition: all 0.2s ease-in;
-	}
+  &:focus {
+    outline: 2px solid rgba(157, 92, 208, 1);
+    transition: all 0.2s ease-in;
+  }
 }
 
 .swiper-slide.projects__slider {
-	display: flex;
-	position: relative;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	border: 1px solid $Grey;
-	height: 148px;
-	box-sizing: border-box;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	transition: all 0.3s ease-in;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $Grey;
+  height: 148px;
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in;
 
-	&:hover {
-		-webkit-filter: grayscale(0);
-		filter: grayscale(0);
-		transition: all 0.3s ease-in;
-		cursor: pointer;
-	}
+  &:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+  }
 }
 
 .swiper-container#slider3 {
-	margin-bottom: 82px;
-	max-width: 1450px;
+  margin-bottom: 82px;
+  max-width: 1450px;
 }
 
 .projects1 {
-	background-image: url("../image/projects1.jpg");
+  background-image: url("../image/projects1.jpg");
 }
 
 .projects2 {
-	background-image: url("../image/projects2.jpg");
+  background-image: url("../image/projects2.jpg");
 }
 
 .projects3 {
-	background-image: url("../image/projects3.jpg");
+  background-image: url("../image/projects3.jpg");
 }
 
 .projects4 {
-	background-image: url("../image/projects4.jpg");
+  background-image: url("../image/projects4.jpg");
 }
 
 .projects5 {
-	background-image: url("../image/projects5.jpg");
+  background-image: url("../image/projects5.jpg");
 }
 
 .projects6 {
-	background-image: url("../image/projects6.jpg");
+  background-image: url("../image/projects6.jpg");
 }
 
 .projects7 {
-	background-image: url("../image/projects7.jpg");
+  background-image: url("../image/projects7.jpg");
 }
 
 .projects8 {
-	background-image: url("../image/projects8.jpg");
+  background-image: url("../image/projects8.jpg");
 }
 
 .projects9 {
-	background-image: url("../image/projects9.jpg");
+  background-image: url("../image/projects9.jpg");
 }
 
 .projects__swiper-button3.swiper-button {
-	position: relative;
+  position: relative;
 
-	.swiper-button-prev.swiper-button-prev-st.button3-prev,
-	.swiper-button-next.swiper-button-next-st.button3-next {
-		position: absolute;
-		top: 83px;
-		background-color: $btn-slider-color2;
-		transition: all 0.2s ease-in;
+  .swiper-button-prev.swiper-button-prev-st.button3-prev,
+  .swiper-button-next.swiper-button-next-st.button3-next {
+    position: absolute;
+    top: 83px;
+    background-color: $btn-slider-color2;
+    transition: all 0.2s ease-in;
 
-		&::after {
-			color: $Black;
-			transition: color 0.2s ease-in;
-		}
+    &::after {
+      color: $Black;
+      transition: color 0.2s ease-in;
+    }
 
-		&:focus {
-			background-color: $btn-slider-color2;
-			border: 2px solid $second-color;
-			transition: all 0.2s ease-in;
-		}
+    &:focus {
+      border: 2px solid $second-color;
+      background-color: $btn-slider-color2;
+      transition: all 0.2s ease-in;
+    }
 
-		&:hover {
-			background-color: $first-color;
-			transition: all 0.2s ease-in;
-		}
+    &:hover {
+      background-color: $first-color;
+      transition: all 0.2s ease-in;
+    }
 
-		&:hover::after {
-			color: $Wight;
-			transition: color 0.2s ease-in;
-		}
+    &:hover::after {
+      color: $Wight;
+      transition: color 0.2s ease-in;
+    }
 
-		&:active {
-			border: 2px solid $extra-lite;
-			background-color: $second-color;
-			transition: all 0.2s ease-in;
-		}
+    &:active {
+      border: 2px solid $extra-lite;
+      background-color: $second-color;
+      transition: all 0.2s ease-in;
+    }
 
-		&:active::after {
-			color: $Wight;
-			transition: color 0.2s ease-in;
-		}
-	}
+    &:active::after {
+      color: $Wight;
+      transition: color 0.2s ease-in;
+    }
+  }
 }
 
 .projects__showing .swiper-button-prev,
 .projects__showing .swiper-container-rtl .swiper-button-next {
-	left: 0;
+  left: 0;
 }
 
 .projects__showing .swiper-button-next,
 .projects__showing .swiper-container-rtl .swiper-button-prev {
-	right: 0;
+  right: 0;
 }
 
 .contacts__title {
-	margin-bottom: 16px;
+  margin-bottom: 16px;
 }

@@ -41,10 +41,6 @@
     padding: 14px 17px 89px 50px;
   }
 
-  .developments__header {
-    margin-bottom: 0;
-  }
-
   .developments__signature {
     position: relative;
     display: block;
@@ -54,38 +50,43 @@
   }
 
   .developments__header {
+    margin-bottom: 0;
     line-height: 33px;
   }
 
   .developmets__descriptions {
-    display: block;
     position: relative;
+    display: block;
+    margin-top: 3px;
     width: 400px;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 32px;
     color: $Darck-grey;
-    margin-top: 3px;
   }
 
   .developments__link {
-    display: block;
     position: absolute;
-    padding: 0;
     bottom: 42px;
-    background: transparent;
+    display: block;
     border: none;
-    cursor: pointer;
+    padding: 0;
     line-height: 23px;
     color: $first-color;
+    background: transparent;
+    cursor: pointer;
 
     &::after {
       content: "";
-      display: block;
       position: relative;
-      width: 97px;
+      display: block;
       border-bottom: 1px solid $first-color;
+      width: 97px;
       transition: all 0.3s ease-in-out;
+    }
+
+    &:focus {
+      outline: 2px solid $second-color;
     }
 
     &:hover {
@@ -101,10 +102,6 @@
       color: $second-color;
       transition: color 0.3s ease-in-out;
     }
-
-    &:focus {
-      outline: 2px solid $second-color;
-    }
   }
 }
 
@@ -119,22 +116,22 @@
 .developments__btn {
   position: relative;
   display: block;
-  text-align: center;
   margin: 0 auto;
-  font-weight: bold;
-  font-size: 18px;
-  color: $first-color;
-  line-height: 25px;
-  padding: 15px 33px;
-  cursor: pointer;
-  background: none;
   border: 2px solid $first-color;
   border-radius: 100px;
+  padding: 15px 33px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: $first-color;
+  background: none;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 
   &:hover {
-    background-color: $first-color;
     color: $Wight;
+    background-color: $first-color;
     transition: all 0.3s ease-in-out;
   }
 
@@ -144,9 +141,9 @@
   }
 
   &:focus {
-    background-color: $first-color;
     border: 3px solid $extra-lite;
     color: $Wight;
+    background-color: $first-color;
     transition: all 0.3s ease-in-out;
   }
 }

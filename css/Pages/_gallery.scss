@@ -205,12 +205,12 @@ div {
   position: relative;
 
   &.swiper-pagination-fraction {
+    margin-right: 31px;
+    width: fit-content;
     width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content;
-    margin-right: 31px;
-    color: $Wight;
     font-size: 14px;
+    color: $Wight;
   }
 }
 
@@ -249,7 +249,6 @@ div {
     left: 50%;
     top: 50%;
     z-index: 2;
-    transform: translate(-50%, -50%);
     width: 310px;
     height: 310px;
     background-image: url("../image/hover-gallery.png");
@@ -257,6 +256,7 @@ div {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0;
+    transform: translate(-50%, -50%);
     @include transition(opacity, 0.3s);
   }
 
@@ -268,7 +268,6 @@ div {
     opacity: 0;
     @include transition(opacity, 0.3s);
   }
-
 
   &:hover::after {
     opacity: 1;
@@ -403,9 +402,9 @@ div {
 
 .gallery__description {
   position: absolute;
-  display: block;
   left: 15px;
   top: 797px;
+  display: block;
   max-width: 377px;
   font-weight: 600;
   font-size: 16px;
@@ -415,29 +414,29 @@ div {
 
   .gallery__description--authorization {
     position: relative;
-    background: none;
     border: none;
-    cursor: pointer;
     color: $first-lite;
+    background: none;
+    cursor: pointer;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
+      left: 4px;
+      top: -5px;
+      border: 1px solid rgba($first-color, 0);
       width: 123px;
       height: 30px;
-      top: -5px;
-      left: 4px;
-      border: 1px solid rgba($first-color, 0);
       transition: all 0.2s ease-in;
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
-      width: 0;
-      height: 2px;
       left: 6px;
       bottom: 0;
+      width: 0;
+      height: 2px;
       background-color: rgba($first-color, 1);
       transition: all 0.2s ease-in;
     }

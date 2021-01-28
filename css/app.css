@@ -431,8 +431,8 @@ input[type="number"]:focus {
 }
 
 .nether__choice .nether__artist:active {
-  background-color: #9d5cd0;
   border-color: #d1a9f0;
+  background-color: #9d5cd0;
   opacity: 0.4;
   transition: all 0.2s ease-in;
 }
@@ -559,38 +559,57 @@ input[type="number"]:focus {
   left: 0;
   top: 0;
   z-index: -100;
-  width: 100%;
+  width: 100vw;
   height: 800px;
 }
 
-.background__img {
-  width: 100%;
-  height: 800px;
+.background__first {
+  position: relative;
+  display: block;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-animation: backgroundAnimation 30s linear infinite;
   animation: backgroundAnimation 30s linear infinite;
 }
 
+.background1 {
+  background-image: url("../image/birmingham-museums-trust.jpg");
+}
+
+.background2 {
+  background-image: url("../image/background2.jpg");
+}
+
+.background3 {
+  background-image: url("../image/background3.jpg");
+}
+
+from {
+  background-size: 100% 100%;
+}
+
 @-webkit-keyframes backgroundAnimation {
   from {
-    transform: scale(1);
+    background-size: 100% 100%;
   }
   50% {
-    transform: scale(1.1);
+    background-size: 110% 110%;
   }
   to {
-    transform: scale(1);
+    background-size: 100% 100%;
   }
 }
 
 @keyframes backgroundAnimation {
   from {
-    transform: scale(1);
+    background-size: 100% 100%;
   }
   50% {
-    transform: scale(1.1);
+    background-size: 110% 110%;
   }
   to {
-    transform: scale(1);
+    background-size: 100% 100%;
   }
 }
 
@@ -874,12 +893,12 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .swiper-pagination-st.swiper-pagination-fraction {
+  margin-right: 31px;
+  width: fit-content;
   width: -webkit-fit-content;
   width: -moz-fit-content;
-  width: fit-content;
-  margin-right: 31px;
-  color: #ffffff;
   font-size: 14px;
+  color: #ffffff;
 }
 
 .swiper-container#slider1 {
@@ -918,7 +937,6 @@ div[data-custom-properties="[object Object]"] {
   left: 50%;
   top: 50%;
   z-index: 2;
-  transform: translate(-50%, -50%);
   width: 310px;
   height: 310px;
   background-image: url("../image/hover-gallery.png");
@@ -926,6 +944,7 @@ div[data-custom-properties="[object Object]"] {
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0;
+  transform: translate(-50%, -50%);
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -1070,9 +1089,9 @@ div[data-custom-properties="[object Object]"] {
 
 .gallery__description {
   position: absolute;
-  display: block;
   left: 15px;
   top: 797px;
+  display: block;
   max-width: 377px;
   font-weight: 600;
   font-size: 16px;
@@ -1083,30 +1102,30 @@ div[data-custom-properties="[object Object]"] {
 
 .gallery__description .gallery__description--authorization {
   position: relative;
-  background: none;
   border: none;
-  cursor: pointer;
   color: #c283f3;
+  background: none;
+  cursor: pointer;
 }
 
 .gallery__description .gallery__description--authorization::before {
-  content: '';
+  content: "";
   position: absolute;
+  left: 4px;
+  top: -5px;
+  border: 1px solid rgba(157, 92, 208, 0);
   width: 123px;
   height: 30px;
-  top: -5px;
-  left: 4px;
-  border: 1px solid rgba(157, 92, 208, 0);
   transition: all 0.2s ease-in;
 }
 
 .gallery__description .gallery__description--authorization::after {
-  content: '';
+  content: "";
   position: absolute;
-  width: 0;
-  height: 2px;
   left: 6px;
   bottom: 0;
+  width: 0;
+  height: 2px;
   background-color: #9d5cd0;
   transition: all 0.2s ease-in;
 }
@@ -1503,8 +1522,8 @@ div[data-custom-properties="[object Object]"] {
 
 /* developments section */
 .developments__container {
-  padding-bottom: 80px;
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .developments__title {
@@ -1512,17 +1531,17 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .swiper-wrapper.development__slider {
+  flex-wrap: wrap;
   margin-bottom: 49px;
   margin-left: 3px;
-  flex-wrap: wrap;
 }
 
 .developments__card {
   position: relative;
+  border: 1px solid #cacaca;
   width: 499px;
   height: auto;
   box-sizing: border-box;
-  border: 1px solid #cacaca;
 }
 
 .developments__card:not(:nth-child(3n + 3)) {
@@ -1544,52 +1563,53 @@ div[data-custom-properties="[object Object]"] {
   padding: 14px 17px 89px 50px;
 }
 
-.developments__card .developments__header {
-  margin-bottom: 0;
-}
-
 .developments__card .developments__signature {
-  display: block;
   position: relative;
-  text-align: right;
+  display: block;
   margin-bottom: 3px;
   line-height: 16px;
+  text-align: right;
 }
 
 .developments__card .developments__header {
+  margin-bottom: 0;
   line-height: 33px;
 }
 
 .developments__card .developmets__descriptions {
-  display: block;
   position: relative;
+  display: block;
+  margin-top: 3px;
   width: 400px;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 32px;
   color: #333333;
-  margin-top: 3px;
 }
 
 .developments__card .developments__link {
-  display: block;
   position: absolute;
-  padding: 0;
   bottom: 42px;
-  background: transparent;
+  display: block;
   border: none;
-  cursor: pointer;
+  padding: 0;
   line-height: 23px;
   color: #9d5cd0;
+  background: transparent;
+  cursor: pointer;
 }
 
 .developments__card .developments__link::after {
   content: "";
-  display: block;
   position: relative;
-  width: 97px;
+  display: block;
   border-bottom: 1px solid #9d5cd0;
+  width: 97px;
   transition: all 0.3s ease-in-out;
+}
+
+.developments__card .developments__link:focus {
+  outline: 2px solid #7943a4;
 }
 
 .developments__card .developments__link:hover {
@@ -1606,10 +1626,6 @@ div[data-custom-properties="[object Object]"] {
   transition: color 0.3s ease-in-out;
 }
 
-.developments__card .developments__link:focus {
-  outline: 2px solid #7943a4;
-}
-
 .developments__card:nth-child(4) {
   display: none;
 }
@@ -1621,23 +1637,23 @@ div[data-custom-properties="[object Object]"] {
 .developments__btn {
   position: relative;
   display: block;
-  text-align: center;
   margin: 0 auto;
-  font-weight: bold;
-  font-size: 18px;
-  color: #9d5cd0;
-  line-height: 25px;
-  padding: 15px 33px;
-  cursor: pointer;
-  background: none;
   border: 2px solid #9d5cd0;
   border-radius: 100px;
+  padding: 15px 33px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #9d5cd0;
+  background: none;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .developments__btn:hover {
-  background-color: #9d5cd0;
   color: #ffffff;
+  background-color: #9d5cd0;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1647,9 +1663,9 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .developments__btn:focus {
-  background-color: #9d5cd0;
   border: 3px solid #d1a9f0;
   color: #ffffff;
+  background-color: #9d5cd0;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1968,17 +1984,17 @@ div[data-custom-properties="[object Object]"] {
   transition: all 0.3s ease-in-out;
 }
 
+.editions__order:focus {
+  border: 3px solid #d1a9f0;
+  background: #7943a4;
+}
+
 .editions__order:hover {
   background-color: #9d5cd0;
   transition: all 0.3s ease-in-out;
 }
 
 .editions__order:active {
-  border: 3px solid #d1a9f0;
-  background: #7943a4;
-}
-
-.editions__order:focus {
   border: 3px solid #d1a9f0;
   background: #7943a4;
 }
@@ -1990,9 +2006,9 @@ div[data-custom-properties="[object Object]"] {
 
 /* projects section */
 .projects__container {
-  padding-left: 11px;
   padding-top: 80px;
   padding-bottom: 0;
+  padding-left: 11px;
 }
 
 .projects__title {
@@ -2000,8 +2016,8 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .projects__descriptions {
-  margin-left: 2px;
   margin-bottom: 33px;
+  margin-left: 2px;
   max-width: 1060px;
   letter-spacing: 0.1px;
 }
@@ -2012,9 +2028,9 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .projects__tooltip svg {
+  top: 5px;
   position: relative;
   display: inline-block;
-  top: 5px;
 }
 
 .tooltip1::before {
@@ -2066,14 +2082,14 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .tooltip-toggle::before {
+  content: attr(data-label);
   position: absolute;
-  color: #ffffff;
-  background-color: #cacaca;
+  padding: 9px;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  content: attr(aria-label);
-  padding: 9px;
+  color: #ffffff;
+  background-color: #cacaca;
   transition: all 0.3s ease;
 }
 
@@ -2081,15 +2097,15 @@ div[data-custom-properties="[object Object]"] {
   content: " ";
   position: absolute;
   left: 4px;
+  margin-left: -5px;
   border-top: 11px solid #cacaca;
   border-right: 11px solid transparent;
   border-left: 11px solid transparent;
-  margin-left: -5px;
 }
 
 .tooltip-toggle::before, .tooltip-toggle::after {
-  opacity: 0;
   text-align: center;
+  opacity: 0;
 }
 
 .tooltip-toggle:focus {
@@ -2130,12 +2146,12 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .projects__link::after {
-  content: '';
+  content: "";
   position: absolute;
+  left: 0;
+  bottom: 0;
   width: 0;
   height: 2px;
-  left: 0px;
-  bottom: 0;
   background-color: #9d5cd0;
   transition: all 0.2s ease-in;
 }
@@ -2151,17 +2167,17 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .swiper-slide.projects__slider {
-  display: flex;
   position: relative;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   border: 1px solid #cacaca;
   height: 148px;
   box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: all 0.3s ease-in;
@@ -2235,8 +2251,8 @@ div[data-custom-properties="[object Object]"] {
 
 .projects__swiper-button3.swiper-button .swiper-button-prev.swiper-button-prev-st.button3-prev:focus,
 .projects__swiper-button3.swiper-button .swiper-button-next.swiper-button-next-st.button3-next:focus {
-  background-color: #ececec;
   border: 2px solid #7943a4;
+  background-color: #ececec;
   transition: all 0.2s ease-in;
 }
 
@@ -2407,7 +2423,7 @@ div[data-custom-properties="[object Object]"] {
   border-radius: 100px;
   width: 38px;
   height: 38px;
-  box-shadow: 0px 0px 15px -3px;
+  box-shadow: 0 0 15px -3px;
   color: transparent;
   background: transparent;
   transition: color 0.2s linear;
@@ -2522,8 +2538,8 @@ div[data-custom-properties="[object Object]"] {
 
 .nav-toggle span {
   position: absolute;
-  display: block;
   right: 5px;
+  display: block;
   width: 28px;
   height: 3.65px;
   background-color: #ffffff;
@@ -2535,9 +2551,9 @@ div[data-custom-properties="[object Object]"] {
   position: absolute;
   left: 0;
   top: 12px;
+  display: block;
   width: 24px;
   height: 3.65px;
-  display: block;
   background-color: #ffffff;
   transition: background-color 0.5s ease-in-out;
 }
@@ -2547,9 +2563,9 @@ div[data-custom-properties="[object Object]"] {
   position: absolute;
   left: 0;
   bottom: 13px;
+  display: block;
   width: 36px;
   height: 3.65px;
-  display: block;
   background-color: #ffffff;
   transition: background-color 0.5s ease-in-out;
 }
@@ -2589,12 +2605,12 @@ div[data-custom-properties="[object Object]"] {
 
 .header__close {
   position: relative;
+  z-index: 100;
   display: none;
+  margin-bottom: 55px;
+  border: none;
   width: 36px;
   height: 36px;
-  margin-bottom: 55px;
-  z-index: 100;
-  border: none;
   background: none;
   transition: all 0.5s ease-in;
 }
@@ -2612,12 +2628,12 @@ div[data-custom-properties="[object Object]"] {
   position: fixed;
   left: -150vw;
   top: 0;
-  width: 100%;
-  height: 100vh;
+  z-index: 15;
+  overflow-y: scroll;
   padding-top: 25px;
   padding-left: 65px;
-  overflow-y: scroll;
-  z-index: 15;
+  width: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
   transition: left 0.5s;
 }
