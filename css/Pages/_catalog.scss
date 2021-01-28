@@ -298,8 +298,7 @@
 	font-size: 16px;
 	text-align: left;
 	color: $Darck-grey;
-	transition: font-weight 0.2s ease-in;
-	transition: color 0.2s ease-in;
+	transition: font-weight 0.2s ease-in, color 0.2s ease-in;
 
 	&::before {
 		content: '';
@@ -341,8 +340,7 @@
 	&:active {
 		font-weight: 600;
 		color: $second-color;
-		transition: font-weight 0.2s ease-in;
-		transition: color 0.2s ease-in;
+		transition: font-weight 0.2s ease-in, color 0.2s ease-in;
 	}
 }
 

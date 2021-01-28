@@ -76,22 +76,19 @@
 		font-size: 18px;
 		text-align: center;
 		color: $first-color;
-		transition: color 0.3s ease-in-out;
-		transition: background-color 0.3s ease-in-out;
+		transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
 		&:hover {
 			background-color: $first-color;
 			color: $Wight;
-			transition: color 0.3s ease-in-out;
-			transition: background-color 0.3s ease-in-out;
+			transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 		}
 
 		&:focus {
 			background-color: $second-color;
 			border-color: $extra-lite;
 			color: $Wight;
-			transition: color 0.3s ease-in-out;
-			transition: background-color 0.3s ease-in-out;
+			transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 		}
 	}
 
@@ -128,7 +125,6 @@
 		top: 1px;
 		width: 38px;
 		height: 38px;
-		background: transparent;
 		border-radius: 100px;
 		box-shadow: 0px 0px 15px -3px;
 		color: transparent;
@@ -143,7 +139,6 @@
 		top: 0;
 		width: 40px;
 		height: 40px;
-		background: transparent;
 		border: 3px solid;
 		border-color: transparent;
 		border-radius: 100px;

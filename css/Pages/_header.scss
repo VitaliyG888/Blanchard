@@ -171,7 +171,7 @@
 		width: 115%;
 		height: 30px;
 		opacity: 0;
-		transition: opasity 0.3s ease-in;
+		transition: opacity 0.3s ease-in;
 	}
 
 	&::after {
@@ -190,7 +190,7 @@
 
 	&:focus::before {
 		opacity: 1;
-		transition: opasity 0.3s ease-in;
+		transition: opacity 0.3s ease-in;
 	}
 
 	&:active {
