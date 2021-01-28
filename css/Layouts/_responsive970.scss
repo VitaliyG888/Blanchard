@@ -34,8 +34,8 @@
   }
 
   .first__description {
-    letter-spacing: -0.1px;
     margin-bottom: 131px;
+    letter-spacing: -0.1px;
   }
 
   .about__container {
@@ -50,8 +50,8 @@
 
   .gallery .gallery__container {
     padding-top: 80px;
-    padding-left: 12px;
     padding-bottom: 70px;
+    padding-left: 12px;
   }
 
   .gallery__block {
@@ -93,8 +93,8 @@
 
   .gallery__description {
     position: initial;
-    max-width: 668px;
     margin-left: 3px;
+    max-width: 668px;
   }
 
   // catalog section
@@ -108,15 +108,14 @@
   }
 
   .catalog__card.card {
-    width: 100%;
     margin: 0;
+    width: 100%;
+    max-width: 668px;
 
-    & img {
+    img {
       width: 100%;
-      height: 274px;
-
+      height: 419px;
     }
-
   }
 
   .catalog__title {
@@ -129,21 +128,20 @@
   }
 
   .catalog__description {
-    width: 669px;
     margin-bottom: 95px;
     margin-left: 0;
+    width: 669px;
   }
 
   .catalog__content {
     flex-wrap: wrap-reverse;
   }
 
-
   .catalog__artists.accordeon {
-    max-width: 668px;
-    width: 100%;
-    margin-left: 0;
     margin-bottom: 47px;
+    margin-left: 0;
+    width: 100%;
+    max-width: 668px;
   }
 
   .accordeon-section {
@@ -151,20 +149,9 @@
   }
 
   .accordeon-item {
+    grid-column-gap: 20px;
     grid-template-columns: repeat(3, 209px);
     grid-template-rows: repeat(9, 32px);
-    grid-column-gap: 20px;
-  }
-
-
-
-  .catalog__card.card {
-    max-width: 668px;
-
-    & img {
-      width: 668px;
-      height: 419px;
-    }
   }
 
   // developments section
@@ -214,7 +201,6 @@
     margin-bottom: -16px;
   }
 
-
   .editions__container {
     padding-bottom: 78px;
   }
@@ -242,13 +228,13 @@
     display: flex;
 
     .editions__list--1 {
-      width: 134px;
       margin-right: 57px;
+      width: 134px;
     }
 
     .editions__list--2 {
-      width: 297px;
       margin-right: 43px;
+      width: 297px;
     }
 
     .editions__list--3 {
@@ -261,10 +247,10 @@
   }
 
   .editions__priceform {
-    flex-direction: column;
-    align-items: flex-start;
     left: 15px;
     top: 353px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .editions__img {
@@ -284,14 +270,14 @@
   }
 
   .editions__swiper-button2 {
-    margin-left: -42px;
     margin-top: -14px;
     margin-bottom: 26px;
+    margin-left: -42px;
   }
 
   .editions__showing {
-    margin-left: 31px;
     margin-top: 73px;
+    margin-left: 31px;
   }
 
   // progects section
@@ -310,8 +296,8 @@
   }
 
   .projects__descriptions {
-    max-width: 636px;
     margin-bottom: 37px;
+    max-width: 636px;
   }
 
   .projects__partners {
@@ -319,10 +305,10 @@
   }
 
   .swiper-container#slider3 {
-    max-width: 562px;
-    margin-bottom: 80px;
     margin-top: 7px;
+    margin-bottom: 80px;
     height: 106px;
+    max-width: 562px;
   }
 
   .swiper-slide.projects__slider {
@@ -341,10 +327,10 @@
   // contacts section
 
   .contacts__container {
-    width: 100%;
     margin: 0;
     padding-right: 0;
-    padding-left: calc((100vw - 682px)/2);
+    padding-left: calc((100vw - 682px) / 2);
+    width: 100%;
   }
 
   .contacts .contacts__container .contacts__block {
@@ -357,6 +343,5 @@
 
   .contacts .contacts__container .contacts__block .contacts_name {
     margin-bottom: 6px;
-
   }
 }

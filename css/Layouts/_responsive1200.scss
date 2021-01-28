@@ -2,13 +2,9 @@
   .container {
     width: 957px;
 
-
     .header__container {
+      padding: 29px 8px 29px 13px;
       width: calc(100% - 8rem);
-      padding-top: 29px;
-      padding-right: 8px;
-      padding-bottom: 29px;
-      padding-left: 13px;
     }
   }
 
@@ -16,7 +12,6 @@
     width: 193px;
     height: 42px;
   }
-
 
   .header__nether {
     display: none;
@@ -84,8 +79,8 @@
   }
 
   .nav--showed {
-    display: block;
     z-index: 20;
+    display: block;
     -webkit-animation: show-menu 0.5s ease-in;
     animation: show-menu 0.5s ease-in;
   }
@@ -100,18 +95,16 @@
   }
 
   .header__admission {
+    z-index: 100;
+    margin-bottom: 30px;
     border: 2px solid $first-color;
     border-radius: 100px;
     padding: 19px 88px;
-    margin-bottom: 30px;
-    z-index: 100;
     -webkit-animation: show-menu 0.5s ease-in;
     animation: show-menu 0.5s ease-in;
   }
 
   .search {
-
-
     .search__input {
       width: 0;
 
@@ -140,17 +133,16 @@
   .search__magnifier {
     display: block;
     margin-top: 3px;
+    border: none;
     padding: 0;
     background: none;
-    border: none;
 
     .search__magnifier--lupe {
       width: 31px;
       height: 31px;
     }
 
-    & svg {
-
+    svg {
       rect,
       path {
         transition: all 0.5s ease-in;
@@ -158,7 +150,6 @@
     }
 
     &:hover svg {
-
       rect,
       path {
         fill: $first-color;
@@ -167,7 +158,6 @@
     }
 
     &:active svg {
-
       rect,
       path {
         fill: $second-color;
@@ -179,7 +169,6 @@
   .header__magnifier.active {
     display: none;
   }
-
 
   .first__wrapper {
     position: relative;
@@ -200,8 +189,8 @@
   }
 
   .first__description {
-    max-width: 693px;
     margin-bottom: 132px;
+    max-width: 693px;
   }
 
   .first__block-up {
@@ -236,10 +225,9 @@
   }
 
   .gallery__description {
-    max-width: 280px;
     top: 609px;
+    max-width: 280px;
   }
-
 
   .catalog__container {
     padding-top: 70px;
@@ -254,18 +242,17 @@
   }
 
   .catalog__transfer {
-    width: 450px;
     margin-top: 18px;
+    width: 450px;
   }
 
   .catalog__card.card {
     width: 437px;
 
-    & img {
+    img {
       width: 437px;
       height: 274px;
     }
-
   }
 
   .accordeon-section {
@@ -273,15 +260,14 @@
   }
 
   .accordeon-item {
+    grid-column-gap: 19px;
     grid-template-columns: repeat(2, 209px);
     grid-template-rows: repeat(12, 32px);
-    grid-column-gap: 19px;
   }
 
   .developments__container {
     padding-bottom: 75px;
   }
-
 
   .developments__card {
     width: 289px;
@@ -300,12 +286,11 @@
 
     .developments__signature {
       margin-bottom: 3px;
-      ;
     }
 
     .developmets__descriptions {
-      letter-spacing: 0.1px;
       width: 223px;
+      letter-spacing: 0.1px;
     }
 
     .developments__link {
@@ -314,8 +299,8 @@
   }
 
   .swiper-container#slider2 {
+    margin-left: 0;
     max-width: 630px;
-    margin-left: 0px;
   }
 
   .editions__container {
@@ -325,20 +310,20 @@
 
   .editions__priceform {
     position: absolute;
-    flex-direction: row;
-    align-items: center;
     left: 540px;
     top: 105px;
+    flex-direction: row;
+    align-items: center;
   }
 
   .editions__price {
-    margin-bottom: 0;
     margin-right: 14px;
+    margin-bottom: 0;
   }
 
   .editions__img {
-    height: 322px;
     margin-bottom: 14px;
+    height: 322px;
   }
 
   .editions__checkboks {
@@ -355,18 +340,17 @@
   }
 
   .editions__block--left {
-    width: 238px;
     margin-right: 58px;
+    width: 238px;
   }
-
 
   .projects__container {
     padding-bottom: 4px;
   }
 
   .projects__descriptions {
-    max-width: 925px;
     margin-bottom: 33px;
+    max-width: 925px;
     letter-spacing: 0;
   }
 
@@ -375,9 +359,9 @@
   }
 
   .tooltip2::before {
-    width: 324px;
     left: -151px;
     top: -40px;
+    width: 324px;
   }
 
   .tooltip3::before {
@@ -389,8 +373,8 @@
   }
 
   .swiper-container#slider3 {
-    max-width: 818px;
     height: 128px;
+    max-width: 818px;
   }
 
   .swiper-slide.projects__slider {
@@ -407,8 +391,8 @@
   }
 
   .contacts__container {
+    padding-left: calc((100vw - 941px) / 2);
     width: 100%;
-    padding-left: calc((100vw - 941px)/2);
   }
 
   .contacts__title {
@@ -416,10 +400,10 @@
   }
 
   .contacts .contacts__container .contacts__block {
-    width: 382px;
     margin-right: 100px;
     padding-top: 125px;
     padding-bottom: 125px;
+    width: 382px;
   }
 
   .contacts__form {
