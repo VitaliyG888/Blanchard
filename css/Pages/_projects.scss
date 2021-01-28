@@ -23,8 +23,8 @@
 }
 
 .projects__tooltip svg {
-  top: 5px;
   position: relative;
+  top: 5px;
   display: inline-block;
 }
 
@@ -81,6 +81,12 @@
     }
   }
 
+  &::before,
+  &::after {
+    text-align: center;
+    opacity: 0;
+  }
+
   &::before {
     content: attr(data-label);
     position: absolute;
@@ -101,12 +107,6 @@
     border-top: 11px solid $Grey;
     border-right: 11px solid transparent;
     border-left: 11px solid transparent;
-  }
-
-  &::before,
-  &::after {
-    text-align: center;
-    opacity: 0;
   }
 
   &:focus {

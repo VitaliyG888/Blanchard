@@ -2028,8 +2028,8 @@ div[data-custom-properties="[object Object]"] {
 }
 
 .projects__tooltip svg {
-  top: 5px;
   position: relative;
+  top: 5px;
   display: inline-block;
 }
 
@@ -2081,6 +2081,11 @@ div[data-custom-properties="[object Object]"] {
   fill: #9d5cd0;
 }
 
+.tooltip-toggle::before, .tooltip-toggle::after {
+  text-align: center;
+  opacity: 0;
+}
+
 .tooltip-toggle::before {
   content: attr(data-label);
   position: absolute;
@@ -2101,11 +2106,6 @@ div[data-custom-properties="[object Object]"] {
   border-top: 11px solid #cacaca;
   border-right: 11px solid transparent;
   border-left: 11px solid transparent;
-}
-
-.tooltip-toggle::before, .tooltip-toggle::after {
-  text-align: center;
-  opacity: 0;
 }
 
 .tooltip-toggle:focus {
