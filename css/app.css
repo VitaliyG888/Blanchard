@@ -2727,10 +2727,10 @@ div[data-custom-properties="[object Object]"] {
     margin-right: 0;
   }
   .nav-prime__item:not(:last-child) {
-    margin-right: 25px;
+    margin-right: 30px;
   }
   .nether__item:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 50px;
   }
   .swiper-container#slider1 {
     width: 700px;
