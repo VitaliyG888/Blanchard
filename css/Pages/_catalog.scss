@@ -281,8 +281,8 @@
 .accordeon-item {
   display: grid;
   grid-auto-flow: column;
-  grid-column-gap: 48px;
-  grid-template-columns: repeat(3, 209px);
+  grid-column-gap: 46px;
+  grid-template-columns: repeat(3, 211px);
   grid-template-rows: repeat(9, 32px);
   padding: 30px 0 25px;
 }
@@ -298,8 +298,8 @@
   text-align: left;
   color: $Darck-grey;
   background: none;
+  transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
   cursor: pointer;
-  @include transition(border-color, 0.2s);
 
   &::before {
     content: "";

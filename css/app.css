@@ -1,5 +1,5 @@
 @font-face {
-  src: url("../fonts/OpenSans-Regular.woff") format("woff");
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
   font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  src: url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
   font-family: "Open Sans";
   font-weight: 600;
   font-style: normal;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  src: url("../fonts/OpenSans-Bold.woff") format("woff");
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2");
   font-family: "Open Sans";
   font-weight: 700;
   font-style: normal;
@@ -1427,8 +1427,8 @@ div[data-custom-properties="[object Object]"] {
 .accordeon-item {
   display: grid;
   grid-auto-flow: column;
-  grid-column-gap: 48px;
-  grid-template-columns: repeat(3, 209px);
+  grid-column-gap: 46px;
+  grid-template-columns: repeat(3, 211px);
   grid-template-rows: repeat(9, 32px);
   padding: 30px 0 25px;
 }
@@ -1444,8 +1444,8 @@ div[data-custom-properties="[object Object]"] {
   text-align: left;
   color: #333333;
   background: none;
+  transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
   cursor: pointer;
-  transition: border-color 0.2s ease-in-out;
 }
 
 .accordeon-link::before {
@@ -3762,13 +3762,13 @@ div[data-custom-properties="[object Object]"] {
     width: 97px;
     height: 22px;
   }
-  .footer__link img {
+  .footer__link {
     width: 25px;
     height: 25px;
   }
-  .footer__link::after {
-    width: 32px;
-    height: 32px;
+  .footer__link::before {
+    width: 33px;
+    height: 33px;
   }
   .footer__item:not(:last-child) {
     margin-right: 14px;
