@@ -275,8 +275,8 @@ input[type="number"]:focus {
 .nether__container {
   align-items: center;
   justify-content: space-between;
-  padding-top: 19px;
-  padding-bottom: 21px;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 
 .nether__item:not(:last-child) {
@@ -462,22 +462,18 @@ input[type="number"]:focus {
 .search {
   position: relative;
   outline: 2px solid rgba(157, 92, 208, 0);
-  padding-left: 44px;
+  padding-top: 9px;
+  width: 256px;
   transition: all 0.2s ease-in;
 }
 
 .search .search__magnifier {
-  position: absolute;
-  left: 8px;
-  top: 8px;
-  display: block;
-  border: none;
-  background: transparent;
+  display: inline-block;
 }
 
 .search .search__input {
-  margin-top: 6px;
-  margin-right: 3px;
+  position: absolute;
+  bottom: 3px;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.85);
   width: 218px;
@@ -508,37 +504,37 @@ input[type="number"]:focus {
   font-family: "Open sans";
 }
 
-.search:focus-within {
-  outline: 2px solid #9d5cd0;
-  transition: all 0.2s ease-in;
+.search .search__input:hover {
+  border-bottom: 1px solid #9d5cd0;
+  transition: border-color 0.3s ease-in;
 }
 
-.search:hover .search__input {
-  border-bottom: 1px solid #9d5cd0;
-  transition: border-color 0.2s ease-in;
+.search:focus-within {
+  outline: 2px solid #9d5cd0;
+  transition: all 0.3s ease-in;
 }
 
 .search .search__magnifier--rect,
 .search .search__magnifier--path {
   fill: #ffffff;
-  transition: fill 0.2s ease-in;
+  transition: fill 0.3s ease-in;
 }
 
 .search:hover .search__magnifier--rect,
 .search:hover .search__magnifier--path {
   fill: #9d5cd0;
-  transition: fill 0.2s ease-in;
+  transition: fill 0.3s ease-in;
 }
 
 .search:active .search__input {
   border-bottom: 1px solid rgba(255, 255, 255, 0.85);
-  transition: border-color 0.2s ease-in;
+  transition: border-color 0.3s ease-in;
 }
 
 .search:active .search__magnifier--rect,
 .search:active .search__magnifier--path {
   fill: #7943a4;
-  transition: fill 0.2s ease-in;
+  transition: fill 0.3s ease-in;
 }
 
 .header__burger {
@@ -549,17 +545,12 @@ input[type="number"]:focus {
   display: none;
 }
 
-.first {
-  z-index: -1;
-  background: transparent;
-}
-
 .first__swiper {
   position: absolute;
   left: 0;
   top: 0;
   z-index: -100;
-  width: 100vw;
+  width: 100%;
   height: 800px;
 }
 
@@ -567,8 +558,8 @@ input[type="number"]:focus {
   position: relative;
   display: block;
   height: 100%;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   -webkit-animation: backgroundAnimation 30s linear infinite;
   animation: backgroundAnimation 30s linear infinite;
 }
@@ -2540,7 +2531,7 @@ div[data-custom-properties="[object Object]"] {
   right: 5px;
   display: block;
   width: 28px;
-  height: 3.65px;
+  height: 3px;
   background-color: #ffffff;
   transition: background-color 0.5s ease-in-out;
 }
@@ -2552,7 +2543,7 @@ div[data-custom-properties="[object Object]"] {
   top: 12px;
   display: block;
   width: 24px;
-  height: 3.65px;
+  height: 3px;
   background-color: #ffffff;
   transition: background-color 0.5s ease-in-out;
 }
@@ -2564,7 +2555,7 @@ div[data-custom-properties="[object Object]"] {
   bottom: 13px;
   display: block;
   width: 36px;
-  height: 3.65px;
+  height: 3px;
   background-color: #ffffff;
   transition: background-color 0.5s ease-in-out;
 }
@@ -2774,11 +2765,16 @@ div[data-custom-properties="[object Object]"] {
   .container {
     width: 957px;
   }
-  .container .header__container {
-    padding: 29px 8px 29px 13px;
-    width: calc(100% - 8rem);
+  .header__container {
+    padding: 29px 8px 33px 13px;
+    width: calc(100% - 4.6rem);
+  }
+  .nav-toggle {
+    margin-top: 0;
   }
   .header__logo {
+    position: absolute;
+    left: calc((100vw - 204px) / 2);
     width: 193px;
     height: 42px;
   }
@@ -2851,14 +2847,21 @@ div[data-custom-properties="[object Object]"] {
     border: 2px solid #9d5cd0;
     border-radius: 100px;
     padding: 19px 88px;
-    -webkit-animation: show-menu 0.5s ease-in;
-    animation: show-menu 0.5s ease-in;
+    -webkit-animation: show-menu 0.6s ease-in;
+    animation: show-menu 0.6s ease-in;
+  }
+  .search {
+    width: 33px;
+    transition: width 0.2s linear;
   }
   .search .search__input {
+    padding: 0;
     width: 0;
+    font-size: 14px;
+    transition: width 0.2s linear;
   }
   .search .search__input::-webkit-input-placeholder {
-    color: transparent;
+    content: "";
   }
   .search .search__input::-moz-placeholder {
     content: "";
@@ -2872,30 +2875,36 @@ div[data-custom-properties="[object Object]"] {
   .search .search__input::placeholder {
     content: "";
   }
+  .search.active-search {
+    width: 256px;
+    transition: width 0.2s ease-in;
+  }
+  .search__input.active-search {
+    width: 218px;
+    transition: width 0.2s ease-in;
+    transition-delay: 0.1s;
+  }
   .search__magnifier {
     display: block;
-    margin-top: 3px;
-    border: none;
+    margin-top: -3px;
     padding: 0;
-    background: none;
   }
   .search__magnifier .search__magnifier--lupe {
-    width: 31px;
-    height: 31px;
-  }
-  .search__magnifier svg rect,
-  .search__magnifier svg path {
-    transition: all 0.5s ease-in;
+    width: 29px;
+    height: 29px;
   }
   .search__magnifier:hover svg rect,
   .search__magnifier:hover svg path {
     fill: #9d5cd0;
-    transition: all 0.5s ease-in;
+    transition: fill 0.3s ease-in;
   }
   .search__magnifier:active svg rect,
   .search__magnifier:active svg path {
     fill: #7943a4;
-    transition: all 0.5s ease-in;
+    transition: fill 0.3s ease-in;
+  }
+  .search__magnifier.active-search {
+    margin-right: 5px;
   }
   .header__magnifier.active {
     display: none;
@@ -3094,21 +3103,64 @@ div[data-custom-properties="[object Object]"] {
   .container {
     width: 698px;
   }
-  .nav-toggle span {
-    top: 17px;
-  }
   .header__container {
     padding-top: 29px;
-    padding-bottom: 29px;
+    padding-bottom: 32px;
   }
-  .header__container .header__logo {
-    margin-right: 103px;
+  .header__logo.active-search {
+    display: none;
   }
-  .header__container .header__burger {
+  .header__logo {
+    -webkit-animation: anim 0.4s linear 0s 1 forwards;
+    animation: anim 0.4s linear 0s 1 forwards;
+  }
+  @-webkit-keyframes anim {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes anim {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .header__burger {
     margin-right: 106px;
   }
-  .header__container .header__magnifier .header__magnifier--lupe {
+  .header__burger.active-search {
+    display: none !important;
+  }
+  .header__magnifier .header__magnifier--lupe {
     margin-right: 13px;
+  }
+  .search.active-search {
+    width: 100%;
+    transition: width 0.3s ease-in;
+  }
+  .search__input.active-search {
+    width: 94%;
+    transition: width 0.3s ease-in;
+    transition-delay: 0.2s;
   }
   .first .first__container {
     padding-top: 114px;
@@ -3385,8 +3437,16 @@ div[data-custom-properties="[object Object]"] {
     height: 2px;
   }
   .header__logo {
+    left: calc((100vw - 113px) / 2);
     width: 97px;
     height: 22px;
+  }
+  .search {
+    padding-top: 3px;
+    width: 16px;
+  }
+  .search .search__input {
+    font-size: 10px;
   }
   .search__magnifier {
     padding: 0;
@@ -3782,11 +3842,10 @@ div[data-custom-properties="[object Object]"] {
   .header__container {
     padding-left: 17px;
   }
-  .header__container .header__burger {
-    margin-top: -7px;
+  .header__burger {
     margin-right: 0;
   }
-  .header__container .header__logo {
+  .header__logo {
     margin-right: 0;
   }
   .first .first__title {
@@ -4010,6 +4069,9 @@ div[data-custom-properties="[object Object]"] {
     padding-right: 0;
     padding-left: 0;
     width: 292px;
+  }
+  .search.active-search {
+    padding-top: 27px;
   }
   .first .first__container {
     padding-left: 0;

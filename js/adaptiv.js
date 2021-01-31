@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		screenWidth1200 = window.matchMedia('(max-width: 1200px)'),
 		screenWidth750 = window.matchMedia('(max-width: 750px)'),
 		headerNav = document.querySelector('#header-nav'),
-		searchBtn = document.querySelector('#search-btn'),
+		searchForm = document.querySelector('#search-form'),
+		netherNav = document.querySelector('#nether-nav'),
 		headerClose = document.querySelector('.header__close'),
 		headerAdmission = document.querySelector('.header__admission'),
-		headerLogo = document.querySelector('.header__logo'),
-		headerSearchInput = document.querySelector('#header__search-input');
+		headerLogo = document.querySelector('.header__logo');
 
 	const editAccAdapt = function () {
 		let editionsCheckAll = document.querySelectorAll('.editions__check'),
@@ -74,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		document.querySelectorAll("#name7").forEach(el => {
 			el.innerHTML = "Искусство и ви...<br><span>Арнхейм, Рудольф </span>";
 		});
-		headerNav.after(searchBtn);
 	}
 
 	screenWidth1650.addEventListener('change', function (e) {
@@ -115,37 +114,36 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	if (document.documentElement.clientWidth < 1200) {
-		headerLogo.after(searchBtn);
+		headerLogo.after(searchForm);
 		headerClose.after(headerNav);
 		headerNav.after(headerAdmission);
 		document.querySelector('.header__burger').style.display = 'block';
-	} else {
-		headerSearchInput.after(searchBtn);
+	}else if(document.documentElement.clientWidth >= 1200) {
+		netherNav.after(searchForm);
 		headerLogo.after(headerNav);
 		headerNav.after(headerAdmission);
 		document.querySelector('.header__burger').style.display = 'none';
 	}
-
-	screenWidth1200.addEventListener('change', function (e) {
-		if (e.matches) {
-			headerLogo.after(searchBtn);
-			headerClose.after(headerNav);
-			headerNav.after(headerAdmission);
-			document.querySelector('.header__burger').style.display = 'block';
-		} else {
-			headerSearchInput.after(searchBtn);
-			headerLogo.after(headerNav);
-			headerNav.after(headerAdmission);
-			document.querySelector('.header__burger').style.display = 'none';
-		}
-	});
-
 
 	if (document.documentElement.clientWidth < 730) {
 		document.querySelector('.contacts__title').after(document.querySelector('.contacts__address'));
 		document.querySelector('.contacts__title').after(document.querySelector('.contacts__name'));
 		editAccAdapt();
 	}
+
+	screenWidth1200.addEventListener('change', function (e) {
+		if (e.matches) {
+			headerLogo.after(searchForm);
+			headerClose.after(headerNav);
+			headerNav.after(headerAdmission);
+			document.querySelector('.header__burger').style.display = 'block';
+		} else {
+			netherNav.after(searchForm);
+			headerLogo.after(headerNav);
+			headerNav.after(headerAdmission);
+			document.querySelector('.header__burger').style.display = 'none';
+		}
+	});
 
 	screenWidth750.addEventListener('change', function (el) {
 		if (el.matches) {

@@ -32,8 +32,18 @@
   }
 
   .header__logo {
+    left: calc((100vw - 113px) / 2);
     width: 97px;
     height: 22px;
+  }
+
+  .search {
+    padding-top: 3px;
+    width: 16px;
+
+    .search__input {
+      font-size: 10px;
+    }
   }
 
   .search__magnifier {

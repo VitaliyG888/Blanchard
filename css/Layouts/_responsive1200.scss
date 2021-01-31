@@ -1,14 +1,20 @@
 @media (max-width: 1200px) {
   .container {
     width: 957px;
+  }
 
-    .header__container {
-      padding: 29px 8px 29px 13px;
-      width: calc(100% - 8rem);
-    }
+  .header__container {
+    padding: 29px 8px 33px 13px;
+    width: calc(100% - 4.6rem);
+  }
+
+  .nav-toggle {
+    margin-top: 0;
   }
 
   .header__logo {
+    position: absolute;
+    left: calc((100vw - 204px) / 2);
     width: 193px;
     height: 42px;
   }
@@ -100,16 +106,22 @@
     border: 2px solid $first-color;
     border-radius: 100px;
     padding: 19px 88px;
-    -webkit-animation: show-menu 0.5s ease-in;
-    animation: show-menu 0.5s ease-in;
+    -webkit-animation: show-menu 0.6s ease-in;
+    animation: show-menu 0.6s ease-in;
   }
 
   .search {
+    width: 33px;
+    transition: width 0.2s linear;
+
     .search__input {
+      padding: 0;
       width: 0;
+      font-size: 14px;
+      transition: width 0.2s linear;
 
       &::-webkit-input-placeholder {
-        color: transparent;
+        content: "";
       }
 
       &::-moz-placeholder {
@@ -130,30 +142,32 @@
     }
   }
 
+  .search.active-search {
+    width: 256px;
+    transition: width 0.2s ease-in;
+  }
+
+  .search__input.active-search {
+    width: 218px;
+    transition: width 0.2s ease-in;
+    transition-delay: 0.1s;
+  }
+
   .search__magnifier {
     display: block;
-    margin-top: 3px;
-    border: none;
+    margin-top: -3px;
     padding: 0;
-    background: none;
 
     .search__magnifier--lupe {
-      width: 31px;
-      height: 31px;
-    }
-
-    svg {
-      rect,
-      path {
-        transition: all 0.5s ease-in;
-      }
+      width: 29px;
+      height: 29px;
     }
 
     &:hover svg {
       rect,
       path {
         fill: $first-color;
-        transition: all 0.5s ease-in;
+        transition: fill 0.3s ease-in;
       }
     }
 
@@ -161,9 +175,13 @@
       rect,
       path {
         fill: $second-color;
-        transition: all 0.5s ease-in;
+        transition: fill 0.3s ease-in;
       }
     }
+  }
+
+  .search__magnifier.active-search {
+    margin-right: 5px;
   }
 
   .header__magnifier.active {

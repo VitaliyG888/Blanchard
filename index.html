@@ -64,7 +64,7 @@
     </div>
     <div class="header__nether nether">
       <div class="container nether__container flex">
-        <nav class="nether__nav">
+        <nav class="nether__nav" id="nether-nav">
           <ul class="nether__list liststyle flex">
             <li class="nether__item">
               <a href=" #" class="nether__style">Реализм</a>
@@ -244,9 +244,8 @@
           </ul>
         </nav>
 
-        <form class="search header__search ">
-          <input type="search" class="search__input" id="header__search-input" placeholder="Поиск по сайту">
-          <button class="search__magnifier reset-btn" id="search-btn" type="submit" aria-label="Поиск по сайту">
+        <form class="search header__search" id="search-form">
+          <button class="search__magnifier reset-btn" id="search-btn" aria-label="Поиск по сайту">
             <svg class="search__magnifier--lupe" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 23 22"
               width="23" height="22">
               <rect class="search__magnifier--rect" fill="white"
@@ -256,6 +255,7 @@
                 d="M 12.0969 18 C 7.53041 18 3.99692 14.3229 3.99692 10 C 3.99692 5.67715 7.53041 2 12.0969 2 C 16.6634 2 20.1969 5.67715 20.1969 10 C 20.1969 14.3229 16.6634 18 12.0969 18 Z M 12.0969 20 C 6.57408 20 2.09692 15.5228 2.09692 10 C 2.09692 4.47715 6.57408 0 12.0969 0 C 17.6198 0 22.0969 4.47715 22.0969 10 C 22.0969 15.5228 17.6198 20 12.0969 20 Z" />
             </svg>
           </button>
+          <input type="text" class="search__input" id="header__search-input" placeholder="Поиск по сайту">
         </form>
       </div>
     </div>
@@ -807,6 +807,7 @@
     </div>
   </footer>
 
+  <script src="js/search.js"></script>
   <script src="js/just-validate.min.js"></script>
   <script src="js/inputmask.min.js"></script>
   <script src="js/choices.min.js"></script>
