@@ -55,6 +55,20 @@
     }
   }
 
+  .header__higher.active-search {
+    background: linear-gradient(to bottom, #000000, #c4c4c4);
+  }
+
+  .search.active-search {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 80%;
+  }
+
+  .search__input.active-search {
+    width: 87%;
+  }
+
   .first .first__container {
     padding-top: 30px;
     padding-bottom: 46px;

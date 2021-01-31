@@ -112,13 +112,13 @@
 
   .search {
     width: 33px;
-    transition: width 0.2s linear;
+    transition: width 0.3s linear;
 
     .search__input {
       padding: 0;
       width: 0;
       font-size: 14px;
-      transition: width 0.2s linear;
+      transition: width 0.3s linear;
 
       &::-webkit-input-placeholder {
         content: "";
@@ -144,14 +144,13 @@
 
   .search.active-search {
     width: 256px;
-    transition: width 0.2s ease-in;
+    transition: width 0.3s ease-in;
   }
 
   .search__input.active-search {
     width: 218px;
-    transition: width 0.2s ease-in;
-    transition-delay: 0.1s;
-  }
+    transition: width 0.3s ease-in 0.2s;
+   }
 
   .search__magnifier {
     display: block;

@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	searchMagPath = document.querySelector('.search__magnifier--path'),
 	searchMagRect = document.querySelector('.search__magnifier--rect'),
 	headerLogo = document.querySelector('.header__logo'),
+	headerHigher = document.querySelector('.header__higher'),
 	headerBurger = document.querySelector('.js-burger');
 
 			if (document.documentElement.clientWidth < 1200) {
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 					searchBtn.classList.add('active-search');
 					searchMagLupe.classList.add('active-search');
 					headerLogo.classList.add('active-search');
+					headerHigher.classList.add('active-search');
 				}
 			}
 	});
