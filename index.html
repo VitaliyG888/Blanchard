@@ -323,7 +323,7 @@
           <div class="gallery__swiper swiper-container" id="slider1">
             <div class="gallery__wraper swiper-wrapper">
               <div class="swiper-slide gallery__slider picture1"></div>
-              <div class="swiper-slide gallery__slider picture2"></div>
+              <div class="swiper-slide gallery__slider picture2 open-modal" data-path="modal-first"></div>
               <div class="swiper-slide gallery__slider picture3"></div>
               <div class="swiper-slide gallery__slider picture4"></div>
               <div class="swiper-slide gallery__slider picture5"></div>
@@ -361,6 +361,19 @@
           количества скачиваний <button class="gallery__description--authorization">авторизуйтесь,</button> либо
           воспользуйтесь
           лицензией. </p>
+      </div>
+    </div>
+    <div class="galery__modal modal">
+      <div class="modal-wrapper modal--1" data-target="modal-first">
+        <img src="/image/Modal1.jpg" alt="Женщина с граблями" class="modal-img">
+        <div class="modal-content">
+          <h2>Казимир Малевич</h2>
+          <h3>“Женщина с граблями”</h3>
+          <span>1931-1932</span>
+          <p>Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах,
+             после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+        </div>
+        <button class="modal-close">&times;</button>
       </div>
     </div>
   </section>
@@ -825,6 +838,7 @@
   <script src="js/event.js"></script>
   <script src="js/adaptiv.js"></script>
   <script src="js/mobail-slider.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>

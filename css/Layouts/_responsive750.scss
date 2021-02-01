@@ -195,6 +195,36 @@
     background-repeat: round;
   }
 
+  .modal-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+
+  .modal-content {
+    margin-right: 0;
+    margin-left: 10px;
+    width: 270px;
+    height: 350px;
+
+    span {
+      margin-bottom: 15px;
+    }
+  }
+
+  .modal-img {
+    margin-right: 0;
+    margin-bottom: 17px;
+    width: 290px;
+    height: 230px;
+  }
+
+  .modal-close {
+    right: 7px;
+    top: 7px;
+  }
+
   .catalog__container {
     padding-top: 50px;
   }

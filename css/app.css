@@ -2633,6 +2633,90 @@ div[data-custom-properties="[object Object]"] {
   transition: left 0.5s;
 }
 
+.galery__modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-wrapper {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.modal-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-content {
+  margin-right: 48px;
+  width: 402px;
+  height: 258px;
+}
+
+.modal-content h2 {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #333333;
+}
+
+.modal-content h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.modal-content span {
+  display: block;
+  margin-bottom: 41px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #969696;
+}
+
+.modal-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.modal-img {
+  margin-right: 48px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  border: none;
+  font-size: 38px;
+  background: none;
+  cursor: pointer;
+}
+
 @media (max-width: 1650px) {
   .container {
     width: 1400px;
@@ -2852,13 +2936,13 @@ div[data-custom-properties="[object Object]"] {
   }
   .search {
     width: 33px;
-    transition: width 0.3s linear;
+    transition: width 0.2s linear;
   }
   .search .search__input {
     padding: 0;
     width: 0;
     font-size: 14px;
-    transition: width 0.3s linear;
+    transition: width 0.2s linear;
   }
   .search .search__input::-webkit-input-placeholder {
     content: "";
@@ -2878,11 +2962,11 @@ div[data-custom-properties="[object Object]"] {
   }
   .search.active-search {
     width: 256px;
-    transition: width 0.3s ease-in;
+    transition: width 0.2s ease-in;
   }
   .search__input.active-search {
     width: 218px;
-    transition: width 0.3s ease-in 0.2s;
+    transition: width 0.2s ease-in 0.1s;
   }
   .search__magnifier {
     display: block;
@@ -2954,6 +3038,16 @@ div[data-custom-properties="[object Object]"] {
   .gallery__description {
     top: 609px;
     max-width: 280px;
+  }
+  .modal-content {
+    margin-right: 48px;
+    width: 231px;
+    height: 382px;
+  }
+  .modal-img {
+    margin-right: 17px;
+    width: 297px;
+    height: 594px;
   }
   .catalog__container {
     padding-top: 70px;
@@ -3155,12 +3249,9 @@ div[data-custom-properties="[object Object]"] {
   }
   .search.active-search {
     width: 100%;
-    transition: width 0.3s ease-in;
   }
   .search__input.active-search {
     width: 94%;
-    transition: width 0.3s ease-in;
-    transition-delay: 0.2s;
   }
   .first .first__container {
     padding-top: 114px;
@@ -3218,6 +3309,16 @@ div[data-custom-properties="[object Object]"] {
     position: initial;
     margin-left: 3px;
     max-width: 668px;
+  }
+  .modal-content {
+    margin-right: 48px;
+    width: 270px;
+    height: 350px;
+  }
+  .modal-img {
+    margin-right: 48px;
+    width: 301px;
+    height: 594px;
   }
   .catalog__container {
     padding-top: 65px;
@@ -3567,6 +3668,31 @@ div[data-custom-properties="[object Object]"] {
   .swiper-slide.gallery__slider {
     height: 100%;
     background-repeat: round;
+  }
+  .modal-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  .modal-content {
+    margin-right: 0;
+    margin-left: 10px;
+    width: 270px;
+    height: 350px;
+  }
+  .modal-content span {
+    margin-bottom: 15px;
+  }
+  .modal-img {
+    margin-right: 0;
+    margin-bottom: 17px;
+    width: 290px;
+    height: 230px;
+  }
+  .modal-close {
+    right: 7px;
+    top: 7px;
   }
   .catalog__container {
     padding-top: 50px;

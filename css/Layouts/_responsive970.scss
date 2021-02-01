@@ -63,13 +63,10 @@
 
   .search.active-search {
     width: 100%;
-    transition: width 0.3s ease-in;
   }
 
   .search__input.active-search {
     width: 94%;
-    transition: width 0.3s ease-in;
-    transition-delay: 0.2s;
   }
 
   .first .first__container {
@@ -145,7 +142,17 @@
     max-width: 668px;
   }
 
-  // catalog section
+  .modal-content {
+    margin-right: 48px;
+    width: 270px;
+    height: 350px;
+  }
+
+  .modal-img {
+    margin-right: 48px;
+    width: 301px;
+    height: 594px;
+  }
 
   .catalog__container {
     padding-top: 65px;
