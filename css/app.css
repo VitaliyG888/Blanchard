@@ -4003,6 +4003,10 @@ div[data-custom-properties="[object Object]"] {
     width: 33px;
     height: 33px;
   }
+  .footer__link::after {
+    width: 25px;
+    height: 25px;
+  }
   .footer__item:not(:last-child) {
     margin-right: 14px;
   }

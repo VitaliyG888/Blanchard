@@ -342,7 +342,7 @@
     }
   }
 
-  .editions__check:checked + .editions__label span {
+  .editions__check:checked+.editions__label span {
     color: rgba($first-lite, 1);
     transition: color 0.2s ease-in;
   }
@@ -556,11 +556,16 @@
   .footer__link {
     width: 25px;
     height: 25px;
-  }
 
-  .footer__link::before {
-    width: 33px;
-    height: 33px;
+    &::before {
+      width: 33px;
+      height: 33px;
+    }
+
+    &::after {
+      width: 25px;
+      height: 25px;
+    }
   }
 
   .footer__item:not(:last-child) {
