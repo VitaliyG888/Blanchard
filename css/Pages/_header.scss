@@ -123,14 +123,14 @@
 }
 
 .nether__container {
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 24px;
+  padding-left: 8px;
 }
 
 .nether__item:not(:last-child) {
-  margin-right: 102px;
+  margin-right: 90px;
 }
 
 .nether__item:hover .nether__choice,
@@ -156,7 +156,7 @@
 
 .nether__item .nether__style {
   position: relative;
-  padding-bottom: 22px;
+  padding-bottom: 25px;
   font-weight: 400;
   font-size: 18px;
   color: $Wight;
@@ -211,7 +211,6 @@
 .nether__choice {
   position: absolute;
   z-index: 10;
-  margin-top: 26px;
   padding: 40px;
   width: 300px;
   max-height: 300px;
@@ -312,7 +311,6 @@
 .search {
   position: relative;
   outline: 2px solid rgba($first-color, 0);
-  padding-top: 9px;
   width: 256px;
   transition: all 0.2s ease-in;
 

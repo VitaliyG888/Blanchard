@@ -15,7 +15,7 @@
 }
 
 .footer__logo:focus {
-  outline: 1px solid $Wight;
+  outline: 1px solid $first-color;
 }
 
 .footer__link {
@@ -37,10 +37,30 @@
     height: 54px;
     transition: border-color 0.2s linear;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    border-radius: 100px;
+    width: 46px;
+    height: 46px;
+    box-shadow: 0 0 19px -2px;
+    color: transparent;
+    background: transparent;
+    transition: color 0.2s linear;
+  }
+
+  &:hover::after {
+    color: $extra-lite;
+    transition: color 0.2s linear;
+  }
 }
 
 .footer__link:focus::before {
-  border-color: $Wight;
+  border-color: $first-lite;
   transition: border-color 0.2s linear;
 }
 

@@ -4,7 +4,8 @@
   }
 
   .header__container {
-    padding-top: 29px;
+    padding-top: 32px;
+    padding-right: 11px;
     padding-bottom: 32px;
   }
 
@@ -205,7 +206,7 @@
 
   .accordeon-item {
     grid-column-gap: 20px;
-    grid-template-columns: repeat(3, 209px);
+    grid-template-columns: repeat(3, 211px);
     grid-template-rows: repeat(9, 32px);
   }
 
