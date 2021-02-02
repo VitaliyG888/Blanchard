@@ -2089,6 +2089,7 @@ div[data-custom-properties="[object Object]"] {
   color: #ffffff;
   background-color: #cacaca;
   transition: all 0.3s ease;
+  pointer-events: none;
 }
 
 .tooltip-toggle::after {
@@ -3180,15 +3181,15 @@ div[data-custom-properties="[object Object]"] {
     letter-spacing: 0;
   }
   .tooltip1::before {
-    top: -44px;
+    top: -47px;
   }
   .tooltip2::before {
     left: -151px;
-    top: -40px;
+    top: -47px;
     width: 324px;
   }
   .tooltip3::before {
-    top: -28px;
+    top: -31px;
   }
   .projects__tooltip::after {
     display: none;
@@ -3493,12 +3494,13 @@ div[data-custom-properties="[object Object]"] {
     margin-top: 73px;
     margin-left: 31px;
   }
-  .tooltip3::before {
-    left: -20px;
-    top: -41px;
-  }
   .tooltip2::before {
-    top: -62px;
+    left: -148px;
+    top: -48px;
+  }
+  .tooltip3::before {
+    left: -105px;
+    top: -31px;
   }
   .tooltip1::before {
     top: -46px;
@@ -3940,17 +3942,18 @@ div[data-custom-properties="[object Object]"] {
     margin-bottom: 23px;
   }
   .tooltip1::before {
-    left: -102px;
-    top: -55px;
+    left: -98px;
+    top: -63px;
     width: 214px;
   }
   .tooltip2::before {
-    left: -112px;
-    top: -59px;
+    left: -109px;
+    top: -63px;
     width: 239px;
   }
   .tooltip3::before {
-    left: -14px;
+    left: -65px;
+    top: -47px;
     width: 153px;
   }
   .swiper-container#slider3 {
@@ -4211,7 +4214,7 @@ div[data-custom-properties="[object Object]"] {
     bottom: 27px;
   }
   .tooltip3::before {
-    left: -113px;
+    left: -70px;
   }
   .projects__descriptions {
     max-width: 290px;
@@ -4292,6 +4295,10 @@ div[data-custom-properties="[object Object]"] {
   }
   .editions__img {
     height: 144px;
+  }
+  .tooltip3::before {
+    left: -73px;
+    width: 136px;
   }
   .contacts__container {
     width: 100%;

@@ -97,6 +97,7 @@
     color: $Wight;
     background-color: $Grey;
     transition: all 0.3s ease;
+    pointer-events: none;
   }
 
   &::after {
