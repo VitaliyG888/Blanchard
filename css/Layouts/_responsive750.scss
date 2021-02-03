@@ -141,6 +141,7 @@
   .gallery .gallery__container {
     padding-top: 56px;
     padding-bottom: 50px;
+    padding-left: 15px;
   }
 
   .gallery__title {
@@ -163,10 +164,14 @@
     width: 291px;
   }
 
+  .gallery__choice {
+    margin-left: calc((100% - 291px) / 2);
+  }
+
   .gallery__showing.swiper {
     position: relative;
     margin-bottom: 14px;
-    padding-top: 10px;
+    padding-left: calc((100% - 350px) / 2);
     height: 430px;
   }
 
@@ -174,7 +179,7 @@
     position: absolute;
     bottom: 0;
     margin: 0;
-    padding-left: 73px;
+    padding-left: 95px;
   }
 
   .swiper-button-prev {
@@ -480,7 +485,7 @@
 
   .projects__descriptions {
     margin-bottom: 24px;
-    max-width: 450px;
+    max-width: 400px;
   }
 
   .projects__partners {
@@ -507,7 +512,7 @@
 
   .swiper-container#slider3 {
     margin-bottom: 50px;
-    max-width: 390px;
+    max-width: 370px;
   }
 
   .contacts__map.map {

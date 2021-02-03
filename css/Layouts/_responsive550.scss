@@ -43,9 +43,16 @@
     height: 367px;
   }
 
+  .gallery__showing.swiper {
+    padding-left: calc((100% - 292px) / 2);
+  }
+
+  .gallery__swiper-button1.swiper-button {
+    padding-left: 73px;
+  }
+
   .gallery .gallery__container {
     padding-bottom: 70px;
-    padding-left: 0;
   }
 
   .gallery__choice {

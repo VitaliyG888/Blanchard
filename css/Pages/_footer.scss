@@ -53,7 +53,8 @@
     transition: color 0.2s linear;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:active::after {
     color: $extra-lite;
     transition: color 0.2s linear;
   }
