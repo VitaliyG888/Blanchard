@@ -2517,7 +2517,7 @@ div[data-custom-properties="[object Object]"] {
   border-radius: 100px;
   width: 46px;
   height: 46px;
-  box-shadow: 0 0 19px -2px;
+  box-shadow: 0 0 9px 2px;
   color: transparent;
   background: transparent;
   transition: color 0.2s linear;
@@ -3832,7 +3832,7 @@ div[data-custom-properties="[object Object]"] {
   }
   .editions__checkboks {
     margin-bottom: 10px;
-    padding-top: 12px;
+    padding-top: 9px;
   }
   .editions__docket {
     position: relative;
@@ -4049,7 +4049,7 @@ div[data-custom-properties="[object Object]"] {
     margin-left: 3px;
     width: 261px;
     font-size: 32px;
-    line-height: 39px;
+    line-height: 38px;
     letter-spacing: 0.1px;
   }
   .first__description {
@@ -4175,7 +4175,7 @@ div[data-custom-properties="[object Object]"] {
     width: 290px;
   }
   .developments__card .developments__card--down {
-    padding: 16px 11px 72px 28px;
+    padding: 16px 11px 76px 28px;
   }
   .developments__card .developments__header {
     margin-bottom: 35px;
