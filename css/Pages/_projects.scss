@@ -30,9 +30,10 @@
 
 .tooltip1 {
   &::before {
-    left: -125px;
+    left: 50%;
     top: -59px;
     width: 265px;
+    transform: translateX(-50%);
   }
 
   &::after {
@@ -42,9 +43,10 @@
 
 .tooltip2 {
   &::before {
-    left: -124px;
+    left: 50%;
     top: -74px;
     width: 265px;
+    transform: translateX(-50%);
   }
 
   &::after {
@@ -54,9 +56,10 @@
 
 .tooltip3 {
   &::before {
-    left: -106px;
+    left: 50%;
     top: -43px;
     width: 232px;
+    transform: translateX(-50%);
   }
 
   &::after {
@@ -66,6 +69,7 @@
 
 .tooltip-toggle {
   position: relative;
+  display: inline-block;
   cursor: pointer;
 
   svg {
@@ -152,6 +156,7 @@
 
 .projects__link {
   position: relative;
+  display: inline-block;
   outline: 2px solid rgba(157, 92, 208, 0);
   color: $first-color;
   transition: all 0.2s ease-in;

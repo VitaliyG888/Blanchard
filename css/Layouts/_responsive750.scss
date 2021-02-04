@@ -493,19 +493,16 @@
   }
 
   .tooltip1::before {
-    left: -98px;
     top: -63px;
     width: 214px;
   }
 
   .tooltip2::before {
-    left: -109px;
     top: -63px;
     width: 239px;
   }
 
   .tooltip3::before {
-    left: -65px;
     top: -47px;
     width: 153px;
   }
@@ -524,6 +521,7 @@
     margin: 0 auto;
     padding-top: 24px;
     padding-bottom: 30px;
+    width: 80%;
   }
 
   .contacts__container {
