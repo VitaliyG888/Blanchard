@@ -135,7 +135,6 @@
   }
 
   &:hover {
-
     &::before,
     &::after {
       opacity: 1;
@@ -172,13 +171,13 @@
     transition: all 0.2s ease-in;
   }
 
-  &:hover::after {
-    width: 247px;
+  &:focus {
+    outline: 2px solid rgba(157, 92, 208, 1);
     transition: all 0.2s ease-in;
   }
 
-  &:focus {
-    outline: 2px solid rgba(157, 92, 208, 1);
+  &:hover::after {
+    width: 247px;
     transition: all 0.2s ease-in;
   }
 }

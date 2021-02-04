@@ -347,7 +347,7 @@
     }
   }
 
-  .editions__check:checked+.editions__label span {
+  .editions__check:checked + .editions__label span {
     color: rgba($first-lite, 1);
     transition: color 0.2s ease-in;
   }

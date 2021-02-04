@@ -18,38 +18,6 @@
     animation: anim 0.4s linear 0s 1 forwards;
   }
 
-  @-webkit-keyframes anim {
-    0% {
-      display: none;
-      opacity: 0;
-    }
-    1% {
-      display: block;
-      opacity: 0;
-      transform: scale(0);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-
-  @keyframes anim {
-    0% {
-      display: none;
-      opacity: 0;
-    }
-    1% {
-      display: block;
-      opacity: 0;
-      transform: scale(0);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-
   .header__burger {
     margin-right: 106px;
   }
@@ -209,8 +177,6 @@
     grid-template-columns: repeat(3, 211px);
     grid-template-rows: repeat(9, 32px);
   }
-
-  // developments section
 
   .developments__container {
     padding-top: 68px;
@@ -377,8 +343,6 @@
     margin-top: -38px;
   }
 
-  // contacts section
-
   .contacts__container {
     margin: 0;
     padding-right: 0;
@@ -396,5 +360,41 @@
 
   .contacts .contacts__container .contacts__block .contacts_name {
     margin-bottom: 6px;
+  }
+
+  @-webkit-keyframes anim {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      display: block;
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes anim {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      display: block;
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 }

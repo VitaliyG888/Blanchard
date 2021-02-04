@@ -2155,13 +2155,13 @@ div[data-custom-properties="[object Object]"] {
   transition: all 0.2s ease-in;
 }
 
-.projects__link:hover::after {
-  width: 247px;
+.projects__link:focus {
+  outline: 2px solid #9d5cd0;
   transition: all 0.2s ease-in;
 }
 
-.projects__link:focus {
-  outline: 2px solid #9d5cd0;
+.projects__link:hover::after {
+  width: 247px;
   transition: all 0.2s ease-in;
 }
 
@@ -2921,34 +2921,6 @@ div[data-custom-properties="[object Object]"] {
   .nav-prime__item:not(:last-child) {
     margin-bottom: 40px;
   }
-  @-webkit-keyframes show-menu {
-    0% {
-      opacity: 0;
-    }
-    30% {
-      opacity: 0.2;
-    }
-    70% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes show-menu {
-    0% {
-      opacity: 0;
-    }
-    90% {
-      opacity: 0.1;
-    }
-    95% {
-      opacity: 0.3;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
   .nav--showed {
     z-index: 20;
     display: block;
@@ -3228,6 +3200,34 @@ div[data-custom-properties="[object Object]"] {
   .contacts__form {
     width: 337px;
   }
+  @-webkit-keyframes show-menu {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 0.2;
+    }
+    70% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes show-menu {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0.1;
+    }
+    95% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
 @media (max-width: 970px) {
@@ -3245,36 +3245,6 @@ div[data-custom-properties="[object Object]"] {
   .header__logo {
     -webkit-animation: anim 0.4s linear 0s 1 forwards;
     animation: anim 0.4s linear 0s 1 forwards;
-  }
-  @-webkit-keyframes anim {
-    0% {
-      display: none;
-      opacity: 0;
-    }
-    1% {
-      display: block;
-      opacity: 0;
-      transform: scale(0);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  @keyframes anim {
-    0% {
-      display: none;
-      opacity: 0;
-    }
-    1% {
-      display: block;
-      opacity: 0;
-      transform: scale(0);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
   }
   .header__burger {
     margin-right: 106px;
@@ -3544,6 +3514,36 @@ div[data-custom-properties="[object Object]"] {
   }
   .contacts .contacts__container .contacts__block .contacts_name {
     margin-bottom: 6px;
+  }
+  @-webkit-keyframes anim {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes anim {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 }
 
