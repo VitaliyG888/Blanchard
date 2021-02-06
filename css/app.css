@@ -3549,7 +3549,7 @@ div[data-custom-properties="[object Object]"] {
 
 @media (max-width: 750px) {
   .container {
-    width: calc(100% - 4rem);
+    width: calc(100% - 2rem);
   }
   .header__container {
     align-items: inherit;
@@ -3998,7 +3998,6 @@ div[data-custom-properties="[object Object]"] {
   }
   .footer__container {
     padding: 9px 15px;
-    width: calc(100% - 2rem);
     height: 44px;
   }
   .footer__logo {
