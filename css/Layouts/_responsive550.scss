@@ -1,6 +1,6 @@
 @media (max-width: 550px) {
   .container {
-    width: calc(100% - 3rem);
+    width: calc(100% - 1rem);
   }
 
   .header__container {
@@ -242,10 +242,6 @@
     bottom: 27px;
   }
 
-  .tooltip3::before {
-    left: -70px;
-  }
-
   .projects__descriptions {
     max-width: 290px;
   }
@@ -271,13 +267,6 @@
 
   .contacts__form .contacts__tweet {
     margin-bottom: 14px;
-  }
-
-  .contacts__form .contacts__button {
-    margin-bottom: 24px;
-    width: 128px;
-    height: 40px;
-    font-size: 14px;
   }
 
   .contacts__odrercall,
