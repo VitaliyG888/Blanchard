@@ -4262,7 +4262,10 @@ div[data-custom-properties="[object Object]"] {
   .container {
     padding-right: 0;
     padding-left: 0;
-    width: 292px;
+    width: 91%;
+  }
+  .header__container {
+    padding-left: 3px;
   }
   .first .first__container {
     padding-left: 0;
@@ -4315,9 +4318,6 @@ div[data-custom-properties="[object Object]"] {
   .contacts .contacts__container .contacts__block {
     margin: 0 auto;
     padding-bottom: 39px;
-    width: 91%;
-  }
-  .container.footer__container {
     width: 91%;
   }
 }
