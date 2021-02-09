@@ -243,7 +243,20 @@
   }
 
   .projects__descriptions {
+    padding: 0;
     max-width: 290px;
+  }
+
+  .tooltip1::before {
+    transform: translateX(-50%);
+  }
+
+  .tooltip2::before {
+    transform: translateX(-50%);
+  }
+
+  .tooltip3::before {
+    transform: translateX(-50%);
   }
 
   .contacts__container {

@@ -485,7 +485,9 @@
 
   .projects__descriptions {
     margin-bottom: 24px;
-    max-width: 400px;
+    padding-right: 110px;
+    padding-left: 35px;
+    max-width: 100%;
   }
 
   .projects__partners {
@@ -493,18 +495,21 @@
   }
 
   .tooltip1::before {
-    top: -63px;
-    width: 214px;
+    top: -60px;
+    width: 190px;
+    transform: translateX(-34%);
   }
 
   .tooltip2::before {
-    top: -63px;
-    width: 239px;
+    top: -60px;
+    width: 227px;
+    transform: translateX(-34%);
   }
 
   .tooltip3::before {
-    top: -47px;
-    width: 153px;
+    top: -44px;
+    width: 135px;
+    transform: translateX(-27%);
   }
 
   .swiper-container#slider3 {
