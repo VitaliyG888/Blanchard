@@ -4207,10 +4207,14 @@ div[data-custom-properties="[object Object]"] {
     width: 290px;
   }
   .editions__number {
+    padding-left: 8px;
     width: 70px;
   }
   .editions__input {
-    margin-left: 5px;
+    margin-left: 11px;
+  }
+  .editions__input:not(:first-child) {
+    margin-left: 8px;
   }
   .editions__showing {
     margin: 0;
