@@ -128,6 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	if (document.documentElement.clientWidth < 730) {
 		document.querySelector('.contacts__title').after(document.querySelector('.contacts__address'));
 		document.querySelector('.contacts__title').after(document.querySelector('.contacts__name'));
+		document.querySelector('.gallery__block').before(document.querySelector('.gallery__title'));
 		editAccAdapt();
 	}
 
@@ -149,6 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (el.matches) {
 			document.querySelector('.contacts__title').after(document.querySelector('.contacts__address'));
 			document.querySelector('.contacts__title').after(document.querySelector('.contacts__name'));
+			document.querySelector('.gallery__block').before(document.querySelector('.gallery__title'));
 			editAccAdapt();
 		} else {
 			window.location.reload();
