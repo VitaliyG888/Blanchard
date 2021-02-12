@@ -79,8 +79,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	let trabAcc = function (index = 1) {
 		request2 = new XMLHttpRequest();
-		request2.open('GET', `data-name-${index}.json`);
-		request2.onload = function (e) {
+		request2.open('GET', `data/data-name-${index}.json`);
+		request2.onload = function () {
 			if (request2.readyState === 4) {
 				if (request2.status === 200) {
 					dataTable2 = JSON.parse(request2.responseText);
@@ -117,19 +117,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		switch (tabName) {
 			case 'tab1':
-				requestURL = 'data1.json';
+				requestURL = 'data/data1.json';
 				break;
 			case 'tab2':
-				requestURL = 'data2.json';
+				requestURL = 'data/data2.json';
 				break;
 			case 'tab3':
-				requestURL = 'data3.json';
+				requestURL = 'data/data3.json';
 				break;
 			case 'tab4':
-				requestURL = 'data4.json';
+				requestURL = 'data/data4.json';
 				break;
 			case 'tab5':
-				requestURL = 'data5.json';
+				requestURL = 'data/data5.json';
 				break;
 		};
 
