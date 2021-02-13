@@ -129,6 +129,13 @@
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 
+  &:focus {
+    border: 3px solid $extra-lite;
+    color: $Wight;
+    background-color: $first-color;
+    transition: all 0.3s ease-in-out;
+  }
+
   &:hover {
     color: $Wight;
     background-color: $first-color;
@@ -138,12 +145,5 @@
   &:active {
     border: 3px solid $extra-lite;
     background-color: $second-color;
-  }
-
-  &:focus {
-    border: 3px solid $extra-lite;
-    color: $Wight;
-    background-color: $first-color;
-    transition: all 0.3s ease-in-out;
   }
 }

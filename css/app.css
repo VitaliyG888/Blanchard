@@ -508,15 +508,15 @@ input[type="number"]:focus {
   transition: border-color 0.3s ease-in;
 }
 
-.search:focus-within {
-  outline: 2px solid #9d5cd0;
-  transition: all 0.3s ease-in;
-}
-
 .search .search__magnifier--rect,
 .search .search__magnifier--path {
   fill: #ffffff;
   transition: fill 0.3s ease-in;
+}
+
+.search:focus-within {
+  outline: 2px solid #9d5cd0;
+  transition: all 0.3s ease-in;
 }
 
 .search:hover .search__magnifier--rect,
@@ -940,11 +940,6 @@ div[data-custom-properties="[object Object]"] {
 
 .swiper-slide.gallery__slider:focus {
   border: 3px solid #7943a4;
-}
-
-.swiper-slide.gallery__slider::before {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
 }
 
 .swiper-slide.gallery__slider:hover::after {
@@ -1644,6 +1639,13 @@ div[data-custom-properties="[object Object]"] {
   cursor: pointer;
 }
 
+.developments__btn:focus {
+  border: 3px solid #d1a9f0;
+  color: #ffffff;
+  background-color: #9d5cd0;
+  transition: all 0.3s ease-in-out;
+}
+
 .developments__btn:hover {
   color: #ffffff;
   background-color: #9d5cd0;
@@ -1653,13 +1655,6 @@ div[data-custom-properties="[object Object]"] {
 .developments__btn:active {
   border: 3px solid #d1a9f0;
   background-color: #7943a4;
-}
-
-.developments__btn:focus {
-  border: 3px solid #d1a9f0;
-  color: #ffffff;
-  background-color: #9d5cd0;
-  transition: all 0.3s ease-in-out;
 }
 
 /* editions section */
@@ -2065,19 +2060,6 @@ div[data-custom-properties="[object Object]"] {
   cursor: pointer;
 }
 
-.tooltip-toggle svg {
-  width: 18px;
-  height: 18px;
-}
-
-.tooltip-toggle svg .filled-circle {
-  fill: none;
-}
-
-.tooltip-toggle svg .letter {
-  fill: #9d5cd0;
-}
-
 .tooltip-toggle::before, .tooltip-toggle::after {
   text-align: center;
   opacity: 0;
@@ -2104,6 +2086,19 @@ div[data-custom-properties="[object Object]"] {
   border-top: 11px solid #cacaca;
   border-right: 11px solid transparent;
   border-left: 11px solid transparent;
+}
+
+.tooltip-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.tooltip-toggle svg .filled-circle {
+  fill: none;
+}
+
+.tooltip-toggle svg .letter {
+  fill: #9d5cd0;
 }
 
 .tooltip-toggle:focus {
@@ -2375,16 +2370,16 @@ div[data-custom-properties="[object Object]"] {
   transition: all 0.3s ease-in-out;
 }
 
-.contacts__form .contacts__button:hover {
-  color: #ffffff;
-  background-color: #9d5cd0;
-  transition: all 0.3s ease-in-out;
-}
-
 .contacts__form .contacts__button:focus {
   border-color: #d1a9f0;
   color: #ffffff;
   background-color: #7943a4;
+  transition: all 0.3s ease-in-out;
+}
+
+.contacts__form .contacts__button:hover {
+  color: #ffffff;
+  background-color: #9d5cd0;
   transition: all 0.3s ease-in-out;
 }
 
@@ -2444,16 +2439,16 @@ div[data-custom-properties="[object Object]"] {
   transition: border-color 0.2s linear;
 }
 
-.contacts__whats:hover::before,
-.contacts__teleg:hover::before {
-  color: #000000;
-  transition: color 0.2s linear;
-}
-
 .contacts__whats:focus::after,
 .contacts__teleg:focus::after {
   border-color: #9d5cd0;
   transition: border-color 0.2s linear;
+}
+
+.contacts__whats:hover::before,
+.contacts__teleg:hover::before {
+  color: #000000;
+  transition: color 0.2s linear;
 }
 
 .contacts__map.map {

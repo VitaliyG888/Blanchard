@@ -264,11 +264,6 @@ div {
     border: 3px solid $second-color;
   }
 
-  &::before {
-    opacity: 0;
-    @include transition(opacity, 0.3s);
-  }
-
   &:hover::after {
     opacity: 1;
     @include transition(opacity, 0.3s);

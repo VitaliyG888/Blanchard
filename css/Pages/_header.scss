@@ -356,15 +356,15 @@
     }
   }
 
-  &:focus-within {
-    outline: 2px solid rgba($first-color, 1);
-    transition: all 0.3s ease-in;
-  }
-
   .search__magnifier--rect,
   .search__magnifier--path {
     fill: $Wight;
     transition: fill 0.3s ease-in;
+  }
+
+  &:focus-within {
+    outline: 2px solid rgba($first-color, 1);
+    transition: all 0.3s ease-in;
   }
 
   &:hover .search__magnifier--rect,

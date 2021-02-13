@@ -78,16 +78,16 @@
     background: none;
     transition: all 0.3s ease-in-out;
 
-    &:hover {
-      color: $Wight;
-      background-color: $first-color;
-      transition: all 0.3s ease-in-out;
-    }
-
     &:focus {
       border-color: $extra-lite;
       color: $Wight;
       background-color: $second-color;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: $Wight;
+      background-color: $first-color;
       transition: all 0.3s ease-in-out;
     }
   }
@@ -146,14 +146,14 @@
     transition: border-color 0.2s linear;
   }
 
-  &:hover::before {
-    color: $Black;
-    transition: color 0.2s linear;
-  }
-
   &:focus::after {
     border-color: $first-color;
     transition: border-color 0.2s linear;
+  }
+
+  &:hover::before {
+    color: $Black;
+    transition: color 0.2s linear;
   }
 }
 
