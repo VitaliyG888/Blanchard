@@ -13,18 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
 			items = menu.querySelectorAll('.nav-prime__link'),
 			containers = document.querySelectorAll('h2.title');
 
-		let pageHeight = Math.max(
-			document.body.scrollHeight, document.documentElement.scrollHeight,
-			document.body.offsetHeight, document.documentElement.offsetHeight,
-			document.body.clientHeight, document.documentElement.clientHeight
-		);
-
 		menu.onclick = function (e) {
 			if (e.target.tagName != 'A') return;
 			let current = switchLinks(e.target);
 			selectContainer(current);
 		}
-
 
 		function switchLinks(el) {
 			let current;

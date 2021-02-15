@@ -1,4 +1,4 @@
-	let eventNews = function () {
+	let eventNews = () => {
 		let developmentsCard = document.querySelectorAll('.developments__card'),
 			developmentsBtn = document.querySelector('.developments__btn');
 
