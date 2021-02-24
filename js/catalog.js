@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		request = new XMLHttpRequest();
 		request.open('GET', requestURL);
-		request.onload = function (e) {
+		request.onload = function () {
 			if (request.readyState === 4) {
 				if (request.status === 200) {
 					dataTable = JSON.parse(request.responseText);
